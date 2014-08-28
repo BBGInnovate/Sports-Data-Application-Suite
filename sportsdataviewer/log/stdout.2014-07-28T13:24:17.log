@@ -1,0 +1,78 @@
+[Mon, 28 Jul 2014 17:19:20 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "detailedErrors": true,
+  "flash": {
+    "defaultClass": "alert",
+    "inlineClasses": {
+      "success": "alert alert-success",
+      "alert": "alert",
+      "error": "alert alert-error",
+      "info": "alert alert-info"
+    },
+    "blockClasses": {
+      "success": "alert alert-block alert-success",
+      "alert": "alert alert-block",
+      "error": "alert alert-block alert-error",
+      "info": "alert alert-block alert-info"
+    }
+  },
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/lbacker/Documents/nodeapps/sportsdataviewer/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/lbacker/Documents/nodeapps/sportsdataviewer/public",
+  "assetHost": "",
+  "assetBasePath": "/",
+  "cacheControl": {
+    "expires": {
+      "default": 0
+    }
+  },
+  "sessions": {
+    "store": "filesystem",
+    "key": "sid",
+    "expiry": 1209600,
+    "filename": "_session_store.json"
+  },
+  "cookieSessionKey": "sdata",
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/lbacker/Documents/nodeapps/sportsdataviewer/config/locales"
+    ]
+  },
+  "appName": "Geddy App (development)",
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "mailer": null,
+  "generatedByVersion": "0.12.12",
+  "model": {
+    "defaultAdapter": "filesystem"
+  }
+}
+[Mon, 28 Jul 2014 17:19:20 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 17:19:20 GMT] INFO Server worker running in development on port 4000 with a PID of: 1709
+[Mon, 28 Jul 2014 17:19:55 GMT] INFO Code changed, killing 1709, cycling ...
+[Mon, 28 Jul 2014 17:19:55 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 17:19:55 GMT] INFO Server worker running in development on port 4000 with a PID of: 1713
+[Mon, 28 Jul 2014 17:19:58 GMT] INFO Code changed, killing 1713, cycling ...
+[Mon, 28 Jul 2014 17:19:58 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 17:19:58 GMT] INFO Server worker running in development on port 4000 with a PID of: 1715
+[Mon, 28 Jul 2014 17:21:12 GMT] INFO Code changed, killing 1715, cycling ...
+[Mon, 28 Jul 2014 17:21:12 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 17:21:28 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 17:22:03 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 17:22:04 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 17:22:08 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 17:22:21 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 17:23:21 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 17:23:21 GMT] INFO Server worker running in development on port 4000 with a PID of: 1736

@@ -1,0 +1,2439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2014 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a06.nexus.opta.net
+     production time:    20140706T132529,25Z
+     production module:  Opta::Feed::XML::Soccer::F9
+-->
+<SoccerFeed TimeStamp="20140828T151407-0400">
+  <SoccerDocument Type="Latest" uID="f731825">
+    <Competition uID="c4">
+      <Name>World Cup</Name>
+      <Round>
+        <Name>Quarter-Finals</Name>
+        <RoundNumber>3</RoundNumber>
+      </Round>
+      <Stat Type="season_id">2013</Stat>
+      <Stat Type="season_name">Season 2013/2014</Stat>
+      <Stat Type="symid">IG_WC</Stat>
+      <Stat Type="matchday">5</Stat>
+    </Competition>
+    <MatchData>
+      <MatchInfo MatchType="Cup" Period="FullTime" TimeStamp="20140705T234700+0100" Weather="Partly Cloudy">
+        <Attendance>51179</Attendance>
+        <Date>20140705T210000+0100</Date>
+        <Result Type="PenaltyShootout" Winner="t366" />
+      </MatchInfo>
+      <MatchOfficial uID="o41357">
+        <OfficialData>
+          <OfficialRef Type="Main" />
+        </OfficialData>
+        <OfficialName>
+          <First>Ravshan</First>
+          <Last>Irmatov</Last>
+        </OfficialName>
+      </MatchOfficial>
+      <AssistantOfficials>
+        <AssistantOfficial FirstName="Abduxamidullo" LastName="Rasulov" Type="Lineman 1" uID="o44225" />
+        <AssistantOfficial FirstName="Bakhadyr" LastName="Kochkarov" Type="Lineman 2" uID="o41364" />
+        <AssistantOfficial FirstName="Noumandiez" LastName="Doue" Type="Fourth official" uID="o42327" />
+      </AssistantOfficials>
+      <Stat Type="match_time">122</Stat>
+      <Stat Type="second_half_extra_time">17</Stat>
+      <Stat Type="first_half_extra_time">18</Stat>
+      <Stat Type="second_half_time">50</Stat>
+      <Stat Type="first_half_time">47</Stat>
+      <TeamData Score="0" ShootOutScore="4" Side="Home" TeamRef="t366">
+        <Booking Card="Yellow" CardType="Yellow" EventID="1956564865" EventNumber="2641" Period="SecondHalf" PlayerRef="p85352" Reason="Foul" Time="64" TimeStamp="20140705T222133+0100" uID="b366-1" />
+        <Booking Card="Yellow" CardType="Yellow" EventID="1842713378" EventNumber="41112" Period="ExtraSecondHalf" PlayerRef="p14941" Reason="Foul" Time="111" TimeStamp="20140705T232410+0100" uID="b366-2" />
+        <PlayerLineUp>
+          <MatchPlayer PlayerRef="p72162" Position="Goalkeeper" ShirtNumber="1" Status="Start">
+            <Stat Type="leftside_pass">8</Stat>
+            <Stat Type="accurate_keeper_sweeper">1</Stat>
+            <Stat Type="accurate_pass">18</Stat>
+            <Stat Type="total_final_third_passes">3</Stat>
+            <Stat Type="rightside_pass">4</Stat>
+            <Stat Type="attempts_conceded_ibox">5</Stat>
+            <Stat Type="touches">45</Stat>
+            <Stat Type="total_fwd_zone_pass">9</Stat>
+            <Stat Type="keeper_pick_up">7</Stat>
+            <Stat Type="accurate_fwd_zone_pass">2</Stat>
+            <Stat Type="saves">1</Stat>
+            <Stat Type="total_high_claim">2</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">11</Stat>
+            <Stat Type="poss_won_def_3rd">2</Stat>
+            <Stat Type="accurate_back_zone_pass">16</Stat>
+            <Stat Type="passes_right">5</Stat>
+            <Stat Type="successful_open_play_pass">18</Stat>
+            <Stat Type="total_back_zone_pass">16</Stat>
+            <Stat Type="total_long_balls">12</Stat>
+            <Stat Type="accurate_keeper_throws">7</Stat>
+            <Stat Type="total_sub_off">1</Stat>
+            <Stat Type="goal_kicks">10</Stat>
+            <Stat Type="open_play_pass">24</Stat>
+            <Stat Type="total_pass">25</Stat>
+            <Stat Type="total_launches">9</Stat>
+            <Stat Type="fwd_pass">13</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">15</Stat>
+            <Stat Type="total_keeper_sweeper">1</Stat>
+            <Stat Type="keeper_throws">7</Stat>
+            <Stat Type="good_high_claim">2</Stat>
+            <Stat Type="accurate_launches">3</Stat>
+            <Stat Type="poss_lost_all">9</Stat>
+            <Stat Type="accurate_long_balls">5</Stat>
+            <Stat Type="accurate_goal_kicks">8</Stat>
+            <Stat Type="poss_lost_ctrl">9</Stat>
+            <Stat Type="final_third_entries">4</Stat>
+            <Stat Type="pen_area_entries">1</Stat>
+            <Stat Type="mins_played">119</Stat>
+            <Stat Type="long_pass_own_to_opp_success">6</Stat>
+            <Stat Type="saved_ibox">1</Stat>
+            <Stat Type="formation_place">1</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p78140" Position="Defender" ShirtNumber="3" Status="Start">
+            <Stat Type="duel_lost">4</Stat>
+            <Stat Type="leftside_pass">34</Stat>
+            <Stat Type="accurate_pass">75</Stat>
+            <Stat Type="won_tackle">4</Stat>
+            <Stat Type="total_final_third_passes">14</Stat>
+            <Stat Type="rightside_pass">10</Stat>
+            <Stat Type="attempts_conceded_ibox">5</Stat>
+            <Stat Type="touches">119</Stat>
+            <Stat Type="total_fwd_zone_pass">42</Stat>
+            <Stat Type="accurate_fwd_zone_pass">29</Stat>
+            <Stat Type="total_chipped_pass">9</Stat>
+            <Stat Type="effective_head_clearance">7</Stat>
+            <Stat Type="blocked_pass">3</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">7</Stat>
+            <Stat Type="turnover">1</Stat>
+            <Stat Type="poss_won_def_3rd">6</Stat>
+            <Stat Type="accurate_back_zone_pass">46</Stat>
+            <Stat Type="passes_right">16</Stat>
+            <Stat Type="total_throws">1</Stat>
+            <Stat Type="successful_open_play_pass">74</Stat>
+            <Stat Type="total_back_zone_pass">47</Stat>
+            <Stat Type="total_long_balls">18</Stat>
+            <Stat Type="poss_won_mid_3rd">1</Stat>
+            <Stat Type="put_through">3</Stat>
+            <Stat Type="head_clearance">7</Stat>
+            <Stat Type="open_play_pass">87</Stat>
+            <Stat Type="aerial_won">5</Stat>
+            <Stat Type="total_pass">88</Stat>
+            <Stat Type="total_launches">1</Stat>
+            <Stat Type="fwd_pass">37</Stat>
+            <Stat Type="outfielder_block">1</Stat>
+            <Stat Type="last_man_tackle">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">30</Stat>
+            <Stat Type="accurate_chipped_pass">3</Stat>
+            <Stat Type="duel_won">10</Stat>
+            <Stat Type="successful_final_third_passes">4</Stat>
+            <Stat Type="total_cross_nocorner">1</Stat>
+            <Stat Type="successful_put_through">2</Stat>
+            <Stat Type="total_tackle">5</Stat>
+            <Stat Type="passes_left">1</Stat>
+            <Stat Type="poss_lost_all">17</Stat>
+            <Stat Type="accurate_long_balls">13</Stat>
+            <Stat Type="challenge_lost">1</Stat>
+            <Stat Type="total_cross">1</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="unsuccessful_touch">1</Stat>
+            <Stat Type="head_pass">7</Stat>
+            <Stat Type="poss_lost_ctrl">17</Stat>
+            <Stat Type="aerial_lost">1</Stat>
+            <Stat Type="crosses_18yard">1</Stat>
+            <Stat Type="final_third_entries">12</Stat>
+            <Stat Type="effective_clearance">14</Stat>
+            <Stat Type="interception">4</Stat>
+            <Stat Type="attempted_tackle_foul">2</Stat>
+            <Stat Type="backward_pass">7</Stat>
+            <Stat Type="interception_won">4</Stat>
+            <Stat Type="pen_area_entries">3</Stat>
+            <Stat Type="accurate_throws">1</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="fouls">2</Stat>
+            <Stat Type="big_chance_missed">1</Stat>
+            <Stat Type="total_clearance">14</Stat>
+            <Stat Type="long_pass_own_to_opp_success">20</Stat>
+            <Stat Type="formation_place">6</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p21095" Position="Defender" ShirtNumber="2" Status="Start">
+            <Stat Type="leftside_pass">26</Stat>
+            <Stat Type="accurate_pass">76</Stat>
+            <Stat Type="won_tackle">3</Stat>
+            <Stat Type="total_final_third_passes">1</Stat>
+            <Stat Type="rightside_pass">31</Stat>
+            <Stat Type="offside_provoked">1</Stat>
+            <Stat Type="attempts_conceded_ibox">5</Stat>
+            <Stat Type="touches">101</Stat>
+            <Stat Type="total_fwd_zone_pass">15</Stat>
+            <Stat Type="accurate_fwd_zone_pass">13</Stat>
+            <Stat Type="total_chipped_pass">2</Stat>
+            <Stat Type="effective_head_clearance">5</Stat>
+            <Stat Type="lost_corners">1</Stat>
+            <Stat Type="ontarget_scoring_att">1</Stat>
+            <Stat Type="total_scoring_att">2</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">8</Stat>
+            <Stat Type="poss_won_def_3rd">7</Stat>
+            <Stat Type="accurate_back_zone_pass">63</Stat>
+            <Stat Type="passes_right">6</Stat>
+            <Stat Type="total_throws">1</Stat>
+            <Stat Type="successful_open_play_pass">75</Stat>
+            <Stat Type="total_back_zone_pass">64</Stat>
+            <Stat Type="total_long_balls">4</Stat>
+            <Stat Type="poss_won_mid_3rd">1</Stat>
+            <Stat Type="att_ibox_target">1</Stat>
+            <Stat Type="head_clearance">5</Stat>
+            <Stat Type="open_play_pass">78</Stat>
+            <Stat Type="aerial_won">4</Stat>
+            <Stat Type="total_pass">79</Stat>
+            <Stat Type="total_launches">2</Stat>
+            <Stat Type="fwd_pass">18</Stat>
+            <Stat Type="outfielder_block">1</Stat>
+            <Stat Type="interceptions_in_box">1</Stat>
+            <Stat Type="att_bx_centre">2</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">13</Stat>
+            <Stat Type="accurate_chipped_pass">1</Stat>
+            <Stat Type="duel_won">7</Stat>
+            <Stat Type="total_tackle">3</Stat>
+            <Stat Type="att_sv_low_left">1</Stat>
+            <Stat Type="passes_left">4</Stat>
+            <Stat Type="accurate_launches">1</Stat>
+            <Stat Type="poss_lost_all">3</Stat>
+            <Stat Type="accurate_long_balls">3</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="att_ibox_miss">1</Stat>
+            <Stat Type="head_pass">2</Stat>
+            <Stat Type="shot_off_target">1</Stat>
+            <Stat Type="poss_lost_ctrl">3</Stat>
+            <Stat Type="final_third_entries">1</Stat>
+            <Stat Type="att_hd_total">2</Stat>
+            <Stat Type="effective_clearance">8</Stat>
+            <Stat Type="att_hd_miss">1</Stat>
+            <Stat Type="won_corners">1</Stat>
+            <Stat Type="interception">4</Stat>
+            <Stat Type="backward_pass">4</Stat>
+            <Stat Type="interception_won">4</Stat>
+            <Stat Type="accurate_throws">1</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="att_hd_target">1</Stat>
+            <Stat Type="total_clearance">8</Stat>
+            <Stat Type="long_pass_own_to_opp_success">11</Stat>
+            <Stat Type="att_setpiece">1</Stat>
+            <Stat Type="att_miss_high">1</Stat>
+            <Stat Type="formation_place">5</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p85352" Position="Defender" ShirtNumber="4" Status="Start">
+            <Stat Type="duel_lost">3</Stat>
+            <Stat Type="leftside_pass">12</Stat>
+            <Stat Type="accurate_pass">85</Stat>
+            <Stat Type="won_tackle">4</Stat>
+            <Stat Type="total_final_third_passes">5</Stat>
+            <Stat Type="rightside_pass">50</Stat>
+            <Stat Type="attempts_conceded_ibox">2</Stat>
+            <Stat Type="touches">97</Stat>
+            <Stat Type="yellow_card">1</Stat>
+            <Stat Type="total_fwd_zone_pass">27</Stat>
+            <Stat Type="accurate_fwd_zone_pass">26</Stat>
+            <Stat Type="total_chipped_pass">5</Stat>
+            <Stat Type="effective_head_clearance">2</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">5</Stat>
+            <Stat Type="poss_won_def_3rd">1</Stat>
+            <Stat Type="accurate_back_zone_pass">59</Stat>
+            <Stat Type="passes_right">4</Stat>
+            <Stat Type="total_throws">1</Stat>
+            <Stat Type="successful_open_play_pass">82</Stat>
+            <Stat Type="total_back_zone_pass">60</Stat>
+            <Stat Type="total_long_balls">14</Stat>
+            <Stat Type="poss_won_mid_3rd">4</Stat>
+            <Stat Type="total_sub_off">1</Stat>
+            <Stat Type="head_clearance">2</Stat>
+            <Stat Type="open_play_pass">84</Stat>
+            <Stat Type="total_pass">87</Stat>
+            <Stat Type="fwd_pass">23</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">14</Stat>
+            <Stat Type="accurate_chipped_pass">4</Stat>
+            <Stat Type="duel_won">5</Stat>
+            <Stat Type="successful_final_third_passes">4</Stat>
+            <Stat Type="total_tackle">5</Stat>
+            <Stat Type="passes_left">13</Stat>
+            <Stat Type="poss_lost_all">2</Stat>
+            <Stat Type="accurate_long_balls">12</Stat>
+            <Stat Type="challenge_lost">1</Stat>
+            <Stat Type="poss_lost_ctrl">2</Stat>
+            <Stat Type="final_third_entries">5</Stat>
+            <Stat Type="effective_clearance">3</Stat>
+            <Stat Type="backward_pass">2</Stat>
+            <Stat Type="pen_area_entries">1</Stat>
+            <Stat Type="accurate_throws">1</Stat>
+            <Stat Type="mins_played">105</Stat>
+            <Stat Type="fouls">2</Stat>
+            <Stat Type="total_clearance">3</Stat>
+            <Stat Type="long_pass_own_to_opp_success">14</Stat>
+            <Stat Type="formation_place">4</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p4719" Position="Midfielder" ShirtNumber="15" Status="Start">
+            <Stat Type="total_flick_on">6</Stat>
+            <Stat Type="duel_lost">7</Stat>
+            <Stat Type="blocked_scoring_att">1</Stat>
+            <Stat Type="leftside_pass">19</Stat>
+            <Stat Type="dispossessed">1</Stat>
+            <Stat Type="accurate_cross">1</Stat>
+            <Stat Type="att_rf_total">1</Stat>
+            <Stat Type="accurate_pass">55</Stat>
+            <Stat Type="total_final_third_passes">26</Stat>
+            <Stat Type="rightside_pass">2</Stat>
+            <Stat Type="attempts_conceded_ibox">5</Stat>
+            <Stat Type="touches">104</Stat>
+            <Stat Type="total_fwd_zone_pass">55</Stat>
+            <Stat Type="att_assist_openplay">1</Stat>
+            <Stat Type="won_contest">2</Stat>
+            <Stat Type="accurate_fwd_zone_pass">33</Stat>
+            <Stat Type="total_chipped_pass">7</Stat>
+            <Stat Type="effective_head_clearance">3</Stat>
+            <Stat Type="total_scoring_att">1</Stat>
+            <Stat Type="blocked_pass">2</Stat>
+            <Stat Type="accurate_flick_on">2</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">6</Stat>
+            <Stat Type="poss_won_def_3rd">2</Stat>
+            <Stat Type="accurate_back_zone_pass">23</Stat>
+            <Stat Type="passes_right">34</Stat>
+            <Stat Type="total_throws">11</Stat>
+            <Stat Type="successful_open_play_pass">54</Stat>
+            <Stat Type="total_back_zone_pass">25</Stat>
+            <Stat Type="total_long_balls">6</Stat>
+            <Stat Type="att_obx_centre">1</Stat>
+            <Stat Type="att_openplay">1</Stat>
+            <Stat Type="poss_won_mid_3rd">4</Stat>
+            <Stat Type="put_through">2</Stat>
+            <Stat Type="head_clearance">3</Stat>
+            <Stat Type="open_play_pass">72</Stat>
+            <Stat Type="aerial_won">6</Stat>
+            <Stat Type="total_pass">73</Stat>
+            <Stat Type="total_launches">2</Stat>
+            <Stat Type="fwd_pass">37</Stat>
+            <Stat Type="ontarget_att_assist">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">10</Stat>
+            <Stat Type="accurate_chipped_pass">3</Stat>
+            <Stat Type="duel_won">8</Stat>
+            <Stat Type="successful_final_third_passes">17</Stat>
+            <Stat Type="shield_ball_oop">1</Stat>
+            <Stat Type="total_cross_nocorner">7</Stat>
+            <Stat Type="passes_left">2</Stat>
+            <Stat Type="poss_lost_all">31</Stat>
+            <Stat Type="accurate_long_balls">4</Stat>
+            <Stat Type="challenge_lost">1</Stat>
+            <Stat Type="total_cross">7</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="att_obox_blocked">1</Stat>
+            <Stat Type="head_pass">9</Stat>
+            <Stat Type="poss_lost_ctrl">31</Stat>
+            <Stat Type="aerial_lost">4</Stat>
+            <Stat Type="crosses_18yard">3</Stat>
+            <Stat Type="final_third_entries">16</Stat>
+            <Stat Type="accurate_cross_nocorner">1</Stat>
+            <Stat Type="effective_clearance">3</Stat>
+            <Stat Type="won_corners">1</Stat>
+            <Stat Type="backward_pass">15</Stat>
+            <Stat Type="pen_area_entries">7</Stat>
+            <Stat Type="accurate_throws">10</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="fouls">1</Stat>
+            <Stat Type="total_contest">3</Stat>
+            <Stat Type="total_clearance">3</Stat>
+            <Stat Type="long_pass_own_to_opp_success">6</Stat>
+            <Stat Type="total_att_assist">1</Stat>
+            <Stat Type="crosses_18yardplus">4</Stat>
+            <Stat Type="formation_place">2</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p15403" Position="Midfielder" ShirtNumber="10" Status="Start">
+            <Stat Type="duel_lost">3</Stat>
+            <Stat Type="leftside_pass">18</Stat>
+            <Stat Type="dispossessed">2</Stat>
+            <Stat Type="accurate_cross">1</Stat>
+            <Stat Type="att_rf_total">5</Stat>
+            <Stat Type="accurate_pass">70</Stat>
+            <Stat Type="att_assist_setplay">1</Stat>
+            <Stat Type="was_fouled">1</Stat>
+            <Stat Type="total_final_third_passes">32</Stat>
+            <Stat Type="rightside_pass">24</Stat>
+            <Stat Type="attempts_conceded_ibox">5</Stat>
+            <Stat Type="touches">108</Stat>
+            <Stat Type="total_fwd_zone_pass">59</Stat>
+            <Stat Type="accurate_fwd_zone_pass">39</Stat>
+            <Stat Type="total_chipped_pass">12</Stat>
+            <Stat Type="ontarget_scoring_att">2</Stat>
+            <Stat Type="total_scoring_att">5</Stat>
+            <Stat Type="blocked_pass">1</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">5</Stat>
+            <Stat Type="poss_won_def_3rd">3</Stat>
+            <Stat Type="accurate_back_zone_pass">32</Stat>
+            <Stat Type="passes_right">8</Stat>
+            <Stat Type="total_throws">2</Stat>
+            <Stat Type="att_obox_target">2</Stat>
+            <Stat Type="successful_open_play_pass">70</Stat>
+            <Stat Type="total_back_zone_pass">32</Stat>
+            <Stat Type="att_obox_post">2</Stat>
+            <Stat Type="accurate_layoffs">1</Stat>
+            <Stat Type="total_long_balls">14</Stat>
+            <Stat Type="att_obx_centre">4</Stat>
+            <Stat Type="att_openplay">2</Stat>
+            <Stat Type="poss_won_mid_3rd">2</Stat>
+            <Stat Type="put_through">1</Stat>
+            <Stat Type="big_chance_created">1</Stat>
+            <Stat Type="freekick_cross">1</Stat>
+            <Stat Type="att_freekick_total">2</Stat>
+            <Stat Type="open_play_pass">85</Stat>
+            <Stat Type="total_pass">85</Stat>
+            <Stat Type="total_launches">2</Stat>
+            <Stat Type="fwd_pass">30</Stat>
+            <Stat Type="att_freekick_post">1</Stat>
+            <Stat Type="total_corners_intobox">3</Stat>
+            <Stat Type="att_bx_centre">1</Stat>
+            <Stat Type="post_scoring_att">2</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">13</Stat>
+            <Stat Type="accurate_chipped_pass">4</Stat>
+            <Stat Type="duel_won">1</Stat>
+            <Stat Type="successful_final_third_passes">19</Stat>
+            <Stat Type="total_cross_nocorner">3</Stat>
+            <Stat Type="att_post_high">1</Stat>
+            <Stat Type="passes_left">25</Stat>
+            <Stat Type="att_rf_target">2</Stat>
+            <Stat Type="accurate_launches">1</Stat>
+            <Stat Type="poss_lost_all">27</Stat>
+            <Stat Type="att_sv_low_centre">1</Stat>
+            <Stat Type="accurate_long_balls">8</Stat>
+            <Stat Type="total_cross">6</Stat>
+            <Stat Type="att_sv_high_left">1</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="att_freekick_target">1</Stat>
+            <Stat Type="att_ibox_miss">1</Stat>
+            <Stat Type="shot_off_target">3</Stat>
+            <Stat Type="poss_lost_ctrl">27</Stat>
+            <Stat Type="crosses_18yard">1</Stat>
+            <Stat Type="final_third_entries">21</Stat>
+            <Stat Type="accurate_cross_nocorner">1</Stat>
+            <Stat Type="won_corners">3</Stat>
+            <Stat Type="interception">1</Stat>
+            <Stat Type="attempted_tackle_foul">1</Stat>
+            <Stat Type="backward_pass">13</Stat>
+            <Stat Type="interception_won">1</Stat>
+            <Stat Type="pen_area_entries">5</Stat>
+            <Stat Type="accurate_throws">2</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="total_layoffs">1</Stat>
+            <Stat Type="fouls">1</Stat>
+            <Stat Type="accurate_freekick_cross">1</Stat>
+            <Stat Type="hit_woodwork">2</Stat>
+            <Stat Type="long_pass_own_to_opp_success">9</Stat>
+            <Stat Type="total_att_assist">2</Stat>
+            <Stat Type="att_post_left">1</Stat>
+            <Stat Type="att_setpiece">1</Stat>
+            <Stat Type="att_miss_high">1</Stat>
+            <Stat Type="offtarget_att_assist">1</Stat>
+            <Stat Type="corner_taken">3</Stat>
+            <Stat Type="crosses_18yardplus">1</Stat>
+            <Stat Type="formation_place">8</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p41733" Position="Midfielder" ShirtNumber="20" Status="Start">
+            <Stat Type="total_flick_on">1</Stat>
+            <Stat Type="duel_lost">4</Stat>
+            <Stat Type="blocked_scoring_att">1</Stat>
+            <Stat Type="leftside_pass">19</Stat>
+            <Stat Type="att_rf_total">1</Stat>
+            <Stat Type="accurate_pass">55</Stat>
+            <Stat Type="won_tackle">1</Stat>
+            <Stat Type="was_fouled">1</Stat>
+            <Stat Type="total_final_third_passes">15</Stat>
+            <Stat Type="rightside_pass">18</Stat>
+            <Stat Type="attempts_conceded_ibox">5</Stat>
+            <Stat Type="touches">67</Stat>
+            <Stat Type="total_fwd_zone_pass">35</Stat>
+            <Stat Type="att_assist_openplay">1</Stat>
+            <Stat Type="accurate_fwd_zone_pass">32</Stat>
+            <Stat Type="total_chipped_pass">2</Stat>
+            <Stat Type="effective_head_clearance">2</Stat>
+            <Stat Type="total_scoring_att">1</Stat>
+            <Stat Type="blocked_pass">2</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">4</Stat>
+            <Stat Type="poss_won_def_3rd">1</Stat>
+            <Stat Type="accurate_back_zone_pass">23</Stat>
+            <Stat Type="passes_right">17</Stat>
+            <Stat Type="total_throws">1</Stat>
+            <Stat Type="successful_open_play_pass">55</Stat>
+            <Stat Type="total_back_zone_pass">25</Stat>
+            <Stat Type="accurate_layoffs">1</Stat>
+            <Stat Type="total_long_balls">7</Stat>
+            <Stat Type="att_obx_centre">1</Stat>
+            <Stat Type="poss_won_mid_3rd">3</Stat>
+            <Stat Type="put_through">2</Stat>
+            <Stat Type="head_clearance">2</Stat>
+            <Stat Type="open_play_pass">60</Stat>
+            <Stat Type="aerial_won">3</Stat>
+            <Stat Type="total_pass">60</Stat>
+            <Stat Type="fwd_pass">12</Stat>
+            <Stat Type="ontarget_att_assist">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">6</Stat>
+            <Stat Type="accurate_chipped_pass">2</Stat>
+            <Stat Type="duel_won">5</Stat>
+            <Stat Type="successful_final_third_passes">13</Stat>
+            <Stat Type="successful_put_through">1</Stat>
+            <Stat Type="total_tackle">1</Stat>
+            <Stat Type="passes_left">2</Stat>
+            <Stat Type="poss_lost_all">5</Stat>
+            <Stat Type="accurate_long_balls">7</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="att_obox_blocked">1</Stat>
+            <Stat Type="head_pass">4</Stat>
+            <Stat Type="poss_lost_ctrl">5</Stat>
+            <Stat Type="aerial_lost">3</Stat>
+            <Stat Type="final_third_entries">9</Stat>
+            <Stat Type="effective_clearance">2</Stat>
+            <Stat Type="attempted_tackle_foul">1</Stat>
+            <Stat Type="backward_pass">11</Stat>
+            <Stat Type="accurate_throws">1</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="total_layoffs">2</Stat>
+            <Stat Type="fouls">1</Stat>
+            <Stat Type="total_clearance">2</Stat>
+            <Stat Type="long_pass_own_to_opp_success">5</Stat>
+            <Stat Type="total_att_assist">1</Stat>
+            <Stat Type="att_setpiece">1</Stat>
+            <Stat Type="formation_place">7</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p58877" Position="Midfielder" ShirtNumber="5" Status="Start">
+            <Stat Type="duel_lost">4</Stat>
+            <Stat Type="leftside_pass">1</Stat>
+            <Stat Type="dispossessed">1</Stat>
+            <Stat Type="accurate_pass">68</Stat>
+            <Stat Type="won_tackle">1</Stat>
+            <Stat Type="was_fouled">1</Stat>
+            <Stat Type="total_final_third_passes">18</Stat>
+            <Stat Type="rightside_pass">41</Stat>
+            <Stat Type="offside_provoked">1</Stat>
+            <Stat Type="attempts_conceded_ibox">5</Stat>
+            <Stat Type="touches">104</Stat>
+            <Stat Type="total_fwd_zone_pass">45</Stat>
+            <Stat Type="accurate_fwd_zone_pass">37</Stat>
+            <Stat Type="total_chipped_pass">6</Stat>
+            <Stat Type="effective_head_clearance">2</Stat>
+            <Stat Type="fouled_final_third">1</Stat>
+            <Stat Type="blocked_pass">1</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">3</Stat>
+            <Stat Type="turnover">2</Stat>
+            <Stat Type="poss_won_def_3rd">2</Stat>
+            <Stat Type="accurate_back_zone_pass">31</Stat>
+            <Stat Type="passes_right">2</Stat>
+            <Stat Type="total_throws">10</Stat>
+            <Stat Type="successful_open_play_pass">68</Stat>
+            <Stat Type="total_back_zone_pass">35</Stat>
+            <Stat Type="total_long_balls">13</Stat>
+            <Stat Type="poss_won_mid_3rd">1</Stat>
+            <Stat Type="put_through">1</Stat>
+            <Stat Type="big_chance_created">1</Stat>
+            <Stat Type="head_clearance">2</Stat>
+            <Stat Type="open_play_pass">79</Stat>
+            <Stat Type="aerial_won">2</Stat>
+            <Stat Type="total_pass">79</Stat>
+            <Stat Type="total_launches">4</Stat>
+            <Stat Type="fwd_pass">23</Stat>
+            <Stat Type="effective_blocked_cross">1</Stat>
+            <Stat Type="blocked_cross">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">9</Stat>
+            <Stat Type="accurate_chipped_pass">1</Stat>
+            <Stat Type="duel_won">4</Stat>
+            <Stat Type="successful_final_third_passes">13</Stat>
+            <Stat Type="total_cross_nocorner">1</Stat>
+            <Stat Type="total_tackle">1</Stat>
+            <Stat Type="passes_left">25</Stat>
+            <Stat Type="accurate_launches">1</Stat>
+            <Stat Type="poss_lost_all">19</Stat>
+            <Stat Type="accurate_long_balls">10</Stat>
+            <Stat Type="challenge_lost">1</Stat>
+            <Stat Type="total_cross">1</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="unsuccessful_touch">2</Stat>
+            <Stat Type="head_pass">3</Stat>
+            <Stat Type="poss_lost_ctrl">19</Stat>
+            <Stat Type="aerial_lost">2</Stat>
+            <Stat Type="crosses_18yard">1</Stat>
+            <Stat Type="final_third_entries">9</Stat>
+            <Stat Type="effective_clearance">2</Stat>
+            <Stat Type="interception">3</Stat>
+            <Stat Type="backward_pass">14</Stat>
+            <Stat Type="interception_won">3</Stat>
+            <Stat Type="accurate_throws">8</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="total_clearance">2</Stat>
+            <Stat Type="long_pass_own_to_opp_success">6</Stat>
+            <Stat Type="total_att_assist">1</Stat>
+            <Stat Type="formation_place">3</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p106824" Position="Striker" ShirtNumber="21" Status="Start">
+            <Stat Type="total_through_ball">1</Stat>
+            <Stat Type="total_flick_on">1</Stat>
+            <Stat Type="duel_lost">9</Stat>
+            <Stat Type="leftside_pass">3</Stat>
+            <Stat Type="dispossessed">3</Stat>
+            <Stat Type="accurate_pass">17</Stat>
+            <Stat Type="won_tackle">1</Stat>
+            <Stat Type="total_final_third_passes">12</Stat>
+            <Stat Type="rightside_pass">6</Stat>
+            <Stat Type="attempts_conceded_ibox">2</Stat>
+            <Stat Type="touches">43</Stat>
+            <Stat Type="total_fwd_zone_pass">19</Stat>
+            <Stat Type="att_assist_openplay">1</Stat>
+            <Stat Type="won_contest">3</Stat>
+            <Stat Type="accurate_fwd_zone_pass">13</Stat>
+            <Stat Type="att_fastbreak">1</Stat>
+            <Stat Type="ontarget_scoring_att">1</Stat>
+            <Stat Type="total_scoring_att">1</Stat>
+            <Stat Type="blocked_pass">2</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">2</Stat>
+            <Stat Type="turnover">1</Stat>
+            <Stat Type="accurate_back_zone_pass">4</Stat>
+            <Stat Type="passes_right">3</Stat>
+            <Stat Type="total_throws">1</Stat>
+            <Stat Type="successful_open_play_pass">17</Stat>
+            <Stat Type="total_back_zone_pass">4</Stat>
+            <Stat Type="accurate_layoffs">2</Stat>
+            <Stat Type="att_openplay">1</Stat>
+            <Stat Type="poss_won_mid_3rd">2</Stat>
+            <Stat Type="total_sub_off">1</Stat>
+            <Stat Type="put_through">2</Stat>
+            <Stat Type="big_chance_created">1</Stat>
+            <Stat Type="att_ibox_target">1</Stat>
+            <Stat Type="att_lf_total">1</Stat>
+            <Stat Type="open_play_pass">21</Stat>
+            <Stat Type="aerial_won">1</Stat>
+            <Stat Type="total_pass">21</Stat>
+            <Stat Type="att_lf_target">1</Stat>
+            <Stat Type="fwd_pass">5</Stat>
+            <Stat Type="ontarget_att_assist">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="duel_won">5</Stat>
+            <Stat Type="successful_final_third_passes">9</Stat>
+            <Stat Type="total_cross_nocorner">2</Stat>
+            <Stat Type="att_bx_left">1</Stat>
+            <Stat Type="successful_put_through">1</Stat>
+            <Stat Type="total_tackle">1</Stat>
+            <Stat Type="total_offside">2</Stat>
+            <Stat Type="passes_left">9</Stat>
+            <Stat Type="poss_lost_all">15</Stat>
+            <Stat Type="att_sv_low_centre">1</Stat>
+            <Stat Type="challenge_lost">1</Stat>
+            <Stat Type="total_cross">2</Stat>
+            <Stat Type="unsuccessful_touch">1</Stat>
+            <Stat Type="head_pass">2</Stat>
+            <Stat Type="poss_lost_ctrl">15</Stat>
+            <Stat Type="shot_fastbreak">1</Stat>
+            <Stat Type="crosses_18yard">1</Stat>
+            <Stat Type="final_third_entries">1</Stat>
+            <Stat Type="interception">2</Stat>
+            <Stat Type="backward_pass">7</Stat>
+            <Stat Type="interception_won">2</Stat>
+            <Stat Type="pen_area_entries">2</Stat>
+            <Stat Type="accurate_throws">1</Stat>
+            <Stat Type="mins_played">76</Stat>
+            <Stat Type="total_layoffs">3</Stat>
+            <Stat Type="total_contest">8</Stat>
+            <Stat Type="total_att_assist">1</Stat>
+            <Stat Type="crosses_18yardplus">1</Stat>
+            <Stat Type="total_fastbreak">1</Stat>
+            <Stat Type="formation_place">11</Stat>
+          </MatchPlayer>
+          <MatchPlayer Captain="1" PlayerRef="p12297" Position="Striker" ShirtNumber="9" Status="Start">
+            <Stat Type="total_flick_on">5</Stat>
+            <Stat Type="duel_lost">8</Stat>
+            <Stat Type="leftside_pass">10</Stat>
+            <Stat Type="att_rf_total">1</Stat>
+            <Stat Type="att_bx_right">3</Stat>
+            <Stat Type="accurate_pass">20</Stat>
+            <Stat Type="total_final_third_passes">15</Stat>
+            <Stat Type="rightside_pass">4</Stat>
+            <Stat Type="attempts_conceded_ibox">5</Stat>
+            <Stat Type="touches">41</Stat>
+            <Stat Type="att_sv_high_right">1</Stat>
+            <Stat Type="total_fwd_zone_pass">24</Stat>
+            <Stat Type="att_assist_openplay">1</Stat>
+            <Stat Type="won_contest">1</Stat>
+            <Stat Type="accurate_fwd_zone_pass">15</Stat>
+            <Stat Type="att_fastbreak">1</Stat>
+            <Stat Type="ontarget_scoring_att">4</Stat>
+            <Stat Type="total_scoring_att">5</Stat>
+            <Stat Type="blocked_pass">1</Stat>
+            <Stat Type="accurate_flick_on">3</Stat>
+            <Stat Type="att_obxd_right">1</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">4</Stat>
+            <Stat Type="turnover">2</Stat>
+            <Stat Type="accurate_back_zone_pass">5</Stat>
+            <Stat Type="passes_right">6</Stat>
+            <Stat Type="att_obox_target">1</Stat>
+            <Stat Type="successful_open_play_pass">18</Stat>
+            <Stat Type="total_back_zone_pass">5</Stat>
+            <Stat Type="accurate_layoffs">3</Stat>
+            <Stat Type="total_long_balls">4</Stat>
+            <Stat Type="att_openplay">1</Stat>
+            <Stat Type="poss_won_mid_3rd">4</Stat>
+            <Stat Type="put_through">1</Stat>
+            <Stat Type="att_ibox_target">3</Stat>
+            <Stat Type="att_freekick_total">1</Stat>
+            <Stat Type="att_lf_total">3</Stat>
+            <Stat Type="open_play_pass">26</Stat>
+            <Stat Type="aerial_won">1</Stat>
+            <Stat Type="total_pass">28</Stat>
+            <Stat Type="att_lf_target">3</Stat>
+            <Stat Type="fwd_pass">11</Stat>
+            <Stat Type="att_bx_centre">1</Stat>
+            <Stat Type="ontarget_att_assist">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">3</Stat>
+            <Stat Type="duel_won">2</Stat>
+            <Stat Type="successful_final_third_passes">7</Stat>
+            <Stat Type="total_cross_nocorner">1</Stat>
+            <Stat Type="total_offside">5</Stat>
+            <Stat Type="passes_left">4</Stat>
+            <Stat Type="att_rf_target">1</Stat>
+            <Stat Type="poss_lost_all">13</Stat>
+            <Stat Type="att_sv_low_centre">1</Stat>
+            <Stat Type="accurate_long_balls">3</Stat>
+            <Stat Type="total_cross">1</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="att_freekick_target">1</Stat>
+            <Stat Type="att_ibox_miss">1</Stat>
+            <Stat Type="unsuccessful_touch">2</Stat>
+            <Stat Type="head_pass">5</Stat>
+            <Stat Type="shot_off_target">1</Stat>
+            <Stat Type="poss_lost_ctrl">13</Stat>
+            <Stat Type="hand_ball">1</Stat>
+            <Stat Type="shot_fastbreak">1</Stat>
+            <Stat Type="aerial_lost">3</Stat>
+            <Stat Type="att_sv_low_right">2</Stat>
+            <Stat Type="crosses_18yard">1</Stat>
+            <Stat Type="final_third_entries">5</Stat>
+            <Stat Type="overrun">1</Stat>
+            <Stat Type="att_hd_total">1</Stat>
+            <Stat Type="effective_clearance">1</Stat>
+            <Stat Type="att_hd_miss">1</Stat>
+            <Stat Type="won_corners">2</Stat>
+            <Stat Type="attempted_tackle_foul">1</Stat>
+            <Stat Type="backward_pass">3</Stat>
+            <Stat Type="pen_area_entries">2</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="total_layoffs">5</Stat>
+            <Stat Type="fouls">5</Stat>
+            <Stat Type="big_chance_missed">3</Stat>
+            <Stat Type="total_contest">2</Stat>
+            <Stat Type="hit_woodwork">1</Stat>
+            <Stat Type="total_clearance">1</Stat>
+            <Stat Type="long_pass_own_to_opp_success">3</Stat>
+            <Stat Type="total_att_assist">1</Stat>
+            <Stat Type="att_setpiece">2</Stat>
+            <Stat Type="att_miss_high">1</Stat>
+            <Stat Type="total_fastbreak">1</Stat>
+            <Stat Type="formation_place">9</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p8533" Position="Striker" ShirtNumber="11" Status="Start">
+            <Stat Type="total_through_ball">1</Stat>
+            <Stat Type="total_flick_on">1</Stat>
+            <Stat Type="duel_lost">9</Stat>
+            <Stat Type="blocked_scoring_att">5</Stat>
+            <Stat Type="leftside_pass">22</Stat>
+            <Stat Type="poss_won_att_3rd">2</Stat>
+            <Stat Type="dispossessed">3</Stat>
+            <Stat Type="accurate_cross">4</Stat>
+            <Stat Type="att_bx_right">2</Stat>
+            <Stat Type="accurate_pass">42</Stat>
+            <Stat Type="won_tackle">1</Stat>
+            <Stat Type="att_assist_setplay">3</Stat>
+            <Stat Type="was_fouled">8</Stat>
+            <Stat Type="total_final_third_passes">32</Stat>
+            <Stat Type="rightside_pass">5</Stat>
+            <Stat Type="attempts_conceded_ibox">5</Stat>
+            <Stat Type="touches">97</Stat>
+            <Stat Type="total_fwd_zone_pass">56</Stat>
+            <Stat Type="att_assist_openplay">1</Stat>
+            <Stat Type="won_contest">8</Stat>
+            <Stat Type="accurate_fwd_zone_pass">42</Stat>
+            <Stat Type="total_chipped_pass">1</Stat>
+            <Stat Type="fouled_final_third">6</Stat>
+            <Stat Type="total_scoring_att">5</Stat>
+            <Stat Type="blocked_pass">2</Stat>
+            <Stat Type="attempts_conceded_obox">1</Stat>
+            <Stat Type="ball_recovery">5</Stat>
+            <Stat Type="turnover">3</Stat>
+            <Stat Type="poss_won_def_3rd">2</Stat>
+            <Stat Type="accurate_back_zone_pass">4</Stat>
+            <Stat Type="passes_right">12</Stat>
+            <Stat Type="total_throws">3</Stat>
+            <Stat Type="successful_open_play_pass">41</Stat>
+            <Stat Type="total_back_zone_pass">5</Stat>
+            <Stat Type="accurate_layoffs">1</Stat>
+            <Stat Type="total_long_balls">4</Stat>
+            <Stat Type="att_obx_centre">2</Stat>
+            <Stat Type="att_openplay">4</Stat>
+            <Stat Type="poss_won_mid_3rd">1</Stat>
+            <Stat Type="put_through">2</Stat>
+            <Stat Type="freekick_cross">3</Stat>
+            <Stat Type="att_freekick_total">1</Stat>
+            <Stat Type="att_lf_total">5</Stat>
+            <Stat Type="open_play_pass">47</Stat>
+            <Stat Type="aerial_won">2</Stat>
+            <Stat Type="total_pass">48</Stat>
+            <Stat Type="fwd_pass">15</Stat>
+            <Stat Type="total_corners_intobox">8</Stat>
+            <Stat Type="att_bx_centre">1</Stat>
+            <Stat Type="ontarget_att_assist">2</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">3</Stat>
+            <Stat Type="accurate_chipped_pass">1</Stat>
+            <Stat Type="duel_won">19</Stat>
+            <Stat Type="successful_final_third_passes">27</Stat>
+            <Stat Type="total_cross_nocorner">5</Stat>
+            <Stat Type="successful_put_through">1</Stat>
+            <Stat Type="total_tackle">1</Stat>
+            <Stat Type="total_offside">2</Stat>
+            <Stat Type="passes_left">6</Stat>
+            <Stat Type="poss_lost_all">24</Stat>
+            <Stat Type="accurate_long_balls">4</Stat>
+            <Stat Type="challenge_lost">1</Stat>
+            <Stat Type="total_cross">13</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="att_obox_blocked">2</Stat>
+            <Stat Type="unsuccessful_touch">3</Stat>
+            <Stat Type="head_pass">3</Stat>
+            <Stat Type="poss_lost_ctrl">24</Stat>
+            <Stat Type="att_ibox_blocked">3</Stat>
+            <Stat Type="aerial_lost">1</Stat>
+            <Stat Type="crosses_18yard">2</Stat>
+            <Stat Type="final_third_entries">5</Stat>
+            <Stat Type="accurate_cross_nocorner">1</Stat>
+            <Stat Type="won_corners">3</Stat>
+            <Stat Type="backward_pass">6</Stat>
+            <Stat Type="pen_area_entries">6</Stat>
+            <Stat Type="accurate_throws">3</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="total_layoffs">1</Stat>
+            <Stat Type="fouls">1</Stat>
+            <Stat Type="accurate_freekick_cross">1</Stat>
+            <Stat Type="total_contest">11</Stat>
+            <Stat Type="long_pass_own_to_opp_success">3</Stat>
+            <Stat Type="accurate_corners_intobox">3</Stat>
+            <Stat Type="total_att_assist">4</Stat>
+            <Stat Type="offtarget_att_assist">2</Stat>
+            <Stat Type="corner_taken">8</Stat>
+            <Stat Type="formation_place">10</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p111478" Position="Substitute" ShirtNumber="13" Status="Sub" SubPosition="Defender">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p39187" Position="Substitute" ShirtNumber="17" Status="Sub" SubPosition="Forward">
+            <Stat Type="total_flick_on">1</Stat>
+            <Stat Type="duel_lost">2</Stat>
+            <Stat Type="leftside_pass">2</Stat>
+            <Stat Type="poss_won_att_3rd">1</Stat>
+            <Stat Type="dispossessed">2</Stat>
+            <Stat Type="accurate_pass">10</Stat>
+            <Stat Type="total_final_third_passes">6</Stat>
+            <Stat Type="rightside_pass">5</Stat>
+            <Stat Type="attempts_conceded_ibox">3</Stat>
+            <Stat Type="touches">18</Stat>
+            <Stat Type="total_fwd_zone_pass">9</Stat>
+            <Stat Type="att_assist_openplay">1</Stat>
+            <Stat Type="won_contest">1</Stat>
+            <Stat Type="accurate_fwd_zone_pass">6</Stat>
+            <Stat Type="blocked_pass">1</Stat>
+            <Stat Type="ball_recovery">2</Stat>
+            <Stat Type="accurate_back_zone_pass">4</Stat>
+            <Stat Type="successful_open_play_pass">10</Stat>
+            <Stat Type="total_back_zone_pass">4</Stat>
+            <Stat Type="total_long_balls">1</Stat>
+            <Stat Type="poss_won_mid_3rd">1</Stat>
+            <Stat Type="put_through">1</Stat>
+            <Stat Type="open_play_pass">13</Stat>
+            <Stat Type="total_pass">13</Stat>
+            <Stat Type="fwd_pass">3</Stat>
+            <Stat Type="long_pass_own_to_opp">1</Stat>
+            <Stat Type="duel_won">1</Stat>
+            <Stat Type="successful_final_third_passes">4</Stat>
+            <Stat Type="total_offside">4</Stat>
+            <Stat Type="passes_left">4</Stat>
+            <Stat Type="poss_lost_all">5</Stat>
+            <Stat Type="accurate_long_balls">1</Stat>
+            <Stat Type="total_sub_on">1</Stat>
+            <Stat Type="head_pass">2</Stat>
+            <Stat Type="poss_lost_ctrl">5</Stat>
+            <Stat Type="won_corners">1</Stat>
+            <Stat Type="backward_pass">3</Stat>
+            <Stat Type="pen_area_entries">1</Stat>
+            <Stat Type="mins_played">44</Stat>
+            <Stat Type="total_contest">1</Stat>
+            <Stat Type="total_att_assist">1</Stat>
+            <Stat Type="offtarget_att_assist">1</Stat>
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p39077" Position="Substitute" ShirtNumber="12" Status="Sub" SubPosition="Defender">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p109434" Position="Substitute" ShirtNumber="14" Status="Sub" SubPosition="Defender">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p85654" Position="Substitute" ShirtNumber="16" Status="Sub" SubPosition="Midfielder">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p20480" Position="Substitute" ShirtNumber="23" Status="Sub" SubPosition="Goalkeeper">
+            <Stat Type="total_sub_on">1</Stat>
+            <Stat Type="mins_played">1</Stat>
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p39215" Position="Substitute" ShirtNumber="22" Status="Sub" SubPosition="Goalkeeper">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p52940" Position="Substitute" ShirtNumber="7" Status="Sub" SubPosition="Defender">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p39204" Position="Substitute" ShirtNumber="8" Status="Sub" SubPosition="Midfielder">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p14941" Position="Substitute" ShirtNumber="19" Status="Sub" SubPosition="Forward">
+            <Stat Type="total_flick_on">1</Stat>
+            <Stat Type="duel_lost">4</Stat>
+            <Stat Type="leftside_pass">1</Stat>
+            <Stat Type="accurate_pass">4</Stat>
+            <Stat Type="won_tackle">1</Stat>
+            <Stat Type="total_final_third_passes">2</Stat>
+            <Stat Type="rightside_pass">1</Stat>
+            <Stat Type="attempts_conceded_ibox">3</Stat>
+            <Stat Type="touches">8</Stat>
+            <Stat Type="yellow_card">1</Stat>
+            <Stat Type="total_fwd_zone_pass">3</Stat>
+            <Stat Type="att_assist_openplay">1</Stat>
+            <Stat Type="accurate_fwd_zone_pass">2</Stat>
+            <Stat Type="total_chipped_pass">1</Stat>
+            <Stat Type="blocked_pass">1</Stat>
+            <Stat Type="accurate_flick_on">1</Stat>
+            <Stat Type="ball_recovery">1</Stat>
+            <Stat Type="turnover">1</Stat>
+            <Stat Type="accurate_back_zone_pass">2</Stat>
+            <Stat Type="passes_right">1</Stat>
+            <Stat Type="successful_open_play_pass">4</Stat>
+            <Stat Type="total_back_zone_pass">3</Stat>
+            <Stat Type="accurate_layoffs">1</Stat>
+            <Stat Type="total_long_balls">2</Stat>
+            <Stat Type="poss_won_mid_3rd">1</Stat>
+            <Stat Type="put_through">1</Stat>
+            <Stat Type="open_play_pass">6</Stat>
+            <Stat Type="total_pass">6</Stat>
+            <Stat Type="total_launches">2</Stat>
+            <Stat Type="fwd_pass">2</Stat>
+            <Stat Type="ontarget_att_assist">1</Stat>
+            <Stat Type="long_pass_own_to_opp">1</Stat>
+            <Stat Type="accurate_chipped_pass">1</Stat>
+            <Stat Type="duel_won">1</Stat>
+            <Stat Type="successful_final_third_passes">2</Stat>
+            <Stat Type="total_tackle">1</Stat>
+            <Stat Type="poss_lost_all">3</Stat>
+            <Stat Type="accurate_long_balls">1</Stat>
+            <Stat Type="total_sub_on">1</Stat>
+            <Stat Type="unsuccessful_touch">1</Stat>
+            <Stat Type="head_pass">1</Stat>
+            <Stat Type="poss_lost_ctrl">3</Stat>
+            <Stat Type="aerial_lost">4</Stat>
+            <Stat Type="final_third_entries">1</Stat>
+            <Stat Type="backward_pass">2</Stat>
+            <Stat Type="mins_played">15</Stat>
+            <Stat Type="total_layoffs">1</Stat>
+            <Stat Type="fouls">2</Stat>
+            <Stat Type="total_att_assist">1</Stat>
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+        </PlayerLineUp>
+        <ShootOut FirstPenalty="0">
+          <PenaltyShot EventID="1047500499" EventNumber="51229" Outcome="Scored" PlayerRef="p12297" TimeStamp="20140705T234153+0100" uID="pen366-1" />
+        </ShootOut>
+        <Stat EFH="0" ESH="0" FH="2" SH="0" Type="total_through_ball">2</Stat>
+        <Stat EFH="1" ESH="3" FH="5" SH="7" Type="total_flick_on">16</Stat>
+        <Stat EFH="4" ESH="7" FH="29" SH="17" Type="duel_lost">57</Stat>
+        <Stat EFH="4" ESH="3" FH="0" SH="0" Type="blocked_scoring_att">7</Stat>
+        <Stat EFH="16" ESH="16" FH="87" SH="56" Type="leftside_pass">175</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="1" Type="poss_won_att_3rd">3</Stat>
+        <Stat EFH="2" ESH="0" FH="5" SH="5" Type="dispossessed">12</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="accurate_keeper_sweeper">1</Stat>
+        <Stat EFH="1" ESH="3" FH="0" SH="2" Type="accurate_cross">6</Stat>
+        <Stat EFH="1" ESH="2" FH="2" SH="3" Type="att_rf_total">8</Stat>
+        <Stat EFH="1" ESH="2" FH="0" SH="2" Type="att_bx_right">5</Stat>
+        <Stat EFH="52" ESH="49" FH="290" SH="204" Type="accurate_pass">595</Stat>
+        <Stat EFH="0" ESH="2" FH="7" SH="7" Type="won_tackle">16</Stat>
+        <Stat EFH="1" ESH="1" FH="0" SH="2" Type="att_assist_setplay">4</Stat>
+        <Stat EFH="25" ESH="25" FH="72" SH="59" Type="total_final_third_passes">181</Stat>
+        <Stat EFH="22" ESH="19" FH="96" SH="64" Type="rightside_pass">201</Stat>
+        <Stat EFH="0" ESH="3" FH="1" SH="1" Type="attempts_conceded_ibox">5</Stat>
+        <Stat EFH="101" ESH="110" FH="411" SH="332" Type="touches">954</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_sv_high_right">1</Stat>
+        <Stat EFH="44" ESH="43" FH="170" SH="141" Type="total_fwd_zone_pass">398</Stat>
+        <Stat EFH="2" ESH="3" FH="2" SH="0" Type="att_assist_openplay">7</Stat>
+        <Stat EFH="0" ESH="1" FH="8" SH="6" Type="won_contest">15</Stat>
+        <Stat EFH="27" ESH="28" FH="132" SH="102" Type="accurate_fwd_zone_pass">289</Stat>
+        <Stat EFH="4" ESH="9" FH="14" SH="18" Type="total_chipped_pass">45</Stat>
+        <Stat EFH="6" ESH="4" FH="7" SH="4" Type="effective_head_clearance">21</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="0" Type="att_fastbreak">2</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="lost_corners">1</Stat>
+        <Stat EFH="1" ESH="1" FH="1" SH="5" Type="fouled_final_third">8</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="saves">1</Stat>
+        <Stat EFH="1" ESH="0" FH="4" SH="3" Type="ontarget_scoring_att">8</Stat>
+        <Stat EFH="5" ESH="5" FH="4" SH="6" Type="total_scoring_att">20</Stat>
+        <Stat EFH="1" ESH="3" FH="5" SH="7" Type="blocked_pass">16</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="1" Type="total_high_claim">2</Stat>
+        <Stat EFH="0" ESH="2" FH="1" SH="3" Type="accurate_flick_on">6</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_obxd_right">1</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="attempts_conceded_obox">1</Stat>
+        <Stat EFH="6" ESH="6" FH="26" SH="25" Type="ball_recovery">63</Stat>
+        <Stat EFH="0" ESH="2" FH="0" SH="1" Type="subs_made">3</Stat>
+        <Stat EFH="1" ESH="5" FH="11" SH="9" Type="poss_won_def_3rd">26</Stat>
+        <Stat EFH="26" ESH="24" FH="158" SH="104" Type="accurate_back_zone_pass">312</Stat>
+        <Stat EFH="14" ESH="11" FH="43" SH="46" Type="passes_right">114</Stat>
+        <Stat EFH="6" ESH="7" FH="8" SH="10" Type="total_throws">31</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="1" Type="att_obox_target">3</Stat>
+        <Stat EFH="51" ESH="49" FH="288" SH="198" Type="successful_open_play_pass">586</Stat>
+        <Stat EFH="26" ESH="27" FH="164" SH="108" Type="total_back_zone_pass">325</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="1" Type="att_obox_post">2</Stat>
+        <Stat EFH="0" ESH="1" FH="6" SH="2" Type="accurate_layoffs">9</Stat>
+        <Stat EFH="11" ESH="13" FH="37" SH="38" Type="total_long_balls">99</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="1" Type="total_yel_card">2</Stat>
+        <Stat EFH="1" ESH="0" FH="3" SH="3" Type="accurate_keeper_throws">7</Stat>
+        <Stat EFH="3" ESH="2" FH="2" SH="1" Type="att_obx_centre">8</Stat>
+        <Stat EFH="2" ESH="4" FH="3" SH="0" Type="att_openplay">9</Stat>
+        <Stat EFH="4" ESH="1" FH="9" SH="11" Type="poss_won_mid_3rd">25</Stat>
+        <Stat EFH="1" ESH="3" FH="5" SH="7" Type="put_through">16</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="2" Type="big_chance_created">3</Stat>
+        <Stat EFH="1" ESH="0" FH="2" SH="2" Type="att_ibox_target">5</Stat>
+        <Stat EFH="0" ESH="1" FH="1" SH="2" Type="freekick_cross">4</Stat>
+        <Stat EFH="1" ESH="0" FH="1" SH="2" Type="att_freekick_total">4</Stat>
+        <Stat EFH="6" ESH="4" FH="7" SH="4" Type="head_clearance">21</Stat>
+        <Stat EFH="1" ESH="1" FH="5" SH="3" Type="goal_kicks">10</Stat>
+        <Stat EFH="3" ESH="2" FH="2" SH="2" Type="att_lf_total">9</Stat>
+        <Stat EFH="64" ESH="65" FH="322" SH="231" Type="open_play_pass">682</Stat>
+        <Stat EFH="6" ESH="2" FH="6" SH="10" Type="aerial_won">24</Stat>
+        <Stat EFH="65" ESH="65" FH="325" SH="237" Type="total_pass">692</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="2" Type="att_lf_target">4</Stat>
+        <Stat EFH="5" ESH="4" FH="3" SH="10" Type="total_launches">22</Stat>
+        <Stat EFH="24" ESH="26" FH="94" SH="85" Type="fwd_pass">229</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="effective_blocked_cross">1</Stat>
+        <Stat EFH="0" ESH="2" FH="0" SH="0" Type="outfielder_block">2</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="last_man_tackle">1</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_freekick_post">1</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="interceptions_in_box">1</Stat>
+        <Stat EFH="3" ESH="2" FH="2" SH="4" Type="total_corners_intobox">11</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="blocked_cross">1</Stat>
+        <Stat EFH="1" ESH="1" FH="1" SH="2" Type="att_bx_centre">5</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="1" Type="post_scoring_att">2</Stat>
+        <Stat EFH="3" ESH="2" FH="2" SH="0" Type="ontarget_att_assist">7</Stat>
+        <Stat EFH="11" ESH="14" FH="46" SH="47" Type="long_pass_own_to_opp">118</Stat>
+        <Stat EFH="1" ESH="4" FH="5" SH="10" Type="accurate_chipped_pass">20</Stat>
+        <Stat EFH="6" ESH="7" FH="25" SH="30" Type="duel_won">68</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="total_keeper_sweeper">1</Stat>
+        <Stat EFH="13" ESH="16" FH="50" SH="40" Type="successful_final_third_passes">119</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="shield_ball_oop">1</Stat>
+        <Stat EFH="0" ESH="1" FH="3" SH="7" Type="fk_foul_won">11</Stat>
+        <Stat EFH="2" ESH="3" FH="7" SH="8" Type="total_cross_nocorner">20</Stat>
+        <Stat EFH="1" ESH="0" FH="3" SH="3" Type="keeper_throws">7</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="att_bx_left">1</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="4" Type="successful_put_through">5</Stat>
+        <Stat EFH="0" ESH="3" FH="8" SH="7" Type="total_tackle">18</Stat>
+        <Stat EFH="2" ESH="2" FH="3" SH="6" Type="total_offside">13</Stat>
+        <Stat EFH="1" ESH="0" FH="0" SH="0" Type="att_sv_low_left">1</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="att_post_high">1</Stat>
+        <Stat EFH="6" ESH="1" FH="50" SH="38" Type="passes_left">95</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="1" Type="att_rf_target">3</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="1" Type="good_high_claim">2</Stat>
+        <Stat EFH="1" ESH="1" FH="1" SH="3" Type="accurate_launches">6</Stat>
+        <Stat EFH="21" ESH="23" FH="63" SH="66" Type="poss_lost_all">173</Stat>
+        <Stat EFH="0" ESH="0" FH="3" SH="0" Type="att_sv_low_centre">3</Stat>
+        <Stat EFH="6" ESH="8" FH="28" SH="29" Type="accurate_long_balls">71</Stat>
+        <Stat EFH="0" ESH="2" FH="4" SH="0" Type="challenge_lost">6</Stat>
+        <Stat EFH="5" ESH="5" FH="9" SH="12" Type="total_cross">31</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="att_sv_high_left">1</Stat>
+        <Stat Type="clean_sheet">1</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="1" Type="att_freekick_target">2</Stat>
+        <Stat EFH="3" ESH="1" FH="0" SH="0" Type="att_obox_blocked">4</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="2" Type="att_ibox_miss">3</Stat>
+        <Stat EFH="1" ESH="1" FH="4" SH="2" Type="accurate_goal_kicks">8</Stat>
+        <Stat EFH="0" ESH="2" FH="3" SH="5" Type="unsuccessful_touch">10</Stat>
+        <Stat EFH="0" ESH="2" FH="0" SH="3" Type="shot_off_target">5</Stat>
+        <Stat EFH="21" ESH="23" FH="63" SH="66" Type="poss_lost_ctrl">173</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="hand_ball">1</Stat>
+        <Stat EFH="1" ESH="2" FH="0" SH="0" Type="att_ibox_blocked">3</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="0" Type="shot_fastbreak">2</Stat>
+        <Stat EFH="2" ESH="5" FH="7" SH="4" Type="aerial_lost">18</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="2" Type="att_sv_low_right">2</Stat>
+        <Stat EFH="1" ESH="0" FH="4" SH="5" Type="crosses_18yard">10</Stat>
+        <Stat EFH="13" ESH="10" FH="39" SH="27" Type="final_third_entries">89</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="overrun">1</Stat>
+        <Stat EFH="1" ESH="1" FH="0" SH="1" Type="att_hd_total">3</Stat>
+        <Stat EFH="0" ESH="2" FH="0" SH="1" Type="accurate_cross_nocorner">3</Stat>
+        <Stat EFH="8" ESH="9" FH="10" SH="6" Type="effective_clearance">33</Stat>
+        <Stat EFH="1" ESH="2" FH="9" SH="3" Type="fk_foul_lost">15</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="1" Type="att_hd_miss">2</Stat>
+        <Stat EFH="3" ESH="2" FH="2" SH="4" Type="won_corners">11</Stat>
+        <Stat EFH="66.1" ESH="60.2" FH="68.7" SH="68.2" Type="possession_percentage">67.3</Stat>
+        <Stat EFH="3" ESH="2" FH="4" SH="5" Type="interception">14</Stat>
+        <Stat EFH="0" ESH="0" FH="4" SH="1" Type="attempted_tackle_foul">5</Stat>
+        <Stat EFH="3" ESH="4" FH="48" SH="32" Type="backward_pass">87</Stat>
+        <Stat EFH="3" ESH="2" FH="4" SH="5" Type="interception_won">14</Stat>
+        <Stat EFH="3" ESH="5" FH="12" SH="8" Type="pen_area_entries">28</Stat>
+        <Stat EFH="6" ESH="6" FH="7" SH="9" Type="accurate_throws">28</Stat>
+        <Stat EFH="1" ESH="1" FH="7" SH="4" Type="total_layoffs">13</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="3" Type="big_chance_missed">4</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="1" Type="accurate_freekick_cross">2</Stat>
+        <Stat EFH="1" ESH="0" FH="0" SH="0" Type="att_hd_target">1</Stat>
+        <Stat EFH="0" ESH="1" FH="13" SH="11" Type="total_contest">25</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="2" Type="hit_woodwork">3</Stat>
+        <Stat EFH="8" ESH="9" FH="10" SH="6" Type="total_clearance">33</Stat>
+        <Stat EFH="6" ESH="8" FH="34" SH="35" Type="long_pass_own_to_opp_success">83</Stat>
+        <Stat EFH="1" ESH="1" FH="0" SH="1" Type="accurate_corners_intobox">3</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="saved_ibox">1</Stat>
+        <Stat EFH="3" ESH="4" FH="2" SH="4" Type="total_att_assist">13</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_post_left">1</Stat>
+        <Stat EFH="1" ESH="0" FH="0" SH="4" Type="att_setpiece">5</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="2" Type="att_miss_high">3</Stat>
+        <Stat EFH="0" ESH="2" FH="0" SH="2" Type="offtarget_att_assist">4</Stat>
+        <Stat EFH="3" ESH="2" FH="2" SH="4" Type="corner_taken">11</Stat>
+        <Stat EFH="1" ESH="2" FH="2" SH="1" Type="crosses_18yardplus">6</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="0" Type="total_fastbreak">2</Stat>
+        <Stat Type="formation_used">343</Stat>
+        <Substitution EventID="55230856" EventNumber="2766" Period="2" Reason="Tactical" SubOff="p106824" SubOn="p39187" SubstitutePosition="4" Time="76" TimeStamp="20140705T223306+0100" uID="s366-1" />
+        <Substitution EventID="2050016774" EventNumber="41057" Period="4" Reason="Tactical" SubOff="p85352" SubOn="p14941" SubstitutePosition="4" Time="105" TimeStamp="20140705T231744+0100" uID="s366-2" />
+        <Substitution EventID="1746544276" EventNumber="41218" Period="4" Reason="Tactical" SubOff="p72162" SubOn="p20480" SubstitutePosition="1" Time="121" TimeStamp="20140705T233412+0100" uID="s366-3" />
+      </TeamData>
+      <TeamData Score="0" ShootOutScore="3" Side="Away" TeamRef="t838">
+        <Booking Card="Yellow" CardType="Yellow" EventID="1641829758" EventNumber="13713" Period="FirstHalf" PlayerRef="p34355" Reason="Foul" Time="37" TimeStamp="20140705T213744+0100" uID="b838-1" />
+        <Booking Card="Yellow" CardType="Yellow" EventID="747008087" EventNumber="25214" Period="SecondHalf" PlayerRef="p34352" Reason="Foul" Time="52" TimeStamp="20140705T220908+0100" uID="b838-2" />
+        <Booking Card="Yellow" CardType="Yellow" EventID="1720044470" EventNumber="28115" Period="SecondHalf" PlayerRef="p105021" Reason="Foul" Time="81" TimeStamp="20140705T223825+0100" uID="b838-3" />
+        <Booking Card="Yellow" CardType="Yellow" EventID="1674412069" EventNumber="410716" Period="ExtraSecondHalf" PlayerRef="p99123" Reason="Foul" Time="107" TimeStamp="20140705T232008+0100" uID="b838-4" />
+        <PlayerLineUp>
+          <MatchPlayer PlayerRef="p28411" Position="Goalkeeper" ShirtNumber="1" Status="Start">
+            <Stat Type="diving_save">5</Stat>
+            <Stat Type="leftside_pass">1</Stat>
+            <Stat Type="accurate_keeper_sweeper">1</Stat>
+            <Stat Type="accurate_pass">16</Stat>
+            <Stat Type="was_fouled">1</Stat>
+            <Stat Type="total_final_third_passes">15</Stat>
+            <Stat Type="rightside_pass">6</Stat>
+            <Stat Type="attempts_conceded_ibox">11</Stat>
+            <Stat Type="touches">54</Stat>
+            <Stat Type="total_fwd_zone_pass">17</Stat>
+            <Stat Type="keeper_pick_up">4</Stat>
+            <Stat Type="accurate_fwd_zone_pass">4</Stat>
+            <Stat Type="lost_corners">2</Stat>
+            <Stat Type="saves">7</Stat>
+            <Stat Type="total_high_claim">1</Stat>
+            <Stat Type="attempts_conceded_obox">9</Stat>
+            <Stat Type="ball_recovery">8</Stat>
+            <Stat Type="poss_won_def_3rd">3</Stat>
+            <Stat Type="accurate_back_zone_pass">12</Stat>
+            <Stat Type="dive_save">2</Stat>
+            <Stat Type="passes_right">9</Stat>
+            <Stat Type="successful_open_play_pass">6</Stat>
+            <Stat Type="stand_save">1</Stat>
+            <Stat Type="total_back_zone_pass">12</Stat>
+            <Stat Type="total_long_balls">21</Stat>
+            <Stat Type="accurate_keeper_throws">1</Stat>
+            <Stat Type="cross_not_claimed">1</Stat>
+            <Stat Type="goal_kicks">11</Stat>
+            <Stat Type="open_play_pass">7</Stat>
+            <Stat Type="aerial_won">1</Stat>
+            <Stat Type="total_pass">29</Stat>
+            <Stat Type="total_launches">16</Stat>
+            <Stat Type="fwd_pass">22</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">22</Stat>
+            <Stat Type="duel_won">1</Stat>
+            <Stat Type="total_keeper_sweeper">1</Stat>
+            <Stat Type="successful_final_third_passes">4</Stat>
+            <Stat Type="keeper_throws">1</Stat>
+            <Stat Type="passes_left">4</Stat>
+            <Stat Type="good_high_claim">1</Stat>
+            <Stat Type="accurate_launches">4</Stat>
+            <Stat Type="poss_lost_all">18</Stat>
+            <Stat Type="accurate_long_balls">8</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="accurate_goal_kicks">7</Stat>
+            <Stat Type="saved_obox">3</Stat>
+            <Stat Type="poss_lost_ctrl">18</Stat>
+            <Stat Type="final_third_entries">18</Stat>
+            <Stat Type="effective_clearance">2</Stat>
+            <Stat Type="gk_smother">1</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="total_clearance">2</Stat>
+            <Stat Type="long_pass_own_to_opp_success">5</Stat>
+            <Stat Type="saved_ibox">4</Stat>
+            <Stat Type="punches">2</Stat>
+            <Stat Type="formation_place">1</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p34352" Position="Defender" ShirtNumber="4" Status="Start">
+            <Stat Type="duel_lost">5</Stat>
+            <Stat Type="leftside_pass">4</Stat>
+            <Stat Type="accurate_pass">22</Stat>
+            <Stat Type="won_tackle">1</Stat>
+            <Stat Type="was_fouled">1</Stat>
+            <Stat Type="total_final_third_passes">2</Stat>
+            <Stat Type="rightside_pass">14</Stat>
+            <Stat Type="offside_provoked">2</Stat>
+            <Stat Type="attempts_conceded_ibox">11</Stat>
+            <Stat Type="touches">41</Stat>
+            <Stat Type="yellow_card">1</Stat>
+            <Stat Type="total_fwd_zone_pass">5</Stat>
+            <Stat Type="accurate_fwd_zone_pass">2</Stat>
+            <Stat Type="total_chipped_pass">2</Stat>
+            <Stat Type="effective_head_clearance">4</Stat>
+            <Stat Type="lost_corners">1</Stat>
+            <Stat Type="blocked_pass">1</Stat>
+            <Stat Type="attempts_conceded_obox">9</Stat>
+            <Stat Type="ball_recovery">1</Stat>
+            <Stat Type="poss_won_def_3rd">1</Stat>
+            <Stat Type="accurate_back_zone_pass">20</Stat>
+            <Stat Type="successful_open_play_pass">21</Stat>
+            <Stat Type="total_back_zone_pass">22</Stat>
+            <Stat Type="total_long_balls">7</Stat>
+            <Stat Type="put_through">1</Stat>
+            <Stat Type="head_clearance">4</Stat>
+            <Stat Type="open_play_pass">26</Stat>
+            <Stat Type="aerial_won">2</Stat>
+            <Stat Type="total_pass">27</Stat>
+            <Stat Type="fwd_pass">8</Stat>
+            <Stat Type="interceptions_in_box">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">4</Stat>
+            <Stat Type="duel_won">4</Stat>
+            <Stat Type="successful_final_third_passes">1</Stat>
+            <Stat Type="successful_put_through">1</Stat>
+            <Stat Type="total_tackle">1</Stat>
+            <Stat Type="passes_left">4</Stat>
+            <Stat Type="poss_lost_all">5</Stat>
+            <Stat Type="accurate_long_balls">6</Stat>
+            <Stat Type="challenge_lost">3</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="head_pass">3</Stat>
+            <Stat Type="poss_lost_ctrl">5</Stat>
+            <Stat Type="aerial_lost">1</Stat>
+            <Stat Type="final_third_entries">1</Stat>
+            <Stat Type="effective_clearance">7</Stat>
+            <Stat Type="interception">2</Stat>
+            <Stat Type="attempted_tackle_foul">1</Stat>
+            <Stat Type="backward_pass">1</Stat>
+            <Stat Type="interception_won">2</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="fouls">1</Stat>
+            <Stat Type="total_clearance">7</Stat>
+            <Stat Type="long_pass_own_to_opp_success">1</Stat>
+            <Stat Type="formation_place">4</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p99123" Position="Defender" ShirtNumber="2" Status="Start">
+            <Stat Type="duel_lost">3</Stat>
+            <Stat Type="leftside_pass">16</Stat>
+            <Stat Type="att_rf_total">1</Stat>
+            <Stat Type="accurate_pass">32</Stat>
+            <Stat Type="won_tackle">3</Stat>
+            <Stat Type="was_fouled">2</Stat>
+            <Stat Type="total_final_third_passes">6</Stat>
+            <Stat Type="rightside_pass">2</Stat>
+            <Stat Type="offside_provoked">2</Stat>
+            <Stat Type="attempts_conceded_ibox">11</Stat>
+            <Stat Type="touches">60</Stat>
+            <Stat Type="yellow_card">1</Stat>
+            <Stat Type="total_fwd_zone_pass">16</Stat>
+            <Stat Type="accurate_fwd_zone_pass">11</Stat>
+            <Stat Type="total_chipped_pass">8</Stat>
+            <Stat Type="effective_head_clearance">2</Stat>
+            <Stat Type="lost_corners">2</Stat>
+            <Stat Type="fouled_final_third">1</Stat>
+            <Stat Type="total_scoring_att">1</Stat>
+            <Stat Type="blocked_pass">3</Stat>
+            <Stat Type="attempts_conceded_obox">9</Stat>
+            <Stat Type="ball_recovery">3</Stat>
+            <Stat Type="poss_won_def_3rd">3</Stat>
+            <Stat Type="accurate_back_zone_pass">21</Stat>
+            <Stat Type="passes_right">7</Stat>
+            <Stat Type="successful_open_play_pass">32</Stat>
+            <Stat Type="total_back_zone_pass">25</Stat>
+            <Stat Type="total_long_balls">4</Stat>
+            <Stat Type="put_through">3</Stat>
+            <Stat Type="head_clearance">2</Stat>
+            <Stat Type="open_play_pass">41</Stat>
+            <Stat Type="aerial_won">2</Stat>
+            <Stat Type="total_pass">41</Stat>
+            <Stat Type="total_launches">3</Stat>
+            <Stat Type="fwd_pass">22</Stat>
+            <Stat Type="effective_blocked_cross">1</Stat>
+            <Stat Type="interceptions_in_box">1</Stat>
+            <Stat Type="blocked_cross">1</Stat>
+            <Stat Type="att_miss_right">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">14</Stat>
+            <Stat Type="accurate_chipped_pass">3</Stat>
+            <Stat Type="duel_won">6</Stat>
+            <Stat Type="successful_final_third_passes">2</Stat>
+            <Stat Type="successful_put_through">2</Stat>
+            <Stat Type="total_tackle">3</Stat>
+            <Stat Type="passes_left">1</Stat>
+            <Stat Type="accurate_launches">2</Stat>
+            <Stat Type="poss_lost_all">10</Stat>
+            <Stat Type="accurate_long_balls">2</Stat>
+            <Stat Type="challenge_lost">2</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="att_ibox_miss">1</Stat>
+            <Stat Type="head_pass">3</Stat>
+            <Stat Type="shot_off_target">1</Stat>
+            <Stat Type="poss_lost_ctrl">10</Stat>
+            <Stat Type="final_third_entries">6</Stat>
+            <Stat Type="effective_clearance">8</Stat>
+            <Stat Type="interception">1</Stat>
+            <Stat Type="backward_pass">1</Stat>
+            <Stat Type="interception_won">1</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="fouls">1</Stat>
+            <Stat Type="total_clearance">8</Stat>
+            <Stat Type="long_pass_own_to_opp_success">10</Stat>
+            <Stat Type="att_setpiece">1</Stat>
+            <Stat Type="formation_place">6</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p105021" Position="Defender" ShirtNumber="3" Status="Start">
+            <Stat Type="duel_lost">1</Stat>
+            <Stat Type="leftside_pass">14</Stat>
+            <Stat Type="accurate_pass">27</Stat>
+            <Stat Type="won_tackle">2</Stat>
+            <Stat Type="was_fouled">2</Stat>
+            <Stat Type="total_final_third_passes">4</Stat>
+            <Stat Type="rightside_pass">5</Stat>
+            <Stat Type="offside_provoked">6</Stat>
+            <Stat Type="attempts_conceded_ibox">11</Stat>
+            <Stat Type="touches">61</Stat>
+            <Stat Type="yellow_card">1</Stat>
+            <Stat Type="total_fwd_zone_pass">11</Stat>
+            <Stat Type="accurate_fwd_zone_pass">7</Stat>
+            <Stat Type="total_chipped_pass">6</Stat>
+            <Stat Type="effective_head_clearance">9</Stat>
+            <Stat Type="lost_corners">4</Stat>
+            <Stat Type="total_scoring_att">1</Stat>
+            <Stat Type="blocked_pass">3</Stat>
+            <Stat Type="attempts_conceded_obox">9</Stat>
+            <Stat Type="ball_recovery">2</Stat>
+            <Stat Type="poss_won_def_3rd">2</Stat>
+            <Stat Type="accurate_back_zone_pass">20</Stat>
+            <Stat Type="passes_right">1</Stat>
+            <Stat Type="successful_open_play_pass">27</Stat>
+            <Stat Type="total_back_zone_pass">21</Stat>
+            <Stat Type="total_long_balls">7</Stat>
+            <Stat Type="put_through">3</Stat>
+            <Stat Type="head_clearance">9</Stat>
+            <Stat Type="open_play_pass">32</Stat>
+            <Stat Type="aerial_won">4</Stat>
+            <Stat Type="total_pass">32</Stat>
+            <Stat Type="total_launches">1</Stat>
+            <Stat Type="fwd_pass">12</Stat>
+            <Stat Type="att_cmiss_high_right">1</Stat>
+            <Stat Type="effective_blocked_cross">1</Stat>
+            <Stat Type="outfielder_block">1</Stat>
+            <Stat Type="blocked_cross">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">10</Stat>
+            <Stat Type="accurate_chipped_pass">3</Stat>
+            <Stat Type="duel_won">9</Stat>
+            <Stat Type="successful_final_third_passes">1</Stat>
+            <Stat Type="successful_put_through">3</Stat>
+            <Stat Type="total_tackle">3</Stat>
+            <Stat Type="passes_left">2</Stat>
+            <Stat Type="poss_lost_all">5</Stat>
+            <Stat Type="accurate_long_balls">3</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="att_ibox_miss">1</Stat>
+            <Stat Type="head_pass">4</Stat>
+            <Stat Type="shot_off_target">1</Stat>
+            <Stat Type="poss_lost_ctrl">5</Stat>
+            <Stat Type="final_third_entries">4</Stat>
+            <Stat Type="att_hd_total">1</Stat>
+            <Stat Type="effective_clearance">17</Stat>
+            <Stat Type="att_hd_miss">1</Stat>
+            <Stat Type="interception">1</Stat>
+            <Stat Type="backward_pass">1</Stat>
+            <Stat Type="interception_won">1</Stat>
+            <Stat Type="pen_area_entries">2</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="fouls">1</Stat>
+            <Stat Type="total_clearance">17</Stat>
+            <Stat Type="long_pass_own_to_opp_success">6</Stat>
+            <Stat Type="att_setpiece">1</Stat>
+            <Stat Type="att_miss_high_right">1</Stat>
+            <Stat Type="formation_place">5</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p77760" Position="Defender" ShirtNumber="16" Status="Start">
+            <Stat Type="total_flick_on">2</Stat>
+            <Stat Type="duel_lost">5</Stat>
+            <Stat Type="leftside_pass">6</Stat>
+            <Stat Type="accurate_pass">10</Stat>
+            <Stat Type="won_tackle">3</Stat>
+            <Stat Type="was_fouled">2</Stat>
+            <Stat Type="total_final_third_passes">6</Stat>
+            <Stat Type="offside_provoked">2</Stat>
+            <Stat Type="attempts_conceded_ibox">4</Stat>
+            <Stat Type="touches">40</Stat>
+            <Stat Type="total_fwd_zone_pass">12</Stat>
+            <Stat Type="won_contest">2</Stat>
+            <Stat Type="accurate_fwd_zone_pass">6</Stat>
+            <Stat Type="effective_head_clearance">1</Stat>
+            <Stat Type="blocked_pass">1</Stat>
+            <Stat Type="attempts_conceded_obox">2</Stat>
+            <Stat Type="ball_recovery">4</Stat>
+            <Stat Type="poss_won_def_3rd">3</Stat>
+            <Stat Type="accurate_back_zone_pass">4</Stat>
+            <Stat Type="passes_right">5</Stat>
+            <Stat Type="total_throws">8</Stat>
+            <Stat Type="successful_open_play_pass">10</Stat>
+            <Stat Type="total_back_zone_pass">6</Stat>
+            <Stat Type="accurate_layoffs">2</Stat>
+            <Stat Type="poss_won_mid_3rd">1</Stat>
+            <Stat Type="total_sub_off">1</Stat>
+            <Stat Type="put_through">1</Stat>
+            <Stat Type="head_clearance">1</Stat>
+            <Stat Type="open_play_pass">15</Stat>
+            <Stat Type="aerial_won">1</Stat>
+            <Stat Type="total_pass">15</Stat>
+            <Stat Type="total_launches">1</Stat>
+            <Stat Type="dangerous_play">1</Stat>
+            <Stat Type="fwd_pass">6</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">2</Stat>
+            <Stat Type="duel_won">10</Stat>
+            <Stat Type="successful_final_third_passes">3</Stat>
+            <Stat Type="total_cross_nocorner">3</Stat>
+            <Stat Type="successful_put_through">1</Stat>
+            <Stat Type="total_tackle">5</Stat>
+            <Stat Type="passes_left">1</Stat>
+            <Stat Type="poss_lost_all">13</Stat>
+            <Stat Type="challenge_lost">1</Stat>
+            <Stat Type="total_cross">3</Stat>
+            <Stat Type="head_pass">4</Stat>
+            <Stat Type="poss_lost_ctrl">13</Stat>
+            <Stat Type="aerial_lost">1</Stat>
+            <Stat Type="crosses_18yard">2</Stat>
+            <Stat Type="final_third_entries">5</Stat>
+            <Stat Type="effective_clearance">3</Stat>
+            <Stat Type="attempted_tackle_foul">1</Stat>
+            <Stat Type="backward_pass">3</Stat>
+            <Stat Type="accurate_throws">4</Stat>
+            <Stat Type="mins_played">79</Stat>
+            <Stat Type="total_layoffs">2</Stat>
+            <Stat Type="fouls">2</Stat>
+            <Stat Type="total_contest">3</Stat>
+            <Stat Type="total_clearance">3</Stat>
+            <Stat Type="long_pass_own_to_opp_success">1</Stat>
+            <Stat Type="total_pull_back">1</Stat>
+            <Stat Type="crosses_18yardplus">1</Stat>
+            <Stat Type="formation_place">2</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p34355" Position="Defender" ShirtNumber="15" Status="Start">
+            <Stat Type="duel_lost">11</Stat>
+            <Stat Type="accurate_pass">14</Stat>
+            <Stat Type="won_tackle">2</Stat>
+            <Stat Type="total_final_third_passes">7</Stat>
+            <Stat Type="rightside_pass">11</Stat>
+            <Stat Type="attempts_conceded_ibox">11</Stat>
+            <Stat Type="touches">56</Stat>
+            <Stat Type="yellow_card">1</Stat>
+            <Stat Type="total_fwd_zone_pass">22</Stat>
+            <Stat Type="accurate_fwd_zone_pass">10</Stat>
+            <Stat Type="total_chipped_pass">1</Stat>
+            <Stat Type="effective_head_clearance">8</Stat>
+            <Stat Type="lost_corners">1</Stat>
+            <Stat Type="blocked_pass">2</Stat>
+            <Stat Type="attempts_conceded_obox">9</Stat>
+            <Stat Type="ball_recovery">2</Stat>
+            <Stat Type="poss_won_def_3rd">1</Stat>
+            <Stat Type="accurate_back_zone_pass">4</Stat>
+            <Stat Type="total_throws">12</Stat>
+            <Stat Type="successful_open_play_pass">14</Stat>
+            <Stat Type="total_back_zone_pass">6</Stat>
+            <Stat Type="total_long_balls">3</Stat>
+            <Stat Type="poss_won_mid_3rd">1</Stat>
+            <Stat Type="put_through">2</Stat>
+            <Stat Type="head_clearance">8</Stat>
+            <Stat Type="open_play_pass">27</Stat>
+            <Stat Type="aerial_won">2</Stat>
+            <Stat Type="total_pass">27</Stat>
+            <Stat Type="total_launches">6</Stat>
+            <Stat Type="fwd_pass">15</Stat>
+            <Stat Type="outfielder_block">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">13</Stat>
+            <Stat Type="duel_won">5</Stat>
+            <Stat Type="successful_final_third_passes">2</Stat>
+            <Stat Type="shield_ball_oop">1</Stat>
+            <Stat Type="total_cross_nocorner">1</Stat>
+            <Stat Type="successful_put_through">1</Stat>
+            <Stat Type="total_tackle">3</Stat>
+            <Stat Type="passes_left">11</Stat>
+            <Stat Type="accurate_launches">1</Stat>
+            <Stat Type="poss_lost_all">20</Stat>
+            <Stat Type="accurate_long_balls">1</Stat>
+            <Stat Type="challenge_lost">4</Stat>
+            <Stat Type="total_cross">1</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="head_pass">5</Stat>
+            <Stat Type="poss_lost_ctrl">20</Stat>
+            <Stat Type="hand_ball">1</Stat>
+            <Stat Type="aerial_lost">5</Stat>
+            <Stat Type="crosses_18yard">1</Stat>
+            <Stat Type="final_third_entries">7</Stat>
+            <Stat Type="effective_clearance">9</Stat>
+            <Stat Type="attempted_tackle_foul">1</Stat>
+            <Stat Type="backward_pass">1</Stat>
+            <Stat Type="pen_area_entries">2</Stat>
+            <Stat Type="accurate_throws">6</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="fouls">3</Stat>
+            <Stat Type="total_clearance">9</Stat>
+            <Stat Type="long_pass_own_to_opp_success">3</Stat>
+            <Stat Type="formation_place">3</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p99127" Position="Midfielder" ShirtNumber="9" Status="Start">
+            <Stat Type="total_flick_on">2</Stat>
+            <Stat Type="duel_lost">4</Stat>
+            <Stat Type="leftside_pass">3</Stat>
+            <Stat Type="poss_won_att_3rd">1</Stat>
+            <Stat Type="dispossessed">3</Stat>
+            <Stat Type="accurate_pass">11</Stat>
+            <Stat Type="was_fouled">1</Stat>
+            <Stat Type="total_final_third_passes">7</Stat>
+            <Stat Type="rightside_pass">3</Stat>
+            <Stat Type="attempts_conceded_ibox">3</Stat>
+            <Stat Type="touches">27</Stat>
+            <Stat Type="total_fwd_zone_pass">14</Stat>
+            <Stat Type="won_contest">2</Stat>
+            <Stat Type="accurate_fwd_zone_pass">8</Stat>
+            <Stat Type="total_chipped_pass">1</Stat>
+            <Stat Type="fouled_final_third">1</Stat>
+            <Stat Type="accurate_flick_on">1</Stat>
+            <Stat Type="attempts_conceded_obox">2</Stat>
+            <Stat Type="ball_recovery">3</Stat>
+            <Stat Type="turnover">3</Stat>
+            <Stat Type="accurate_back_zone_pass">3</Stat>
+            <Stat Type="passes_right">3</Stat>
+            <Stat Type="successful_open_play_pass">11</Stat>
+            <Stat Type="total_back_zone_pass">3</Stat>
+            <Stat Type="accurate_layoffs">2</Stat>
+            <Stat Type="poss_won_mid_3rd">2</Stat>
+            <Stat Type="total_sub_off">1</Stat>
+            <Stat Type="open_play_pass">17</Stat>
+            <Stat Type="aerial_won">1</Stat>
+            <Stat Type="total_pass">17</Stat>
+            <Stat Type="fwd_pass">5</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">1</Stat>
+            <Stat Type="duel_won">4</Stat>
+            <Stat Type="successful_final_third_passes">3</Stat>
+            <Stat Type="total_offside">2</Stat>
+            <Stat Type="passes_left">1</Stat>
+            <Stat Type="poss_lost_all">13</Stat>
+            <Stat Type="unsuccessful_touch">3</Stat>
+            <Stat Type="head_pass">2</Stat>
+            <Stat Type="poss_lost_ctrl">13</Stat>
+            <Stat Type="hand_ball">1</Stat>
+            <Stat Type="final_third_entries">5</Stat>
+            <Stat Type="backward_pass">6</Stat>
+            <Stat Type="mins_played">66</Stat>
+            <Stat Type="total_layoffs">4</Stat>
+            <Stat Type="fouls">1</Stat>
+            <Stat Type="total_contest">3</Stat>
+            <Stat Type="long_pass_own_to_opp_success">1</Stat>
+            <Stat Type="formation_place">7</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p102683" Position="Midfielder" ShirtNumber="17" Status="Start">
+            <Stat Type="duel_lost">2</Stat>
+            <Stat Type="leftside_pass">5</Stat>
+            <Stat Type="accurate_pass">22</Stat>
+            <Stat Type="won_tackle">1</Stat>
+            <Stat Type="total_final_third_passes">6</Stat>
+            <Stat Type="rightside_pass">4</Stat>
+            <Stat Type="attempts_conceded_ibox">7</Stat>
+            <Stat Type="touches">37</Stat>
+            <Stat Type="total_fwd_zone_pass">15</Stat>
+            <Stat Type="accurate_fwd_zone_pass">11</Stat>
+            <Stat Type="clearance_off_line">1</Stat>
+            <Stat Type="total_chipped_pass">6</Stat>
+            <Stat Type="lost_corners">1</Stat>
+            <Stat Type="blocked_pass">1</Stat>
+            <Stat Type="attempts_conceded_obox">4</Stat>
+            <Stat Type="ball_recovery">5</Stat>
+            <Stat Type="turnover">2</Stat>
+            <Stat Type="poss_won_def_3rd">3</Stat>
+            <Stat Type="accurate_back_zone_pass">11</Stat>
+            <Stat Type="passes_right">5</Stat>
+            <Stat Type="successful_open_play_pass">22</Stat>
+            <Stat Type="total_back_zone_pass">11</Stat>
+            <Stat Type="accurate_layoffs">1</Stat>
+            <Stat Type="total_long_balls">6</Stat>
+            <Stat Type="poss_won_mid_3rd">2</Stat>
+            <Stat Type="total_sub_off">1</Stat>
+            <Stat Type="put_through">1</Stat>
+            <Stat Type="open_play_pass">26</Stat>
+            <Stat Type="total_pass">26</Stat>
+            <Stat Type="fwd_pass">13</Stat>
+            <Stat Type="outfielder_block">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">7</Stat>
+            <Stat Type="accurate_chipped_pass">4</Stat>
+            <Stat Type="duel_won">4</Stat>
+            <Stat Type="successful_final_third_passes">4</Stat>
+            <Stat Type="successful_put_through">1</Stat>
+            <Stat Type="total_tackle">4</Stat>
+            <Stat Type="passes_left">4</Stat>
+            <Stat Type="poss_lost_all">6</Stat>
+            <Stat Type="accurate_long_balls">3</Stat>
+            <Stat Type="challenge_lost">1</Stat>
+            <Stat Type="unsuccessful_touch">2</Stat>
+            <Stat Type="head_pass">1</Stat>
+            <Stat Type="poss_lost_ctrl">6</Stat>
+            <Stat Type="aerial_lost">1</Stat>
+            <Stat Type="final_third_entries">6</Stat>
+            <Stat Type="effective_clearance">2</Stat>
+            <Stat Type="backward_pass">4</Stat>
+            <Stat Type="mins_played">97</Stat>
+            <Stat Type="total_layoffs">1</Stat>
+            <Stat Type="total_clearance">2</Stat>
+            <Stat Type="long_pass_own_to_opp_success">4</Stat>
+            <Stat Type="formation_place">8</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p28392" Position="Midfielder" ShirtNumber="7" Status="Start">
+            <Stat Type="total_through_ball">1</Stat>
+            <Stat Type="total_flick_on">2</Stat>
+            <Stat Type="duel_lost">11</Stat>
+            <Stat Type="blocked_scoring_att">2</Stat>
+            <Stat Type="leftside_pass">2</Stat>
+            <Stat Type="dispossessed">3</Stat>
+            <Stat Type="accurate_cross">1</Stat>
+            <Stat Type="att_rf_total">1</Stat>
+            <Stat Type="att_bx_right">1</Stat>
+            <Stat Type="accurate_pass">16</Stat>
+            <Stat Type="won_tackle">1</Stat>
+            <Stat Type="att_assist_setplay">1</Stat>
+            <Stat Type="was_fouled">1</Stat>
+            <Stat Type="att_freekick_miss">1</Stat>
+            <Stat Type="total_final_third_passes">8</Stat>
+            <Stat Type="rightside_pass">7</Stat>
+            <Stat Type="attempts_conceded_ibox">11</Stat>
+            <Stat Type="touches">46</Stat>
+            <Stat Type="total_fwd_zone_pass">24</Stat>
+            <Stat Type="won_contest">1</Stat>
+            <Stat Type="accurate_fwd_zone_pass">12</Stat>
+            <Stat Type="total_chipped_pass">5</Stat>
+            <Stat Type="effective_head_clearance">1</Stat>
+            <Stat Type="total_scoring_att">3</Stat>
+            <Stat Type="blocked_pass">2</Stat>
+            <Stat Type="attempts_conceded_obox">9</Stat>
+            <Stat Type="ball_recovery">2</Stat>
+            <Stat Type="accurate_back_zone_pass">5</Stat>
+            <Stat Type="passes_right">1</Stat>
+            <Stat Type="successful_open_play_pass">15</Stat>
+            <Stat Type="total_back_zone_pass">8</Stat>
+            <Stat Type="accurate_layoffs">3</Stat>
+            <Stat Type="total_long_balls">5</Stat>
+            <Stat Type="att_obx_centre">1</Stat>
+            <Stat Type="att_openplay">2</Stat>
+            <Stat Type="poss_won_mid_3rd">2</Stat>
+            <Stat Type="put_through">2</Stat>
+            <Stat Type="freekick_cross">3</Stat>
+            <Stat Type="att_freekick_total">1</Stat>
+            <Stat Type="head_clearance">1</Stat>
+            <Stat Type="att_lf_total">2</Stat>
+            <Stat Type="open_play_pass">25</Stat>
+            <Stat Type="aerial_won">1</Stat>
+            <Stat Type="total_pass">27</Stat>
+            <Stat Type="fwd_pass">11</Stat>
+            <Stat Type="outfielder_block">2</Stat>
+            <Stat Type="total_corners_intobox">1</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">4</Stat>
+            <Stat Type="accurate_chipped_pass">1</Stat>
+            <Stat Type="duel_won">4</Stat>
+            <Stat Type="successful_final_third_passes">2</Stat>
+            <Stat Type="total_cross_nocorner">4</Stat>
+            <Stat Type="att_bx_left">1</Stat>
+            <Stat Type="total_tackle">1</Stat>
+            <Stat Type="passes_left">4</Stat>
+            <Stat Type="poss_lost_all">18</Stat>
+            <Stat Type="accurate_long_balls">1</Stat>
+            <Stat Type="challenge_lost">3</Stat>
+            <Stat Type="total_cross">5</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="head_pass">3</Stat>
+            <Stat Type="shot_off_target">1</Stat>
+            <Stat Type="poss_lost_ctrl">18</Stat>
+            <Stat Type="att_ibox_blocked">2</Stat>
+            <Stat Type="aerial_lost">3</Stat>
+            <Stat Type="crosses_18yard">1</Stat>
+            <Stat Type="final_third_entries">7</Stat>
+            <Stat Type="accurate_cross_nocorner">1</Stat>
+            <Stat Type="effective_clearance">1</Stat>
+            <Stat Type="won_corners">1</Stat>
+            <Stat Type="interception">1</Stat>
+            <Stat Type="attempted_tackle_foul">1</Stat>
+            <Stat Type="backward_pass">7</Stat>
+            <Stat Type="interception_won">1</Stat>
+            <Stat Type="pen_area_entries">8</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="total_layoffs">3</Stat>
+            <Stat Type="fouls">2</Stat>
+            <Stat Type="accurate_freekick_cross">1</Stat>
+            <Stat Type="total_contest">1</Stat>
+            <Stat Type="total_clearance">1</Stat>
+            <Stat Type="long_pass_own_to_opp_success">3</Stat>
+            <Stat Type="total_att_assist">1</Stat>
+            <Stat Type="att_miss_high">1</Stat>
+            <Stat Type="offtarget_att_assist">1</Stat>
+            <Stat Type="att_obox_miss">1</Stat>
+            <Stat Type="corner_taken">1</Stat>
+            <Stat Type="formation_place">11</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p61960" Position="Midfielder" ShirtNumber="5" Status="Start">
+            <Stat Type="duel_lost">3</Stat>
+            <Stat Type="leftside_pass">1</Stat>
+            <Stat Type="poss_won_att_3rd">1</Stat>
+            <Stat Type="accurate_pass">26</Stat>
+            <Stat Type="won_tackle">1</Stat>
+            <Stat Type="was_fouled">1</Stat>
+            <Stat Type="total_final_third_passes">4</Stat>
+            <Stat Type="rightside_pass">9</Stat>
+            <Stat Type="attempts_conceded_ibox">11</Stat>
+            <Stat Type="touches">47</Stat>
+            <Stat Type="total_fwd_zone_pass">19</Stat>
+            <Stat Type="att_assist_openplay">1</Stat>
+            <Stat Type="accurate_fwd_zone_pass">18</Stat>
+            <Stat Type="total_chipped_pass">1</Stat>
+            <Stat Type="effective_head_clearance">4</Stat>
+            <Stat Type="blocked_pass">2</Stat>
+            <Stat Type="attempts_conceded_obox">9</Stat>
+            <Stat Type="ball_recovery">8</Stat>
+            <Stat Type="turnover">4</Stat>
+            <Stat Type="poss_won_def_3rd">4</Stat>
+            <Stat Type="accurate_back_zone_pass">8</Stat>
+            <Stat Type="passes_right">6</Stat>
+            <Stat Type="successful_open_play_pass">26</Stat>
+            <Stat Type="total_back_zone_pass">10</Stat>
+            <Stat Type="accurate_layoffs">5</Stat>
+            <Stat Type="total_long_balls">3</Stat>
+            <Stat Type="poss_won_mid_3rd">3</Stat>
+            <Stat Type="put_through">2</Stat>
+            <Stat Type="head_clearance">4</Stat>
+            <Stat Type="open_play_pass">29</Stat>
+            <Stat Type="aerial_won">2</Stat>
+            <Stat Type="total_pass">29</Stat>
+            <Stat Type="total_launches">1</Stat>
+            <Stat Type="fwd_pass">15</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">3</Stat>
+            <Stat Type="accurate_chipped_pass">1</Stat>
+            <Stat Type="duel_won">4</Stat>
+            <Stat Type="successful_final_third_passes">4</Stat>
+            <Stat Type="successful_put_through">1</Stat>
+            <Stat Type="total_tackle">1</Stat>
+            <Stat Type="passes_left">5</Stat>
+            <Stat Type="accurate_launches">1</Stat>
+            <Stat Type="poss_lost_all">7</Stat>
+            <Stat Type="accurate_long_balls">3</Stat>
+            <Stat Type="challenge_lost">1</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="unsuccessful_touch">4</Stat>
+            <Stat Type="head_pass">4</Stat>
+            <Stat Type="poss_lost_ctrl">7</Stat>
+            <Stat Type="aerial_lost">1</Stat>
+            <Stat Type="final_third_entries">3</Stat>
+            <Stat Type="effective_clearance">9</Stat>
+            <Stat Type="interception">2</Stat>
+            <Stat Type="backward_pass">4</Stat>
+            <Stat Type="interception_won">2</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="total_layoffs">5</Stat>
+            <Stat Type="fouls">1</Stat>
+            <Stat Type="total_clearance">9</Stat>
+            <Stat Type="long_pass_own_to_opp_success">3</Stat>
+            <Stat Type="total_att_assist">1</Stat>
+            <Stat Type="offtarget_att_assist">1</Stat>
+            <Stat Type="formation_place">10</Stat>
+          </MatchPlayer>
+          <MatchPlayer Captain="1" PlayerRef="p37084" Position="Striker" ShirtNumber="10" Status="Start">
+            <Stat Type="total_through_ball">1</Stat>
+            <Stat Type="total_flick_on">2</Stat>
+            <Stat Type="duel_lost">10</Stat>
+            <Stat Type="leftside_pass">12</Stat>
+            <Stat Type="poss_won_att_3rd">1</Stat>
+            <Stat Type="dispossessed">5</Stat>
+            <Stat Type="accurate_pass">31</Stat>
+            <Stat Type="was_fouled">2</Stat>
+            <Stat Type="total_final_third_passes">9</Stat>
+            <Stat Type="rightside_pass">1</Stat>
+            <Stat Type="attempts_conceded_ibox">11</Stat>
+            <Stat Type="touches">56</Stat>
+            <Stat Type="total_fwd_zone_pass">28</Stat>
+            <Stat Type="att_assist_openplay">2</Stat>
+            <Stat Type="accurate_fwd_zone_pass">20</Stat>
+            <Stat Type="total_chipped_pass">3</Stat>
+            <Stat Type="effective_head_clearance">1</Stat>
+            <Stat Type="fouled_final_third">2</Stat>
+            <Stat Type="accurate_flick_on">1</Stat>
+            <Stat Type="attempts_conceded_obox">9</Stat>
+            <Stat Type="ball_recovery">7</Stat>
+            <Stat Type="turnover">3</Stat>
+            <Stat Type="poss_won_def_3rd">1</Stat>
+            <Stat Type="accurate_back_zone_pass">11</Stat>
+            <Stat Type="passes_right">6</Stat>
+            <Stat Type="successful_open_play_pass">29</Stat>
+            <Stat Type="total_back_zone_pass">12</Stat>
+            <Stat Type="accurate_layoffs">7</Stat>
+            <Stat Type="total_long_balls">4</Stat>
+            <Stat Type="poss_won_mid_3rd">5</Stat>
+            <Stat Type="error_lead_to_shot">1</Stat>
+            <Stat Type="head_clearance">1</Stat>
+            <Stat Type="open_play_pass">38</Stat>
+            <Stat Type="total_pass">40</Stat>
+            <Stat Type="fwd_pass">14</Stat>
+            <Stat Type="effective_blocked_cross">1</Stat>
+            <Stat Type="blocked_cross">1</Stat>
+            <Stat Type="ontarget_att_assist">2</Stat>
+            <Stat Type="game_started">1</Stat>
+            <Stat Type="long_pass_own_to_opp">3</Stat>
+            <Stat Type="accurate_chipped_pass">2</Stat>
+            <Stat Type="duel_won">2</Stat>
+            <Stat Type="successful_final_third_passes">3</Stat>
+            <Stat Type="passes_left">3</Stat>
+            <Stat Type="poss_lost_all">19</Stat>
+            <Stat Type="accurate_long_balls">2</Stat>
+            <Stat Type="clean_sheet">1</Stat>
+            <Stat Type="unsuccessful_touch">3</Stat>
+            <Stat Type="head_pass">2</Stat>
+            <Stat Type="poss_lost_ctrl">19</Stat>
+            <Stat Type="aerial_lost">2</Stat>
+            <Stat Type="final_third_entries">7</Stat>
+            <Stat Type="effective_clearance">1</Stat>
+            <Stat Type="interception">1</Stat>
+            <Stat Type="attempted_tackle_foul">1</Stat>
+            <Stat Type="backward_pass">13</Stat>
+            <Stat Type="interception_won">1</Stat>
+            <Stat Type="pen_area_entries">1</Stat>
+            <Stat Type="mins_played">120</Stat>
+            <Stat Type="total_layoffs">7</Stat>
+            <Stat Type="fouls">1</Stat>
+            <Stat Type="total_contest">2</Stat>
+            <Stat Type="total_clearance">1</Stat>
+            <Stat Type="long_pass_own_to_opp_success">1</Stat>
+            <Stat Type="total_att_assist">2</Stat>
+            <Stat Type="formation_place">9</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p121319" Position="Substitute" ShirtNumber="13" Status="Sub" SubPosition="Midfielder">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p105080" Position="Substitute" ShirtNumber="23" Status="Sub" SubPosition="Goalkeeper">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p63793" Position="Substitute" ShirtNumber="14" Status="Sub" SubPosition="Forward">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p105017" Position="Substitute" ShirtNumber="18" Status="Sub" SubPosition="Goalkeeper">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p102679" Position="Substitute" ShirtNumber="20" Status="Sub" SubPosition="Midfielder">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p121332" Position="Substitute" ShirtNumber="12" Status="Sub" SubPosition="Defender">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p78506" Position="Substitute" ShirtNumber="8" Status="Sub" SubPosition="Defender">
+            <Stat Type="duel_lost">1</Stat>
+            <Stat Type="leftside_pass">5</Stat>
+            <Stat Type="accurate_pass">4</Stat>
+            <Stat Type="won_tackle">1</Stat>
+            <Stat Type="was_fouled">1</Stat>
+            <Stat Type="total_final_third_passes">1</Stat>
+            <Stat Type="offside_provoked">1</Stat>
+            <Stat Type="attempts_conceded_ibox">7</Stat>
+            <Stat Type="touches">15</Stat>
+            <Stat Type="total_fwd_zone_pass">2</Stat>
+            <Stat Type="accurate_fwd_zone_pass">1</Stat>
+            <Stat Type="attempts_conceded_obox">7</Stat>
+            <Stat Type="ball_recovery">1</Stat>
+            <Stat Type="turnover">1</Stat>
+            <Stat Type="poss_won_def_3rd">1</Stat>
+            <Stat Type="accurate_back_zone_pass">3</Stat>
+            <Stat Type="passes_right">1</Stat>
+            <Stat Type="total_throws">2</Stat>
+            <Stat Type="successful_open_play_pass">4</Stat>
+            <Stat Type="total_back_zone_pass">3</Stat>
+            <Stat Type="open_play_pass">5</Stat>
+            <Stat Type="aerial_won">1</Stat>
+            <Stat Type="total_pass">5</Stat>
+            <Stat Type="interceptions_in_box">1</Stat>
+            <Stat Type="duel_won">2</Stat>
+            <Stat Type="successful_final_third_passes">1</Stat>
+            <Stat Type="total_tackle">1</Stat>
+            <Stat Type="poss_lost_all">2</Stat>
+            <Stat Type="total_sub_on">1</Stat>
+            <Stat Type="unsuccessful_touch">1</Stat>
+            <Stat Type="head_pass">1</Stat>
+            <Stat Type="poss_lost_ctrl">2</Stat>
+            <Stat Type="aerial_lost">1</Stat>
+            <Stat Type="effective_clearance">1</Stat>
+            <Stat Type="interception">3</Stat>
+            <Stat Type="interception_won">3</Stat>
+            <Stat Type="accurate_throws">2</Stat>
+            <Stat Type="mins_played">41</Stat>
+            <Stat Type="total_clearance">1</Stat>
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p77755" Position="Substitute" ShirtNumber="21" Status="Sub" SubPosition="Forward">
+            <Stat Type="total_flick_on">1</Stat>
+            <Stat Type="duel_lost">10</Stat>
+            <Stat Type="poss_won_att_3rd">2</Stat>
+            <Stat Type="dispossessed">1</Stat>
+            <Stat Type="att_rf_total">1</Stat>
+            <Stat Type="att_bx_right">1</Stat>
+            <Stat Type="accurate_pass">8</Stat>
+            <Stat Type="total_final_third_passes">6</Stat>
+            <Stat Type="rightside_pass">2</Stat>
+            <Stat Type="attempts_conceded_ibox">8</Stat>
+            <Stat Type="touches">23</Stat>
+            <Stat Type="total_fwd_zone_pass">9</Stat>
+            <Stat Type="won_contest">1</Stat>
+            <Stat Type="accurate_fwd_zone_pass">6</Stat>
+            <Stat Type="effective_head_clearance">1</Stat>
+            <Stat Type="ontarget_scoring_att">1</Stat>
+            <Stat Type="total_scoring_att">1</Stat>
+            <Stat Type="attempts_conceded_obox">7</Stat>
+            <Stat Type="ball_recovery">4</Stat>
+            <Stat Type="turnover">3</Stat>
+            <Stat Type="accurate_back_zone_pass">2</Stat>
+            <Stat Type="passes_right">1</Stat>
+            <Stat Type="successful_open_play_pass">7</Stat>
+            <Stat Type="total_back_zone_pass">2</Stat>
+            <Stat Type="accurate_layoffs">1</Stat>
+            <Stat Type="att_openplay">1</Stat>
+            <Stat Type="poss_won_mid_3rd">2</Stat>
+            <Stat Type="att_ibox_target">1</Stat>
+            <Stat Type="head_clearance">1</Stat>
+            <Stat Type="open_play_pass">10</Stat>
+            <Stat Type="total_pass">11</Stat>
+            <Stat Type="fwd_pass">5</Stat>
+            <Stat Type="outfielder_block">1</Stat>
+            <Stat Type="duel_won">1</Stat>
+            <Stat Type="successful_final_third_passes">4</Stat>
+            <Stat Type="att_rf_target">1</Stat>
+            <Stat Type="poss_lost_all">10</Stat>
+            <Stat Type="att_sv_low_centre">1</Stat>
+            <Stat Type="total_sub_on">1</Stat>
+            <Stat Type="unsuccessful_touch">3</Stat>
+            <Stat Type="head_pass">2</Stat>
+            <Stat Type="poss_lost_ctrl">10</Stat>
+            <Stat Type="aerial_lost">7</Stat>
+            <Stat Type="final_third_entries">3</Stat>
+            <Stat Type="overrun">1</Stat>
+            <Stat Type="effective_clearance">1</Stat>
+            <Stat Type="backward_pass">4</Stat>
+            <Stat Type="pen_area_entries">2</Stat>
+            <Stat Type="mins_played">54</Stat>
+            <Stat Type="total_layoffs">1</Stat>
+            <Stat Type="total_contest">3</Stat>
+            <Stat Type="total_clearance">1</Stat>
+            <Stat Type="total_fastbreak">1</Stat>
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p83591" Position="Substitute" ShirtNumber="11" Status="Sub" SubPosition="Midfielder">
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+          <MatchPlayer PlayerRef="p99129" Position="Substitute" ShirtNumber="22" Status="Sub" SubPosition="Midfielder">
+            <Stat Type="total_flick_on">1</Stat>
+            <Stat Type="duel_lost">2</Stat>
+            <Stat Type="leftside_pass">3</Stat>
+            <Stat Type="accurate_pass">6</Stat>
+            <Stat Type="total_final_third_passes">3</Stat>
+            <Stat Type="rightside_pass">3</Stat>
+            <Stat Type="attempts_conceded_ibox">4</Stat>
+            <Stat Type="touches">14</Stat>
+            <Stat Type="total_fwd_zone_pass">11</Stat>
+            <Stat Type="accurate_fwd_zone_pass">5</Stat>
+            <Stat Type="total_chipped_pass">4</Stat>
+            <Stat Type="effective_head_clearance">1</Stat>
+            <Stat Type="blocked_pass">1</Stat>
+            <Stat Type="attempts_conceded_obox">5</Stat>
+            <Stat Type="accurate_back_zone_pass">1</Stat>
+            <Stat Type="passes_right">3</Stat>
+            <Stat Type="successful_open_play_pass">6</Stat>
+            <Stat Type="total_back_zone_pass">1</Stat>
+            <Stat Type="accurate_layoffs">1</Stat>
+            <Stat Type="total_long_balls">1</Stat>
+            <Stat Type="put_through">1</Stat>
+            <Stat Type="head_clearance">1</Stat>
+            <Stat Type="open_play_pass">12</Stat>
+            <Stat Type="aerial_won">1</Stat>
+            <Stat Type="total_pass">12</Stat>
+            <Stat Type="fwd_pass">6</Stat>
+            <Stat Type="long_pass_own_to_opp">4</Stat>
+            <Stat Type="duel_won">1</Stat>
+            <Stat Type="successful_put_through">1</Stat>
+            <Stat Type="passes_left">4</Stat>
+            <Stat Type="poss_lost_all">6</Stat>
+            <Stat Type="total_sub_on">1</Stat>
+            <Stat Type="head_pass">3</Stat>
+            <Stat Type="poss_lost_ctrl">6</Stat>
+            <Stat Type="aerial_lost">2</Stat>
+            <Stat Type="final_third_entries">3</Stat>
+            <Stat Type="effective_clearance">1</Stat>
+            <Stat Type="mins_played">23</Stat>
+            <Stat Type="total_layoffs">1</Stat>
+            <Stat Type="total_clearance">1</Stat>
+            <Stat Type="long_pass_own_to_opp_success">1</Stat>
+            <Stat Type="formation_place">0</Stat>
+          </MatchPlayer>
+        </PlayerLineUp>
+        <ShootOut FirstPenalty="1">
+          <PenaltyShot EventID="1971261768" EventNumber="512124" Outcome="Scored" PlayerRef="p61960" TimeStamp="20140705T234106+0100" uID="pen838-1" />
+        </ShootOut>
+        <Stat EFH="1" ESH="0" FH="1" SH="0" Type="total_through_ball">2</Stat>
+        <Stat EFH="2" ESH="0" FH="3" SH="5" Type="total_flick_on">10</Stat>
+        <Stat EFH="6" ESH="7" FH="25" SH="30" Type="duel_lost">68</Stat>
+        <Stat EFH="1" ESH="0" FH="3" SH="1" Type="diving_save">5</Stat>
+        <Stat EFH="0" ESH="2" FH="0" SH="0" Type="blocked_scoring_att">2</Stat>
+        <Stat EFH="6" ESH="9" FH="34" SH="23" Type="leftside_pass">72</Stat>
+        <Stat EFH="0" ESH="2" FH="2" SH="1" Type="poss_won_att_3rd">5</Stat>
+        <Stat EFH="0" ESH="1" FH="6" SH="5" Type="dispossessed">12</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="accurate_keeper_sweeper">1</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="accurate_cross">1</Stat>
+        <Stat EFH="0" ESH="1" FH="1" SH="1" Type="att_rf_total">3</Stat>
+        <Stat EFH="0" ESH="2" FH="0" SH="0" Type="att_bx_right">2</Stat>
+        <Stat EFH="18" ESH="28" FH="117" SH="82" Type="accurate_pass">245</Stat>
+        <Stat EFH="2" ESH="0" FH="5" SH="8" Type="won_tackle">15</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_assist_setplay">1</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_freekick_miss">1</Stat>
+        <Stat EFH="9" ESH="12" FH="30" SH="33" Type="total_final_third_passes">84</Stat>
+        <Stat EFH="8" ESH="5" FH="30" SH="24" Type="rightside_pass">67</Stat>
+        <Stat EFH="2" ESH="3" FH="2" SH="4" Type="attempts_conceded_ibox">11</Stat>
+        <Stat EFH="63" ESH="80" FH="236" SH="199" Type="touches">578</Stat>
+        <Stat EFH="24" ESH="36" FH="84" SH="61" Type="total_fwd_zone_pass">205</Stat>
+        <Stat EFH="0" ESH="2" FH="1" SH="0" Type="att_assist_openplay">3</Stat>
+        <Stat EFH="0" ESH="2" FH="4" SH="0" Type="won_contest">6</Stat>
+        <Stat EFH="10" ESH="20" FH="55" SH="36" Type="accurate_fwd_zone_pass">121</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="clearance_off_line">1</Stat>
+        <Stat EFH="5" ESH="4" FH="11" SH="17" Type="total_chipped_pass">37</Stat>
+        <Stat EFH="4" ESH="2" FH="10" SH="16" Type="effective_head_clearance">32</Stat>
+        <Stat EFH="3" ESH="2" FH="2" SH="4" Type="lost_corners">11</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="2" Type="fouled_final_third">4</Stat>
+        <Stat EFH="1" ESH="0" FH="4" SH="2" Type="saves">7</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="ontarget_scoring_att">1</Stat>
+        <Stat EFH="0" ESH="3" FH="1" SH="2" Type="total_scoring_att">6</Stat>
+        <Stat EFH="1" ESH="3" FH="5" SH="7" Type="blocked_pass">16</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="total_high_claim">1</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="2" Type="accurate_flick_on">2</Stat>
+        <Stat EFH="3" ESH="2" FH="2" SH="2" Type="attempts_conceded_obox">9</Stat>
+        <Stat EFH="5" ESH="8" FH="21" SH="16" Type="ball_recovery">50</Stat>
+        <Stat EFH="1" ESH="0" FH="0" SH="2" Type="subs_made">3</Stat>
+        <Stat EFH="2" ESH="2" FH="9" SH="9" Type="poss_won_def_3rd">22</Stat>
+        <Stat EFH="8" ESH="8" FH="62" SH="47" Type="accurate_back_zone_pass">125</Stat>
+        <Stat EFH="3" ESH="17" FH="20" SH="8" Type="passes_right">48</Stat>
+        <Stat EFH="4" ESH="1" FH="8" SH="9" Type="total_throws">22</Stat>
+        <Stat EFH="18" ESH="25" FH="109" SH="78" Type="successful_open_play_pass">230</Stat>
+        <Stat EFH="11" ESH="9" FH="70" SH="52" Type="total_back_zone_pass">142</Stat>
+        <Stat EFH="0" ESH="4" FH="14" SH="4" Type="accurate_layoffs">22</Stat>
+        <Stat EFH="5" ESH="8" FH="26" SH="22" Type="total_long_balls">61</Stat>
+        <Stat EFH="0" ESH="1" FH="1" SH="2" Type="total_yel_card">4</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="accurate_keeper_throws">1</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_obx_centre">1</Stat>
+        <Stat EFH="0" ESH="3" FH="0" SH="0" Type="att_openplay">3</Stat>
+        <Stat EFH="2" ESH="3" FH="8" SH="5" Type="poss_won_mid_3rd">18</Stat>
+        <Stat EFH="1" ESH="3" FH="5" SH="7" Type="put_through">16</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="error_lead_to_shot">1</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="att_ibox_target">1</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="1" Type="freekick_cross">3</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_freekick_total">1</Stat>
+        <Stat EFH="4" ESH="2" FH="10" SH="16" Type="head_clearance">32</Stat>
+        <Stat EFH="2" ESH="2" FH="1" SH="6" Type="goal_kicks">11</Stat>
+        <Stat EFH="0" ESH="2" FH="0" SH="0" Type="att_lf_total">2</Stat>
+        <Stat EFH="31" ESH="39" FH="138" SH="102" Type="open_play_pass">310</Stat>
+        <Stat EFH="2" ESH="5" FH="7" SH="4" Type="aerial_won">18</Stat>
+        <Stat EFH="35" ESH="44" FH="150" SH="109" Type="total_pass">338</Stat>
+        <Stat EFH="5" ESH="5" FH="9" SH="9" Type="total_launches">28</Stat>
+        <Stat EFH="18" ESH="24" FH="59" SH="53" Type="fwd_pass">154</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_cmiss_high_right">1</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="1" Type="effective_blocked_cross">3</Stat>
+        <Stat EFH="3" ESH="2" FH="0" SH="1" Type="outfielder_block">6</Stat>
+        <Stat EFH="0" ESH="1" FH="1" SH="1" Type="interceptions_in_box">3</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="total_corners_intobox">1</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="1" Type="blocked_cross">3</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="att_miss_right">1</Stat>
+        <Stat EFH="0" ESH="2" FH="0" SH="0" Type="ontarget_att_assist">2</Stat>
+        <Stat EFH="11" ESH="14" FH="30" SH="32" Type="long_pass_own_to_opp">87</Stat>
+        <Stat EFH="2" ESH="1" FH="4" SH="7" Type="accurate_chipped_pass">14</Stat>
+        <Stat EFH="4" ESH="7" FH="29" SH="17" Type="duel_won">57</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="total_keeper_sweeper">1</Stat>
+        <Stat EFH="1" ESH="4" FH="12" SH="17" Type="successful_final_third_passes">34</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="shield_ball_oop">1</Stat>
+        <Stat EFH="1" ESH="2" FH="8" SH="3" Type="fk_foul_won">14</Stat>
+        <Stat EFH="0" ESH="0" FH="4" SH="4" Type="total_cross_nocorner">8</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="keeper_throws">1</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="att_bx_left">1</Stat>
+        <Stat EFH="1" ESH="2" FH="5" SH="3" Type="successful_put_through">11</Stat>
+        <Stat EFH="2" ESH="0" FH="10" SH="10" Type="total_tackle">22</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="2" Type="total_offside">2</Stat>
+        <Stat EFH="6" ESH="5" FH="16" SH="17" Type="passes_left">44</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="att_rf_target">1</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="good_high_claim">1</Stat>
+        <Stat EFH="0" ESH="3" FH="2" SH="3" Type="accurate_launches">8</Stat>
+        <Stat EFH="21" ESH="26" FH="54" SH="51" Type="poss_lost_all">152</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="att_sv_low_centre">1</Stat>
+        <Stat EFH="0" ESH="4" FH="12" SH="13" Type="accurate_long_balls">29</Stat>
+        <Stat EFH="0" ESH="1" FH="8" SH="6" Type="challenge_lost">15</Stat>
+        <Stat EFH="0" ESH="1" FH="4" SH="4" Type="total_cross">9</Stat>
+        <Stat Type="clean_sheet">1</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="1" Type="att_ibox_miss">2</Stat>
+        <Stat EFH="1" ESH="0" FH="1" SH="5" Type="accurate_goal_kicks">7</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="1" Type="saved_obox">3</Stat>
+        <Stat EFH="2" ESH="2" FH="5" SH="7" Type="unsuccessful_touch">16</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="2" Type="shot_off_target">3</Stat>
+        <Stat EFH="21" ESH="26" FH="54" SH="51" Type="poss_lost_ctrl">152</Stat>
+        <Stat EFH="1" ESH="0" FH="1" SH="0" Type="hand_ball">2</Stat>
+        <Stat EFH="0" ESH="2" FH="0" SH="0" Type="att_ibox_blocked">2</Stat>
+        <Stat EFH="6" ESH="2" FH="6" SH="10" Type="aerial_lost">24</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="3" Type="crosses_18yard">4</Stat>
+        <Stat EFH="8" ESH="12" FH="30" SH="25" Type="final_third_entries">75</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="overrun">1</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_hd_total">1</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="accurate_cross_nocorner">1</Stat>
+        <Stat EFH="8" ESH="11" FH="18" SH="25" Type="effective_clearance">62</Stat>
+        <Stat EFH="1" ESH="1" FH="4" SH="7" Type="fk_foul_lost">13</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_hd_miss">1</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="won_corners">1</Stat>
+        <Stat EFH="33.9" ESH="39.8" FH="31.3" SH="31.8" Type="possession_percentage">32.7</Stat>
+        <Stat EFH="2" ESH="2" FH="3" SH="4" Type="interception">11</Stat>
+        <Stat EFH="0" ESH="0" FH="2" SH="3" Type="attempted_tackle_foul">5</Stat>
+        <Stat EFH="3" ESH="6" FH="27" SH="9" Type="backward_pass">45</Stat>
+        <Stat EFH="2" ESH="2" FH="3" SH="4" Type="interception_won">11</Stat>
+        <Stat EFH="2" ESH="2" FH="6" SH="5" Type="pen_area_entries">15</Stat>
+        <Stat EFH="3" ESH="0" FH="4" SH="5" Type="accurate_throws">12</Stat>
+        <Stat EFH="0" ESH="4" FH="15" SH="5" Type="total_layoffs">24</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="accurate_freekick_cross">1</Stat>
+        <Stat EFH="0" ESH="4" FH="6" SH="2" Type="total_contest">12</Stat>
+        <Stat EFH="8" ESH="11" FH="18" SH="25" Type="total_clearance">62</Stat>
+        <Stat EFH="1" ESH="7" FH="15" SH="16" Type="long_pass_own_to_opp_success">39</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="total_pull_back">1</Stat>
+        <Stat EFH="1" ESH="0" FH="2" SH="2" Type="saved_ibox">5</Stat>
+        <Stat EFH="0" ESH="2" FH="1" SH="1" Type="total_att_assist">4</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="1" Type="att_setpiece">2</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_miss_high">1</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="1" Type="offtarget_att_assist">2</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_obox_miss">1</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="corner_taken">1</Stat>
+        <Stat EFH="0" ESH="0" FH="0" SH="1" Type="att_miss_high_right">1</Stat>
+        <Stat EFH="0" ESH="0" FH="1" SH="0" Type="crosses_18yardplus">1</Stat>
+        <Stat EFH="1" ESH="0" FH="0" SH="1" Type="punches">2</Stat>
+        <Stat EFH="0" ESH="1" FH="0" SH="0" Type="total_fastbreak">1</Stat>
+        <Stat Type="formation_used">541</Stat>
+        <Substitution EventID="435443423" EventNumber="26621" Period="2" Reason="Tactical" SubOff="p99127" SubOn="p77755" SubstitutePosition="4" Time="66" TimeStamp="20140705T222334+0100" uID="s838-1" />
+        <Substitution EventID="226084831" EventNumber="27922" Period="2" Reason="Injury" SubOff="p77760" SubOn="p78506" SubstitutePosition="2" Time="79" TimeStamp="20140705T223613+0100" uID="s838-2" />
+        <Substitution EventID="848163458" EventNumber="39723" Period="3" Reason="Tactical" SubOff="p102683" SubOn="p99129" SubstitutePosition="3" Time="97" TimeStamp="20140705T230451+0100" uID="s838-3" />
+      </TeamData>
+    </MatchData>
+    <Team uID="t366">
+      <Country>Netherlands</Country>
+      <Name>Netherlands</Name>
+      <Player Position="Goalkeeper" uID="p72162">
+        <PersonName>
+          <First>Jasper</First>
+          <Last>Cillessen</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Defender" uID="p78140">
+        <PersonName>
+          <First>Stefan</First>
+          <Last>de Vrij</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Defender" uID="p21095">
+        <PersonName>
+          <First>Ron</First>
+          <Last>Vlaar</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Defender" uID="p85352">
+        <PersonName>
+          <First>Bruno</First>
+          <Last>Martins Indi</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Midfielder" uID="p4719">
+        <PersonName>
+          <First>Dirk</First>
+          <Last>Kuyt</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Midfielder" uID="p15403">
+        <PersonName>
+          <First>Wesley</First>
+          <Last>Sneijder</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Midfielder" uID="p41733">
+        <PersonName>
+          <First>Georginio</First>
+          <Last>Wijnaldum</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Midfielder" uID="p58877">
+        <PersonName>
+          <First>Daley</First>
+          <Last>Blind</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Striker" uID="p106824">
+        <PersonName>
+          <First>Memphis</First>
+          <Last>Depay</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Striker" uID="p12297">
+        <PersonName>
+          <First>Robin</First>
+          <Last>van Persie</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Striker" uID="p8533">
+        <PersonName>
+          <First>Arjen</First>
+          <Last>Robben</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p111478">
+        <PersonName>
+          <First>Joël</First>
+          <Last>Veltman</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p39187">
+        <PersonName>
+          <First>Jeremain</First>
+          <Last>Lens</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p39077">
+        <PersonName>
+          <First>Paul</First>
+          <Last>Verhaegh</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p109434">
+        <PersonName>
+          <First>Terence</First>
+          <Last>Kongolo</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p85654">
+        <PersonName>
+          <First>Jordy</First>
+          <Last>Clasie</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p20480">
+        <PersonName>
+          <First>Tim</First>
+          <Last>Krul</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p39215">
+        <PersonName>
+          <First>Michel</First>
+          <Last>Vorm</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p52940">
+        <PersonName>
+          <First>Daryl</First>
+          <Last>Janmaat</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p39204">
+        <PersonName>
+          <First>Jonathan</First>
+          <Last>de Guzmán</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p14941">
+        <PersonName>
+          <First>Klaas-Jan</First>
+          <Last>Huntelaar</Last>
+        </PersonName>
+      </Player>
+      <TeamOfficial Type="Manager" uID="man61">
+        <PersonName>
+          <First>Louis</First>
+          <Last>Van Gaal</Last>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+    <Team uID="t838">
+      <Country>Costa Rica</Country>
+      <Name>Costa Rica</Name>
+      <Player Position="Goalkeeper" uID="p28411">
+        <PersonName>
+          <First>Keylor</First>
+          <Last>Navas</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Defender" uID="p34352">
+        <PersonName>
+          <First>Michael</First>
+          <Last>Umaña</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Defender" uID="p99123">
+        <PersonName>
+          <First>Johnny</First>
+          <Last>Acosta</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Defender" uID="p105021">
+        <PersonName>
+          <First>Giancarlo</First>
+          <Last>Gonzalez</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Defender" uID="p77760">
+        <PersonName>
+          <First>Cristian</First>
+          <Last>Gamboa</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Defender" uID="p34355">
+        <PersonName>
+          <First>Júnior Enrique</First>
+          <Known>Júnior Díaz</Known>
+          <Last>Díaz Campbell</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Midfielder" uID="p99127">
+        <PersonName>
+          <First>Joel</First>
+          <Last>Campbell</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Midfielder" uID="p102683">
+        <PersonName>
+          <First>Yeltsin</First>
+          <Known>Yeltsin Tejeda</Known>
+          <Last>Tejeda Valverde</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Midfielder" uID="p28392">
+        <PersonName>
+          <First>Christian</First>
+          <Last>Bolaños</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Midfielder" uID="p61960">
+        <PersonName>
+          <First>Celso</First>
+          <Last>Borges</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Striker" uID="p37084">
+        <PersonName>
+          <First>Bryan</First>
+          <Last>Ruiz</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p121319">
+        <PersonName>
+          <First>Óscar Esteban</First>
+          <Known>Esteban Granados</Known>
+          <Last>Granados Maroto</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p105080">
+        <PersonName>
+          <First>Daniel</First>
+          <Last>Cambronero</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p63793">
+        <PersonName>
+          <First>Randall</First>
+          <Last>Brenes</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p105017">
+        <PersonName>
+          <First>Patrick</First>
+          <Last>Pemberton</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p102679">
+        <PersonName>
+          <First>Diego</First>
+          <Last>Calvo</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p121332">
+        <PersonName>
+          <First>Waylon</First>
+          <Last>Francis</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p78506">
+        <PersonName>
+          <First>David</First>
+          <Last>Myrie</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p77755">
+        <PersonName>
+          <First>Marcos</First>
+          <Last>Ureña</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p83591">
+        <PersonName>
+          <First>Michael</First>
+          <Known>Michael Barrantes</Known>
+          <Last>Barrantes</Last>
+        </PersonName>
+      </Player>
+      <Player Position="Substitute" uID="p99129">
+        <PersonName>
+          <First>José</First>
+          <Last>Cubero</Last>
+        </PersonName>
+      </Player>
+      <TeamOfficial Type="Manager" uID="man37721">
+        <PersonName>
+          <First>Jorge Luis</First>
+          <Last>Pinto</Last>
+        </PersonName>
+      </TeamOfficial>
+    </Team>
+    <Venue uID="v8605">
+      <Name>Arena Fonte Nova</Name>
+    </Venue>
+  </SoccerDocument>
+</SoccerFeed>

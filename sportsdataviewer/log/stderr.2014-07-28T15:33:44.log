@@ -1,0 +1,348 @@
+[Mon, 28 Jul 2014 19:03:03 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:03:03 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2120 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:2
+    1| <div class="commentary" id="initialCommentary">
+ >> 2| 	<% for( var i=0; i < json.commentary.length; i++ ) { %>
+    3| 
+    4| 		<div class="update<% if (i === 0){ %> current<% } %>">
+    5| 			
+json is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:663)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:09:49 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:09:49 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2120 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:2
+    1| <div class="commentary" id="initialCommentary">
+ >> 2| 	<% for( var i=0; i < json.commentary.length; i++ ) { %>
+    3| 
+    4| 		<div class="update<% if (i === 0){ %> current<% } %>">
+    5| 			
+json is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:663)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:10:08 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:10:08 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2120 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:2
+    1| <div class="commentary" id="initialCommentary">
+ >> 2| 	<% for( var i=0; i < json.commentary.length; i++ ) { %>
+    3| 
+    4| 		<div class="update<% if (i === 0){ %> current<% } %>">
+    5| 			
+json is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:665)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:11:34 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:11:34 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2102 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:3
+    1| <h1>SOCCER <i>(is weird)</i></h1>
+    2| 
+ >> 3| <%= html = new EJS({url: 'commentary'}).render(data); %>
+    4| 
+    5| 
+    6| <div class="commentary" id="initialCommentary">
+EJS is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:821)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:11:48 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:11:48 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2120 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:3
+    1| <h1>SOCCER <i>(is weird)</i></h1>
+    2| 
+ >> 3| <%= html = new EJS({url: 'app/views/soccers/commentary'}).render(data); %>
+    4| 
+    5| 
+    6| <div class="commentary" id="initialCommentary">
+EJS is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:839)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:12:01 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:12:01 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:3
+    1| <h1>SOCCER <i>(is weird)</i></h1>
+    2| 
+ >> 3| <%= html = new EJS({url: 'app/views/soccers/commentary.html.ejs'}).render(data); %>
+    4| 
+    5| 
+    6| <div class="commentary" id="initialCommentary">
+EJS is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:848)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:12:22 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:12:22 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:3
+    1| <h1>SOCCER <i>(is weird)</i></h1>
+    2| 
+ >> 3| <%= html = new EJS({url: 'app/views/soccers/commentary.html.ejs'}).render(json); %>
+    4| 
+    5| 
+    6| <div class="commentary" id="initialCommentary">
+EJS is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:848)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:12:22 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:12:22 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:3
+    1| <h1>SOCCER <i>(is weird)</i></h1>
+    2| 
+ >> 3| <%= html = new EJS({url: 'app/views/soccers/commentary.html.ejs'}).render(json); %>
+    4| 
+    5| 
+    6| <div class="commentary" id="initialCommentary">
+EJS is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:848)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:13:00 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:13:00 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1764 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected token (
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:13:43 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:13:43 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2139 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:3
+    1| FOOOOasdfasd
+    2| <div class="commentary" id="initialCommentary">
+ >> 3| 	<% for( var i=0; i < json.commentary.length; i++ ) { %>
+    4| 
+    5| 		<div class="update<% if (i === 0){ %> current<% } %>">
+    6| 			
+json is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:94:5), <anonymous>:2:678)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:17:52 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:17:52 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2127 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:4
+    2| 
+    3| <div class="commentary" id="initialCommentary">
+ >> 4| 	<% for( var i=0; i < json.commentary.length; i++ ) { %>
+    5| 
+    6| 		<div class="update<% if (i === 0){ %> current<% } %>">
+    7| 			
+json is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:94:5), <anonymous>:2:676)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:18:03 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:18:03 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2127 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:4
+    2| 
+    3| <div class="commentary" id="initialCommentary">
+ >> 4| 	<% for( var i=0; i < json.commentary.length; i++ ) { %>
+    5| 
+    6| 		<div class="update<% if (i === 0){ %> current<% } %>">
+    7| 			
+json is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:94:5), <anonymous>:2:676)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:18:04 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:18:04 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2127 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:4
+    2| 
+    3| <div class="commentary" id="initialCommentary">
+ >> 4| 	<% for( var i=0; i < json.commentary.length; i++ ) { %>
+    5| 
+    6| 		<div class="update<% if (i === 0){ %> current<% } %>">
+    7| 			
+json is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:94:5), <anonymous>:2:676)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:18:04 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:18:04 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2127 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:4
+    2| 
+    3| <div class="commentary" id="initialCommentary">
+ >> 4| 	<% for( var i=0; i < json.commentary.length; i++ ) { %>
+    5| 
+    6| 		<div class="update<% if (i === 0){ %> current<% } %>">
+    7| 			
+json is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:94:5), <anonymous>:2:676)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:18:30 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:18:30 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2082 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:3
+    1| <h1>SOCCER <i>(is weird)</i></h1>
+    2| 
+ >> 3| <%= partial('commentary', json); %>
+    4| 
+    5| 
+    6| <div class="commentary" id="initialCommentary">
+json is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:800)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:18:39 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:18:39 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2082 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:3
+    1| <h1>SOCCER <i>(is weird)</i></h1>
+    2| 
+ >> 3| <%= partial('commentary', json); %>
+    4| 
+    5| 
+    6| <div class="commentary" id="initialCommentary">
+json is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:800)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:25:35 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:25:35 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1767 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:26:06 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:26:06 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1767 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:28:50 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:28:50 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2144 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:3
+    1| HUMMMMMM
+    2| <div class="commentary" id="initialCommentary">
+ >> 3| 	<% for( var i=0; i < gameData.commentary.length; i++ ) { %>
+    4| 
+    5| 		<div class="update<% if (i === 0){ %> current<% } %>">
+    6| 			
+gameData is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:686)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:33:31 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:33:31 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1662 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: Partial template "game-overview" not found in app/views, . and app/views/soccers
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+    at Object.oncomplete (fs.js:107:15)

@@ -1,0 +1,1073 @@
+[
+  {
+    "id": "p19928",
+    "firstName": "Julio Cesar",
+    "lastName": "Soares De Espindola",
+    "IDTeam": "t614",
+    "team": "Brazil",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 3,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 2,
+        "saved_ibox": 1,
+        "touches": 24,
+        "IDGame": "f731767"
+      },
+      {
+        "goals_conceded": 0,
+        "saves": 2,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 1,
+        "saved_ibox": 1,
+        "touches": 23,
+        "IDGame": "f731783"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 1,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 42,
+        "IDGame": "f731815"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 1,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 1,
+        "saved_ibox": 0,
+        "touches": 25,
+        "IDGame": "f731823"
+      },
+      {
+        "goals_conceded": 3,
+        "saves": 1,
+        "goals_conceded_ibox": 3,
+        "saved_obox": 1,
+        "saved_ibox": 0,
+        "touches": 21,
+        "IDGame": "f731829"
+      },
+      {
+        "goals_conceded": 7,
+        "saves": 3,
+        "goals_conceded_ibox": 7,
+        "saved_obox": 2,
+        "saved_ibox": 1,
+        "touches": 33,
+        "IDGame": "f731827"
+      }
+    ],
+    "goals_conceded": 13,
+    "saves": 11,
+    "goals_conceded_ibox": 13,
+    "saved_obox": 7,
+    "saved_ibox": 4,
+    "touches": 168
+  },
+  {
+    "id": "p33376",
+    "firstName": "Guillermo",
+    "lastName": "Ochoa",
+    "IDTeam": "t659",
+    "team": "Mexico",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 1,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 23,
+        "IDGame": "f731768"
+      }
+    ],
+    "goals_conceded": 0,
+    "saves": 1,
+    "goals_conceded_ibox": 0,
+    "saved_obox": 0,
+    "saved_ibox": 1,
+    "touches": 23
+  },
+  {
+    "id": "p4232",
+    "firstName": "Iker",
+    "lastName": "Casillas",
+    "IDTeam": "t118",
+    "team": "Spain",
+    "gameArray": [
+      {
+        "goals_conceded": 5,
+        "saves": 5,
+        "goals_conceded_ibox": 5,
+        "saved_obox": 3,
+        "saved_ibox": 2,
+        "touches": 20,
+        "IDGame": "f731769"
+      },
+      {
+        "goals_conceded": 2,
+        "saves": 2,
+        "goals_conceded_ibox": 2,
+        "saved_obox": 2,
+        "saved_ibox": 0,
+        "touches": 30,
+        "IDGame": "f731785"
+      }
+    ],
+    "goals_conceded": 7,
+    "saves": 7,
+    "goals_conceded_ibox": 7,
+    "saved_obox": 5,
+    "saved_ibox": 2,
+    "touches": 50
+  },
+  {
+    "id": "p33148",
+    "firstName": "Claudio",
+    "lastName": "Bravo",
+    "IDTeam": "t831",
+    "team": "Chile",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 3,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 0,
+        "saved_ibox": 3,
+        "touches": 52,
+        "IDGame": "f731770"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 3,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 0,
+    "saved_ibox": 3,
+    "touches": 52
+  },
+  {
+    "id": "p48844",
+    "firstName": "David",
+    "lastName": "Ospina",
+    "IDTeam": "t832",
+    "team": "Colombia",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 2,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 2,
+        "saved_ibox": 0,
+        "touches": 35,
+        "IDGame": "f731771"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 2,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 1,
+        "saved_ibox": 1,
+        "touches": 38,
+        "IDGame": "f731787"
+      },
+      {
+        "goals_conceded": 0,
+        "saves": 4,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 3,
+        "saved_ibox": 1,
+        "touches": 46,
+        "IDGame": "f731816"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 8,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 6,
+    "saved_ibox": 2,
+    "touches": 119
+  },
+  {
+    "id": "p12056",
+    "firstName": "Boubacar",
+    "lastName": "Barry",
+    "IDTeam": "t1221",
+    "team": "Côte d'Ivoire",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 1,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 33,
+        "IDGame": "f731772"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 1,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 0,
+    "saved_ibox": 1,
+    "touches": 33
+  },
+  {
+    "id": "p42864",
+    "firstName": "Fernando",
+    "lastName": "Muslera",
+    "IDTeam": "t837",
+    "team": "Uruguay",
+    "gameArray": [
+      {
+        "goals_conceded": 3,
+        "saves": 1,
+        "goals_conceded_ibox": 3,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 27,
+        "IDGame": "f731773"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 5,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 2,
+        "saved_ibox": 3,
+        "touches": 34,
+        "IDGame": "f731789"
+      }
+    ],
+    "goals_conceded": 4,
+    "saves": 6,
+    "goals_conceded_ibox": 4,
+    "saved_obox": 2,
+    "saved_ibox": 4,
+    "touches": 61
+  },
+  {
+    "id": "p15749",
+    "firstName": "Joe",
+    "lastName": "Hart",
+    "IDTeam": "t114",
+    "team": "England",
+    "gameArray": [
+      {
+        "goals_conceded": 2,
+        "saves": 1,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 1,
+        "saved_ibox": 0,
+        "touches": 27,
+        "IDGame": "f731774"
+      }
+    ],
+    "goals_conceded": 2,
+    "saves": 1,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 1,
+    "saved_ibox": 0,
+    "touches": 27
+  },
+  {
+    "id": "p11973",
+    "firstName": "Diego",
+    "lastName": "Benaglio",
+    "IDTeam": "t497",
+    "team": "Switzerland",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 3,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 2,
+        "saved_ibox": 1,
+        "touches": 42,
+        "IDGame": "f731775"
+      },
+      {
+        "goals_conceded": 5,
+        "saves": 7,
+        "goals_conceded_ibox": 5,
+        "saved_obox": 2,
+        "saved_ibox": 5,
+        "touches": 29,
+        "IDGame": "f731791"
+      }
+    ],
+    "goals_conceded": 6,
+    "saves": 10,
+    "goals_conceded_ibox": 6,
+    "saved_obox": 4,
+    "saved_ibox": 6,
+    "touches": 71
+  },
+  {
+    "id": "p37915",
+    "firstName": "Hugo",
+    "lastName": "Lloris",
+    "IDTeam": "t368",
+    "team": "France",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 1,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 25,
+        "IDGame": "f731776"
+      },
+      {
+        "goals_conceded": 0,
+        "saves": 2,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 2,
+        "saved_ibox": 0,
+        "touches": 29,
+        "IDGame": "f731819"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 2,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 0,
+        "saved_ibox": 2,
+        "touches": 37,
+        "IDGame": "f731824"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 5,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 2,
+    "saved_ibox": 3,
+    "touches": 91
+  },
+  {
+    "id": "p42899",
+    "firstName": "Sergio",
+    "lastName": "Romero",
+    "IDTeam": "t632",
+    "team": "Argentina",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 5,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 4,
+        "saved_ibox": 1,
+        "touches": 32,
+        "IDGame": "f731777"
+      },
+      {
+        "goals_conceded": 0,
+        "saves": 3,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 0,
+        "saved_ibox": 3,
+        "touches": 21,
+        "IDGame": "f731793"
+      },
+      {
+        "goals_conceded": 0,
+        "saves": 4,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 2,
+        "saved_ibox": 2,
+        "touches": 34,
+        "IDGame": "f731821"
+      },
+      {
+        "goals_conceded": 0,
+        "saves": 2,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 1,
+        "saved_ibox": 0,
+        "touches": 44,
+        "IDGame": "f731826"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 14,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 7,
+    "saved_ibox": 6,
+    "touches": 131
+  },
+  {
+    "id": "p111674",
+    "firstName": "Alireza",
+    "lastName": "Haghighi",
+    "IDTeam": "t1042",
+    "team": "Iran",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 4,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 3,
+        "saved_ibox": 1,
+        "touches": 43,
+        "IDGame": "f731778"
+      }
+    ],
+    "goals_conceded": 0,
+    "saves": 4,
+    "goals_conceded_ibox": 0,
+    "saved_obox": 3,
+    "saved_ibox": 1,
+    "touches": 43
+  },
+  {
+    "id": "p20388",
+    "firstName": "Manuel",
+    "lastName": "Neuer",
+    "IDTeam": "t357",
+    "team": "Germany",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 4,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 2,
+        "saved_ibox": 2,
+        "touches": 34,
+        "IDGame": "f731779"
+      },
+      {
+        "goals_conceded": 2,
+        "saves": 4,
+        "goals_conceded_ibox": 2,
+        "saved_obox": 3,
+        "saved_ibox": 1,
+        "touches": 42,
+        "IDGame": "f731795"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 3,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 2,
+        "saved_ibox": 1,
+        "touches": 59,
+        "IDGame": "f731820"
+      },
+      {
+        "goals_conceded": 0,
+        "saves": 1,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 0,
+        "saved_ibox": 0,
+        "touches": 54,
+        "IDGame": "f731830"
+      }
+    ],
+    "goals_conceded": 3,
+    "saves": 12,
+    "goals_conceded_ibox": 3,
+    "saved_obox": 7,
+    "saved_ibox": 4,
+    "touches": 189
+  },
+  {
+    "id": "p61988",
+    "firstName": "Adam",
+    "lastName": "Larsen Kwarasey",
+    "IDTeam": "t1219",
+    "team": "Ghana",
+    "gameArray": [
+      {
+        "goals_conceded": 2,
+        "saves": 2,
+        "goals_conceded_ibox": 2,
+        "saved_obox": 2,
+        "saved_ibox": 0,
+        "touches": 28,
+        "IDGame": "f731780"
+      }
+    ],
+    "goals_conceded": 2,
+    "saves": 2,
+    "goals_conceded_ibox": 2,
+    "saved_obox": 2,
+    "saved_ibox": 0,
+    "touches": 28
+  },
+  {
+    "id": "p60772",
+    "firstName": "Thibaut",
+    "lastName": "Courtois",
+    "IDTeam": "t360",
+    "team": "Belgium",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 0,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 0,
+        "saved_ibox": 0,
+        "touches": 16,
+        "IDGame": "f731781"
+      },
+      {
+        "goals_conceded": 0,
+        "saves": 3,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 3,
+        "saved_ibox": 0,
+        "touches": 33,
+        "IDGame": "f731797"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 4,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 2,
+        "saved_ibox": 2,
+        "touches": 39,
+        "IDGame": "f731822"
+      }
+    ],
+    "goals_conceded": 2,
+    "saves": 7,
+    "goals_conceded_ibox": 2,
+    "saved_obox": 5,
+    "saved_ibox": 2,
+    "touches": 88
+  },
+  {
+    "id": "p18090",
+    "firstName": "Igor",
+    "lastName": "Akinfeev",
+    "IDTeam": "t536",
+    "team": "Russia",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 4,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 3,
+        "saved_ibox": 1,
+        "touches": 29,
+        "IDGame": "f731782"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 4,
+    "goals_conceded_ibox": 0,
+    "saved_obox": 3,
+    "saved_ibox": 1,
+    "touches": 29
+  },
+  {
+    "id": "p131897",
+    "firstName": "Matthew",
+    "lastName": "Ryan",
+    "IDTeam": "t575",
+    "team": "Australia",
+    "gameArray": [
+      {
+        "goals_conceded": 3,
+        "saves": 6,
+        "goals_conceded_ibox": 2,
+        "saved_obox": 2,
+        "saved_ibox": 4,
+        "touches": 49,
+        "IDGame": "f731786"
+      },
+      {
+        "goals_conceded": 3,
+        "saves": 1,
+        "goals_conceded_ibox": 3,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 58,
+        "IDGame": "f731801"
+      }
+    ],
+    "goals_conceded": 6,
+    "saves": 7,
+    "goals_conceded_ibox": 5,
+    "saved_obox": 2,
+    "saved_ibox": 5,
+    "touches": 107
+  },
+  {
+    "id": "p19739",
+    "firstName": "Eiji",
+    "lastName": "Kawashima",
+    "IDTeam": "t1266",
+    "team": "Japan",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 4,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 1,
+        "saved_ibox": 3,
+        "touches": 33,
+        "IDGame": "f731788"
+      },
+      {
+        "goals_conceded": 4,
+        "saves": 0,
+        "goals_conceded_ibox": 4,
+        "saved_obox": 0,
+        "saved_ibox": 0,
+        "touches": 27,
+        "IDGame": "f731803"
+      }
+    ],
+    "goals_conceded": 4,
+    "saves": 4,
+    "goals_conceded_ibox": 4,
+    "saved_obox": 1,
+    "saved_ibox": 3,
+    "touches": 60
+  },
+  {
+    "id": "p4126",
+    "firstName": "Gianluigi",
+    "lastName": "Buffon",
+    "IDTeam": "t119",
+    "team": "Italy",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 4,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 4,
+        "saved_ibox": 0,
+        "touches": 43,
+        "IDGame": "f731790"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 4,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 1,
+        "saved_ibox": 3,
+        "touches": 34,
+        "IDGame": "f731805"
+      }
+    ],
+    "goals_conceded": 2,
+    "saves": 8,
+    "goals_conceded_ibox": 2,
+    "saved_obox": 5,
+    "saved_ibox": 3,
+    "touches": 77
+  },
+  {
+    "id": "p34302",
+    "firstName": "Noel",
+    "lastName": "Valladares",
+    "IDTeam": "t847",
+    "team": "Honduras",
+    "gameArray": [
+      {
+        "goals_conceded": 2,
+        "saves": 2,
+        "goals_conceded_ibox": 2,
+        "saved_obox": 1,
+        "saved_ibox": 1,
+        "touches": 24,
+        "IDGame": "f731792"
+      },
+      {
+        "goals_conceded": 3,
+        "saves": 7,
+        "goals_conceded_ibox": 2,
+        "saved_obox": 1,
+        "saved_ibox": 6,
+        "touches": 32,
+        "IDGame": "f731807"
+      }
+    ],
+    "goals_conceded": 5,
+    "saves": 9,
+    "goals_conceded_ibox": 4,
+    "saved_obox": 2,
+    "saved_ibox": 7,
+    "touches": 56
+  },
+  {
+    "id": "p10995",
+    "firstName": "Charles",
+    "lastName": "Itandje",
+    "IDTeam": "t494",
+    "team": "Cameroon",
+    "gameArray": [
+      {
+        "goals_conceded": 4,
+        "saves": 5,
+        "goals_conceded_ibox": 4,
+        "saved_obox": 2,
+        "saved_ibox": 3,
+        "touches": 41,
+        "IDGame": "f731784"
+      },
+      {
+        "goals_conceded": 4,
+        "saves": 6,
+        "goals_conceded_ibox": 4,
+        "saved_obox": 4,
+        "saved_ibox": 2,
+        "touches": 46,
+        "IDGame": "f731799"
+      }
+    ],
+    "goals_conceded": 8,
+    "saves": 11,
+    "goals_conceded_ibox": 8,
+    "saved_obox": 6,
+    "saved_ibox": 5,
+    "touches": 87
+  },
+  {
+    "id": "p13262",
+    "firstName": "Vincent",
+    "lastName": "Enyeama",
+    "IDTeam": "t1216",
+    "team": "Nigeria",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 7,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 2,
+        "saved_ibox": 5,
+        "touches": 47,
+        "IDGame": "f731794"
+      },
+      {
+        "goals_conceded": 3,
+        "saves": 10,
+        "goals_conceded_ibox": 2,
+        "saved_obox": 5,
+        "saved_ibox": 5,
+        "touches": 45,
+        "IDGame": "f731809"
+      }
+    ],
+    "goals_conceded": 3,
+    "saves": 17,
+    "goals_conceded_ibox": 2,
+    "saved_obox": 7,
+    "saved_ibox": 10,
+    "touches": 92
+  },
+  {
+    "id": "p15337",
+    "firstName": "Tim",
+    "lastName": "Howard",
+    "IDTeam": "t596",
+    "team": "USA",
+    "gameArray": [
+      {
+        "goals_conceded": 2,
+        "saves": 5,
+        "goals_conceded_ibox": 2,
+        "saved_obox": 3,
+        "saved_ibox": 2,
+        "touches": 40,
+        "IDGame": "f731796"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 5,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 3,
+        "saved_ibox": 2,
+        "touches": 43,
+        "IDGame": "f731811"
+      }
+    ],
+    "goals_conceded": 3,
+    "saves": 10,
+    "goals_conceded_ibox": 2,
+    "saved_obox": 6,
+    "saved_ibox": 4,
+    "touches": 83
+  },
+  {
+    "id": "p82975",
+    "firstName": "Sung-Ryong",
+    "lastName": "Jung",
+    "IDTeam": "t1041",
+    "team": "South Korea",
+    "gameArray": [
+      {
+        "goals_conceded": 4,
+        "saves": 1,
+        "goals_conceded_ibox": 4,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 23,
+        "IDGame": "f731798"
+      }
+    ],
+    "goals_conceded": 4,
+    "saves": 1,
+    "goals_conceded_ibox": 4,
+    "saved_obox": 0,
+    "saved_ibox": 1,
+    "touches": 23
+  },
+  {
+    "id": "p7810",
+    "firstName": "Stipe",
+    "lastName": "Pletikosa",
+    "IDTeam": "t535",
+    "team": "Croatia",
+    "gameArray": [
+      {
+        "goals_conceded": 3,
+        "saves": 1,
+        "goals_conceded_ibox": 3,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 31,
+        "IDGame": "f731800"
+      }
+    ],
+    "goals_conceded": 3,
+    "saves": 1,
+    "goals_conceded_ibox": 3,
+    "saved_obox": 0,
+    "saved_ibox": 1,
+    "touches": 31
+  },
+  {
+    "id": "p72162",
+    "firstName": "Jasper",
+    "lastName": "Cillessen",
+    "IDTeam": "t366",
+    "team": "Netherlands",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 1,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 38,
+        "IDGame": "f731802"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 4,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 3,
+        "saved_ibox": 1,
+        "touches": 30,
+        "IDGame": "f731817"
+      },
+      {
+        "goals_conceded": 0,
+        "saves": 1,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 45,
+        "IDGame": "f731825"
+      },
+      {
+        "goals_conceded": 0,
+        "saves": 4,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 2,
+        "saved_ibox": 2,
+        "touches": 43,
+        "IDGame": "f731828"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 10,
+    "goals_conceded_ibox": 0,
+    "saved_obox": 5,
+    "saved_ibox": 5,
+    "touches": 156
+  },
+  {
+    "id": "p48332",
+    "firstName": "Orestis",
+    "lastName": "Karnezis",
+    "IDTeam": "t517",
+    "team": "Greece",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 0,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 0,
+        "saved_ibox": 0,
+        "touches": 7,
+        "IDGame": "f731804"
+      }
+    ],
+    "goals_conceded": 0,
+    "saves": 0,
+    "goals_conceded_ibox": 0,
+    "saved_obox": 0,
+    "saved_ibox": 0,
+    "touches": 7
+  },
+  {
+    "id": "p28411",
+    "firstName": "Keylor",
+    "lastName": "Navas",
+    "IDTeam": "t838",
+    "team": "Costa Rica",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 1,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 1,
+        "saved_ibox": 0,
+        "touches": 36,
+        "IDGame": "f731806"
+      },
+      {
+        "goals_conceded": 1,
+        "saves": 7,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 1,
+        "saved_ibox": 6,
+        "touches": 66,
+        "IDGame": "f731818"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 8,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 2,
+    "saved_ibox": 6,
+    "touches": 102
+  },
+  {
+    "id": "p58966",
+    "firstName": "Alexander",
+    "lastName": "Domínguez",
+    "IDTeam": "t830",
+    "team": "Ecuador",
+    "gameArray": [
+      {
+        "goals_conceded": 0,
+        "saves": 9,
+        "goals_conceded_ibox": 0,
+        "saved_obox": 2,
+        "saved_ibox": 7,
+        "touches": 48,
+        "IDGame": "f731808"
+      }
+    ],
+    "goals_conceded": 0,
+    "saves": 9,
+    "goals_conceded_ibox": 0,
+    "saved_obox": 2,
+    "saved_ibox": 7,
+    "touches": 48
+  },
+  {
+    "id": "p40349",
+    "firstName": "Asmir",
+    "lastName": "Begovic",
+    "IDTeam": "t537",
+    "team": "Bosnia and Herzegovina",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 1,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 0,
+        "saved_ibox": 1,
+        "touches": 36,
+        "IDGame": "f731810"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 1,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 0,
+    "saved_ibox": 1,
+    "touches": 36
+  },
+  {
+    "id": "p44743",
+    "firstName": "Antonio Alberto",
+    "lastName": "Bastos Pimparel",
+    "IDTeam": "t359",
+    "team": "Portugal",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 3,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 0,
+        "saved_ibox": 3,
+        "touches": 44,
+        "IDGame": "f731812"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 3,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 0,
+    "saved_ibox": 3,
+    "touches": 44
+  },
+  {
+    "id": "p170450",
+    "firstName": "Seung-Gyu",
+    "lastName": "Kim",
+    "IDTeam": "t1041",
+    "team": "South Korea",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 4,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 3,
+        "saved_ibox": 1,
+        "touches": 33,
+        "IDGame": "f731813"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 4,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 3,
+    "saved_ibox": 1,
+    "touches": 33
+  },
+  {
+    "id": "p28549",
+    "firstName": "Rais",
+    "lastName": "M'Bolhi",
+    "IDTeam": "t1215",
+    "team": "Algeria",
+    "gameArray": [
+      {
+        "goals_conceded": 1,
+        "saves": 3,
+        "goals_conceded_ibox": 1,
+        "saved_obox": 1,
+        "saved_ibox": 2,
+        "touches": 39,
+        "IDGame": "f731814"
+      }
+    ],
+    "goals_conceded": 1,
+    "saves": 3,
+    "goals_conceded_ibox": 1,
+    "saved_obox": 1,
+    "saved_ibox": 2,
+    "touches": 39
+  }
+]

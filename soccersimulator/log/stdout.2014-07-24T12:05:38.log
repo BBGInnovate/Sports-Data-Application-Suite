@@ -1,0 +1,473 @@
+[Thu, 24 Jul 2014 14:05:44 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "detailedErrors": true,
+  "flash": {
+    "defaultClass": "alert",
+    "inlineClasses": {
+      "success": "alert alert-success",
+      "alert": "alert",
+      "error": "alert alert-error",
+      "info": "alert alert-info"
+    },
+    "blockClasses": {
+      "success": "alert alert-block alert-success",
+      "alert": "alert alert-block",
+      "error": "alert alert-block alert-error",
+      "info": "alert alert-block alert-info"
+    }
+  },
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/lbacker/Documents/nodeapps/soccersimulator/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/lbacker/Documents/nodeapps/soccersimulator/public",
+  "assetHost": "",
+  "assetBasePath": "/",
+  "cacheControl": {
+    "expires": {
+      "default": 0
+    }
+  },
+  "sessions": {
+    "store": "filesystem",
+    "key": "sid",
+    "expiry": 1209600,
+    "filename": "_session_store.json"
+  },
+  "cookieSessionKey": "sdata",
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/lbacker/Documents/nodeapps/soccersimulator/config/locales"
+    ]
+  },
+  "appName": "Soccer Simulation (development)",
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "mailer": null,
+  "generatedByVersion": "0.12.12",
+  "simulationFilePath": "/Users/lbacker/Documents/nodeapps/soccersimulator/simulationfiles/",
+  "model": {
+    "defaultAdapter": "filesystem"
+  },
+  "ftpPushDetail": {
+    "server": "54.83.49.250",
+    "userName": "opta-user",
+    "password": "0Pt@W0rldCup",
+    "directory": "/var/www/FTP/",
+    "protocol": "SFTP"
+  }
+}
+[Thu, 24 Jul 2014 14:05:44 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:05:44 GMT] INFO Server worker running in development on port 4000 with a PID of: 6180
+[Thu, 24 Jul 2014 14:06:07 GMT] INFO Code changed, killing 6180, cycling ...
+[Thu, 24 Jul 2014 14:06:07 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:06:08 GMT] INFO Server worker running in development on port 4000 with a PID of: 6186
+[Thu, 24 Jul 2014 14:06:12 GMT] INFO Code changed, killing 6186, cycling ...
+[Thu, 24 Jul 2014 14:06:12 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:06:13 GMT] INFO Server worker running in development on port 4000 with a PID of: 6188
+[Thu, 24 Jul 2014 14:06:15 GMT] INFO Code changed, killing 6188, cycling ...
+[Thu, 24 Jul 2014 14:06:15 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:06:16 GMT] INFO Server worker running in development on port 4000 with a PID of: 6190
+[Thu, 24 Jul 2014 14:09:31 GMT] INFO Code changed, killing 6190, cycling ...
+[Thu, 24 Jul 2014 14:09:31 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:09:31 GMT] INFO Server worker running in development on port 4000 with a PID of: 6196
+[Thu, 24 Jul 2014 14:15:20 GMT] INFO Code changed, killing 6196, cycling ...
+[Thu, 24 Jul 2014 14:15:20 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:15:24 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:15:24 GMT] INFO Server worker running in development on port 4000 with a PID of: 6209
+[Thu, 24 Jul 2014 14:15:42 GMT] INFO Code changed, killing 6209, cycling ...
+[Thu, 24 Jul 2014 14:15:42 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:15:43 GMT] INFO Server worker running in development on port 4000 with a PID of: 6211
+[Thu, 24 Jul 2014 14:16:22 GMT] INFO Code changed, killing 6211, cycling ...
+[Thu, 24 Jul 2014 14:16:22 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:16:23 GMT] INFO Server worker running in development on port 4000 with a PID of: 6216
+[Thu, 24 Jul 2014 14:16:24 GMT] INFO Code changed, killing 6216, cycling ...
+[Thu, 24 Jul 2014 14:16:24 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:16:24 GMT] INFO Server worker running in development on port 4000 with a PID of: 6218
+[Thu, 24 Jul 2014 14:17:15 GMT] INFO Code changed, killing 6218, cycling ...
+[Thu, 24 Jul 2014 14:17:15 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:17:15 GMT] INFO Server worker running in development on port 4000 with a PID of: 6220
+[Thu, 24 Jul 2014 14:17:29 GMT] INFO Code changed, killing 6220, cycling ...
+[Thu, 24 Jul 2014 14:17:29 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:17:29 GMT] INFO Server worker running in development on port 4000 with a PID of: 6222
+[Thu, 24 Jul 2014 14:17:48 GMT] INFO Code changed, killing 6222, cycling ...
+[Thu, 24 Jul 2014 14:17:48 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:17:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 6224
+[Thu, 24 Jul 2014 14:18:04 GMT] INFO Code changed, killing 6224, cycling ...
+[Thu, 24 Jul 2014 14:18:04 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:18:04 GMT] INFO Server worker running in development on port 4000 with a PID of: 6228
+[Thu, 24 Jul 2014 14:18:17 GMT] INFO Code changed, killing 6228, cycling ...
+[Thu, 24 Jul 2014 14:18:17 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:18:18 GMT] INFO Server worker running in development on port 4000 with a PID of: 6232
+[Thu, 24 Jul 2014 14:18:28 GMT] INFO Code changed, killing 6232, cycling ...
+[Thu, 24 Jul 2014 14:18:28 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:18:29 GMT] INFO Server worker running in development on port 4000 with a PID of: 6235
+[Thu, 24 Jul 2014 14:19:55 GMT] INFO Code changed, killing 6235, cycling ...
+[Thu, 24 Jul 2014 14:19:55 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:19:56 GMT] INFO Server worker running in development on port 4000 with a PID of: 6243
+[Thu, 24 Jul 2014 14:20:06 GMT] INFO Code changed, killing 6243, cycling ...
+[Thu, 24 Jul 2014 14:20:06 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:20:06 GMT] INFO Server worker running in development on port 4000 with a PID of: 6245
+[Thu, 24 Jul 2014 14:21:52 GMT] INFO Code changed, killing 6245, cycling ...
+[Thu, 24 Jul 2014 14:21:52 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:21:53 GMT] INFO Server worker running in development on port 4000 with a PID of: 6249
+[Thu, 24 Jul 2014 14:22:14 GMT] INFO Code changed, killing 6249, cycling ...
+[Thu, 24 Jul 2014 14:22:14 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:22:14 GMT] INFO Server worker running in development on port 4000 with a PID of: 6253
+[Thu, 24 Jul 2014 14:22:53 GMT] INFO Code changed, killing 6253, cycling ...
+[Thu, 24 Jul 2014 14:22:53 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:22:54 GMT] INFO Server worker running in development on port 4000 with a PID of: 6256
+[Thu, 24 Jul 2014 14:22:56 GMT] INFO Code changed, killing 6256, cycling ...
+[Thu, 24 Jul 2014 14:22:56 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:22:56 GMT] INFO Server worker running in development on port 4000 with a PID of: 6258
+[Thu, 24 Jul 2014 14:24:01 GMT] INFO Code changed, killing 6258, cycling ...
+[Thu, 24 Jul 2014 14:24:01 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:24:01 GMT] INFO Server worker running in development on port 4000 with a PID of: 6261
+[Thu, 24 Jul 2014 14:24:01 GMT] INFO Code changed, killing 6261, cycling ...
+[Thu, 24 Jul 2014 14:24:01 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:24:01 GMT] INFO Server worker running in development on port 4000 with a PID of: 6262
+[Thu, 24 Jul 2014 14:24:04 GMT] INFO Code changed, killing 6262, cycling ...
+[Thu, 24 Jul 2014 14:24:04 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:24:04 GMT] INFO Server worker running in development on port 4000 with a PID of: 6264
+[Thu, 24 Jul 2014 14:25:32 GMT] INFO Code changed, killing 6264, cycling ...
+[Thu, 24 Jul 2014 14:25:32 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:25:32 GMT] INFO Server worker running in development on port 4000 with a PID of: 6267
+[Thu, 24 Jul 2014 14:25:49 GMT] INFO Code changed, killing 6267, cycling ...
+[Thu, 24 Jul 2014 14:25:49 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:25:49 GMT] INFO Server worker running in development on port 4000 with a PID of: 6271
+[Thu, 24 Jul 2014 14:25:57 GMT] INFO Code changed, killing 6271, cycling ...
+[Thu, 24 Jul 2014 14:25:57 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:25:58 GMT] INFO Server worker running in development on port 4000 with a PID of: 6273
+[Thu, 24 Jul 2014 14:26:23 GMT] INFO Code changed, killing 6273, cycling ...
+[Thu, 24 Jul 2014 14:26:23 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:26:23 GMT] INFO Server worker running in development on port 4000 with a PID of: 6275
+[Thu, 24 Jul 2014 14:26:40 GMT] INFO Code changed, killing 6275, cycling ...
+[Thu, 24 Jul 2014 14:26:40 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:26:40 GMT] INFO Server worker running in development on port 4000 with a PID of: 6277
+[Thu, 24 Jul 2014 14:26:48 GMT] INFO Code changed, killing 6277, cycling ...
+[Thu, 24 Jul 2014 14:26:48 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:26:49 GMT] INFO Server worker running in development on port 4000 with a PID of: 6279
+[Thu, 24 Jul 2014 14:26:51 GMT] INFO Code changed, killing 6279, cycling ...
+[Thu, 24 Jul 2014 14:26:51 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:26:52 GMT] INFO Server worker running in development on port 4000 with a PID of: 6281
+[Thu, 24 Jul 2014 14:27:09 GMT] INFO Code changed, killing 6281, cycling ...
+[Thu, 24 Jul 2014 14:27:09 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:27:09 GMT] INFO Server worker running in development on port 4000 with a PID of: 6284
+[Thu, 24 Jul 2014 14:27:10 GMT] INFO Code changed, killing 6284, cycling ...
+[Thu, 24 Jul 2014 14:27:10 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:27:10 GMT] INFO Server worker running in development on port 4000 with a PID of: 6285
+[Thu, 24 Jul 2014 14:27:32 GMT] INFO Code changed, killing 6285, cycling ...
+[Thu, 24 Jul 2014 14:27:32 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:27:32 GMT] INFO Server worker running in development on port 4000 with a PID of: 6289
+[Thu, 24 Jul 2014 14:27:46 GMT] INFO Code changed, killing 6289, cycling ...
+[Thu, 24 Jul 2014 14:27:46 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:27:46 GMT] INFO Server worker running in development on port 4000 with a PID of: 6292
+[Thu, 24 Jul 2014 14:28:15 GMT] INFO Code changed, killing 6292, cycling ...
+[Thu, 24 Jul 2014 14:28:15 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:28:15 GMT] INFO Server worker running in development on port 4000 with a PID of: 6294
+[Thu, 24 Jul 2014 14:28:29 GMT] INFO Code changed, killing 6294, cycling ...
+[Thu, 24 Jul 2014 14:28:29 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:28:29 GMT] INFO Server worker running in development on port 4000 with a PID of: 6297
+[Thu, 24 Jul 2014 14:28:34 GMT] INFO Code changed, killing 6297, cycling ...
+[Thu, 24 Jul 2014 14:28:34 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:28:34 GMT] INFO Server worker running in development on port 4000 with a PID of: 6299
+[Thu, 24 Jul 2014 14:28:48 GMT] INFO Code changed, killing 6299, cycling ...
+[Thu, 24 Jul 2014 14:28:48 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:28:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 6301
+[Thu, 24 Jul 2014 14:29:21 GMT] INFO Code changed, killing 6301, cycling ...
+[Thu, 24 Jul 2014 14:29:21 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:29:21 GMT] INFO Server worker running in development on port 4000 with a PID of: 6304
+[Thu, 24 Jul 2014 14:29:33 GMT] INFO Code changed, killing 6304, cycling ...
+[Thu, 24 Jul 2014 14:29:33 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:29:34 GMT] INFO Server worker running in development on port 4000 with a PID of: 6306
+[Thu, 24 Jul 2014 14:30:06 GMT] INFO Code changed, killing 6306, cycling ...
+[Thu, 24 Jul 2014 14:30:06 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:30:06 GMT] INFO Server worker running in development on port 4000 with a PID of: 6309
+[Thu, 24 Jul 2014 14:30:30 GMT] INFO Code changed, killing 6309, cycling ...
+[Thu, 24 Jul 2014 14:30:30 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:30:30 GMT] INFO Server worker running in development on port 4000 with a PID of: 6312
+[Thu, 24 Jul 2014 14:31:28 GMT] INFO Code changed, killing 6312, cycling ...
+[Thu, 24 Jul 2014 14:31:28 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:31:29 GMT] INFO Server worker running in development on port 4000 with a PID of: 6315
+[Thu, 24 Jul 2014 14:31:36 GMT] INFO Code changed, killing 6315, cycling ...
+[Thu, 24 Jul 2014 14:31:36 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:31:36 GMT] INFO Server worker running in development on port 4000 with a PID of: 6317
+[Thu, 24 Jul 2014 14:31:50 GMT] INFO Code changed, killing 6317, cycling ...
+[Thu, 24 Jul 2014 14:31:50 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:31:50 GMT] INFO Server worker running in development on port 4000 with a PID of: 6319
+[Thu, 24 Jul 2014 14:32:42 GMT] INFO Code changed, killing 6319, cycling ...
+[Thu, 24 Jul 2014 14:32:42 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:32:42 GMT] INFO Server worker running in development on port 4000 with a PID of: 6321
+[Thu, 24 Jul 2014 14:33:26 GMT] INFO Code changed, killing 6321, cycling ...
+[Thu, 24 Jul 2014 14:33:26 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:33:26 GMT] INFO Server worker running in development on port 4000 with a PID of: 6327
+[Thu, 24 Jul 2014 14:33:28 GMT] INFO Code changed, killing 6327, cycling ...
+[Thu, 24 Jul 2014 14:33:28 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:33:29 GMT] INFO Server worker running in development on port 4000 with a PID of: 6329
+[Thu, 24 Jul 2014 14:33:45 GMT] INFO Code changed, killing 6329, cycling ...
+[Thu, 24 Jul 2014 14:33:45 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:33:46 GMT] INFO Server worker running in development on port 4000 with a PID of: 6332
+[Thu, 24 Jul 2014 14:34:12 GMT] INFO Code changed, killing 6332, cycling ...
+[Thu, 24 Jul 2014 14:34:12 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:34:12 GMT] INFO Server worker running in development on port 4000 with a PID of: 6335
+[Thu, 24 Jul 2014 14:37:49 GMT] INFO Code changed, killing 6335, cycling ...
+[Thu, 24 Jul 2014 14:37:49 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:37:49 GMT] INFO Server worker running in development on port 4000 with a PID of: 6348
+[Thu, 24 Jul 2014 14:37:51 GMT] INFO Code changed, killing 6348, cycling ...
+[Thu, 24 Jul 2014 14:37:51 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:37:51 GMT] INFO Server worker running in development on port 4000 with a PID of: 6350
+[Thu, 24 Jul 2014 14:39:25 GMT] INFO Code changed, killing 6350, cycling ...
+[Thu, 24 Jul 2014 14:39:25 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:39:25 GMT] INFO Server worker running in development on port 4000 with a PID of: 6352
+[Thu, 24 Jul 2014 14:39:36 GMT] INFO Code changed, killing 6352, cycling ...
+[Thu, 24 Jul 2014 14:39:36 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:39:36 GMT] INFO Server worker running in development on port 4000 with a PID of: 6357
+[Thu, 24 Jul 2014 14:39:57 GMT] INFO Code changed, killing 6357, cycling ...
+[Thu, 24 Jul 2014 14:39:57 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:39:57 GMT] INFO Server worker running in development on port 4000 with a PID of: 6360
+[Thu, 24 Jul 2014 14:40:19 GMT] INFO Code changed, killing 6360, cycling ...
+[Thu, 24 Jul 2014 14:40:19 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:40:19 GMT] INFO Server worker running in development on port 4000 with a PID of: 6363
+[Thu, 24 Jul 2014 14:40:47 GMT] INFO Code changed, killing 6363, cycling ...
+[Thu, 24 Jul 2014 14:40:47 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:40:47 GMT] INFO Server worker running in development on port 4000 with a PID of: 6366
+[Thu, 24 Jul 2014 14:41:30 GMT] INFO Code changed, killing 6366, cycling ...
+[Thu, 24 Jul 2014 14:41:30 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:41:30 GMT] INFO Server worker running in development on port 4000 with a PID of: 6369
+[Thu, 24 Jul 2014 14:41:45 GMT] INFO Code changed, killing 6369, cycling ...
+[Thu, 24 Jul 2014 14:41:45 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:41:45 GMT] INFO Server worker running in development on port 4000 with a PID of: 6373
+[Thu, 24 Jul 2014 14:42:22 GMT] INFO Code changed, killing 6373, cycling ...
+[Thu, 24 Jul 2014 14:42:22 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:42:23 GMT] INFO Server worker running in development on port 4000 with a PID of: 6376
+[Thu, 24 Jul 2014 14:45:49 GMT] INFO Code changed, killing 6376, cycling ...
+[Thu, 24 Jul 2014 14:45:49 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:45:50 GMT] INFO Server worker running in development on port 4000 with a PID of: 6383
+[Thu, 24 Jul 2014 14:46:23 GMT] INFO Code changed, killing 6383, cycling ...
+[Thu, 24 Jul 2014 14:46:23 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:46:23 GMT] INFO Server worker running in development on port 4000 with a PID of: 6388
+[Thu, 24 Jul 2014 14:48:54 GMT] INFO Code changed, killing 6388, cycling ...
+[Thu, 24 Jul 2014 14:48:54 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:48:55 GMT] INFO Server worker running in development on port 4000 with a PID of: 6392
+[Thu, 24 Jul 2014 14:49:03 GMT] INFO Code changed, killing 6392, cycling ...
+[Thu, 24 Jul 2014 14:49:03 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:49:03 GMT] INFO Server worker running in development on port 4000 with a PID of: 6396
+[Thu, 24 Jul 2014 14:57:05 GMT] INFO Code changed, killing 6396, cycling ...
+[Thu, 24 Jul 2014 14:57:05 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:57:05 GMT] INFO Server worker running in development on port 4000 with a PID of: 6407
+[Thu, 24 Jul 2014 14:58:04 GMT] INFO Code changed, killing 6407, cycling ...
+[Thu, 24 Jul 2014 14:58:04 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:58:04 GMT] INFO Server worker running in development on port 4000 with a PID of: 6415
+[Thu, 24 Jul 2014 14:58:09 GMT] INFO Code changed, killing 6415, cycling ...
+[Thu, 24 Jul 2014 14:58:09 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:58:09 GMT] INFO Server worker running in development on port 4000 with a PID of: 6417
+[Thu, 24 Jul 2014 14:58:50 GMT] INFO Code changed, killing 6417, cycling ...
+[Thu, 24 Jul 2014 14:58:50 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:58:50 GMT] INFO Server worker running in development on port 4000 with a PID of: 6420
+[Thu, 24 Jul 2014 14:59:37 GMT] INFO Code changed, killing 6420, cycling ...
+[Thu, 24 Jul 2014 14:59:37 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 14:59:37 GMT] INFO Server worker running in development on port 4000 with a PID of: 6423
+[Thu, 24 Jul 2014 15:00:03 GMT] INFO Code changed, killing 6423, cycling ...
+[Thu, 24 Jul 2014 15:00:03 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:00:03 GMT] INFO Server worker running in development on port 4000 with a PID of: 6427
+[Thu, 24 Jul 2014 15:00:25 GMT] INFO Code changed, killing 6427, cycling ...
+[Thu, 24 Jul 2014 15:00:25 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:00:25 GMT] INFO Server worker running in development on port 4000 with a PID of: 6431
+[Thu, 24 Jul 2014 15:00:53 GMT] INFO Code changed, killing 6431, cycling ...
+[Thu, 24 Jul 2014 15:00:53 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:00:53 GMT] INFO Server worker running in development on port 4000 with a PID of: 6436
+[Thu, 24 Jul 2014 15:03:30 GMT] INFO Code changed, killing 6436, cycling ...
+[Thu, 24 Jul 2014 15:03:30 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:03:30 GMT] INFO Server worker running in development on port 4000 with a PID of: 6441
+[Thu, 24 Jul 2014 15:03:47 GMT] INFO Code changed, killing 6441, cycling ...
+[Thu, 24 Jul 2014 15:03:47 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:03:47 GMT] INFO Server worker running in development on port 4000 with a PID of: 6445
+[Thu, 24 Jul 2014 15:04:32 GMT] INFO Code changed, killing 6445, cycling ...
+[Thu, 24 Jul 2014 15:04:32 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:04:32 GMT] INFO Server worker running in development on port 4000 with a PID of: 6447
+[Thu, 24 Jul 2014 15:04:33 GMT] INFO Code changed, killing 6447, cycling ...
+[Thu, 24 Jul 2014 15:04:33 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:04:33 GMT] INFO Server worker running in development on port 4000 with a PID of: 6448
+[Thu, 24 Jul 2014 15:04:42 GMT] INFO Code changed, killing 6448, cycling ...
+[Thu, 24 Jul 2014 15:04:42 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:04:42 GMT] INFO Server worker running in development on port 4000 with a PID of: 6450
+[Thu, 24 Jul 2014 15:05:04 GMT] INFO Code changed, killing 6450, cycling ...
+[Thu, 24 Jul 2014 15:05:04 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:05:05 GMT] INFO Server worker running in development on port 4000 with a PID of: 6454
+[Thu, 24 Jul 2014 15:05:32 GMT] INFO Code changed, killing 6454, cycling ...
+[Thu, 24 Jul 2014 15:05:32 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:05:32 GMT] INFO Server worker running in development on port 4000 with a PID of: 6457
+[Thu, 24 Jul 2014 15:05:51 GMT] INFO Code changed, killing 6457, cycling ...
+[Thu, 24 Jul 2014 15:05:51 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:05:52 GMT] INFO Server worker running in development on port 4000 with a PID of: 6460
+[Thu, 24 Jul 2014 15:05:53 GMT] INFO Code changed, killing 6460, cycling ...
+[Thu, 24 Jul 2014 15:05:53 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:05:53 GMT] INFO Server worker running in development on port 4000 with a PID of: 6462
+[Thu, 24 Jul 2014 15:06:01 GMT] INFO Code changed, killing 6462, cycling ...
+[Thu, 24 Jul 2014 15:06:01 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:06:01 GMT] INFO Server worker running in development on port 4000 with a PID of: 6464
+[Thu, 24 Jul 2014 15:06:41 GMT] INFO Code changed, killing 6464, cycling ...
+[Thu, 24 Jul 2014 15:06:41 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:06:42 GMT] INFO Server worker running in development on port 4000 with a PID of: 6466
+[Thu, 24 Jul 2014 15:07:02 GMT] INFO Code changed, killing 6466, cycling ...
+[Thu, 24 Jul 2014 15:07:02 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:07:02 GMT] INFO Server worker running in development on port 4000 with a PID of: 6468
+[Thu, 24 Jul 2014 15:07:07 GMT] INFO Code changed, killing 6468, cycling ...
+[Thu, 24 Jul 2014 15:07:07 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:07:07 GMT] INFO Server worker running in development on port 4000 with a PID of: 6470
+[Thu, 24 Jul 2014 15:07:19 GMT] INFO Code changed, killing 6470, cycling ...
+[Thu, 24 Jul 2014 15:07:19 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:07:19 GMT] INFO Server worker running in development on port 4000 with a PID of: 6472
+[Thu, 24 Jul 2014 15:07:24 GMT] INFO Code changed, killing 6472, cycling ...
+[Thu, 24 Jul 2014 15:07:24 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:07:24 GMT] INFO Server worker running in development on port 4000 with a PID of: 6474
+[Thu, 24 Jul 2014 15:07:45 GMT] INFO Code changed, killing 6474, cycling ...
+[Thu, 24 Jul 2014 15:07:45 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:07:45 GMT] INFO Server worker running in development on port 4000 with a PID of: 6476
+[Thu, 24 Jul 2014 15:15:51 GMT] INFO Code changed, killing 6476, cycling ...
+[Thu, 24 Jul 2014 15:15:51 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:15:51 GMT] INFO Server worker running in development on port 4000 with a PID of: 6488
+[Thu, 24 Jul 2014 15:16:01 GMT] INFO Code changed, killing 6488, cycling ...
+[Thu, 24 Jul 2014 15:16:01 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:16:02 GMT] INFO Server worker running in development on port 4000 with a PID of: 6492
+[Thu, 24 Jul 2014 15:16:43 GMT] INFO Code changed, killing 6492, cycling ...
+[Thu, 24 Jul 2014 15:16:43 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:16:43 GMT] INFO Server worker running in development on port 4000 with a PID of: 6495
+[Thu, 24 Jul 2014 15:16:47 GMT] INFO Code changed, killing 6495, cycling ...
+[Thu, 24 Jul 2014 15:16:47 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:16:47 GMT] INFO Server worker running in development on port 4000 with a PID of: 6497
+[Thu, 24 Jul 2014 15:16:50 GMT] INFO Code changed, killing 6497, cycling ...
+[Thu, 24 Jul 2014 15:16:50 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:16:50 GMT] INFO Server worker running in development on port 4000 with a PID of: 6499
+[Thu, 24 Jul 2014 15:18:59 GMT] INFO Code changed, killing 6499, cycling ...
+[Thu, 24 Jul 2014 15:18:59 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:18:59 GMT] INFO Server worker running in development on port 4000 with a PID of: 6503
+[Thu, 24 Jul 2014 15:22:57 GMT] INFO Code changed, killing 6503, cycling ...
+[Thu, 24 Jul 2014 15:22:57 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:22:57 GMT] INFO Server worker running in development on port 4000 with a PID of: 6511
+[Thu, 24 Jul 2014 15:23:09 GMT] INFO Code changed, killing 6511, cycling ...
+[Thu, 24 Jul 2014 15:23:09 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:23:09 GMT] INFO Server worker running in development on port 4000 with a PID of: 6516
+[Thu, 24 Jul 2014 15:23:57 GMT] INFO Code changed, killing 6516, cycling ...
+[Thu, 24 Jul 2014 15:23:57 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:25:00 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:25:05 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:25:23 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:26:28 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:26:31 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:27:19 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:27:19 GMT] INFO Server worker running in development on port 4000 with a PID of: 6538
+[Thu, 24 Jul 2014 15:27:56 GMT] INFO Code changed, killing 6538, cycling ...
+[Thu, 24 Jul 2014 15:27:56 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:27:56 GMT] INFO Server worker running in development on port 4000 with a PID of: 6542
+[Thu, 24 Jul 2014 15:29:32 GMT] INFO Code changed, killing 6542, cycling ...
+[Thu, 24 Jul 2014 15:29:32 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:29:33 GMT] INFO Server worker running in development on port 4000 with a PID of: 6546
+[Thu, 24 Jul 2014 15:30:26 GMT] INFO Code changed, killing 6546, cycling ...
+[Thu, 24 Jul 2014 15:30:26 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:30:26 GMT] INFO Server worker running in development on port 4000 with a PID of: 6550
+[Thu, 24 Jul 2014 15:42:44 GMT] INFO Code changed, killing 6550, cycling ...
+[Thu, 24 Jul 2014 15:42:44 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:42:44 GMT] INFO Server worker running in development on port 4000 with a PID of: 6579
+[Thu, 24 Jul 2014 15:43:17 GMT] INFO Code changed, killing 6579, cycling ...
+[Thu, 24 Jul 2014 15:43:17 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:43:17 GMT] INFO Server worker running in development on port 4000 with a PID of: 6585
+[Thu, 24 Jul 2014 15:43:36 GMT] INFO Code changed, killing 6585, cycling ...
+[Thu, 24 Jul 2014 15:43:36 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:43:37 GMT] INFO Server worker running in development on port 4000 with a PID of: 6588
+[Thu, 24 Jul 2014 15:44:48 GMT] INFO Code changed, killing 6588, cycling ...
+[Thu, 24 Jul 2014 15:44:48 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:44:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 6590
+[Thu, 24 Jul 2014 15:45:21 GMT] INFO Code changed, killing 6590, cycling ...
+[Thu, 24 Jul 2014 15:45:21 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:45:28 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:46:01 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:46:20 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:46:41 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:46:42 GMT] INFO Server worker running in development on port 4000 with a PID of: 6606
+[Thu, 24 Jul 2014 15:47:18 GMT] INFO Code changed, killing 6606, cycling ...
+[Thu, 24 Jul 2014 15:47:18 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:47:18 GMT] INFO Server worker running in development on port 4000 with a PID of: 6609
+[Thu, 24 Jul 2014 15:48:06 GMT] INFO Code changed, killing 6609, cycling ...
+[Thu, 24 Jul 2014 15:48:06 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:48:06 GMT] INFO Server worker running in development on port 4000 with a PID of: 6612
+[Thu, 24 Jul 2014 15:48:08 GMT] INFO Code changed, killing 6612, cycling ...
+[Thu, 24 Jul 2014 15:48:08 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:48:08 GMT] INFO Server worker running in development on port 4000 with a PID of: 6614
+[Thu, 24 Jul 2014 15:48:51 GMT] INFO Code changed, killing 6614, cycling ...
+[Thu, 24 Jul 2014 15:48:51 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:48:51 GMT] INFO Server worker running in development on port 4000 with a PID of: 6618
+[Thu, 24 Jul 2014 15:48:52 GMT] INFO Code changed, killing 6618, cycling ...
+[Thu, 24 Jul 2014 15:48:52 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:48:52 GMT] INFO Server worker running in development on port 4000 with a PID of: 6619
+[Thu, 24 Jul 2014 15:49:02 GMT] INFO Code changed, killing 6619, cycling ...
+[Thu, 24 Jul 2014 15:49:02 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:49:02 GMT] INFO Server worker running in development on port 4000 with a PID of: 6622
+[Thu, 24 Jul 2014 15:49:03 GMT] INFO Code changed, killing 6622, cycling ...
+[Thu, 24 Jul 2014 15:49:03 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:49:03 GMT] INFO Server worker running in development on port 4000 with a PID of: 6623
+[Thu, 24 Jul 2014 15:49:04 GMT] INFO Code changed, killing 6623, cycling ...
+[Thu, 24 Jul 2014 15:49:04 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:49:05 GMT] INFO Server worker running in development on port 4000 with a PID of: 6625
+[Thu, 24 Jul 2014 15:50:46 GMT] INFO Code changed, killing 6625, cycling ...
+[Thu, 24 Jul 2014 15:50:46 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:50:46 GMT] INFO Server worker running in development on port 4000 with a PID of: 6627
+[Thu, 24 Jul 2014 15:50:49 GMT] INFO Code changed, killing 6627, cycling ...
+[Thu, 24 Jul 2014 15:50:49 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:50:49 GMT] INFO Server worker running in development on port 4000 with a PID of: 6631
+[Thu, 24 Jul 2014 15:52:08 GMT] INFO Code changed, killing 6631, cycling ...
+[Thu, 24 Jul 2014 15:52:08 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:52:09 GMT] INFO Server worker running in development on port 4000 with a PID of: 6635
+[Thu, 24 Jul 2014 15:52:28 GMT] INFO Code changed, killing 6635, cycling ...
+[Thu, 24 Jul 2014 15:52:28 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:52:28 GMT] INFO Server worker running in development on port 4000 with a PID of: 6640
+[Thu, 24 Jul 2014 15:53:31 GMT] INFO Code changed, killing 6640, cycling ...
+[Thu, 24 Jul 2014 15:53:31 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:53:31 GMT] INFO Server worker running in development on port 4000 with a PID of: 6644
+[Thu, 24 Jul 2014 15:54:20 GMT] INFO Code changed, killing 6644, cycling ...
+[Thu, 24 Jul 2014 15:54:20 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:54:21 GMT] INFO Server worker running in development on port 4000 with a PID of: 6649
+[Thu, 24 Jul 2014 15:54:22 GMT] INFO Code changed, killing 6649, cycling ...
+[Thu, 24 Jul 2014 15:54:22 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:54:22 GMT] INFO Server worker running in development on port 4000 with a PID of: 6651
+[Thu, 24 Jul 2014 15:54:27 GMT] INFO Code changed, killing 6651, cycling ...
+[Thu, 24 Jul 2014 15:54:27 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:54:27 GMT] INFO Server worker running in development on port 4000 with a PID of: 6653
+[Thu, 24 Jul 2014 15:54:35 GMT] INFO Code changed, killing 6653, cycling ...
+[Thu, 24 Jul 2014 15:54:35 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:54:35 GMT] INFO Server worker running in development on port 4000 with a PID of: 6655
+[Thu, 24 Jul 2014 15:54:42 GMT] INFO Code changed, killing 6655, cycling ...
+[Thu, 24 Jul 2014 15:54:42 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:54:42 GMT] INFO Server worker running in development on port 4000 with a PID of: 6657
+[Thu, 24 Jul 2014 15:55:30 GMT] INFO Code changed, killing 6657, cycling ...
+[Thu, 24 Jul 2014 15:55:30 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:55:30 GMT] INFO Server worker running in development on port 4000 with a PID of: 6659
+[Thu, 24 Jul 2014 15:56:11 GMT] INFO Code changed, killing 6659, cycling ...
+[Thu, 24 Jul 2014 15:56:11 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:56:11 GMT] INFO Server worker running in development on port 4000 with a PID of: 6661
+[Thu, 24 Jul 2014 15:56:21 GMT] INFO Code changed, killing 6661, cycling ...
+[Thu, 24 Jul 2014 15:56:21 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:56:21 GMT] INFO Server worker running in development on port 4000 with a PID of: 6663
+[Thu, 24 Jul 2014 15:56:58 GMT] INFO Code changed, killing 6663, cycling ...
+[Thu, 24 Jul 2014 15:56:58 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:56:58 GMT] INFO Server worker running in development on port 4000 with a PID of: 6665
+[Thu, 24 Jul 2014 15:57:25 GMT] INFO Code changed, killing 6665, cycling ...
+[Thu, 24 Jul 2014 15:57:25 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 15:57:25 GMT] INFO Server worker running in development on port 4000 with a PID of: 6669
+[Thu, 24 Jul 2014 16:04:05 GMT] INFO Code changed, killing 6669, cycling ...
+[Thu, 24 Jul 2014 16:04:05 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 16:04:12 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 16:04:12 GMT] INFO Server worker running in development on port 4000 with a PID of: 6688
+[Thu, 24 Jul 2014 16:05:15 GMT] INFO Code changed, killing 6688, cycling ...
+[Thu, 24 Jul 2014 16:05:15 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 16:05:32 GMT] INFO Creating 1 worker process.

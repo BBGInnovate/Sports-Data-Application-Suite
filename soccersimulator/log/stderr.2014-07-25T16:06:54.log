@@ -1,0 +1,56 @@
+[Fri, 25 Jul 2014 19:18:54 GMT] ERROR 127.0.0.1 - - [Fri Jul 25 2014 15:18:54 GMT-0400 (EDT)] "POST /matches/runmatch 1.1" 500 1199 "http://127.0.0.1:4000/matches/setuprun" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: job is not defined
+    at /Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:157:32
+    at Job.<anonymous> (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/lib/queue/job.js:557:13)
+    at /Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/index.js:1138:13
+    at b (domain.js:183:18)
+    at try_callback (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/index.js:573:9)
+    at RedisClient.return_reply (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/index.js:661:13)
+    at ReplyParser.<anonymous> (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/index.js:309:14)
+    at ReplyParser.EventEmitter.emit (events.js:95:17)
+    at ReplyParser.send_reply (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/lib/parser/javascript.js:300:10)
+    at ReplyParser.execute (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/lib/parser/javascript.js:211:22)
+[Fri, 25 Jul 2014 19:19:48 GMT] ERROR 127.0.0.1 - - [Fri Jul 25 2014 15:19:48 GMT-0400 (EDT)] "GET /matches/runmatch 1.1" 500 1995 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/soccersimulator/simulationfiles/undefined/commentary/'
+    at Object.fs.readdirSync (fs.js:654:18)
+    at simulateGameCommentary (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:139:16)
+    at Object.runMatch (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:126:3)
+    at runmatch (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:62:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+[Fri, 25 Jul 2014 19:20:22 GMT] ERROR 127.0.0.1 - - [Fri Jul 25 2014 15:20:22 GMT-0400 (EDT)] "POST /matches/runmatch 1.1" 500 1214 "http://127.0.0.1:4000/matches/setuprun" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: Cannot read property 'id' of undefined
+    at /Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:157:36
+    at Job.<anonymous> (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/lib/queue/job.js:557:13)
+    at /Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/index.js:1138:13
+    at b (domain.js:183:18)
+    at try_callback (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/index.js:573:9)
+    at RedisClient.return_reply (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/index.js:661:13)
+    at ReplyParser.<anonymous> (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/index.js:309:14)
+    at ReplyParser.EventEmitter.emit (events.js:95:17)
+    at ReplyParser.send_reply (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/lib/parser/javascript.js:300:10)
+    at ReplyParser.execute (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/kue/node_modules/redis/lib/parser/javascript.js:211:22)
+[Fri, 25 Jul 2014 19:23:05 GMT] ERROR 127.0.0.1 - - [Fri Jul 25 2014 15:23:05 GMT-0400 (EDT)] "POST /matches/runmatch 1.1" 500 2289 "http://127.0.0.1:4000/matches/setuprun" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: Object function Job(type, data) {
+    this.type = type;
+    this.data = data || {};
+    this._max_attempts = 1;
+//  this.client = redis.client();
+    this.client = Job.client/* || (Job.client = redis.client())*/;
+    this.priority('normal');
+    this.on("error", function(err){});// prevent uncaught exceptions on failed job errors
+} has no method 'create'
+    at simulateGameCommentary (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:152:8)
+    at Object.runMatch (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:126:3)
+    at runmatch (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:62:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:92:9)

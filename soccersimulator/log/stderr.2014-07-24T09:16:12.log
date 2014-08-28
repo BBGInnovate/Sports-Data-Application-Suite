@@ -1,0 +1,12 @@
+[Thu, 24 Jul 2014 13:11:33 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 09:11:33 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 621 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: write after end
+    at writeAfterEnd (_stream_writable.js:133:12)
+    at Transform.Writable.write (_stream_writable.js:181:5)
+    at write (_stream_readable.js:583:24)
+    at flow (_stream_readable.js:592:7)
+    at ReadStream.pipeOnReadable (_stream_readable.js:624:5)
+    at ReadStream.EventEmitter.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at ReadStream.Readable.push (_stream_readable.js:127:10)

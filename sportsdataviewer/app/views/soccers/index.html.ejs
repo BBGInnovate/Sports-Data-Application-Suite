@@ -1,0 +1,54 @@
+<% 
+/* ****************************************************************************
+File:			index.html.ejs
+
+Purpose:		I display the default view for the soccer section. I expect an
+				object wth the game stats JSON and commentary JSON from the 
+				controller.
+
+Paramaters: 	URL: 'widget' - what view to display. I default to display all.
+						types:
+							* scoreboard
+							* timeline
+							* overview
+							* lineup
+							* commentary
+							* game - all the above except lineup
+							* default is to show them all when NO widget=foo is
+							  in the URL
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+var gameStatData = gameData.stat;
+var commentaryData = gameData.commentary;
+// default to show all the widgets, overide when asked to show a single one.
+var showAll = true;
+%>
+<% if ( params.widget === 'scoreboard' ){ showAll = false; %>
+	<%= partial('scoreboard', {gameData: gameStatData, params: params}); %>
+<% } %>
+<% if ( params.widget === 'timeline' ){ showAll = false; %>
+	<%= partial('timeline', {gameData: gameStatData, params: params}); %>
+<% } %>
+<% if ( params.widget === 'overview' ){ showAll = false; %>
+	<%= partial('game-overview', {gameData: gameStatData, params: params}); %>
+<% } %>
+<% if ( params.widget === 'lineup' ){ showAll = false; %>
+	<%= partial('starting-lineup', {gameData: gameStatData, params: params}); %>
+<% } %>
+<% if ( params.widget === 'commentary' ){ showAll = false; %>
+	<%= partial('commentary', {commentary: commentaryData, gameData: gameStatData, params: params}); %>
+<% } %>
+<% if ( params.widget === 'game' ){ showAll = false; %>
+	<%= partial('scoreboard', {gameData: gameStatData, params: params}); %>
+	<%= partial('timeline', {gameData: gameStatData, params: params}); %>
+	<%= partial('game-overview', {gameData: gameStatData, params: params}); %>
+	<%= partial('commentary', {commentary: commentaryData, gameData: gameStatData, params: params}); %>
+<% } %>
+<% if ( showAll ){ /* show ALL the widgets, the default behaivor */%>
+<%= partial('scoreboard', {gameData: gameStatData, params: params}); %>
+<%= partial('timeline', {gameData: gameStatData, params: params}); %>
+<%= partial('game-overview', {gameData: gameStatData, params: params}); %>
+<%= partial('commentary', {commentary: commentaryData, gameData: gameStatData, params: params}); %>
+<%= partial('starting-lineup', {gameData: gameStatData,  params: params}); %>
+<% } %>

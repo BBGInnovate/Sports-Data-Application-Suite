@@ -1,0 +1,39 @@
+[Mon, 28 Jul 2014 20:32:29 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 16:32:29 GMT-0400 (EDT)] "GET /soccer?language=french 1.1" 500 2167 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:4
+    2| 	<thead>
+    3| 		<tr>
+ >> 4| 			<th id="stats-home-name"><%= getCountry(language)[gameData.home.name] %></th>
+    5| 			<th></th>
+    6| 			<th id="stats-away-name"><%= gameData.away.name %></th>
+    7| 		</tr>
+getCountry is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:3553)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 20:34:52 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 16:34:52 GMT-0400 (EDT)] "GET /soccer?language=chienese 1.1" 500 2140 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: ejs:5
+    3| 		<tr>
+    4| 			<th id="stats-home-name">
+ >> 5| 				<%= getCountry(language)[gameData.home.name.toLowerCase()] %>
+    6| 			</th>
+    7| 			<th></th>
+    8| 			<th id="stats-away-name">
+Cannot read property 'germany' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:3625)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 20:42:24 GMT] ERROR Worker 2694 died.

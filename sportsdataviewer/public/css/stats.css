@@ -1,0 +1,635 @@
+body {
+	font-family: Arial, sans-serif;
+	margin:0;
+}
+a {
+	/*color: #ff6d28;*/
+	color: #132fbe;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+.container{
+	margin:0 10px;
+}
+
+/* schedule CSS ====================================================================================== */
+table.schedule{border-collapse:collapse;width: 100%;max-width: 1000px;margin: 0 auto;}
+table.schedule thead tr th{text-align: center;}
+table.schedule tr td{border-top: 1px solid #CCC;text-align: center; padding-top: 5px; padding-bottom: 5px; vertical-align: middle;padding-right:2px;padding-left:2px;}
+table.schedule tr td:nth-child(1){font-weight: bold;}
+table.schedule tr td:nth-child(5){text-align: left; padding-left:1px;}
+table.schedule tr td:nth-child(7){text-align: right; padding-right:1px;}
+
+/*set the mobile defaults*/
+table.schedule #venue, table.schedule tr td:nth-child(3) { display:none; visibility:hidden; }
+table.schedule #group, table.schedule tr td:nth-child(1){display: none;}
+
+table.schedule tr th .collapse{display: none;}
+table.schedule tr.newGroup > td{padding-top: 50px;}
+table.schedule tr td:nth-child(8), table.schedule tr td:nth-child(4){width: 31px;}
+.flag{background: url(../img/sprite_flags_small.png) no-repeat 0px 0px;height:20px;width: 31px;}
+.flag.tbd{background-position: 0px -1200px;}.flag.alg{background-position: 0px 0px;}.flag.arg{background-position: 0px -20px;}.flag.aus{background-position: 0px -40px;}.flag.bel{background-position: 0px -60px;}.flag.bih{background-position: 0px -80px;}.flag.bra{background-position: 0px -100px;}.flag.chi{background-position: 0px -120px;}.flag.civ{background-position: 0px -180px;}.flag.cmr{background-position: 0px -140px;}.flag.col{background-position: 0px -160px;}.flag.crc{background-position: 0px -200px;}.flag.cro{background-position: 0px -220px;}.flag.ecu{background-position: 0px -240px;}.flag.eng{background-position: 0px -260px;}.flag.esp{background-position: 0px -280px;}.flag.fra{background-position: 0px -300px;}.flag.ger{background-position: 0px -320px;}.flag.gha{background-position: 0px -340px;}.flag.gre{background-position: 0px -360px;}.flag.hon{background-position: 0px -380px;}.flag.irn{background-position: 0px -400px;}.flag.ita{background-position: 0px -420px;}.flag.jpn{background-position: 0px -440px;}.flag.kor{background-position: 0px -460px;}.flag.mex{background-position: 0px -480px;}.flag.ned{background-position: 0px -500px;}.flag.nga{background-position: 0px -520px;}.flag.por{background-position: 0px -540px;}.flag.rus{background-position: 0px -560px;}.flag.sui{background-position: 0px -580px;}.flag.uru{background-position: 0px -600px;}.flag.usa{background-position: 0px -620px;}
+
+.full {	display: none;}
+.abbr {display: table-cell;}
+
+@media only screen and (min-width: 350px) {
+	table.schedule #group, table.schedule tr td:nth-child(1){display: table-cell;}
+}
+@media only screen and (min-width: 500px) {
+	.flag{background: url(../img/sprite_flags.png) no-repeat 0px 0px;height:30px;width: 45px;}
+	.flag.alg{background-position: 0px 0px;}.flag.arg{background-position: 0px -30px;}.flag.aus{background-position: 0px -60px;}.flag.bel{background-position: 0px -90px;}.flag.bih{background-position: 0px -120px;}.flag.bra{background-position: 0px -150px;}.flag.chi{background-position: 0px -180px;}.flag.civ{background-position: 0px -270px;}.flag.cmr{background-position: 0px -210px;}.flag.col{background-position: 0px -240px;}.flag.crc{background-position: 0px -300px;}.flag.cro{background-position: 0px -330px;}.flag.ecu{background-position: 0px -360px;}.flag.eng{background-position: 0px -390px;}.flag.esp{background-position: 0px -420px;}.flag.fra{background-position: 0px -450px;}.flag.ger{background-position: 0px -480px;}.flag.gha{background-position: 0px -510px;}.flag.gre{background-position: 0px -540px;}.flag.hon{background-position: 0px -570px;}.flag.irn{background-position: 0px -600px;}.flag.ita{background-position: 0px -630px;}.flag.jpn{background-position: 0px -660px;}.flag.kor{background-position: 0px -690px;}.flag.mex{background-position: 0px -720px;}.flag.ned{background-position: 0px -750px;}.flag.nga{background-position: 0px -780px;}.flag.por{background-position: 0px -810px;}.flag.rus{background-position: 0px -840px;}.flag.sui{background-position: 0px -870px;}.flag.uru{background-position: 0px -900px;}.flag.usa{background-position: 0px -930px;}
+	table.schedule #venue, table.schedule tr td:nth-child(3) { display:table-cell; visibility:visible; }
+	table.schedule tr th .collapse{display: inline-block;}
+	table.schedule tr.newGroup > td{padding-top: 70px;}
+	table.schedule tr td:nth-child(8), table.schedule tr td:nth-child(4){width: 45px;}
+	/*.full {	display: table-cell;}*/
+	.full {	display: inline;}
+	.abbr {display: none;}
+}
+
+
+/*scoreboard at the top ====================================================================================== */
+
+#scroller{
+	margin-bottom: 10px;
+}
+
+table.scoreBoard {
+	height: 1em;
+	width: 100%;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0 .95em;
+	border-bottom: 1px solid #777;
+}
+
+table.scoreBoard td {
+	padding: 0 !important;
+	/*line-height: normal;*/
+}
+#scroller table.scoreBoard td {
+	line-height: normal;
+}
+
+table.scoreBoard .country {
+	display: none;
+	text-align: center;
+}
+
+table.scoreBoard caption {
+	padding: 8px 0;
+	margin: 0;
+	font-family: "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: .4em;
+	font-weight: bold;
+	background-color: #CCC;
+	text-align: center;
+	display: none;
+}
+table.scoreBoard caption.live-game {
+	/*display: inline;*/
+}
+
+table.scoreBoard caption a {
+	color: #FFF;
+}
+
+table.scoreBoard .abbreviation {
+/*display: table-cell;*/
+}
+
+table.scoreBoard tr td {
+	padding: 0 !important;
+	font-size: .8em;
+	vertical-align: middle;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	//background: none;/*height: 5px;*/
+}
+
+table.scoreBoard .flag {
+	display: none;
+	height: 20px;
+	width: 45px;
+}
+
+table.scoreBoard img {
+	height: 15px;
+}
+
+table.scoreBoard #rightFlag {
+	float:right
+}
+
+
+
+/* Commentary CSS ====================================================================================== */
+.commentary {
+	vertical-align: top;
+	padding: 0;
+	margin: auto;
+	/*border-left: 1px solid #999;*/
+	/*max-width: 700px;*/
+}
+
+.update {
+	border-top: 1px dotted #ccc;
+	padding: 10px;
+}
+
+.time {
+	padding-left:55px;
+	margin-bottom: 5px;
+	color: #999;
+	font-size: .8em;
+}
+
+.time.current {
+	color: #900;
+}
+
+.description {
+	padding-left:55px;
+}
+
+.description.nico {
+	background: url(/wp-content/uploads/2014/03/mug_nico.jpg) no-repeat 0 0;
+	min-height: 45px;
+}
+
+.twitter {
+	color: #339933;
+	font-weight: bold;
+}
+
+.update img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	max-width: 90%;
+}
+
+
+
+
+/* Game Stats CSS ====================================================================================== */
+
+table.gameStats{table-layout: fixed;}
+
+table.gameStats #stats-home-name{text-align: left;}
+
+table.gameStats tr th:nth-child(1), table.gameStats tr td:nth-child(1) {
+	text-align: left;
+}
+
+table.gameStats tr td:nth-child(2) {
+	text-align: center;
+	font-weight: bold;
+}
+
+table.gameStats tr th:nth-child(3), table.gameStats tr td:nth-child(3) {
+	text-align: right;
+}
+
+/* CSS from foundation */
+
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td {
+display: table-cell;
+line-height: 1.125rem;
+}
+table tr th, table tr td {
+padding: 0.5625rem 0.625rem;
+font-size: 0.875rem;
+color: #222222;
+}
+
+th, td {
+margin: 0;
+padding: 0;
+}
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+background: #f9f9f9;
+}
+
+
+
+/* tableToSVG CSS ====================================================================================== */
+.tableToSVG {
+	width: 100%;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.tableToSVG td {
+	border-top: 1px solid #999;
+}
+
+
+
+
+/*CSS for the timeline ====================================================================================== */
+
+
+.timeline {
+	width: 100%;
+	height: 70px;
+	margin-bottom: 10px;/*margin-bottom:30px;*/
+	/*padding-left: 15px; /*Added by Gigi to align with all content*/
+}
+
+.timeline .axis path, .timeline .axis line {
+	fill: none;
+	stroke: #FFF;
+	stroke-width: 2px;
+}
+
+.goal, .booking {
+	cursor: hand;
+	cursor: pointer;
+}
+
+.goalNumber {
+	fill: #FFF;
+}
+
+.domain {
+	display: none
+}
+
+.timeLabels {
+	font-size: 1em;
+}
+
+g text	{ /*makes mouse events ignore text*/
+	pointer-events:none;
+} 
+
+
+
+/* TableToSVG graphics CSS ======================================================================================*/
+
+.barlabels {
+	font-weight: bold;
+}
+
+.barvalues {
+	fill: #333;
+}
+
+g.arc text.barvalues{fill:#666;}
+
+
+.bar {
+	fill: #393;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: #555;
+}
+
+.donutLabel{font-weight: bold; font-size:1.4em;}
+
+.legend {
+	position: absolute;
+	width: 30%;
+	height: auto;
+	padding: 10px;
+	background-color: #FFF;
+	right: 0;
+	top: 50px;
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.legend p {
+	margin: 0 0 7px 0;
+	padding: 0;
+	line-height: .8em;
+	font-size: .8em;
+	display: block;
+	width: 90%;
+}
+
+.keySwatch {
+	width: 10px;
+	height: 10px;
+	background-color: #900;
+	display: inline-block;
+}
+
+.keyText {
+	padding-left: 5px;
+}
+
+.key {
+	fill: #000;
+	font-size: .9em;
+}
+
+@media screen and ( max-width: 700px ) {
+	.barlabels {
+		font-size: .8em;
+	}
+
+	.legend {
+		top: auto;
+		bottom: -40px;
+		right: 20%;
+	}
+
+	.legend {
+		width: 60%;
+	}
+
+	.legend p {
+		display: inline-block;
+		width: 50%;
+	}
+}
+
+/* Media queries ========================================================= */
+@media screen and ( min-width: 350px ) {
+	table.scoreBoard .flag {
+		display: block;
+	}
+}
+
+@media (min-width:500px) {
+	.liveGameSVG {
+		width: 90%;
+		margin: 0 5% 100px 5%;
+	}
+}
+
+@media screen and ( min-width: 500px ) and (max-width: 700px) {
+
+	table.scoreBoard {
+		font-size: 2em;
+	}
+	table.scoreBoard .flag {
+		height: 30px;
+	}
+
+	table.scoreBoard .country {
+		display: block;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow-x: hidden;
+	}
+
+	table.scoreBoard .abbreviation {
+		display: none;
+	}
+
+	.timeline {
+		height: 70px;
+	}
+
+	#floatLeft {
+		width: 48%;
+		float: left;
+		border-right: 1px dotted #CCC;
+	}
+
+	#floatRight {
+		width: 46%;
+		float: right;
+	}
+
+	.break {
+		clear: both;
+		border-top: 2px solid;
+	}
+}
+
+@media screen and ( min-width: 700px ) {
+
+	table.scoreBoard {
+		font-size: 3em;
+	}
+
+	table.scoreBoard img {
+		height: 30px;
+	}
+	table.scoreBoard .flag {
+		height: 30px;
+	}
+
+	table.scoreBoard td span.country, table.scoreBoard .country {
+		display: block;
+	}
+
+	table.scoreBoard td span.abbreviation, table.scoreBoard .abbreviation {
+		display: none;
+	}
+
+	.commentary {
+		float: right;
+		width: 67%
+	}
+
+	.statsColumn {
+		float: left;
+		width: 30%;
+		padding: 0 2%;
+	}
+
+	.gameSummary {
+		font-size: 1em !important;
+	}
+
+	.timeline {
+		height: 80px;
+		margin-bottom: 20px;
+	}
+
+	.timeLabels {
+		font-size: 1.2em;
+	}
+}
+
+/*SQUADS =================================================*/
+.abbr{display: inline;}
+.extended{display: none;}
+
+
+/* New squad */
+.testRoster2 h2.flag, h4.flag{
+	width:80%;
+	vertical-align: middle;
+	color:#000;
+	padding-left:40px;
+	font-size: 1.2em;/* needs a media query */
+	margin-bottom: 0;
+	margin-left: 10px;
+}
+
+.testRoster2 h3 {font-weight: normal; color:#999; margin-left: 10px;}
+
+table.roster2 tr td:nth-child(1) img { width:36px; text-align: left;}
+table.roster2 tr td:nth-child(1), table.roster2 tr td:nth-child(2), table.roster2 tr th:nth-child(2)  {text-align: left;}	
+table.roster2 tr td:nth-child(2)  {max-width: 100px;}
+
+table.roster2 tr.newGroup > td{padding-top: 40px;}
+table.roster2 td{text-align: center;border-top: 1px solid #CCC;}
+
+table.roster2 tr td:nth-child(1) { display: none;}
+table.roster2 tr th:nth-child(1) { display: none;}
+
+
+
+
+.centerMe{text-align: center;}
+
+
+/*Player profiles =================================================*/
+.container h2.flag, .container h4.flag{margin-left: 0;}
+
+.mugshot{
+	float:left;
+	margin-right: 10px;
+}
+.playerInfo{
+	/*margin-left: 5px;*/
+}
+.playerInfo p{
+	padding:0;
+	margin: 0;
+}
+
+
+table.tableToSVG.bigNumbers {margin-top: 20px;}
+table.tableToSVG.bigNumbers th{text-align: center; font-weight: bold; text-transform:uppercase;}
+table.tableToSVG.bigNumbers td{color:#CCC;text-align: center; font-size: 3em;font-weight: bold; padding-top: 10px; background-color: #FFF; border-top: none;}
+
+/* Styles for the player match stats */
+table.playerMatchSummary tr th {text-align: center;}
+table.playerMatchSummary tr td:nth-child(2){text-align: left;}	
+table.playerMatchSummary tr td:nth-child(1){width: 45px; padding-right: 5px;}	
+table.playerMatchSummary td{vertical-align: middle;text-align: center;}
+
+
+
+
+
+@media screen and ( min-width: 500px ) {
+	.testRoster2 h2.flag, h4.flag{
+		padding-left:50px;
+		font-size: 1.5em;/* needs a media query */
+	}
+	table.roster tr th:nth-child(1), table.roster tr td:nth-child(1) { display: block; }
+	.abbr{display: none;}
+	.extended{display: inline;}
+
+	.floatLeft{width:48%;float: left;border-right: 1px dotted #CCC;}
+	.floatRight{width: 46%;float: right;}
+}
+
+
+
+/* Squads widget  */
+table.squads td, table.squads th{text-align: center;}
+table.squads tr td:nth-child(1), table.squads tr td:nth-child(2),table.squads tr td:nth-child(3) {text-align: left;}
+table.squads tr th:nth-child(1), table.squads tr th:nth-child(2),table.squads tr th:nth-child(3) {text-align: left;}
+table.squads tr td:nth-child(3), table.squads tr th:nth-child(3) {display: none;}
+
+@media screen and ( min-width: 500px ) {
+table.squads tr td:nth-child(3), table.squads tr th:nth-child(3) {display: table-cell;}
+}
+
+
+/* Squads standings  */
+.standings table{margin-bottom: 50px;}
+.standings h2{margin-bottom: 0;}
+.standings table tr td:nth-child(1), .standings table tr th:nth-child(1) {display: none;}
+@media screen and ( min-width: 500px ) {
+.standings table tr td:nth-child(1), .standings table tr th:nth-child(1) {display: table-cell;}
+}
+
+
+
+/* Starting lineup */
+.teamLineups{width: 100%;}
+table.lineup {margin-bottom: 50px;}
+table.lineup tr td:nth-child(2), table.lineup tr th:nth-child(2)  {text-align: left;}	
+table.lineup tr td:nth-child(2)  {max-width: 100px;}
+table.lineup tr.newGroup > td{padding-top: 40px;}
+table.lineup td{text-align: center;border-top: 1px solid #CCC;}
+.teamLineups h3 {margin-top: 0; font-size: .7em; text-transform: uppercase;}
+.teamLineups h2 {margin-top: 0;}
+.teamLineups.home h2{color:#393;}
+.teamLineups.away h2{color:#999;}
+.teamLineups h2, .teamLineups h3 {padding: 0 5%;}
+
+@media screen and ( min-width: 500px ) {
+	.teamLineups{width: 48%;}
+	.teamLineups.away{float: right;}
+	.teamLineups.home{float: left; padding-right:2%;  border-right: 1px dotted #CCC;}
+	.teamLineups.away h2{text-align: right;}
+}
+@media screen and ( min-width: 500px ) and ( max-width: 660px ) {
+	table.lineup .full {display: none;}
+	table.lineup .abbr {display: table-cell;}
+}
+
+
+/* Simultaneous matches */
+.secondary-game-link{text-align: right;}
+.secondary-game-link a{text-decoration: underline; color:#999;}
+.secondary-game-link a:hover{text-decoration: underline; color:#132fbe;}
+
+
+
+/* Brackets */
+#bracketMobile{display: block;}
+
+table.bracket{width: 100%; display: none; table-layout: fixed; border-collapse: collapse;}
+table.bracket, table.bracket tr#bracketRow, table.bracket tr#bracketRow td {vertical-align: middle; background-color: transparent;}
+table.bracket td{background-color: transparent;}
+table.bracket .column{background-color: #FFF; padding:0;}
+table.bracket .match{background-color: #FFF; height: 160px; margin: 20px 0;}
+table.bracket .match.left{
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+table.bracket .match.right{
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+table.bracket .matchBlank{background-color: #FFF; height: 100px; margin: 10px 0;}
+table.bracket .matchBlank.bigger{margin: 50px 0;}
+table.bracket .match.biggest{height: 320px; margin: 40px 0;}
+
+table.bracket .match .team{height: 40%;padding-top: 10px;text-align:center; width: 80%;}
+table.bracket .match.left .team{margin-right:10%; float:right;}
+table.bracket .match.right .team{margin-left:10%;}
+table.bracket .match.center .team{margin-left:10%;margin-right:10%;}
+
+table.bracket .team:last-of-type{border-top: 1px dashed #999;}
+table.bracket .matchTime{background-color: #000; color:#fff; width:100%;text-align: center; font-size: .9em;}
+table.bracket .matchTime.live{background-color: #393; color:#fff; width:100%;text-align: center; font-size: .9em;}
+
+table.team {width: 100%; vertical-align: middle;}
+table.team td {vertical-align: middle; padding:0;}
+table.team .score{font-size: 1.5em; font-weight: bold;}
+table.team .match.left .score{text-align: right;}
+table.team .match.right .score{text-align: left;}
+
+
+.brackets .scoreBoard {border-bottom: none; table-layout: fixed}
+.brackets .scoreBoard:hover td{text-decoration: underline;}
+.brackets .scoreBoard td{font-weight: normal; font-size: .8em;}
+
+@media screen and ( min-width: 600px ) {
+	table.bracket{display: table;}
+	#bracketMobile{display: none;}
+}

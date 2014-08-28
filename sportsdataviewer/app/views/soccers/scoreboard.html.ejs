@@ -1,0 +1,137 @@
+<% 
+/* ****************************************************************************
+File:			scoreboard.html.ejs
+
+Purpose:		I display the scoreboard view.
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+
+// make some aliases
+var rb = getRB(params.language);
+var home = gameData.home;
+var away = gameData.away;
+var IDGame = gameData.IDGame;
+var fayeURL = geddy.config.fayeClientURL;
+var scoreBoardUUID = getUUID();
+
+%><div class="liveGame">
+<div id="scroller">
+<table class="scoreBoard" id="getFixed">
+<tbody>
+<tr>
+	<td>
+		<div class="flag <%= home.abbreviation.toLowerCase() %>"></div>
+	</td>
+	<td>
+		<span class="country">
+			<a href="<%- urlFor({
+					controller: 'soccer', 
+					action: 'squad',
+					IDTeam : home.IDTeam,
+					relPath: true,
+					language: params.language
+				}) %>">
+				<%= rb.get(home.name.toLowerCase()) %>
+			</a>
+		</span>
+		<span class="abbreviation">
+			<a href="<%- urlFor({
+					controller: 'soccer', 
+					action: 'squad',
+					IDTeam : home.IDTeam,
+					relPath: true,
+					language: params.language
+				}) %>">
+				<%= rb.get(home.abbreviation.toLowerCase()) %>
+			</a>
+		</span>
+	</td>
+	<td>
+		<span id="scoreBoard-homeScore-<%= scoreBoardUUID %>">
+			<%= home.score %>
+		</span>
+		<span id="scoreBoard-homeScore-penality-<%= scoreBoardUUID %>">
+			<% if (home.shootoutGoals > 0) { %>
+				(<%= home.shootoutGoals %>)
+			<% } %>
+		</span>
+		&nbsp;&ndash;&nbsp;
+		<span id="scoreBoard-awayScore-<%= scoreBoardUUID %>">
+			<%= away.score %>
+		</span>
+		<span id="scoreBoard-awayScore-penality-<%= scoreBoardUUID %>">
+			<% if (away.shootoutGoals > 0) { %>
+				(<%= away.shootoutGoals %>)
+			<% } %>
+		</span>
+	</td>
+	<td>
+		<span class="country">
+			<a href="<%- urlFor({
+					controller: 'soccer', 
+					action: 'squad',
+					IDTeam : away.IDTeam,
+					relPath: true,
+					language: params.language
+				}) %>">
+				<%= rb.get(away.name.toLowerCase()) %>
+			</a>
+		</span>
+		<span class="abbreviation">
+			<a href="<%- urlFor({
+					controller: 'soccer', 
+					action: 'squad',
+					IDTeam : away.IDTeam,
+					relPath: true,
+					language: params.language
+				}) %>">
+				<%= rb.get(gameData.away.abbreviation.toLowerCase()) %>
+			</a>
+		</span>
+	</td>
+	<td>
+		<div class="flag <%= away.abbreviation.toLowerCase() %>" id="rightFlag"></div>
+	</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+var gameStatClient = new Faye.Client('<%= fayeURL %>');
+var subscriber = gameStatClient.subscribe('/gamestats-<%= IDGame %>', function(message) {
+	try {
+		var gamestats = jQuery.parseJSON( message.text );
+
+		$('#scoreBoard-homeScore-<%= scoreBoardUUID %>').html(gamestats.home.score);
+		$('#scoreBoard-awayScore-<%= scoreBoardUUID %>').html(gamestats.away.score);
+
+		console.log(gamestats.home.shootoutGoals);
+
+		// only output the penality scores if they are happening
+		try{
+			// HOME
+			if( gamestats.home.shootoutGoals > 0 ){
+				
+				var homeTeamPenilityScores = '(' + gamestats.home.shootoutGoals + ')';
+				$('#scoreBoard-homeScore-penality-<%= scoreBoardUUID %>').html( homeTeamPenilityScores );
+			}
+		}catch(e){
+			console.log(e);
+		}
+		try{
+			// AWAY
+			if( gamestats.away.shootoutGoals > 0 ){
+			
+				var awayTeamPenilityScores = '(' + gamestats.away.shootoutGoals + ')';
+				$('#scoreBoard-awayScore-penality-<%= scoreBoardUUID %>').html( awayTeamPenilityScores );
+			}
+		}catch( e ){
+			console.log(e);
+		}
+	} catch( err ) {
+		//console.log( err )
+	}
+});
+// ]]></script>

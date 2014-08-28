@@ -1,0 +1,100 @@
+[Mon, 28 Jul 2014 15:07:34 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "detailedErrors": true,
+  "flash": {
+    "defaultClass": "alert",
+    "inlineClasses": {
+      "success": "alert alert-success",
+      "alert": "alert",
+      "error": "alert alert-error",
+      "info": "alert alert-info"
+    },
+    "blockClasses": {
+      "success": "alert alert-block alert-success",
+      "alert": "alert alert-block",
+      "error": "alert alert-block alert-error",
+      "info": "alert alert-block alert-info"
+    }
+  },
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/lbacker/Documents/nodeapps/soccersimulator/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/lbacker/Documents/nodeapps/soccersimulator/public",
+  "assetHost": "",
+  "assetBasePath": "/",
+  "cacheControl": {
+    "expires": {
+      "default": 0
+    }
+  },
+  "sessions": {
+    "store": "filesystem",
+    "key": "sid",
+    "expiry": 1209600,
+    "filename": "_session_store.json"
+  },
+  "cookieSessionKey": "sdata",
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/lbacker/Documents/nodeapps/soccersimulator/config/locales"
+    ]
+  },
+  "appName": "Soccer Simulation (development)",
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "mailer": null,
+  "generatedByVersion": "0.12.12",
+  "simulationFilePath": "/Users/lbacker/Documents/nodeapps/soccersimulator/simulationfiles/",
+  "simulationShortTime": 1,
+  "simulationLongTime": 5,
+  "model": {
+    "defaultAdapter": "filesystem"
+  },
+  "ftpPushDetail": {
+    "server": "54.83.49.250",
+    "userName": "opta-user",
+    "password": "0Pt@W0rldCup",
+    "directory": "/var/www/FTP/",
+    "protocol": "SFTP"
+  }
+}
+[Mon, 28 Jul 2014 15:07:34 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 15:07:34 GMT] INFO Server worker running in development on port 4000 with a PID of: 1225
+[Mon, 28 Jul 2014 15:08:19 GMT] INFO Code changed, killing 1225, cycling ...
+[Mon, 28 Jul 2014 15:08:19 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 15:08:20 GMT] INFO Server worker running in development on port 4000 with a PID of: 1227
+[Mon, 28 Jul 2014 15:08:40 GMT] INFO Code changed, killing 1227, cycling ...
+[Mon, 28 Jul 2014 15:08:40 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 15:08:41 GMT] INFO Server worker running in development on port 4000 with a PID of: 1230
+[Mon, 28 Jul 2014 15:09:03 GMT] INFO Code changed, killing 1230, cycling ...
+[Mon, 28 Jul 2014 15:09:03 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 15:09:03 GMT] INFO Server worker running in development on port 4000 with a PID of: 1234
+[Mon, 28 Jul 2014 15:09:41 GMT] INFO Code changed, killing 1234, cycling ...
+[Mon, 28 Jul 2014 15:09:41 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 15:09:42 GMT] INFO Server worker running in development on port 4000 with a PID of: 1237
+[Mon, 28 Jul 2014 15:09:57 GMT] INFO Code changed, killing 1237, cycling ...
+[Mon, 28 Jul 2014 15:09:57 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 15:09:57 GMT] INFO Server worker running in development on port 4000 with a PID of: 1241
+[Mon, 28 Jul 2014 15:10:05 GMT] INFO Code changed, killing 1241, cycling ...
+[Mon, 28 Jul 2014 15:10:05 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 15:10:05 GMT] INFO Server worker running in development on port 4000 with a PID of: 1244
+[Mon, 28 Jul 2014 15:10:22 GMT] INFO Code changed, killing 1244, cycling ...
+[Mon, 28 Jul 2014 15:10:22 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 15:10:23 GMT] INFO Server worker running in development on port 4000 with a PID of: 1246
+[Mon, 28 Jul 2014 15:10:25 GMT] INFO Code changed, killing 1246, cycling ...
+[Mon, 28 Jul 2014 15:10:25 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 15:10:25 GMT] INFO Server worker running in development on port 4000 with a PID of: 1248
+[Mon, 28 Jul 2014 15:11:55 GMT] INFO Code changed, killing 1248, cycling ...
+[Mon, 28 Jul 2014 15:11:55 GMT] INFO Creating 1 worker process.
+[Mon, 28 Jul 2014 15:11:56 GMT] INFO Server worker running in development on port 4000 with a PID of: 1250

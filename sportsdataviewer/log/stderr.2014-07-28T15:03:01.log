@@ -1,0 +1,120 @@
+[Mon, 28 Jul 2014 18:28:07 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 14:28:07 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1986 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/game-f731830.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:52:22)
+    at Object.getLatestGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:30:15)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:24:31)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Mon, 28 Jul 2014 18:28:34 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 14:28:34 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1991 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/game/game-f731830.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:52:22)
+    at Object.getLatestGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:30:15)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:24:31)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Mon, 28 Jul 2014 18:29:03 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 14:29:03 GMT-0400 (EDT)] "GET /soccer 1.1" 500 2003 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/woldcup2014/game/game-f731830.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:52:22)
+    at Object.getLatestGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:30:15)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:24:31)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Mon, 28 Jul 2014 18:41:44 GMT] ERROR Worker 2057 died.
+[Mon, 28 Jul 2014 18:52:18 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 14:52:18 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1767 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 18:52:38 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 14:52:38 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1767 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 18:53:07 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 14:53:07 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1767 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 18:57:07 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 14:57:07 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1767 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 18:57:07 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 14:57:07 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1767 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 18:59:25 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 14:59:25 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1767 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 19:02:19 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 15:02:19 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1659 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: Partial template "commentary" not found in app/views, . and app/views/soccers
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+    at Object.oncomplete (fs.js:107:15)

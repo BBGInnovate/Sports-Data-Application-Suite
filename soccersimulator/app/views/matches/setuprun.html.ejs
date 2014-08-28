@@ -1,0 +1,34 @@
+<h1>Configure Match Simulation</h1>
+<form action="/matches/runmatch" method="post">
+	<div class="control-group">
+		<label for="IDMatch" class="control-label">
+			Select the matches you would like to run during the simulation:
+		</label>
+		<div>
+			<% if (locals.matchList) {%>
+				<% for( var i = 0; i < matchList.length; i++ ) {  %>
+					<input 
+						type="checkbox" 
+						name="IDMatch" 
+						value="<%- matchList[i].id %>" 
+					/>
+					<%- matchList[i].name %>
+					<br />
+				<% }%>
+			<% }%>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="commentPushTime" class="control-label">
+			How many seconds would you like to wait for each comment to be pushed?:
+		</label>
+		<div>
+			<input type="text" name="commentPushTime" value="2" size="5"  />
+			<br />
+			(defatulting to 2 is a pretty choice)
+		</div>
+	</div>
+	<div class="control-group">
+		<input type="submit" value="Simulate Match" />
+	</div>
+</form>

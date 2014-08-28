@@ -1,0 +1,12 @@
+{
+  "name": "soccersimulator",
+  "version": "0.0.1",
+  "author": "BBG | ODDI",
+  "dependencies": {
+    "moment": "^2.7.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "0.8.x"
+  }
+}

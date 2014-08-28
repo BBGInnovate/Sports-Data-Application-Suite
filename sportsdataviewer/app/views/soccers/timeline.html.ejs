@@ -1,0 +1,48 @@
+<%
+/* ****************************************************************************
+File:			timeline.html.ejs
+
+Purpose:		I display the timeline d3 chart.
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+var timelineUID = getUUID();
+var fayeURL = geddy.config.fayeClientURL;
+
+%><%- scriptLink('d3.min.js', {type:'text/javascript'}) %>
+<%- scriptLink('timeline.js', {type:'text/javascript'}) %>
+<div id="timeLine-<%= gameData.IDGame %>-<%= timelineUID %>" class="timeline"></div>
+<script type="text/javascript">// <![CDATA[
+var gameJSON = {};
+$(document).ready(function() {
+	
+	gameJSON = <%- JSON.stringify(gameData) %>;
+	
+	buildTimeline(
+		gameJSON, 
+		'#timeLine-<%= gameData.IDGame %>-<%= timelineUID %>', 
+		10, 
+		'<%- params.language %>'
+	);
+})
+// ]]></script>
+<script type="text/javascript">
+// <![CDATA[
+var gameStatClient = new Faye.Client('<%= fayeURL %>');
+var subscriber = gameStatClient.subscribe('/gamestats-<%= gameData.IDGame %>', function(message) {
+	try {
+		gameJSON = jQuery.parseJSON( message.text );
+		
+		jQuery('#timeLine-<%= gameData.IDGame %>-<%= timelineUID %>').html('');
+		
+		buildTimeline(
+			gameJSON, 
+			'#timeLine-<%= gameData.IDGame %>-<%= timelineUID %>',  
+			10, 
+			'<%- params.language %>'
+		);
+	} catch( err ) {
+		//console.log( err )
+	}
+});
+// ]]></script>

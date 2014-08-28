@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2014 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a02.nexus.opta.net
+     production time:    20140617T120120,592Z
+     production module:  Opta::Feed::XML::Soccer::F13
+-->
+<Commentary away_score="2" away_team_id="596" away_team_name="USA" competition="World Cup" competition_id="4" game_date="2014-08-28 15:14:08" game_id="731780" home_score="1" home_team_id="1219" home_team_name="Ghana" lang_id="en" matchday="1" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+  <message id="755903766" comment="André Ayew (Ghana) wins a free kick in the attacking half." last_modified="2014-06-16 23:05:15" minute="4" period="1" second="39" time="5'" type="free kick won" />
+  <message id="1370342483" comment="Foul by Alejandro Bedoya (USA)." last_modified="2014-06-16 23:06:45" minute="4" period="1" second="39" time="5'" type="free kick lost" />
+  <message id="38411009" comment="Delay over. They are ready to continue." last_modified="2014-06-16 23:05:16" minute="4" period="1" second="26" time="5'" type="end delay" />
+  <message id="1275537966" comment="Delay in match Daniel Opare (Ghana) because of an injury." last_modified="2014-06-16 23:05:20" minute="3" period="1" second="30" time="4'" type="start delay" />
+  <message id="1409192435" comment="Asamoah Gyan (Ghana) wins a free kick in the defensive half." last_modified="2014-06-16 23:02:34" minute="1" period="1" second="59" time="2'" type="free kick won" />
+  <message id="346007947" comment="Foul by DaMarcus Beasley (USA)." last_modified="2014-06-16 23:02:35" minute="1" period="1" second="59" time="2'" type="free kick lost" />
+  <message id="940648879" comment="Goal!  Ghana 0, USA 1. Clint Dempsey (USA) left footed shot from the left side of the box to the bottom right corner. Assisted by Jermaine Jones." last_modified="2014-06-16 23:02:39" minute="0" period="1" second="29" time="1'" type="goal" />
+  <message id="1230235464" comment="First Half begins." last_modified="2014-06-16 23:00:33" minute="0" period="1" second="0" time=" " type="start" />
+  <message id="282686361" comment="Lineups are announced and players are warming up." last_modified="2014-06-16 23:08:05" type="lineup" />
+</Commentary>

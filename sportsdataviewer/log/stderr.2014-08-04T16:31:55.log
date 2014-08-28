@@ -1,0 +1,201 @@
+[Mon, 04 Aug 2014 14:49:10 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 10:49:09 GMT-0400 (EDT)] "GET /soccer/?IDGame=f7317825 1.1" 500 1834 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-f7317825.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Mon, 04 Aug 2014 14:49:16 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 10:49:16 GMT-0400 (EDT)] "GET /soccer/?IDGame=f7317825 1.1" 500 1834 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-f7317825.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Mon, 04 Aug 2014 15:06:36 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 11:06:35 GMT-0400 (EDT)] "GET /soccer/?IDGame=f731825 1.1" 500 1795 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:1
+ >> 1| <% 
+    2| /* ****************************************************************************
+    3| File:			scoreboard.html.ejs
+    4| 
+language is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:46:2659)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 04 Aug 2014 15:07:38 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 11:07:38 GMT-0400 (EDT)] "GET /soccer/?IDGame=f731825 1.1" 500 1798 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:1
+ >> 1| <% 
+    2| /* ****************************************************************************
+    3| File:			scoreboard.html.ejs
+    4| 
+getResource is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:46:2659)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 04 Aug 2014 15:07:54 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 11:07:54 GMT-0400 (EDT)] "GET /soccer/?IDGame=f731825 1.1" 500 1825 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: ejs:1
+ >> 1| <% 
+    2| /* ****************************************************************************
+    3| File:			scoreboard.html.ejs
+    4| 
+Object #<Object> has no method 'getResource'
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:46:2659)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 04 Aug 2014 15:18:50 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 11:18:50 GMT-0400 (EDT)] "GET /soccer/?IDGame=f731825 1.1" 500 1885 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:80
+    78| 					language: params.language
+    79| 				}) %>">
+ >> 80| 				<%= rbObject.get(away.name.toLowerCase()) %>
+    81| 			</a>
+    82| 		</span>
+    83| 		<span class="abbreviation">
+rbObject is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:43:2663)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 04 Aug 2014 15:29:29 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 11:29:29 GMT-0400 (EDT)] "GET /soccer/squad?IDTeam=t366&language=undefined 1.1" 500 1913 "http://127.0.0.1:4000/soccer/?IDGame=f731825" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: ejs:73
+    71| 				</span>
+    72| 				<span class="abbr">
+ >> 73| 					<%= getPlayerPositionAbbreviated(playerArray[i]['position'], rb) %>
+    74| 				</span>
+    75| 			</td>
+    76| 		</tr>
+Object #<Object> has no method 'get'
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:26:739)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 04 Aug 2014 15:32:01 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 11:32:01 GMT-0400 (EDT)] "GET /soccer/player?IDPlayer=p106824&language=undefined 1.1" 500 2059 "http://127.0.0.1:4000/soccer/squad?IDTeam=t366&language=undefined" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:70
+    68| 		<th colspan="2">
+    69| 			<span class='full'><%= rb.get('opposition') %></span>
+ >> 70| 			<span class='abbr'><%= rg.get('oppositionAbbr') %></span>
+    71| 		</th>
+    72| 		<th><%= rb.get('minutesAbbr') %></th>
+    73| 		<th><%= rb.get('goalsAbbr') %></th>
+rg is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:28:1199)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 04 Aug 2014 15:32:44 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 11:32:44 GMT-0400 (EDT)] "GET /soccer/player?IDPlayer=p106824&language=undefined 1.1" 500 2059 "http://127.0.0.1:4000/soccer/squad?IDTeam=t366&language=undefined" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:70
+    68| 		<th colspan="2">
+    69| 			<span class='full'><%= rb.get('opposition') %></span>
+ >> 70| 			<span class='abbr'><%= rg.get('oppositionAbbr') %></span>
+    71| 		</th>
+    72| 		<th><%= rb.get('minutesAbbr') %></th>
+    73| 		<th><%= rb.get('goalsAbbr') %></th>
+rg is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:28:1199)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 04 Aug 2014 15:35:46 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 11:35:46 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1913 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: ejs:43
+    41| 					</span>
+    42| 					<span class='abbr'>
+ >> 43| 						<%= getPlayerPositionAbbreviated(players[i]['position'], rb) %>
+    44| 					</span>
+    45| 				</td>
+    46| 			</tr>
+Object #<Object> has no method 'get'
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:52:725)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 04 Aug 2014 15:35:46 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 11:35:46 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1913 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: ejs:43
+    41| 					</span>
+    42| 					<span class='abbr'>
+ >> 43| 						<%= getPlayerPositionAbbreviated(players[i]['position'], rb) %>
+    44| 					</span>
+    45| 				</td>
+    46| 			</tr>
+Object #<Object> has no method 'get'
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:52:725)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 04 Aug 2014 15:49:02 GMT] ERROR 127.0.0.1 - - [Mon Aug 04 2014 11:49:02 GMT-0400 (EDT)] "GET /soccer/squad?IDTeam=t1219&language=undefined 1.1" 500 877 "http://127.0.0.1:4000/soccer/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14

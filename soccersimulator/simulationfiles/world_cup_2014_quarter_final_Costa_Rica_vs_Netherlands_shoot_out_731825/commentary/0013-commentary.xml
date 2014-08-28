@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2014 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a03.nexus.opta.net
+     production time:    20140706T132528,968Z
+     production module:  Opta::Feed::XML::Soccer::F13
+-->
+<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-07-05 21:00:00" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+  <message id="87532571" comment="Offside, Netherlands. Wesley Sneijder tries a through ball, but Memphis Depay is caught offside." last_modified="2014-07-05 21:24:42" minute="23" period="1" second="49" time="24'" type="offside" />
+  <message id="1934030615" comment="Wesley Sneijder (Netherlands) wins a free kick in the defensive half." last_modified="2014-07-05 21:25:22" minute="23" period="1" second="9" time="24'" type="free kick won" />
+  <message id="201200134" comment="Foul by Bryan Ruiz (Costa Rica)." last_modified="2014-07-05 21:25:13" minute="23" period="1" second="9" time="24'" type="free kick lost" />
+  <message id="1982955651" comment="Attempt saved. Wesley Sneijder (Netherlands) right footed shot from outside the box is saved in the centre of the goal." last_modified="2014-07-05 21:49:23" minute="21" period="1" second="2" time="22'" type="attempt saved" />
+  <message id="1867760499" comment="Attempt saved. Robin van Persie (Netherlands) left footed shot from the centre of the box is saved in the centre of the goal. Assisted by Memphis Depay." last_modified="2014-07-06 11:12:29" minute="20" period="1" second="59" time="21'" type="attempt saved" />
+  <message id="1983125367" comment="Foul by Robin van Persie (Netherlands)." last_modified="2014-07-05 21:10:01" minute="9" period="1" second="12" time="10'" type="free kick lost" />
+  <message id="1485255385" comment="Giancarlo Gonzalez (Costa Rica) wins a free kick in the defensive half." last_modified="2014-07-05 21:10:01" minute="9" period="1" second="12" time="10'" type="free kick won" />
+  <message id="575347108" comment="Corner,  Netherlands. Conceded by Giancarlo Gonzalez." last_modified="2014-07-05 21:08:09" minute="7" period="1" second="21" time="8'" type="corner" />
+  <message id="1363474134" comment="Hand ball by Robin van Persie (Netherlands)." last_modified="2014-07-05 21:09:40" minute="5" period="1" second="50" time="6'" type="free kick lost" />
+  <message id="190851248" comment="Foul by Stefan de Vrij (Netherlands)." last_modified="2014-07-05 21:03:52" minute="3" period="1" second="3" time="4'" type="free kick lost" />
+  <message id="1840351417" comment="Christian Bolaños (Costa Rica) wins a free kick in the attacking half." last_modified="2014-07-05 21:04:33" minute="3" period="1" second="3" time="4'" type="free kick won" />
+  <message id="547333997" comment="First Half begins." last_modified="2014-07-05 21:00:46" minute="0" period="1" second="0" time=" " type="start" />
+  <message id="790395026" comment="Lineups are announced and players are warming up." last_modified="2014-07-05 21:03:35" type="lineup" />
+</Commentary>

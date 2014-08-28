@@ -1,0 +1,112 @@
+<% 
+/* ****************************************************************************
+File:			player.html.ejs
+
+Purpose:		I display the player view.
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+// make some aliases
+var rb = getRB(params.language);
+%>
+<div class='container'>
+	<h4 class='flag <%= player.teamMetadata.abbreviation.toLowerCase() %>'>
+		<a href="<%- urlFor({
+			controller: 'soccer', 
+			action: 'squad',
+			IDTeam : player.info.teamID,
+			relPath: true,
+			language: params.language
+			}) %>">
+			<%= rb.get( player.info.teamName.toLowerCase() ) %>
+		</a>
+	</h4>
+	<h1><%= player.info['name'] %></h1>
+	<div class='mugshot'></div>
+	<div class='playerInfo'>
+		<p>
+	  		<strong><%= rb.get('position') %>:</strong>&nbsp;
+	  		<%= rb.get(player.info.position.toLowerCase()) %>
+		</p>
+		<p>
+			<strong><%= rb.get('birthdate') %>:</strong>&nbsp;
+			<%= formatBirtdate( player.info['dob'] ) %>
+		</p>
+		<p>
+			<strong><%= rb.get('birthplace') %>:</strong>&nbsp;
+			<%= player.info['placeOfBirth'] %>
+		</p>
+		<p>
+			<strong><%= rb.get('height') %>:</strong>&nbsp;
+			<%= player.info['heightMetric'] / 100  %> m
+		</p>
+		<p>
+			<strong><%= rb.get('weight') %>:</strong>&nbsp;
+			<%= player.info['weightMetric'] %> kg
+		</p>
+	</div>
+	<div class='clearMe'></div>
+</div>
+<!-- totals -->
+<table class='tableToSVG bigNumbers'>
+	<tr>
+		<th><%= rb.get('games') %></th>
+		<th><%= rb.get('goals') %></th>
+		<th><%= rb.get('assists') %></th>
+		<th><%= rb.get('shots') %></th>
+	</tr>
+	<tr>
+		<td><%= player.individualGameStat.length %></td>
+		<td><%= player.totalStat.goals %></td>
+		<td><%= player.totalStat.goal_assist %></td>
+		<td><%= player.totalStat.total_scoring_att %></td>
+	</tr>
+</table>
+<!-- aggregate -->
+<table class='tableToSVG playerMatchSummary'>
+	<tr>
+		<th colspan="2">
+			<span class='full'><%= rb.get('opposition') %></span>
+			<span class='abbr'><%= rb.get('oppositionAbbr') %></span>
+		</th>
+		<th><%= rb.get('minutesAbbr') %></th>
+		<th><%= rb.get('goalsAbbr') %></th>
+		<th><%= rb.get('assistsAbbr') %></th>
+		<th><%= rb.get('shotsAbbr') %></th>
+		<th><%= rb.get('foulsCommitted') %></th>
+		<th><%= rb.get('yellowCardsAbbr') %></th>
+		<th><%= rb.get('redCardsAbbr')%></th>
+	</tr>
+<% 
+	// alias
+	var games = player.individualGameStat;
+	for (var i = 0; i < games.length; i++) { 
+%>
+	<tr>
+		<td><div class='flag <%= games[i]['opposingTeam']['abbreviation'].toLowerCase() %>'/></td>
+		<td>
+			<a href="<%- urlFor({
+				controller: 'soccer', 
+				action: 'squad',
+				IDTeam : games[i]['opposingTeam']['optaid'],
+				relPath: true,
+				language: params.language
+				}) %>">
+				<span class='full'>
+					<%= rb.get(games[i]['opposingTeam']['country'].toLowerCase()) %>
+				</span>
+				<span class='abbr'>
+					<%= rb.get(games[i]['opposingTeam']['abbreviation'].toLowerCase()) %>
+				</span>
+			</a>
+		</td>
+		<td><%= games[i]['mins_played'] %></td>
+		<td><%= games[i]['goals'] %></td>
+		<td><%= games[i]['goal_assist'] %></td>
+		<td><%= games[i]['total_scoring_att'] %></td>
+		<td><%= games[i]['fouls'] %></td>
+		<td><%= games[i]['yellow_card'] %></td>
+		<td><%= games[i]['red_card'] %></td>
+	</tr>
+<% } %>
+</table>

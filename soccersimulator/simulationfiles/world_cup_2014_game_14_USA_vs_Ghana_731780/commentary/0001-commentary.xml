@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2014 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a02.nexus.opta.net
+     production time:    20140617T120120,592Z
+     production module:  Opta::Feed::XML::Soccer::F13
+-->
+<Commentary away_score="2" away_team_id="596" away_team_name="USA" competition="World Cup" competition_id="4" game_date="2014-08-28 15:14:08" game_id="731780" home_score="1" home_team_id="1219" home_team_name="Ghana" lang_id="en" matchday="1" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+  <message id="282686361" comment="Lineups are announced and players are warming up." last_modified="2014-06-16 23:08:05" type="lineup" />
+</Commentary>

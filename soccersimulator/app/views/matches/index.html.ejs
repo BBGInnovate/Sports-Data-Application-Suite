@@ -1,0 +1,19 @@
+<h1>Matches</h1>
+
+<h2>What would you like to do?</h2>
+
+<p>
+	This link will build the files nessary to run a simulation. You must do this before running a simulation so the date/time is correct.
+	<br />
+	<b>
+		<%- linkTo(">> Build Match Files", {controller: 'matches', action: 'buildmatchfile'}); %>
+	</b>
+</p>
+
+<p>
+	This link will start the simulation
+	<br />
+	<b>
+		<%- linkTo(">> Simulation Setup", {controller: 'matches', action: 'setuprun'}); %>
+	</b>
+</p>

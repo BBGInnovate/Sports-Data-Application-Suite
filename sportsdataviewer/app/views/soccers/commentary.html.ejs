@@ -1,0 +1,85 @@
+<% 
+/* ****************************************************************************
+File:			commentary.html.ejs
+
+Purpose:		I display the commentary JSON.
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+var commentaryUID = getUUID();
+var fayeURL = geddy.config.fayeClientURL;
+var IDGame = gameData.IDGame;
+var rb = getRB(params.language);
+%>
+<div class="commentary" id="initialCommentary-<%= commentaryUID %>">
+<% for( var i=0; i < commentary.length; i++ ) { %>
+	<div class="update<% if (i === 0){ %> current<% } %>">
+		<div class="time">
+			<%= commentary[i]['minute'] %>  
+			<%= rb.get('minutes') %>
+		</div>
+		<div class="description">
+			<%= commentary[i]['comment'] %>
+		</div>
+	</div>
+<% } %>
+</div>
+<script type="text/javascript">// <![CDATA[
+var commentaryClient = new Faye.Client('<%= fayeURL %>');
+
+var subscriber = commentaryClient.subscribe('/commentary-<%= IDGame %>', function(message) {
+	try {
+	
+		// clear out the curret feed
+		$('#initialCommentary-<%= commentaryUID %>').html('');
+
+		var commentary = jQuery.parseJSON( message.text );
+		commentary.reverse();
+
+		var html = [];
+
+		for (var i = commentary.length - 1; i >= 0; i--) {
+
+			// open of the comment container
+			html.push("<div class='update'>");
+
+				minLabel = 'minutes';
+
+				if (commentary[i].minute <= 1){
+					minLabel = 'minute';
+				}
+
+				// minutes
+				var timeHTML = "<div class='time'>" + commentary[i].minute + " " + minLabel +"</div>";
+				html.push(timeHTML);
+
+				// inner container start
+				html.push("<div class='description'>");			
+				
+					if ( commentary[i].twitterHandle.length ){
+
+						var tLink = "<span class='twitter'><a href='http://twitter.com/" + commentary[i].twitterHandle + "'>" + commentary[i].twitterHandle + "</a></span>";
+						html.push(tLink);
+
+						var tImage = "<img src='" + commentary[i].twitterMediaURL + "'/>";
+						html.push(tImage);				
+					}
+
+					// the comment data
+					html.push(commentary[i].comment);
+
+				// close the inner container
+				html.push("</div>");			
+
+			// close the comment container
+			html.push("</div>");
+			
+		};
+
+		$('#initialCommentary-<%= commentaryUID %>').html(html.join(''));
+		
+	} catch( err ) {
+		console.log( err )
+	}
+});
+// ]]></script>

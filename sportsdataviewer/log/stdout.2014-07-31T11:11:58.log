@@ -1,0 +1,115 @@
+[Thu, 31 Jul 2014 14:45:02 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "detailedErrors": true,
+  "flash": {
+    "defaultClass": "alert",
+    "inlineClasses": {
+      "success": "alert alert-success",
+      "alert": "alert",
+      "error": "alert alert-error",
+      "info": "alert alert-info"
+    },
+    "blockClasses": {
+      "success": "alert alert-block alert-success",
+      "alert": "alert alert-block",
+      "error": "alert alert-block alert-error",
+      "info": "alert alert-block alert-info"
+    }
+  },
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/lbacker/Documents/nodeapps/sportsdataviewer/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/lbacker/Documents/nodeapps/sportsdataviewer/public",
+  "assetHost": "",
+  "assetBasePath": "/",
+  "cacheControl": {
+    "expires": {
+      "default": 0
+    }
+  },
+  "sessions": {
+    "store": "filesystem",
+    "key": "sid",
+    "expiry": 1209600,
+    "filename": "_session_store.json"
+  },
+  "cookieSessionKey": "sdata",
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/lbacker/Documents/nodeapps/sportsdataviewer/config/locales"
+    ]
+  },
+  "appName": "Soccer Data Viewing Application (development)",
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "mailer": null,
+  "generatedByVersion": "0.12.12",
+  "jsonDirectory": "/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/",
+  "fayeClientURL": "http://54.83.5.149:8000/faye",
+  "model": {
+    "defaultAdapter": "filesystem"
+  }
+}
+[Thu, 31 Jul 2014 14:45:02 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 14:45:02 GMT] INFO Server worker running in development on port 4000 with a PID of: 2781
+[Thu, 31 Jul 2014 14:45:25 GMT] INFO Code changed, killing 2781, cycling ...
+[Thu, 31 Jul 2014 14:45:25 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 14:45:26 GMT] INFO Server worker running in development on port 4000 with a PID of: 2783
+[Thu, 31 Jul 2014 14:45:43 GMT] INFO Code changed, killing 2783, cycling ...
+[Thu, 31 Jul 2014 14:45:43 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 14:45:43 GMT] INFO Server worker running in development on port 4000 with a PID of: 2786
+[Thu, 31 Jul 2014 14:45:48 GMT] INFO Code changed, killing 2786, cycling ...
+[Thu, 31 Jul 2014 14:45:48 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 14:45:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 2788
+[Thu, 31 Jul 2014 14:45:54 GMT] INFO Code changed, killing 2788, cycling ...
+[Thu, 31 Jul 2014 14:45:54 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 14:45:54 GMT] INFO Server worker running in development on port 4000 with a PID of: 2790
+[Thu, 31 Jul 2014 14:45:56 GMT] INFO Code changed, killing 2790, cycling ...
+[Thu, 31 Jul 2014 14:45:56 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 14:45:56 GMT] INFO Server worker running in development on port 4000 with a PID of: 2792
+[Thu, 31 Jul 2014 14:46:45 GMT] INFO Code changed, killing 2792, cycling ...
+[Thu, 31 Jul 2014 14:46:45 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 14:46:45 GMT] INFO Server worker running in development on port 4000 with a PID of: 2796
+[Thu, 31 Jul 2014 14:46:48 GMT] INFO Code changed, killing 2796, cycling ...
+[Thu, 31 Jul 2014 14:46:48 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 14:46:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 2798
+[Thu, 31 Jul 2014 14:48:43 GMT] INFO Code changed, killing 2798, cycling ...
+[Thu, 31 Jul 2014 14:48:43 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 14:48:43 GMT] INFO Server worker running in development on port 4000 with a PID of: 2807
+[Thu, 31 Jul 2014 14:49:02 GMT] INFO Code changed, killing 2807, cycling ...
+[Thu, 31 Jul 2014 14:49:02 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 14:49:02 GMT] INFO Server worker running in development on port 4000 with a PID of: 2813
+[Thu, 31 Jul 2014 15:07:53 GMT] INFO Code changed, killing 2813, cycling ...
+[Thu, 31 Jul 2014 15:07:53 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 15:07:53 GMT] INFO Code changed, killing 2949, cycling ...
+[Thu, 31 Jul 2014 15:07:53 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 15:07:53 GMT] INFO Server worker running in development on port 4000 with a PID of: 2950
+[Thu, 31 Jul 2014 15:10:54 GMT] INFO Code changed, killing 2950, cycling ...
+[Thu, 31 Jul 2014 15:10:54 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 15:10:54 GMT] INFO Server worker running in development on port 4000 with a PID of: 2970
+[Thu, 31 Jul 2014 15:11:13 GMT] INFO Code changed, killing 2970, cycling ...
+[Thu, 31 Jul 2014 15:11:13 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 15:11:14 GMT] INFO Server worker running in development on port 4000 with a PID of: 2974
+[Thu, 31 Jul 2014 15:11:22 GMT] INFO Code changed, killing 2974, cycling ...
+[Thu, 31 Jul 2014 15:11:22 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 15:11:22 GMT] INFO Server worker running in development on port 4000 with a PID of: 2977
+[Thu, 31 Jul 2014 15:11:30 GMT] INFO Code changed, killing 2977, cycling ...
+[Thu, 31 Jul 2014 15:11:30 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 15:11:30 GMT] INFO Server worker running in development on port 4000 with a PID of: 2979
+[Thu, 31 Jul 2014 15:11:42 GMT] INFO Code changed, killing 2979, cycling ...
+[Thu, 31 Jul 2014 15:11:42 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 15:11:42 GMT] INFO Server worker running in development on port 4000 with a PID of: 2981
+[Thu, 31 Jul 2014 15:11:45 GMT] INFO Code changed, killing 2981, cycling ...
+[Thu, 31 Jul 2014 15:11:45 GMT] INFO Creating 1 worker process.
+[Thu, 31 Jul 2014 15:11:45 GMT] INFO Server worker running in development on port 4000 with a PID of: 2983

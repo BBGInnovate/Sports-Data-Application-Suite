@@ -1,0 +1,31 @@
+<%
+/* ****************************************************************************
+File:			schedule.html.ejs
+
+Purpose:		I display the schedule.
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+// make an alias
+var rb = getRB(params.language);
+%>
+<div class="scheduleContainer">
+<table class='schedule'>
+<thead>
+	<tr>
+		<th id="group">
+			<span class='full'><%= rb.get('group') %></span>
+			<span class="abbr">G</span>
+		</th>
+		<!-- <th id='match'>Match</th> -->
+		<th id="date">
+			<span class='full'><%= rb.get('dateTime') %> (GMT)</span>
+			<span class="abbr"><%= rb.get('date') %> (GMT)</span>
+		</th>
+		<th id='venue'><%= rb.get('venue') %></th>
+		<th id='teamA' colspan='2'><%= rb.get('team') %></th>
+		<th id='results'><%= rb.get('results') %></th>
+		<th id='teamB' colspan='2'><%= rb.get('team') %></th>
+	</tr>
+</thead>
+<tbody>

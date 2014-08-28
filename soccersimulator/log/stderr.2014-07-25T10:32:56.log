@@ -1,0 +1,97 @@
+[Thu, 24 Jul 2014 16:05:38 GMT] ERROR Worker 6700 died.
+[Thu, 24 Jul 2014 16:12:08 GMT] ERROR Worker 6731 died.
+[Thu, 24 Jul 2014 17:37:38 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 13:37:38 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 1980 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: directoryOfSourceFile is not defined
+    at getCommentFileName (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:187:15)
+    at buildCommentaryFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:125:24)
+    at Object.buildMatchFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:41:3)
+    at buildmatchfile (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:35:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+[Thu, 24 Jul 2014 17:38:56 GMT] ERROR Worker 7170 died.
+[Thu, 24 Jul 2014 17:43:31 GMT] ERROR Worker 7196 died.
+[Thu, 24 Jul 2014 17:48:20 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 13:48:20 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 1027 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: startName is not defined
+    at writeCommetnaryFile (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:163:19)
+    at /Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:145:5
+    at Lazy.<anonymous> (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/lazy/lazy.js:156:13)
+    at Lazy.g (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/lazy/lazy.js:14:15)
+    at Lazy.EventEmitter.emit (events.js:117:20)
+    at Lazy.<anonymous> (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/lazy/lazy.js:78:18)
+    at Lazy.g (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/lazy/lazy.js:14:15)
+    at Lazy.EventEmitter.emit (events.js:117:20)
+    at Lazy.<anonymous> (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/lazy/lazy.js:78:18)
+    at Lazy.g (/Users/lbacker/Documents/nodeapps/soccersimulator/node_modules/lazy/lazy.js:14:15)
+[Thu, 24 Jul 2014 19:42:09 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 15:42:08 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 1883 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected token }
+    at Object.parse (native)
+    at buildCommentaryFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:129:31)
+    at Object.buildMatchFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:41:3)
+    at buildmatchfile (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:35:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+[Thu, 24 Jul 2014 19:47:26 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 15:47:26 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 1883 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected token }
+    at Object.parse (native)
+    at buildCommentaryFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:131:31)
+    at Object.buildMatchFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:41:3)
+    at buildmatchfile (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:35:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+[Thu, 24 Jul 2014 19:48:52 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 15:48:52 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 1883 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected token }
+    at Object.parse (native)
+    at buildCommentaryFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:131:31)
+    at Object.buildMatchFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:41:3)
+    at buildmatchfile (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:35:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+[Thu, 24 Jul 2014 19:53:22 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 15:53:22 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 1883 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected token }
+    at Object.parse (native)
+    at buildCommentaryFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:131:31)
+    at Object.buildMatchFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:41:3)
+    at buildmatchfile (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:35:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+[Thu, 24 Jul 2014 19:56:11 GMT] ERROR Worker 7731 died.
+[Thu, 24 Jul 2014 20:10:02 GMT] ERROR Worker 7833 died.
+[Fri, 25 Jul 2014 13:11:51 GMT] ERROR Worker 8258 died.
+[Fri, 25 Jul 2014 13:12:18 GMT] ERROR Worker 8263 died.
+[Fri, 25 Jul 2014 13:12:28 GMT] ERROR Worker 8265 died.
+[Fri, 25 Jul 2014 13:12:32 GMT] ERROR Worker 8267 died.
+[Fri, 25 Jul 2014 13:21:30 GMT] ERROR Worker 8329 died.
+[Fri, 25 Jul 2014 13:24:58 GMT] ERROR 127.0.0.1 - - [Fri Jul 25 2014 09:24:57 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 2025 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: EISDIR, illegal operation on a directory '/Users/lbacker/Documents/nodeapps/soccersimulator/simulationfiles/world_cup_2014_game_14_USA_vs_Ghana_731780/gamestat/updated/'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.writeFileSync (fs.js:966:15)
+    at stringSwapGameStatFile (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:172:7)
+    at Object.buildMatchFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:44:3)
+    at buildmatchfile (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:35:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Fri, 25 Jul 2014 13:32:19 GMT] ERROR Worker 8369 died.
+[Fri, 25 Jul 2014 13:53:26 GMT] ERROR Worker 8431 died.

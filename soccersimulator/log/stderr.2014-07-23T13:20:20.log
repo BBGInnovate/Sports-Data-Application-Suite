@@ -1,0 +1,33 @@
+[Wed, 23 Jul 2014 15:44:11 GMT] ERROR 127.0.0.1 - - [Wed Jul 23 2014 11:44:11 GMT-0400 (EDT)] "GET /matches/setuprun 1.1" 500 1934 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: sourceDir is not defined
+    at Object.getAvaiableMatch (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:43:37)
+    at setuprun (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:50:31)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:92:9)
+    at Filesystem.read (/usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:53:5)
+[Wed, 23 Jul 2014 15:50:10 GMT] ERROR Worker 4470 died.
+[Wed, 23 Jul 2014 15:50:11 GMT] ERROR Worker 4472 died.
+[Wed, 23 Jul 2014 15:50:15 GMT] ERROR Worker 4477 died.
+[Wed, 23 Jul 2014 15:50:35 GMT] ERROR Worker 4479 died.
+[Wed, 23 Jul 2014 15:50:36 GMT] ERROR Worker 4480 died.
+[Wed, 23 Jul 2014 15:50:48 GMT] ERROR Worker 4482 died.
+[Wed, 23 Jul 2014 15:50:51 GMT] ERROR Worker 4484 died.
+[Wed, 23 Jul 2014 15:56:17 GMT] ERROR Worker 4517 died.
+[Wed, 23 Jul 2014 15:57:34 GMT] ERROR Worker 4526 died.
+[Wed, 23 Jul 2014 16:00:51 GMT] ERROR 127.0.0.1 - - [Wed Jul 23 2014 12:00:51 GMT-0400 (EDT)] "GET /matches/setuprun 1.1" 500 1937 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: capitalizeMe is not defined
+    at Object.getAvaiableMatch (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:51:57)
+    at setuprun (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:50:31)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:92:9)
+    at Filesystem.read (/usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:53:5)

@@ -1,0 +1,36 @@
+[Tue, 29 Jul 2014 12:47:31 GMT] ERROR 127.0.0.1 - - [Tue Jul 29 2014 08:47:31 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1808 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected token .
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Tue, 29 Jul 2014 12:54:34 GMT] ERROR 127.0.0.1 - - [Tue Jul 29 2014 08:54:34 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1811 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Tue, 29 Jul 2014 12:58:58 GMT] ERROR 127.0.0.1 - - [Tue Jul 29 2014 08:58:58 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1814 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected token ILLEGAL
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14

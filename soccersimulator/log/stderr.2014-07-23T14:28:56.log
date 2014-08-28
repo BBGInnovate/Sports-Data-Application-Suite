@@ -1,0 +1,12 @@
+[Wed, 23 Jul 2014 18:28:29 GMT] ERROR 127.0.0.1 - - [Wed Jul 23 2014 14:28:29 GMT-0400 (EDT)] "GET /matches/setuprun 1.1" 500 1932 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ftpDetail is not defined
+    at uploadFile (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:172:18)
+    at Object.getAvaiableMatch (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:63:2)
+    at setuprun (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:50:31)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:92:9)

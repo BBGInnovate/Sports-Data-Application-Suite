@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2014 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a03.nexus.opta.net
+     production time:    20140706T132528,968Z
+     production module:  Opta::Feed::XML::Soccer::F13
+-->
+<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-07-05 21:00:00" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+  <message id="33049152" comment="Corner,  Netherlands. Conceded by Johnny Acosta." last_modified="2014-07-05 23:04:38" minute="93" period="3" second="37" time="94'" type="corner" />
+  <message id="1283224491" comment="Corner,  Netherlands. Conceded by Keylor Navas." last_modified="2014-07-05 23:04:38" minute="93" period="3" second="11" time="94'" type="corner" />
+  <message id="1336657086" comment="Attempt saved. Ron Vlaar (Netherlands) header from the centre of the box is saved in the bottom left corner. Assisted by Arjen Robben with a cross." last_modified="2014-07-05 23:02:02" minute="93" period="3" second="8" time="94'" type="attempt saved" />
+  <message id="1422344074" comment="Corner,  Netherlands. Conceded by Johnny Acosta." last_modified="2014-07-05 23:01:21" minute="92" period="3" second="46" time="93'" type="corner" />
+  <message id="2086475094" comment="Offside, Netherlands. Stefan de Vrij tries a through ball, but Arjen Robben is caught offside." last_modified="2014-07-05 23:00:18" minute="91" period="3" second="40" time="92'" type="offside" />
+  <message id="1230781763" comment="First Half Extra Time begins Netherlands 0, Costa Rica 0." last_modified="2014-07-05 22:58:32" minute="90" period="3" second="0" time=" " type="start" />
+  <message id="1074450653" comment="Second Half ends, Netherlands 0, Costa Rica 0." last_modified="2014-07-05 22:53:57" minute="94" period="2" second="22" time="90'+5'" type="end 2" />
+  <message id="781436467" comment="Offside, Netherlands. Wesley Sneijder tries a through ball, but Arjen Robben is caught offside." last_modified="2014-07-05 22:52:28" minute="93" period="2" second="56" time="90'+4'" type="offside" />
+  <message id="2058542987" comment="Attempt blocked. Robin van Persie (Netherlands) left footed shot from the right side of the box is blocked." last_modified="2014-07-05 22:55:22" minute="92" period="2" second="4" time="90'+3'" type="attempt blocked" />
+  <message id="232653674" comment="Attempt saved. Robin van Persie (Netherlands) left footed shot from a difficult angle and long range on the right is saved in the top right corner." last_modified="2014-07-06 11:14:03" minute="91" period="2" second="54" time="90'+2'" type="attempt saved" />
+  <message id="1212837808" comment="Arjen Robben (Netherlands) wins a free kick on the right wing." last_modified="2014-07-05 22:48:33" minute="90" period="2" second="38" time="90'+1'" type="free kick won" />
+  <message id="435949394" comment="Foul by Júnior Díaz (Costa Rica)." last_modified="2014-07-05 22:48:33" minute="90" period="2" second="38" time="90'+1'" type="free kick lost" />
+  <message id="296733932" comment="Offside, Netherlands. Daley Blind tries a through ball, but Jeremain Lens is caught offside." last_modified="2014-07-05 22:46:42" minute="88" period="2" second="45" time="89'" type="offside" />
+  <message id="733864923" comment="Offside, Netherlands. Wesley Sneijder tries a through ball, but Jeremain Lens is caught offside." last_modified="2014-07-05 22:44:03" minute="86" period="2" second="1" time="87'" type="offside" />
+  <message id="1406053961" comment="Attempt saved. Robin van Persie (Netherlands) right footed shot from the right side of the box is saved in the bottom right corner." last_modified="2014-07-06 11:13:42" minute="83" period="2" second="22" time="84'" type="attempt saved" />
+  <message id="1253341937" comment="Arjen Robben (Netherlands) wins a free kick on the right wing." last_modified="2014-07-05 22:40:24" minute="82" period="2" second="29" time="83'" type="free kick won" />
+  <message id="1977377101" comment="Foul by Christian Bolaños (Costa Rica)." last_modified="2014-07-05 22:40:24" minute="82" period="2" second="29" time="83'" type="free kick lost" />
+  <message id="748627807" comment="Wesley Sneijder (Netherlands) hits the left post with a right footed shot from outside the box from a direct free kick." last_modified="2014-07-06 11:17:45" minute="81" period="2" second="51" time="82'" type="post" />
+  <message id="1720044470" comment="Giancarlo Gonzalez (Costa Rica) is shown the yellow card for a bad foul." last_modified="2014-07-05 22:38:26" minute="80" period="2" second="33" time="81'" type="yellow card" />
+  <message id="2067635257" comment="Arjen Robben (Netherlands) wins a free kick in the attacking half." last_modified="2014-07-05 22:38:25" minute="80" period="2" second="31" time="81'" type="free kick won" />
+  <message id="2039144775" comment="Foul by Giancarlo Gonzalez (Costa Rica)." last_modified="2014-07-05 22:38:25" minute="80" period="2" second="31" time="81'" type="free kick lost" />
+  <message id="482214657" comment="Offside, Netherlands. Dirk Kuyt tries a through ball, but Jeremain Lens is caught offside." last_modified="2014-07-05 22:37:10" minute="79" period="2" second="12" time="80'" type="offside" />
+  <message id="226084831" comment="Substitution, Costa Rica. David Myrie replaces Cristian Gamboa because of an injury." last_modified="2014-07-05 22:36:13" minute="78" period="2" second="21" time="79'" type="substitution" />
+  <message id="968582051" comment="Delay over. They are ready to continue." last_modified="2014-07-05 22:36:12" minute="78" period="2" second="15" time="79'" type="end delay" />
+  <message id="522469104" comment="Delay in match Cristian Gamboa (Costa Rica) because of an injury." last_modified="2014-07-05 22:35:34" minute="77" period="2" second="38" time="78'" type="start delay" />
+  <message id="1566597369" comment="Corner,  Netherlands. Conceded by Michael Umaña." last_modified="2014-07-05 22:34:51" minute="76" period="2" second="57" time="77'" type="corner" />
+  <message id="55230856" comment="Substitution, Netherlands. Jeremain Lens replaces Memphis Depay." last_modified="2014-07-05 22:33:07" minute="75" period="2" second="14" time="76'" type="substitution" />
+  <message id="2119405110" comment="Attempt missed. Ron Vlaar (Netherlands) header from the centre of the box is too high. Assisted by Wesley Sneijder with a cross following a set piece situation." last_modified="2014-07-05 22:32:07" minute="74" period="2" second="3" time="75'" type="miss" />
+  <message id="1939679707" comment="Daley Blind (Netherlands) wins a free kick on the left wing." last_modified="2014-07-05 22:31:17" minute="73" period="2" second="22" time="74'" type="free kick won" />
+  <message id="484717219" comment="Dangerous play by Cristian Gamboa (Costa Rica)." last_modified="2014-07-05 22:31:17" minute="73" period="2" second="22" time="74'" type="free kick lost" />
+  <message id="1445040911" comment="Delay over. They are ready to continue." last_modified="2014-07-05 22:27:51" minute="69" period="2" second="58" time="70'" type="end delay" />
+  <message id="1124138841" comment="Delay in match Cristian Gamboa (Costa Rica) because of an injury." last_modified="2014-07-05 22:27:02" minute="69" period="2" second="6" time="70'" type="start delay" />
+  <message id="1738527908" comment="Offside, Netherlands. Dirk Kuyt tries a through ball, but Robin van Persie is caught offside." last_modified="2014-07-05 22:26:07" minute="68" period="2" second="6" time="69'" type="offside" />
+  <message id="113902406" comment="Corner,  Netherlands. Conceded by Yeltsin Tejeda." last_modified="2014-07-05 22:25:25" minute="67" period="2" second="30" time="68'" type="corner" />
+  <message id="435443423" comment="Substitution, Costa Rica. Marcos Ureña replaces Joel Campbell." last_modified="2014-07-05 22:23:34" minute="65" period="2" second="41" time="66'" type="substitution" />
+  <message id="2117873103" comment="Attempt missed. Giancarlo Gonzalez (Costa Rica) header from the left side of the six yard box is close, but misses the top right corner. Assisted by Christian Bolaños with a cross following a set piece situation." last_modified="2014-07-05 22:22:32" minute="64" period="2" second="27" time="65'" type="miss" />
+  <message id="1956564865" comment="Bruno Martins Indi (Netherlands) is shown the yellow card for a bad foul." last_modified="2014-07-05 22:21:35" minute="63" period="2" second="41" time="64'" type="yellow card" />
+  <message id="689013682" comment="Foul by Bruno Martins Indi (Netherlands)." last_modified="2014-07-05 22:21:32" minute="63" period="2" second="38" time="64'" type="free kick lost" />
+  <message id="1235393756" comment="Bryan Ruiz (Costa Rica) wins a free kick on the right wing." last_modified="2014-07-05 22:21:31" minute="63" period="2" second="38" time="64'" type="free kick won" />
+  <message id="1818826936" comment="Offside, Netherlands. Wesley Sneijder tries a through ball, but Robin van Persie is caught offside." last_modified="2014-07-05 22:20:41" minute="62" period="2" second="44" time="63'" type="offside" />
+  <message id="1384842525" comment="Attempt missed. Christian Bolaños (Costa Rica) right footed shot from outside the box is too high from a direct free kick." last_modified="2014-07-05 22:19:48" minute="61" period="2" second="48" time="62'" type="miss" />
+  <message id="805778407" comment="Foul by Stefan de Vrij (Netherlands)." last_modified="2014-07-06 11:09:26" minute="60" period="2" second="30" time="61'" type="free kick lost" />
+  <message id="1428067999" comment="Joel Campbell (Costa Rica) wins a free kick in the attacking half." last_modified="2014-07-06 11:09:25" minute="60" period="2" second="30" time="61'" type="free kick won" />
+  <message id="1646075548" comment="Foul by Robin van Persie (Netherlands)." last_modified="2014-07-05 22:17:48" minute="59" period="2" second="53" time="60'" type="free kick lost" />
+  <message id="38903807" comment="Giancarlo Gonzalez (Costa Rica) wins a free kick in the defensive half." last_modified="2014-07-05 22:17:47" minute="59" period="2" second="53" time="60'" type="free kick won" />
+  <message id="431826186" comment="Corner,  Netherlands. Conceded by Júnior Díaz." last_modified="2014-07-05 22:17:16" minute="58" period="2" second="38" time="59'" type="corner" />
+  <message id="776739655" comment="Corner,  Netherlands. Conceded by Giancarlo Gonzalez." last_modified="2014-07-05 22:12:57" minute="55" period="2" second="2" time="56'" type="corner" />
+  <message id="1445900314" comment="Georginio Wijnaldum (Netherlands) wins a free kick on the right wing." last_modified="2014-07-05 22:13:08" minute="54" period="2" second="13" time="55'" type="free kick won" />
+  <message id="644525114" comment="Foul by Celso Borges (Costa Rica)." last_modified="2014-07-05 22:12:08" minute="54" period="2" second="13" time="55'" type="free kick lost" />
+  <message id="1293521767" comment="Offside, Costa Rica. Johnny Acosta tries a through ball, but Joel Campbell is caught offside." last_modified="2014-07-05 22:11:38" minute="53" period="2" second="42" time="54'" type="offside" />
+  <message id="219066705" comment="Attempt missed. Wesley Sneijder (Netherlands) right footed shot from the centre of the box is too high. Assisted by Arjen Robben following a set piece situation." last_modified="2014-07-05 22:10:36" minute="52" period="2" second="24" time="53'" type="miss" />
+  <message id="747008087" comment="Michael Umaña (Costa Rica) is shown the yellow card for a bad foul." last_modified="2014-07-05 22:09:09" minute="51" period="2" second="16" time="52'" type="yellow card" />
+  <message id="1978670533" comment="Arjen Robben (Netherlands) wins a free kick on the right wing." last_modified="2014-07-05 22:09:03" minute="51" period="2" second="9" time="52'" type="free kick won" />
+  <message id="1631084584" comment="Foul by Michael Umaña (Costa Rica)." last_modified="2014-07-05 22:09:04" minute="51" period="2" second="9" time="52'" type="free kick lost" />
+  <message id="935826341" comment="Offside, Costa Rica. Keylor Navas tries a through ball, but Joel Campbell is caught offside." last_modified="2014-07-05 22:08:45" minute="50" period="2" second="45" time="51'" type="offside" />
+  <message id="1573827346" comment="Arjen Robben (Netherlands) wins a free kick on the right wing." last_modified="2014-07-05 22:06:49" minute="45" period="2" second="49" time="46'" type="free kick won" />
+  <message id="2072606828" comment="Foul by Christian Bolaños (Costa Rica)." last_modified="2014-07-05 22:06:47" minute="45" period="2" second="49" time="46'" type="free kick lost" />
+  <message id="1852687950" comment="Second Half begins Netherlands 0, Costa Rica 0." last_modified="2014-07-05 22:02:52" minute="45" period="2" second="0" time=" " type="start" />
+  <message id="619460521" comment="First Half ends, Netherlands 0, Costa Rica 0." last_modified="2014-07-05 21:47:21" minute="46" period="1" second="1" time="45'+2'" type="end 1" />
+  <message id="240513088" comment="Foul by Robin van Persie (Netherlands)." last_modified="2014-07-05 21:42:56" minute="42" period="1" second="7" time="43'" type="free kick lost" />
+  <message id="1249335308" comment="Michael Umaña (Costa Rica) wins a free kick in the defensive half." last_modified="2014-07-05 21:42:56" minute="42" period="1" second="7" time="43'" type="free kick won" />
+  <message id="436680317" comment="Corner,  Netherlands. Conceded by Keylor Navas." last_modified="2014-07-05 21:39:38" minute="38" period="1" second="10" time="39'" type="corner" />
+  <message id="2042935953" comment="Attempt saved. Wesley Sneijder (Netherlands) right footed shot from outside the box is saved in the top left corner." last_modified="2014-07-05 21:39:11" minute="38" period="1" second="7" time="39'" type="attempt saved" />
+  <message id="1641829758" comment="Júnior Díaz (Costa Rica) is shown the yellow card for a bad foul." last_modified="2014-07-05 21:37:55" minute="36" period="1" second="58" time="37'" type="yellow card" />
+  <message id="1235401835" comment="Arjen Robben (Netherlands) wins a free kick in the attacking half." last_modified="2014-07-05 21:37:37" minute="36" period="1" second="35" time="37'" type="free kick won" />
+  <message id="1056558918" comment="Foul by Júnior Díaz (Costa Rica)." last_modified="2014-07-05 21:37:38" minute="36" period="1" second="35" time="37'" type="free kick lost" />
+  <message id="1027033466" comment="Arjen Robben (Netherlands) wins a free kick on the right wing." last_modified="2014-07-05 21:36:53" minute="34" period="1" second="1" time="35'" type="free kick won" />
+  <message id="252873123" comment="Foul by Cristian Gamboa (Costa Rica)." last_modified="2014-07-05 21:36:54" minute="34" period="1" second="1" time="35'" type="free kick lost" />
+  <message id="561176954" comment="Attempt missed. Johnny Acosta (Costa Rica) right footed shot from the left side of the six yard box misses to the right. Assisted by Celso Borges with a headed pass following a set piece situation." last_modified="2014-07-06 11:18:20" minute="33" period="1" second="54" time="34'" type="miss" />
+  <message id="1809978431" comment="Foul by Georginio Wijnaldum (Netherlands)." last_modified="2014-07-05 21:34:02" minute="33" period="1" second="13" time="34'" type="free kick lost" />
+  <message id="372368071" comment="Celso Borges (Costa Rica) wins a free kick in the attacking half." last_modified="2014-07-05 21:34:01" minute="33" period="1" second="13" time="34'" type="free kick won" />
+  <message id="1844593807" comment="Foul by Arjen Robben (Netherlands)." last_modified="2014-07-05 21:33:11" minute="32" period="1" second="23" time="33'" type="free kick lost" />
+  <message id="773610623" comment="Cristian Gamboa (Costa Rica) wins a free kick in the defensive half." last_modified="2014-07-05 21:33:11" minute="32" period="1" second="23" time="33'" type="free kick won" />
+  <message id="690291948" comment="Foul by Robin van Persie (Netherlands)." last_modified="2014-07-05 21:32:06" minute="31" period="1" second="19" time="32'" type="free kick lost" />
+  <message id="1792607205" comment="Johnny Acosta (Costa Rica) wins a free kick on the right wing." last_modified="2014-07-05 21:32:06" minute="31" period="1" second="19" time="32'" type="free kick won" />
+  <message id="1268692525" comment="Foul by Bruno Martins Indi (Netherlands)." last_modified="2014-07-05 21:31:39" minute="30" period="1" second="51" time="31'" type="free kick lost" />
+  <message id="1409499463" comment="Cristian Gamboa (Costa Rica) wins a free kick in the defensive half." last_modified="2014-07-05 21:31:39" minute="30" period="1" second="51" time="31'" type="free kick won" />
+  <message id="589672720" comment="Offside, Netherlands. Stefan de Vrij tries a through ball, but Memphis Depay is caught offside." last_modified="2014-07-05 21:30:04" minute="29" period="1" second="6" time="30'" type="offside" />
+  <message id="1396525381" comment="Hand ball by Joel Campbell (Costa Rica)." last_modified="2014-07-05 21:29:30" minute="28" period="1" second="38" time="29'" type="free kick lost" />
+  <message id="2138656812" comment="Attempt saved. Memphis Depay (Netherlands) left footed shot from the left side of the box is saved in the centre of the goal. Assisted by Robin van Persie." last_modified="2014-07-05 21:31:47" minute="28" period="1" second="25" time="29'" type="attempt saved" />
+  <message id="1047592892" comment="Foul by Wesley Sneijder (Netherlands)." last_modified="2014-07-05 21:27:19" minute="26" period="1" second="30" time="27'" type="free kick lost" />
+  <message id="254836272" comment="Bryan Ruiz (Costa Rica) wins a free kick on the left wing." last_modified="2014-07-05 21:27:18" minute="26" period="1" second="30" time="27'" type="free kick won" />
+  <message id="148015418" comment="Offside, Netherlands. Dirk Kuyt tries a through ball, but Robin van Persie is caught offside." last_modified="2014-07-05 21:25:16" minute="24" period="1" second="25" time="25'" type="offside" />
+  <message id="87532571" comment="Offside, Netherlands. Wesley Sneijder tries a through ball, but Memphis Depay is caught offside." last_modified="2014-07-05 21:24:42" minute="23" period="1" second="49" time="24'" type="offside" />
+  <message id="1934030615" comment="Wesley Sneijder (Netherlands) wins a free kick in the defensive half." last_modified="2014-07-05 21:25:22" minute="23" period="1" second="9" time="24'" type="free kick won" />
+  <message id="201200134" comment="Foul by Bryan Ruiz (Costa Rica)." last_modified="2014-07-05 21:25:13" minute="23" period="1" second="9" time="24'" type="free kick lost" />
+  <message id="1982955651" comment="Attempt saved. Wesley Sneijder (Netherlands) right footed shot from outside the box is saved in the centre of the goal." last_modified="2014-07-05 21:49:23" minute="21" period="1" second="2" time="22'" type="attempt saved" />
+  <message id="1867760499" comment="Attempt saved. Robin van Persie (Netherlands) left footed shot from the centre of the box is saved in the centre of the goal. Assisted by Memphis Depay." last_modified="2014-07-06 11:12:29" minute="20" period="1" second="59" time="21'" type="attempt saved" />
+  <message id="1983125367" comment="Foul by Robin van Persie (Netherlands)." last_modified="2014-07-05 21:10:01" minute="9" period="1" second="12" time="10'" type="free kick lost" />
+  <message id="1485255385" comment="Giancarlo Gonzalez (Costa Rica) wins a free kick in the defensive half." last_modified="2014-07-05 21:10:01" minute="9" period="1" second="12" time="10'" type="free kick won" />
+  <message id="575347108" comment="Corner,  Netherlands. Conceded by Giancarlo Gonzalez." last_modified="2014-07-05 21:08:09" minute="7" period="1" second="21" time="8'" type="corner" />
+  <message id="1363474134" comment="Hand ball by Robin van Persie (Netherlands)." last_modified="2014-07-05 21:09:40" minute="5" period="1" second="50" time="6'" type="free kick lost" />
+  <message id="190851248" comment="Foul by Stefan de Vrij (Netherlands)." last_modified="2014-07-05 21:03:52" minute="3" period="1" second="3" time="4'" type="free kick lost" />
+  <message id="1840351417" comment="Christian Bolaños (Costa Rica) wins a free kick in the attacking half." last_modified="2014-07-05 21:04:33" minute="3" period="1" second="3" time="4'" type="free kick won" />
+  <message id="547333997" comment="First Half begins." last_modified="2014-07-05 21:00:46" minute="0" period="1" second="0" time=" " type="start" />
+  <message id="790395026" comment="Lineups are announced and players are warming up." last_modified="2014-07-05 21:03:35" type="lineup" />
+</Commentary>

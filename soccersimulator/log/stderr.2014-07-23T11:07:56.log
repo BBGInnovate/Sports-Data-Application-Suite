@@ -1,0 +1,12 @@
+[Wed, 23 Jul 2014 14:07:54 GMT] ERROR 127.0.0.1 - - [Wed Jul 23 2014 10:07:54 GMT-0400 (EDT)] "GET / 1.1" 500 1833 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at Filesystem._getDatastore (/usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:69:19)
+    at Filesystem.write (/usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:26)
+    at close (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:134:19)
+    at controller.BaseController.output (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:470:20)
+    at cb (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:587:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:146:13
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:152:7)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9

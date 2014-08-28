@@ -1,0 +1,10 @@
+[Wed, 30 Jul 2014 18:50:13 GMT] ERROR Worker 1756 died.
+[Wed, 30 Jul 2014 18:50:18 GMT] ERROR Worker 1760 died.
+[Wed, 30 Jul 2014 18:59:15 GMT] ERROR 127.0.0.1 - - [Wed Jul 30 2014 14:59:14 GMT-0400 (EDT)] "GET / 1.1" 500 1450 "http://127.0.0.1:4001/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected end of input
+    at Object.parse (native)
+    at Filesystem._getDatastore (/usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:69:19)
+    at Filesystem.read (/usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:49:26)
+    at init (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:95:19)
+    at null._onTimeout (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:66:10)
+    at Timer.listOnTimeout [as ontimeout] (timers.js:110:15)

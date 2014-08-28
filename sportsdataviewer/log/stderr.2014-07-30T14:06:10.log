@@ -1,0 +1,63 @@
+[Wed, 30 Jul 2014 14:35:35 GMT] ERROR 127.0.0.1 - - [Wed Jul 30 2014 10:35:35 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1558 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Wed, 30 Jul 2014 14:36:45 GMT] ERROR 127.0.0.1 - - [Wed Jul 30 2014 10:36:45 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1796 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:1
+ >> 1| <% 
+    2| /* ****************************************************************************
+    3| File:			commentary.html.ejs
+    4| 
+gameData is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:13:2608)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Wed, 30 Jul 2014 14:37:15 GMT] ERROR 127.0.0.1 - - [Wed Jul 30 2014 10:37:15 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1796 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:1
+ >> 1| <% 
+    2| /* ****************************************************************************
+    3| File:			commentary.html.ejs
+    4| 
+gameData is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:13:2608)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Wed, 30 Jul 2014 14:37:17 GMT] ERROR 127.0.0.1 - - [Wed Jul 30 2014 10:37:17 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1796 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:1
+ >> 1| <% 
+    2| /* ****************************************************************************
+    3| File:			commentary.html.ejs
+    4| 
+gameData is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:13:2608)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14

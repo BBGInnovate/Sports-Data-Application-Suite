@@ -1,0 +1,100 @@
+<%
+/* ****************************************************************************
+File:			game-overview.html.ejs
+
+Purpose:		I display the game overview table.
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+// make some aliases
+var rb = getRB(params.language);
+var home = gameData.home;
+var away = gameData.away;
+var IDGame = gameData.IDGame;
+var statUUID = getUUID();
+var fayeURL = geddy.config.fayeClientURL;
+%>
+<table id='initialGameStatsTable-<%= statUUID %>' class='gameStats tableToSVG'>
+	<thead>
+		<tr>
+			<th id="stats-home-name-<%= statUUID %>">
+				<%= rb.get(home.name.toLowerCase()) %>
+			</th>
+			<th></th>
+			<th id="stats-away-name-<%= statUUID %>">
+				<%= rb.get(away.name.toLowerCase()) %>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td id="stats-home-total-shotOnGoal-<%= statUUID %>">
+				<%= home.total.shotOnGoal%>(<%= home.score %>)
+			</td>
+			<td><%= rb.get('shotsOnGoal') %></td>
+			<td id="stats-away-total-shotOnGoal-<%= statUUID %>">
+				<%= away.total.shotOnGoal%>(<%= away.score %>)
+			</td>
+		</tr>
+		<tr>
+			<td id="stats-home-total-foulCount-<%= statUUID %>"><%= home.total.foulCount %></td>
+			<td><%= rb.get('fouls') %></td>
+			<td id="stats-away-total-foulCount-<%= statUUID %>"><%= away.total.foulCount %></td>
+		</tr>
+		<tr>
+			<td id="stats-home-total-wonCorner-<%= statUUID %>"><%= home.total.wonCorner %></td>
+			<td><%= rb.get('cornerKicks') %></td>
+			<td id="stats-away-total-wonCorner-<%= statUUID %>"><%= away.total.wonCorner %></td>
+		</tr>
+		<tr>
+			<td id="stats-home-total-offside-<%= statUUID %>"><%= home.total.offSide %></td>
+			<td><%= rb.get('offsides') %></td>
+			<td id="stats-away-total-offside-<%= statUUID %>"><%= away.total.offSide %></td>
+		</tr>
+		<tr>
+			<td id="stats-home-total-yellowCard-<%= statUUID %>"><%= home.total.yellowCard %></td>
+			<td><%= rb.get('yellowCards') %></td>
+			<td id="stats-away-total-yellowCard-<%= statUUID %>"><%= away.total.yellowCard %></td>
+		</tr>
+		<tr>
+			<td id="stats-home-total-redCard-<%= statUUID %>"><%= home.total.redCard %></td>
+			<td><%= rb.get('redCards') %></td>
+			<td id="stats-away-total-redCard"><%= away.total.redCard %></td>
+		</tr>
+		<tr>
+			<td id="stats-home-total-save-<%= statUUID %>"><%= home.total.save %></td>
+			<td><%= rb.get('saves') %></td>
+			<td id="stats-away-total-save-<%= statUUID %>"><%= away.total.save %></td>
+		</tr>
+	</tbody>
+</table>
+
+<script type="text/javascript">// <![CDATA[
+var gameStatClient = new Faye.Client('<%= fayeURL %>');
+var subscriber = gameStatClient.subscribe('/gamestats-<%= IDGame %>', function(message) {
+	try {
+		var gamestats = jQuery.parseJSON( message.text );
+		$('#stats-home-total-shotOnGoal-<%= statUUID %>').html(
+			gamestats.home.total.shotOnGoal + '(' + gamestats.home.score + ')'
+			);
+		$('#stats-away-total-shotOnGoal-<%= statUUID %>').html(
+			gamestats.away.total.shotOnGoal + '(' + gamestats.away.score + ')'
+			);
+		$('#stats-home-total-foulCount-<%= statUUID %>').html(gamestats.home.total.foulCount);
+		$('#stats-away-total-foulCount-<%= statUUID %>').html(gamestats.away.total.foulCount);
+		$('#stats-home-total-wonCorner-<%= statUUID %>').html(gamestats.home.total.wonCorner);
+		$('#stats-away-total-wonCorner-<%= statUUID %>').html(gamestats.away.total.wonCorner);
+		$('#stats-home-total-offside-<%= statUUID %>').html(gamestats.home.total.offSide);
+		$('#stats-away-total-offside-<%= statUUID %>').html(gamestats.away.total.offSide);
+		$('#stats-home-total-yellowCard-<%= statUUID %>').html(gamestats.home.total.yellowCard);
+		$('#stats-away-total-yellowCard-<%= statUUID %>').html(gamestats.away.total.yellowCard);
+		$('#stats-home-total-redCard-<%= statUUID %>').html(gamestats.home.total.redCard);
+		$('#stats-away-total-redCard-<%= statUUID %>').html(gamestats.away.total.redCard);
+		$('#stats-home-total-save-<%= statUUID %>').html(gamestats.home.total.save);
+		$('#stats-away-total-save-<%= statUUID %>').html(gamestats.away.total.save);
+
+	} catch( err ) {
+		console.log( err )
+	}
+});
+// ]]></script>

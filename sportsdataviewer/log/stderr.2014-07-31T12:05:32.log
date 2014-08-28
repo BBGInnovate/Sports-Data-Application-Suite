@@ -1,0 +1,12 @@
+[Thu, 31 Jul 2014 15:32:12 GMT] ERROR 127.0.0.1 - - [Thu Jul 31 2014 11:32:12 GMT-0400 (EDT)] "GET /soccer/squad?IDTeam=t357&language=undefined 1.1" 500 1787 "http://127.0.0.1:4000/soccer/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014t/eamlookup.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:174:22)
+    at Object.getSquad (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:118:21)
+    at squad (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:65:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21

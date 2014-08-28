@@ -1,0 +1,125 @@
+[Wed, 23 Jul 2014 20:27:07 GMT] ERROR Worker 5708 died.
+[Wed, 23 Jul 2014 20:27:12 GMT] ERROR Worker 5712 died.
+[Wed, 23 Jul 2014 20:27:15 GMT] ERROR Worker 5714 died.
+[Wed, 23 Jul 2014 20:27:56 GMT] ERROR Worker 5720 died.
+[Wed, 23 Jul 2014 20:28:08 GMT] ERROR Worker 5722 died.
+[Wed, 23 Jul 2014 20:29:29 GMT] ERROR 127.0.0.1 - - [Wed Jul 23 2014 16:29:29 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 724 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: s is not defined
+    at Transform.<anonymous> (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:123:8)
+    at Transform.EventEmitter.emit (events.js:117:20)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at Transform.Readable.push (_stream_readable.js:127:10)
+    at Transform.push (_stream_transform.js:140:32)
+    at Array.forEach (native)
+    at Transform.liner._transform (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/liner.js:11:12)
+    at Transform._read (_stream_transform.js:179:10)
+[Wed, 23 Jul 2014 20:49:17 GMT] ERROR 127.0.0.1 - - [Wed Jul 23 2014 16:49:17 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 621 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: write after end
+    at writeAfterEnd (_stream_writable.js:133:12)
+    at Transform.Writable.write (_stream_writable.js:181:5)
+    at write (_stream_readable.js:583:24)
+    at flow (_stream_readable.js:592:7)
+    at ReadStream.pipeOnReadable (_stream_readable.js:624:5)
+    at ReadStream.EventEmitter.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at ReadStream.Readable.push (_stream_readable.js:127:10)
+[Wed, 23 Jul 2014 20:49:20 GMT] ERROR 127.0.0.1 - - [Wed Jul 23 2014 16:49:20 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 621 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: write after end
+    at writeAfterEnd (_stream_writable.js:133:12)
+    at Transform.Writable.write (_stream_writable.js:181:5)
+    at write (_stream_readable.js:583:24)
+    at flow (_stream_readable.js:592:7)
+    at ReadStream.pipeOnReadable (_stream_readable.js:624:5)
+    at ReadStream.EventEmitter.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at ReadStream.Readable.push (_stream_readable.js:127:10)
+[Wed, 23 Jul 2014 20:49:23 GMT] ERROR 127.0.0.1 - - [Wed Jul 23 2014 16:49:23 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 621 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: write after end
+    at writeAfterEnd (_stream_writable.js:133:12)
+    at Transform.Writable.write (_stream_writable.js:181:5)
+    at write (_stream_readable.js:583:24)
+    at flow (_stream_readable.js:592:7)
+    at ReadStream.pipeOnReadable (_stream_readable.js:624:5)
+    at ReadStream.EventEmitter.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at ReadStream.Readable.push (_stream_readable.js:127:10)
+[Wed, 23 Jul 2014 20:57:58 GMT] ERROR 127.0.0.1 - - [Wed Jul 23 2014 16:57:58 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 621 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: write after end
+    at writeAfterEnd (_stream_writable.js:133:12)
+    at Transform.Writable.write (_stream_writable.js:181:5)
+    at write (_stream_readable.js:583:24)
+    at flow (_stream_readable.js:592:7)
+    at ReadStream.pipeOnReadable (_stream_readable.js:624:5)
+    at ReadStream.EventEmitter.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at ReadStream.Readable.push (_stream_readable.js:127:10)
+[Thu, 24 Jul 2014 13:08:30 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 09:08:30 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 621 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: write after end
+    at writeAfterEnd (_stream_writable.js:133:12)
+    at Transform.Writable.write (_stream_writable.js:181:5)
+    at write (_stream_readable.js:583:24)
+    at flow (_stream_readable.js:592:7)
+    at ReadStream.pipeOnReadable (_stream_readable.js:624:5)
+    at ReadStream.EventEmitter.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at ReadStream.Readable.push (_stream_readable.js:127:10)
+[Thu, 24 Jul 2014 13:08:52 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 09:08:52 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 621 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: write after end
+    at writeAfterEnd (_stream_writable.js:133:12)
+    at Transform.Writable.write (_stream_writable.js:181:5)
+    at write (_stream_readable.js:583:24)
+    at flow (_stream_readable.js:592:7)
+    at ReadStream.pipeOnReadable (_stream_readable.js:624:5)
+    at ReadStream.EventEmitter.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at ReadStream.Readable.push (_stream_readable.js:127:10)
+[Thu, 24 Jul 2014 13:08:54 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 09:08:54 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 621 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: write after end
+    at writeAfterEnd (_stream_writable.js:133:12)
+    at Transform.Writable.write (_stream_writable.js:181:5)
+    at write (_stream_readable.js:583:24)
+    at flow (_stream_readable.js:592:7)
+    at ReadStream.pipeOnReadable (_stream_readable.js:624:5)
+    at ReadStream.EventEmitter.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at ReadStream.Readable.push (_stream_readable.js:127:10)
+[Thu, 24 Jul 2014 13:08:55 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 09:08:55 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 621 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: write after end
+    at writeAfterEnd (_stream_writable.js:133:12)
+    at Transform.Writable.write (_stream_writable.js:181:5)
+    at write (_stream_readable.js:583:24)
+    at flow (_stream_readable.js:592:7)
+    at ReadStream.pipeOnReadable (_stream_readable.js:624:5)
+    at ReadStream.EventEmitter.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at ReadStream.Readable.push (_stream_readable.js:127:10)
+[Thu, 24 Jul 2014 13:09:06 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 09:09:06 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 621 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: write after end
+    at writeAfterEnd (_stream_writable.js:133:12)
+    at Transform.Writable.write (_stream_writable.js:181:5)
+    at write (_stream_readable.js:583:24)
+    at flow (_stream_readable.js:592:7)
+    at ReadStream.pipeOnReadable (_stream_readable.js:624:5)
+    at ReadStream.EventEmitter.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:408:10)
+    at emitReadable (_stream_readable.js:404:5)
+    at readableAddChunk (_stream_readable.js:165:9)
+    at ReadStream.Readable.push (_stream_readable.js:127:10)

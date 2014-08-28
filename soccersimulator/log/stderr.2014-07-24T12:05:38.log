@@ -1,0 +1,26 @@
+[Thu, 24 Jul 2014 14:15:20 GMT] ERROR Worker 6205 died.
+[Thu, 24 Jul 2014 14:17:39 GMT] ERROR 127.0.0.1 - - [Thu Jul 24 2014 10:17:39 GMT-0400 (EDT)] "GET /matches/buildmatchfile 1.1" 500 1935 "http://127.0.0.1:4000/matches" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: mesages is not defined
+    at buildMatch (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:130:14)
+    at Object.buildMatchFiles (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:39:3)
+    at buildmatchfile (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:35:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:92:9)
+[Thu, 24 Jul 2014 15:23:57 GMT] ERROR Worker 6518 died.
+[Thu, 24 Jul 2014 15:25:00 GMT] ERROR Worker 6522 died.
+[Thu, 24 Jul 2014 15:25:05 GMT] ERROR Worker 6526 died.
+[Thu, 24 Jul 2014 15:25:23 GMT] ERROR Worker 6529 died.
+[Thu, 24 Jul 2014 15:26:28 GMT] ERROR Worker 6531 died.
+[Thu, 24 Jul 2014 15:26:31 GMT] ERROR Worker 6536 died.
+[Thu, 24 Jul 2014 15:45:22 GMT] ERROR Worker 6598 died.
+[Thu, 24 Jul 2014 15:45:29 GMT] ERROR Worker 6600 died.
+[Thu, 24 Jul 2014 15:46:01 GMT] ERROR Worker 6602 died.
+[Thu, 24 Jul 2014 15:46:20 GMT] ERROR Worker 6604 died.
+[Thu, 24 Jul 2014 16:04:05 GMT] ERROR Worker 6682 died.
+[Thu, 24 Jul 2014 16:05:15 GMT] ERROR Worker 6694 died.
+[Thu, 24 Jul 2014 16:05:32 GMT] ERROR Worker 6697 died.

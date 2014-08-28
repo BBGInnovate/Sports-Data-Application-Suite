@@ -1,0 +1,21 @@
+{
+  "commentary": [
+    {
+      "old": "2014-07-05 21:00:00",
+      "new": "",
+      "format": "YYYY-MM-DD HH:mm:ss"
+    }
+  ],
+  "gamestat": [
+    {
+      "old": "Result",
+      "new": "Latest"
+    },
+    {
+      "old": "20140706T142527+0100",
+      "new": "",
+      "format": "YYYYMMDDTHHmmssZZ",
+      
+    }
+  ]
+}

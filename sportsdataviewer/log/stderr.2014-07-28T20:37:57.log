@@ -1,0 +1,49 @@
+[Tue, 29 Jul 2014 00:05:45 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 20:05:45 GMT-0400 (EDT)] "GET /soccer?language 1.1" 500 1226 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: ejs:15
+    13| 			<div class="time">
+    14| 				<%= commentary[i]['minute'] %>  
+ >> 15| 				<%= getBundle(language)['minutes'] %>
+    16| 			</div>
+    17| 			<div class="description">
+    18| 				<%= commentary[i]['comment'] %>
+Cannot read property 'minutes' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:10:712)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Tue, 29 Jul 2014 00:06:01 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 20:06:01 GMT-0400 (EDT)] "GET /soccer?language= 1.1" 500 1226 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: ejs:15
+    13| 			<div class="time">
+    14| 				<%= commentary[i]['minute'] %>  
+ >> 15| 				<%= getBundle(language)['minutes'] %>
+    16| 			</div>
+    17| 			<div class="description">
+    18| 				<%= commentary[i]['comment'] %>
+Cannot read property 'minutes' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:10:712)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Tue, 29 Jul 2014 00:37:49 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 20:37:49 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1701 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: Partial template "timeline" not found in app/views, . and app/views/soccers
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+    at Object.oncomplete (fs.js:107:15)

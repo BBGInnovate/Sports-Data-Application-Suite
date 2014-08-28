@@ -1,0 +1,55 @@
+<% 
+/* ****************************************************************************
+File:			index.html.ejs
+
+Purpose:		I display the index page of the application.
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+%>
+<div style="padding:.7em;">
+<h1>Sports scores from the Voice of America</h1>
+<h2>Soccer</h2>
+<p>Game view with mulitpule widgets.</p>
+<ul>
+  <li>
+  	<%- linkTo('Soccer Default View (all widgets for a game)', {controller: 'soccer', action: 'index'}) %>
+  </li>
+  <li>
+  	<%- linkTo('Soccer Small Game Widget', {
+  				controller: 'soccer', 
+  				action: 'index',
+  				widget: 'game'}) %>
+  </li>
+</ul>
+<p>Widgets.</p>
+<ul>
+  <li>
+  	<%- linkTo('Soccer Schdule', {controller: 'soccer', action: 'schedule'}) %>
+  </li>
+  <li>
+  	<%- linkTo('Soccer Scoreboard', {
+  				controller: 'soccer', 
+  				action: 'index',
+  				widget: 'scoreboard'}) %>
+  </li>
+  <li>
+  	<%- linkTo('Soccer Timeline', {
+  				controller: 'soccer', 
+  				action: 'index',
+  				widget: 'timeline'}) %>
+  </li>
+  <li>
+  	<%- linkTo('Soccer Commentary', {
+  				controller: 'soccer', 
+  				action: 'index',
+  				widget: 'commentary'}) %>
+  </li>
+  <li>
+  	<%- linkTo('Soccer Starting Lineup', {
+  				controller: 'soccer', 
+  				action: 'index',
+  				widget: 'lineup'}) %>
+  </li>
+</ul>
+</div>

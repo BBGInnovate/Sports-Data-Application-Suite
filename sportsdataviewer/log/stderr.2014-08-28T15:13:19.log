@@ -1,0 +1,300 @@
+[Thu, 28 Aug 2014 18:53:02 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:53:02 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 18:53:20 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:53:20 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 18:53:49 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:53:49 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 18:53:49 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:53:49 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 18:53:50 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:53:50 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 18:53:56 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:53:56 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 18:54:01 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:54:01 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 18:54:01 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:54:01 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 18:54:02 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:54:02 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 18:54:02 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:54:02 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 18:54:03 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:54:03 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 18:54:03 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:54:03 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 18:54:03 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:54:03 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 18:54:04 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:54:04 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 18:54:04 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:54:04 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 18:54:04 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 14:54:04 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1835 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/soccer/worldcup2014/game/game-undefined.json'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:188:22)
+    at getGameJSON (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:157:17)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:37:16)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+[Thu, 28 Aug 2014 19:04:41 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 15:04:41 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 19:04:43 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 15:04:43 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 19:04:47 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 15:04:47 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 19:04:48 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 15:04:48 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 19:04:48 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 15:04:48 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 19:04:49 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 15:04:49 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 19:04:49 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 15:04:49 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 19:04:49 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 15:04:49 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+[Thu, 28 Aug 2014 19:04:50 GMT] ERROR 127.0.0.1 - - [Thu Aug 28 2014 15:04:50 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1722 "http://127.0.0.1:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36"
+SyntaxError: Unexpected token d
+    at Object.parse (native)
+    at readJSONFile (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:190:14)
+    at getLatestGameID (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:140:15)
+    at Object.getGame (/Users/lbacker/Documents/nodeapps/sportsdataviewer/lib/service/SoccerService.js:34:21)
+    at index (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:26:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21

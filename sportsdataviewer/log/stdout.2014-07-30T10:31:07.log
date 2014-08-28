@@ -1,0 +1,88 @@
+[Wed, 30 Jul 2014 13:52:13 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "detailedErrors": true,
+  "flash": {
+    "defaultClass": "alert",
+    "inlineClasses": {
+      "success": "alert alert-success",
+      "alert": "alert",
+      "error": "alert alert-error",
+      "info": "alert alert-info"
+    },
+    "blockClasses": {
+      "success": "alert alert-block alert-success",
+      "alert": "alert alert-block",
+      "error": "alert alert-block alert-error",
+      "info": "alert alert-block alert-info"
+    }
+  },
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/lbacker/Documents/nodeapps/sportsdataviewer/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/lbacker/Documents/nodeapps/sportsdataviewer/public",
+  "assetHost": "",
+  "assetBasePath": "/",
+  "cacheControl": {
+    "expires": {
+      "default": 0
+    }
+  },
+  "sessions": {
+    "store": "filesystem",
+    "key": "sid",
+    "expiry": 1209600,
+    "filename": "_session_store.json"
+  },
+  "cookieSessionKey": "sdata",
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/lbacker/Documents/nodeapps/sportsdataviewer/config/locales"
+    ]
+  },
+  "appName": "Soccer Data Viewing Application (development)",
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "mailer": null,
+  "generatedByVersion": "0.12.12",
+  "jsonDirectory": "/Users/lbacker/Documents/nodeapps/sportsdataviewer/data/json/",
+  "model": {
+    "defaultAdapter": "filesystem"
+  }
+}
+[Wed, 30 Jul 2014 13:52:13 GMT] INFO Creating 1 worker process.
+[Wed, 30 Jul 2014 13:52:14 GMT] INFO Server worker running in development on port 4000 with a PID of: 503
+[Wed, 30 Jul 2014 14:09:53 GMT] INFO Code changed, killing 503, cycling ...
+[Wed, 30 Jul 2014 14:09:53 GMT] INFO Creating 1 worker process.
+[Wed, 30 Jul 2014 14:09:54 GMT] INFO Server worker running in development on port 4000 with a PID of: 566
+[Wed, 30 Jul 2014 14:12:57 GMT] INFO Code changed, killing 566, cycling ...
+[Wed, 30 Jul 2014 14:12:57 GMT] INFO Creating 1 worker process.
+[Wed, 30 Jul 2014 14:12:58 GMT] INFO Server worker running in development on port 4000 with a PID of: 578
+[Wed, 30 Jul 2014 14:13:00 GMT] INFO Code changed, killing 578, cycling ...
+[Wed, 30 Jul 2014 14:13:00 GMT] INFO Creating 1 worker process.
+[Wed, 30 Jul 2014 14:13:00 GMT] INFO Server worker running in development on port 4000 with a PID of: 583
+[Wed, 30 Jul 2014 14:13:20 GMT] INFO Code changed, killing 583, cycling ...
+[Wed, 30 Jul 2014 14:13:20 GMT] INFO Creating 1 worker process.
+[Wed, 30 Jul 2014 14:13:20 GMT] INFO Server worker running in development on port 4000 with a PID of: 587
+[Wed, 30 Jul 2014 14:13:23 GMT] INFO Code changed, killing 587, cycling ...
+[Wed, 30 Jul 2014 14:13:23 GMT] INFO Creating 1 worker process.
+[Wed, 30 Jul 2014 14:13:23 GMT] INFO Server worker running in development on port 4000 with a PID of: 589
+[Wed, 30 Jul 2014 14:13:28 GMT] INFO Code changed, killing 589, cycling ...
+[Wed, 30 Jul 2014 14:13:28 GMT] INFO Creating 1 worker process.
+[Wed, 30 Jul 2014 14:13:29 GMT] INFO Server worker running in development on port 4000 with a PID of: 593
+[Wed, 30 Jul 2014 14:13:55 GMT] INFO Code changed, killing 593, cycling ...
+[Wed, 30 Jul 2014 14:13:55 GMT] INFO Creating 1 worker process.
+[Wed, 30 Jul 2014 14:13:55 GMT] INFO Server worker running in development on port 4000 with a PID of: 597
+[Wed, 30 Jul 2014 14:30:06 GMT] INFO Code changed, killing 597, cycling ...
+[Wed, 30 Jul 2014 14:30:06 GMT] INFO Creating 1 worker process.
+[Wed, 30 Jul 2014 14:30:06 GMT] INFO Server worker running in development on port 4000 with a PID of: 639

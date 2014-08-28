@@ -1,0 +1,29 @@
+[Mon, 28 Jul 2014 20:22:38 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 16:22:38 GMT-0400 (EDT)] "GET /soccer?language=chienese 1.1" 500 2264 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: ejs:14
+    12| 				<%= gameData.home.total.shotOnGoal%>(<%= gameData.home.score %>)
+    13| 			</td>
+ >> 14| 			<td><%= getBundle(language)['shotsOnGoal']%></td>
+    15| 			<td id="stats-away-total-shotOnGoal">
+    16| 				<%= gameData.away.total.shotOnGoal%>(<%= gameData.away.score %>)
+    17| 			</td>
+Cannot read property 'shotsOnGoal' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:3531)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Mon, 28 Jul 2014 20:25:33 GMT] ERROR Worker 2592 died.
+[Mon, 28 Jul 2014 20:25:52 GMT] ERROR Worker 2595 died.
+[Mon, 28 Jul 2014 20:25:53 GMT] ERROR Worker 2596 died.
+[Mon, 28 Jul 2014 20:26:25 GMT] ERROR Worker 2600 died.
+[Mon, 28 Jul 2014 20:26:31 GMT] ERROR Worker 2602 died.
+[Mon, 28 Jul 2014 20:26:41 GMT] ERROR Worker 2604 died.
+[Mon, 28 Jul 2014 20:26:45 GMT] ERROR Worker 2606 died.
+[Mon, 28 Jul 2014 20:26:51 GMT] ERROR Worker 2608 died.
+[Mon, 28 Jul 2014 20:27:01 GMT] ERROR Worker 2611 died.
+[Mon, 28 Jul 2014 20:28:05 GMT] ERROR Worker 2613 died.

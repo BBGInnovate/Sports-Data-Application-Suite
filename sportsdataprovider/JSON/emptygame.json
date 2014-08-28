@@ -1,0 +1,51 @@
+{
+  "isGameLive": false,
+  "IDGame": "",
+  "type": "",
+  "time": "",
+  "attendence": "",
+  "venue": "",
+  "pool": "",
+  "round": "",
+  "firstHalfTime": "0",
+  "secondHalfTime": "0",
+  "matchTime": "0",
+  "matchOfficialFirstName": "",
+  "matchOfficialLastName": "",
+  "home": {
+    "IDTeam": "",
+    "abbreviation": "",
+    "score": "",
+    "name": "",
+    "total": {
+      "redCard": 0,
+      "yellowCard": 0,
+      "shotOnGoal": 0,
+      "tackle": 0,
+      "foulCount": 0,
+      "offSide": 0,
+      "wonCorner": 0,
+      "save": 0
+    },
+    "goal": [],
+    "booking": []
+  },
+  "away": {
+    "IDTeam": "",
+    "abbreviation": "",
+    "score": "",
+    "name": "",
+    "total": {
+      "redCard": 0,
+      "yellowCard": 0,
+      "shotOnGoal": 0,
+      "tackle": 0,
+      "foulCount": 0,
+      "offSide": 0,
+      "wonCorner": 0,
+      "save": 0
+    },
+    "goal": [],
+    "booking": []
+  }
+}

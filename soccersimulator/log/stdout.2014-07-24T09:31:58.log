@@ -1,0 +1,92 @@
+[Thu, 24 Jul 2014 13:18:30 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "detailedErrors": true,
+  "flash": {
+    "defaultClass": "alert",
+    "inlineClasses": {
+      "success": "alert alert-success",
+      "alert": "alert",
+      "error": "alert alert-error",
+      "info": "alert alert-info"
+    },
+    "blockClasses": {
+      "success": "alert alert-block alert-success",
+      "alert": "alert alert-block",
+      "error": "alert alert-block alert-error",
+      "info": "alert alert-block alert-info"
+    }
+  },
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/lbacker/Documents/nodeapps/soccersimulator/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/lbacker/Documents/nodeapps/soccersimulator/public",
+  "assetHost": "",
+  "assetBasePath": "/",
+  "cacheControl": {
+    "expires": {
+      "default": 0
+    }
+  },
+  "sessions": {
+    "store": "filesystem",
+    "key": "sid",
+    "expiry": 1209600,
+    "filename": "_session_store.json"
+  },
+  "cookieSessionKey": "sdata",
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/lbacker/Documents/nodeapps/soccersimulator/config/locales"
+    ]
+  },
+  "appName": "Soccer Simulation (development)",
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "mailer": null,
+  "generatedByVersion": "0.12.12",
+  "simulationFilePath": "/Users/lbacker/Documents/nodeapps/soccersimulator/simulationfiles/",
+  "model": {
+    "defaultAdapter": "filesystem"
+  },
+  "ftpPushDetail": {
+    "server": "54.83.49.250",
+    "userName": "opta-user",
+    "password": "0Pt@W0rldCup",
+    "directory": "/var/www/FTP/",
+    "protocol": "SFTP"
+  }
+}
+[Thu, 24 Jul 2014 13:18:30 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 13:18:30 GMT] INFO Server worker running in development on port 4000 with a PID of: 6023
+[Thu, 24 Jul 2014 13:20:07 GMT] INFO Code changed, killing 6023, cycling ...
+[Thu, 24 Jul 2014 13:20:07 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 13:20:08 GMT] INFO Server worker running in development on port 4000 with a PID of: 6038
+[Thu, 24 Jul 2014 13:20:11 GMT] INFO Code changed, killing 6038, cycling ...
+[Thu, 24 Jul 2014 13:20:11 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 13:20:12 GMT] INFO Server worker running in development on port 4000 with a PID of: 6042
+[Thu, 24 Jul 2014 13:22:27 GMT] INFO Code changed, killing 6042, cycling ...
+[Thu, 24 Jul 2014 13:22:27 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 13:22:27 GMT] INFO Server worker running in development on port 4000 with a PID of: 6048
+[Thu, 24 Jul 2014 13:23:21 GMT] INFO Code changed, killing 6048, cycling ...
+[Thu, 24 Jul 2014 13:23:21 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 13:23:21 GMT] INFO Server worker running in development on port 4000 with a PID of: 6061
+[Thu, 24 Jul 2014 13:23:31 GMT] INFO Code changed, killing 6061, cycling ...
+[Thu, 24 Jul 2014 13:23:31 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 13:23:32 GMT] INFO Server worker running in development on port 4000 with a PID of: 6063
+[Thu, 24 Jul 2014 13:24:29 GMT] INFO Code changed, killing 6063, cycling ...
+[Thu, 24 Jul 2014 13:24:29 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 13:24:29 GMT] INFO Server worker running in development on port 4000 with a PID of: 6065
+[Thu, 24 Jul 2014 13:31:52 GMT] INFO Code changed, killing 6065, cycling ...
+[Thu, 24 Jul 2014 13:31:52 GMT] INFO Creating 1 worker process.
+[Thu, 24 Jul 2014 13:31:52 GMT] INFO Server worker running in development on port 4000 with a PID of: 6091

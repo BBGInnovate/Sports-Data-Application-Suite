@@ -1,0 +1,148 @@
+<% 
+/* ****************************************************************************
+File:			starting-lineup.html.ejs
+
+Purpose:		I display a games player lineup.
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+
+// make some aliases
+var rb = getRB(params.language); 
+var home = gameData.home;
+var away = gameData.away;
+
+%>
+<div class='teamLineups home'>
+	<h2><%= rb.get(home.name.toLowerCase()) %></h2>
+	<h3><%= rb.get('startingLineup') %></h3>
+	<table class='tableToSVG lineup'>
+		<% 
+			var players = home.startingLineUp.starting;
+			for (var i = 0; i < players.length; i++) { 
+		%>
+			<tr>
+				<td><%= players[i]['number'] %></td>
+				<td>
+					<a href="<%- urlFor({
+						controller: 'soccer', 
+						action: 'player',
+						IDPlayer : players[i]['id'],
+						relPath: true,
+						language: params.language
+						}) %>">
+						<%= players[i]['name']['firstName'] %>
+						<%= players[i]['name']['lastName'] %>
+					</a>
+				</td>
+				<td>
+					<span class='full'>
+						<%= rb.get(players[i]['position'].toLowerCase()) %>
+					</span>
+					<span class='abbr'>
+						<%= getPlayerPositionAbbreviated(players[i]['position'], rb) %>
+					</span>
+				</td>
+			</tr>
+		<% } %>
+	</table>
+	<br />
+	<h3><%= rb['substitution'] %></h3>
+	<table class='tableToSVG lineup'>
+		<% 
+			var players = home.startingLineUp.substitution;
+			for ( var i = 0; i < players.length; i++ ) { 
+		%>
+			<tr>
+				<td><%= players[i]['number'] %></td>
+				<td>
+					<a href="<%- urlFor({
+						controller: 'soccer', 
+						action: 'player',
+						IDPlayer : players[i]['id'],
+						relPath: true,
+						language: params.language
+						}) %>">
+						<%= players[i]['name']['firstName'] %>
+						<%= players[i]['name']['lastName'] %>
+					</a>
+				</td>
+				<td>
+					<span class='full'>
+						<%= rb.get(players[i]['position'].toLowerCase()) %>
+					</span>
+					<span class='abbr'>
+						<%= getPlayerPositionAbbreviated(players[i]['position'], rb) %>
+					</span>
+				</td>
+			</tr>
+		<% } %>
+	</table>
+</div>
+
+<div class='teamLineups away'>
+	<h2><%= rb.get(away.name.toLowerCase()) %></h2>
+	<h3><%= rb.get('startingLineup') %></h3>
+	<table class='tableToSVG lineup'>
+		<% 
+			var players = away.startingLineUp.starting;
+			for (var i = 0; i < players.length; i++) { 
+		%>
+			<tr>
+				<td><%= players[i]['number'] %></td>
+				<td>
+					<a href="<%- urlFor({
+						controller: 'soccer', 
+						action: 'player',
+						IDPlayer : players[i]['id'],
+						relPath: true,
+						language: params.language
+						}) %>">
+						<%= players[i]['name']['firstName'] %>
+						<%= players[i]['name']['lastName'] %>
+					</a>
+				</td>
+				<td>
+					<span class='full'>
+						<%= rb.get( players[i]['position'].toLowerCase() ) %>
+					</span>
+					<span class='abbr'>
+						<%= getPlayerPositionAbbreviated(players[i]['position'], rb) %>
+					</span>
+				</td>
+			</tr>
+		<% } %>
+	</table>
+	<br />
+	<h3><%= rb['substitution'] %></h3>
+	<table class='tableToSVG lineup'>
+		<% 
+			var players = away.startingLineUp.substitution;
+			for (var i = 0; i < players.length; i++) { 
+		%>
+			<tr>
+				<td><%= players[i]['number'] %></td>
+				<td>
+					<a href="<%- urlFor({
+						controller: 'soccer', 
+						action: 'player',
+						IDPlayer : players[i]['id'],
+						relPath: true,
+						language: params.language
+						}) %>">
+						<%= players[i]['name']['firstName'] %>
+						<%= players[i]['name']['lastName'] %>
+					</a>
+				</td>
+				<td>
+					<span class='full'>
+						<%= rb.get(players[i]['position'].toLowerCase()) %>
+					</span>
+					<span class='abbr'>
+						<%= getPlayerPositionAbbreviated(players[i]['position'], rb) %>
+					</span>
+				</td>
+			</tr>
+		<% } %>
+	</table>
+</div>

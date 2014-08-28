@@ -1,0 +1,41 @@
+[Fri, 25 Jul 2014 15:03:00 GMT] ERROR Worker 9171 died.
+[Fri, 25 Jul 2014 15:05:00 GMT] ERROR Worker 9184 died.
+[Fri, 25 Jul 2014 15:12:52 GMT] ERROR Worker 9218 died.
+[Fri, 25 Jul 2014 15:15:37 GMT] ERROR 127.0.0.1 - - [Fri Jul 25 2014 11:15:37 GMT-0400 (EDT)] "POST /matches/runmatch 1.1" 500 1991 "http://127.0.0.1:4000/matches/setuprun" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: ENOENT, no such file or directory 'world_cup_2014_quarter_final_Costa_Rica_vs_Netherlands_shoot_out_731825/commentary/'
+    at Object.fs.readdirSync (fs.js:654:18)
+    at simulateGameCommentary (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:132:16)
+    at Object.runMatch (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:119:3)
+    at runmatch (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:62:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+[Fri, 25 Jul 2014 15:17:39 GMT] ERROR 127.0.0.1 - - [Fri Jul 25 2014 11:17:39 GMT-0400 (EDT)] "GET /matches/runmatch 1.1" 500 1995 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: ENOENT, no such file or directory '/Users/lbacker/Documents/nodeapps/soccersimulator/simulationfiles/undefined/commentary/'
+    at Object.fs.readdirSync (fs.js:654:18)
+    at simulateGameCommentary (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:132:16)
+    at Object.runMatch (/Users/lbacker/Documents/nodeapps/soccersimulator/lib/MatchService.js:119:3)
+    at runmatch (/Users/lbacker/Documents/nodeapps/soccersimulator/app/controllers/matches.js:62:15)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+[Fri, 25 Jul 2014 15:24:04 GMT] ERROR Worker 9259 died.
+[Fri, 25 Jul 2014 15:47:31 GMT] ERROR Worker 9296 died.
+[Fri, 25 Jul 2014 15:47:34 GMT] ERROR Worker 9301 died.
+[Fri, 25 Jul 2014 15:48:35 GMT] ERROR Worker 9306 died.
+[Fri, 25 Jul 2014 15:50:33 GMT] ERROR Worker 9308 died.
+[Fri, 25 Jul 2014 15:52:06 GMT] ERROR Worker 9314 died.
+[Fri, 25 Jul 2014 15:52:32 GMT] ERROR Worker 9319 died.
+[Fri, 25 Jul 2014 15:52:34 GMT] ERROR Worker 9321 died.
+[Fri, 25 Jul 2014 15:52:38 GMT] ERROR Worker 9323 died.
+[Fri, 25 Jul 2014 15:52:47 GMT] ERROR Worker 9325 died.
+[Fri, 25 Jul 2014 15:52:56 GMT] ERROR Worker 9327 died.
+[Fri, 25 Jul 2014 15:53:12 GMT] ERROR Worker 9329 died.
+[Fri, 25 Jul 2014 15:53:22 GMT] ERROR Worker 9331 died.
+[Fri, 25 Jul 2014 15:53:46 GMT] ERROR Worker 9333 died.

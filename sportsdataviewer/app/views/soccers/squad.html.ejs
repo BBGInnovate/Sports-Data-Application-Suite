@@ -1,0 +1,79 @@
+<%
+/* ****************************************************************************
+File:			squad.html.ejs
+
+Purpose:		I display the squad view.
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+
+var rb = getRB(params.language);
+
+%><div class='testRoster2'>
+<h2 class='flag <%= squad.teamMetadata.abbreviation.toLowerCase() %>'>
+	<%= rb.get(squad.team.name.toLowerCase()) %>
+</h2>
+<% if(squad.team.nickName.length){ /* do we have a nickname to display? */ %>
+	<h3>'<%= squad.team.nickName %>'</h3>
+<% } %>
+<table class='tableToSVG roster2'>
+	<thead>
+		<tr>
+			<th></th>
+			<th><%= rb.get('name') %></th>
+			<th><%= rb.get('age') %></th>
+			<th>
+				<span class='full'><%= rb.get('position') %></span>
+				<span class='abbr'><%= rb.get('positionAbbr') %></span>
+			</th>
+			<!--
+			<th>
+				<span class='full'><%= rb['goals']%></span>
+				<span class='abbr'>G</span>
+			</th>
+			-->
+		</tr>
+	</thead>
+	<% 
+		// alias the player array
+		playerArray = squad.team.player;
+		// default this var to the top value
+		currentPosition = playerArray[0]['position'];
+
+		for (var i = 0; i < playerArray.length; i++) {
+	%>
+		<% if ( currentPosition === playerArray[i]['position'] ){ /* hasnt changed */ %> 
+		<tr>
+		<% } else { currentPosition = playerArray[i]['position']; /* changed so reset */ %>
+		<tr class="newGroup">
+		<% } %>
+			<td>&nbsp;</td>
+			
+			<td>
+				<a href="<%- urlFor({
+						controller: 'soccer', 
+						action: 'player',
+						IDPlayer : playerArray[i]['id'],
+						relPath: true,
+						language: params.language
+					}) %>">
+					<%= playerArray[i]['name'] %>
+				</a>
+			</td>
+
+			<td>
+				<%= getYearDifference(playerArray[i]['dob']) %>
+			</td>
+			
+			<td>
+				<span class="full">
+					<%= rb.get(playerArray[i]['position'].toLowerCase()) %>
+				</span>
+				<span class="abbr">
+					<%= getPlayerPositionAbbreviated(playerArray[i]['position'], rb) %>
+				</span>
+			</td>
+		</tr>
+	<% } %>
+</table>
+</div>

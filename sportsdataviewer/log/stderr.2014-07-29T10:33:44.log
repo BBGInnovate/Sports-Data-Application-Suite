@@ -1,0 +1,103 @@
+[Tue, 29 Jul 2014 13:57:00 GMT] ERROR Worker 3707 died.
+[Tue, 29 Jul 2014 13:57:04 GMT] ERROR Worker 3709 died.
+[Tue, 29 Jul 2014 13:57:37 GMT] ERROR Worker 3711 died.
+[Tue, 29 Jul 2014 14:04:49 GMT] ERROR Worker 3735 died.
+[Tue, 29 Jul 2014 14:06:57 GMT] ERROR 127.0.0.1 - - [Tue Jul 29 2014 10:06:57 GMT-0400 (EDT)] "GET /soccer/squad?IDTeam=t357 1.1" 500 1811 "http://127.0.0.1:4000/soccer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Tue, 29 Jul 2014 14:27:37 GMT] ERROR 127.0.0.1 - - [Tue Jul 29 2014 10:27:37 GMT-0400 (EDT)] "GET /soccer/squad?IDTeam=t357 1.1" 500 1811 "http://127.0.0.1:4000/soccer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Tue, 29 Jul 2014 14:27:51 GMT] ERROR 127.0.0.1 - - [Tue Jul 29 2014 10:27:51 GMT-0400 (EDT)] "GET /soccer/squad?IDTeam=t357 1.1" 500 1811 "http://127.0.0.1:4000/soccer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Tue, 29 Jul 2014 14:27:55 GMT] ERROR 127.0.0.1 - - [Tue Jul 29 2014 10:27:55 GMT-0400 (EDT)] "GET /soccer/squad?IDTeam=t357 1.1" 500 1811 "http://127.0.0.1:4000/soccer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Tue, 29 Jul 2014 14:28:01 GMT] ERROR 127.0.0.1 - - [Tue Jul 29 2014 10:28:01 GMT-0400 (EDT)] "GET /soccer/squad?IDTeam=t357 1.1" 500 2193 "http://127.0.0.1:4000/soccer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:4
+    2| 
+    3| <div class='testRoster2'>
+ >> 4| 	<h2 class='flag <%= getCountry(language)[squad.teamMetadata.abbreviation.toLowerCase()] %>'>
+    5| 		<%= getCountry(language)[squad.team.name.toLowerCase()] %>
+    6| 	</h2>
+    7| </div>
+language is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:504)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Tue, 29 Jul 2014 14:29:15 GMT] ERROR 127.0.0.1 - - [Tue Jul 29 2014 10:29:15 GMT-0400 (EDT)] "GET /soccer/squad?IDTeam=t357 1.1" 500 2193 "http://127.0.0.1:4000/soccer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+ReferenceError: ejs:4
+    2| 
+    3| <div class='testRoster2'>
+ >> 4| 	<h2 class='flag <%= getCountry(language)[squad.teamMetadata.abbreviation.toLowerCase()] %>'>
+    5| 		<%= getCountry(language)[squad.team.name.toLowerCase()] %>
+    6| 	</h2>
+    7| </div>
+language is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:88:10), <anonymous>:2:504)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:101:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+[Tue, 29 Jul 2014 14:29:37 GMT] ERROR Worker 3907 died.
+[Tue, 29 Jul 2014 14:29:41 GMT] ERROR 127.0.0.1 - - [Tue Jul 29 2014 10:29:41 GMT-0400 (EDT)] "GET /soccer/squad?IDTeam=t357 1.1" 500 1972 "http://127.0.0.1:4000/soccer" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+TypeError: Cannot call method 'respond' of undefined
+    at squad (/Users/lbacker/Documents/nodeapps/sportsdataviewer/app/controllers/soccer.js:47:7)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:315:24)
+    at controller.BaseController._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:329:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:106:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:117:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:103:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:92:9)
+    at Filesystem.read (/usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:53:5)
+    at init (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:95:19)

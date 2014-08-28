@@ -1,0 +1,94 @@
+[Wed, 23 Jul 2014 17:46:36 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "detailedErrors": true,
+  "flash": {
+    "defaultClass": "alert",
+    "inlineClasses": {
+      "success": "alert alert-success",
+      "alert": "alert",
+      "error": "alert alert-error",
+      "info": "alert alert-info"
+    },
+    "blockClasses": {
+      "success": "alert alert-block alert-success",
+      "alert": "alert alert-block",
+      "error": "alert alert-block alert-error",
+      "info": "alert alert-block alert-info"
+    }
+  },
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/lbacker/Documents/nodeapps/soccersimulator/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/lbacker/Documents/nodeapps/soccersimulator/public",
+  "assetHost": "",
+  "assetBasePath": "/",
+  "cacheControl": {
+    "expires": {
+      "default": 0
+    }
+  },
+  "sessions": {
+    "store": "filesystem",
+    "key": "sid",
+    "expiry": 1209600,
+    "filename": "_session_store.json"
+  },
+  "cookieSessionKey": "sdata",
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/lbacker/Documents/nodeapps/soccersimulator/config/locales"
+    ]
+  },
+  "appName": "Soccer Simulation (development)",
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "mailer": null,
+  "generatedByVersion": "0.12.12",
+  "simulationFilePath": "/Users/lbacker/Documents/nodeapps/soccersimulator/simulationfiles/",
+  "model": {
+    "defaultAdapter": "filesystem"
+  }
+}
+[Wed, 23 Jul 2014 17:46:37 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:47:02 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:47:14 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:47:14 GMT] INFO Server worker running in development on port 4000 with a PID of: 4934
+[Wed, 23 Jul 2014 17:47:42 GMT] INFO Code changed, killing 4934, cycling ...
+[Wed, 23 Jul 2014 17:47:42 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:47:46 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:47:46 GMT] INFO Server worker running in development on port 4000 with a PID of: 4939
+[Wed, 23 Jul 2014 17:47:53 GMT] INFO Code changed, killing 4939, cycling ...
+[Wed, 23 Jul 2014 17:47:53 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:47:53 GMT] INFO Server worker running in development on port 4000 with a PID of: 4941
+[Wed, 23 Jul 2014 17:48:26 GMT] INFO Code changed, killing 4941, cycling ...
+[Wed, 23 Jul 2014 17:48:26 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:48:26 GMT] INFO Server worker running in development on port 4000 with a PID of: 4945
+[Wed, 23 Jul 2014 17:48:32 GMT] INFO Code changed, killing 4945, cycling ...
+[Wed, 23 Jul 2014 17:48:32 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:48:32 GMT] INFO Server worker running in development on port 4000 with a PID of: 4950
+[Wed, 23 Jul 2014 17:49:03 GMT] INFO Code changed, killing 4950, cycling ...
+[Wed, 23 Jul 2014 17:49:03 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:49:03 GMT] INFO Server worker running in development on port 4000 with a PID of: 4952
+[Wed, 23 Jul 2014 17:49:12 GMT] INFO Code changed, killing 4952, cycling ...
+[Wed, 23 Jul 2014 17:49:12 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:49:12 GMT] INFO Server worker running in development on port 4000 with a PID of: 4955
+[Wed, 23 Jul 2014 17:49:47 GMT] INFO Code changed, killing 4955, cycling ...
+[Wed, 23 Jul 2014 17:49:47 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:49:47 GMT] INFO Server worker running in development on port 4000 with a PID of: 4957
+[Wed, 23 Jul 2014 17:53:33 GMT] INFO Code changed, killing 4957, cycling ...
+[Wed, 23 Jul 2014 17:53:33 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:53:33 GMT] INFO Server worker running in development on port 4000 with a PID of: 4968
+[Wed, 23 Jul 2014 17:54:14 GMT] INFO Code changed, killing 4968, cycling ...
+[Wed, 23 Jul 2014 17:54:14 GMT] INFO Creating 1 worker process.
+[Wed, 23 Jul 2014 17:54:14 GMT] INFO Server worker running in development on port 4000 with a PID of: 4974

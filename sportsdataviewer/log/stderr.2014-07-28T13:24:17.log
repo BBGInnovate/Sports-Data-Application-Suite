@@ -1,0 +1,28 @@
+[Mon, 28 Jul 2014 17:21:12 GMT] ERROR Worker 1720 died.
+[Mon, 28 Jul 2014 17:21:28 GMT] ERROR Worker 1722 died.
+[Mon, 28 Jul 2014 17:22:03 GMT] ERROR Worker 1726 died.
+[Mon, 28 Jul 2014 17:22:04 GMT] ERROR Worker 1728 died.
+[Mon, 28 Jul 2014 17:22:08 GMT] ERROR Worker 1730 died.
+[Mon, 28 Jul 2014 17:22:21 GMT] ERROR Worker 1732 died.
+[Mon, 28 Jul 2014 17:23:28 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 13:23:28 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1688 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: Partial template "app/views/soccers/index" not found in app/views, app/views/soccers and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+    at Object.oncomplete (fs.js:107:15)
+[Mon, 28 Jul 2014 17:23:57 GMT] ERROR 127.0.0.1 - - [Mon Jul 28 2014 13:23:57 GMT-0400 (EDT)] "GET /soccer 1.1" 500 1688 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
+Error: Partial template "app/views/soccers/index" not found in app/views, app/views/soccers and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:266:14
+    at Object.oncomplete (fs.js:107:15)
