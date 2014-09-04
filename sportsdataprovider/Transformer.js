@@ -313,13 +313,13 @@ function doBuildCommentFile( data, twitterData ){
 						log.dump(logObject);
 					}
 
-				
+					/*
 					if(afterStartTest && beforeEndTest){
 						log.log('yeaaaaa')
 					}else{
 						log.log('noooooo')
-
 					}
+					*/
 					
 
 					// if the tweet is after the game start and before the game end

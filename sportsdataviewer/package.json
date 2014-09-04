@@ -1,10 +1,12 @@
 {
-  "name": "sportsdataviewer",
-  "version": "0.0.1",
-  "author": "",
-  "dependencies": {},
-  "devDependencies": {},
-  "engines": {
-    "node": "0.8.x"
-  }
+	"name": "sportsdataviewer",
+	"version": "1.0.0",
+	"author": "John Allen for BBG | ODDI",
+	"dependencies": {
+		"moment" : "~2.8.2"
+	},
+	"devDependencies": {},
+	"engines": {
+		"node": "0.8.x"
+	}	
 }

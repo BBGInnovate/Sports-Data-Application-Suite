@@ -1,0 +1,24 @@
+{
+	"name": "sportsdataprovider",
+	"version": "0.7.0",
+	"author": "John Allen for BBG | ODDI",
+	"description" : "The Sports Data Provider is a headless Node application which reads new or updated FTP files parses them and then writes JSON files. It then pushes the JSON to a configured Faye server.",
+	"dependencies": {
+		"chokidar" : "^0.8.4",
+		"xmldom" : "^0.1.19",
+		"emailjs" : "^0.3.11",
+		"log" : "^1.4.0",
+		"twit" : "^1.1.18",
+		"moment" : "^2.8.2",
+		"kue" : "^0.8.6",
+		"faye" : "^1.0.3",
+		"winston" : "^0.7.3"
+	},
+	"devDependencies": {},
+	"engines": {
+		"node": "0.8.x"
+	}	
+}
+
+
+		
