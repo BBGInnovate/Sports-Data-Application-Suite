@@ -1,0 +1,13 @@
+.DS_Store
+soccersimulator/simulationfiles/**/*
+soccersimulator/log/**/*
+soccersimulator/_session_store.json
+sportsdataviewer/log/**/*
+sportsdataviewer/_session_store.json
+sportsdataprovider/JSON/**/*
+sportsdataprovider/FTP/**/*
+sportsdataprovider/logs/**/*
+sportsdataprovider/scribble.js
+sportsdataprovider/logs/**/*
+sportsdataprovider/Config.js
+sportsdataprovider/aggregate_data/**/*

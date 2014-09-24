@@ -107,8 +107,6 @@ var subscriber = gameStatClient.subscribe('/gamestats-<%= IDGame %>', function(m
 		$('#scoreBoard-homeScore-<%= scoreBoardUUID %>').html(gamestats.home.score);
 		$('#scoreBoard-awayScore-<%= scoreBoardUUID %>').html(gamestats.away.score);
 
-		console.log(gamestats.home.shootoutGoals);
-
 		// only output the penality scores if they are happening
 		try{
 			// HOME
@@ -128,7 +126,7 @@ var subscriber = gameStatClient.subscribe('/gamestats-<%= IDGame %>', function(m
 				$('#scoreBoard-awayScore-penality-<%= scoreBoardUUID %>').html( awayTeamPenilityScores );
 			}
 		}catch( e ){
-			console.log(e);
+			//console.log(e);
 		}
 	} catch( err ) {
 		//console.log( err )
