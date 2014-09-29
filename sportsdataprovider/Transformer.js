@@ -1,10 +1,11 @@
-/* ****************************************************************************
- * File: 		Transformer.js
- * Purpose: 	I take JSON objects aggrigate data and generate display friendly 
- * 				JSON files for the front end to use.
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/**
+ * @fileOverview 	I take JSON objects aggrigate data and generate display  
+ * 					friendly JSON files for the front end to use.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			Transformer.js
+ */
+ 
 /* *************************** Required Classes **************************** */
 var fs = require('fs');
 var util = require('util');
@@ -15,8 +16,8 @@ var log = require('./Logger.js');
 var utils = require('./Utils.js');
 var Twit = require('twit');
 var moment = require('moment');
-var faye = require('faye');
 var aggDataService = require('./AggregateDataService');
+var Controller = require('./Controller');
 
 // only fire aggregate data methods if told to do so passed in 
 // e.g.: node app.js true false
@@ -28,26 +29,11 @@ if(process.argv[2] != undefined && process.argv[2] === 'true'){
 /* *************************** Constructor Code **************************** */
 var config = Config.getConfig();
 var twitter = new Twit({
-    consumer_key:         config.twitterOAuth.consumer_key
-  , consumer_secret:      config.twitterOAuth.consumer_secret
-  , access_token:         config.twitterOAuth.access_token
-  , access_token_secret:  config.twitterOAuth.access_token_secret
+    consumer_key: config.twitterOAuth.consumer_key, 
+    consumer_secret: config.twitterOAuth.consumer_secret, 
+    access_token: config.twitterOAuth.access_token, 
+    access_token_secret: config.twitterOAuth.access_token_secret
 })
-
-var fayClient = new faye.Client(config.faye.url);
-
-// we need to send the password to the server so lets add an extension to do
-// this.
-fayClient.addExtension({
-	outgoing: function( message, callback ) {
-
-		message.ext = message.ext || {};
-		message.ext.password = config.faye.publishPassword;
-
-		callback( message );
-	}
-});
-
 
 
 /* *************************** Public Methods ****************************** */
@@ -55,10 +41,10 @@ fayClient.addExtension({
 /**
  * I update the currentgame.json file. If a game file XML says it's the latest
  * I write the game ID to the file so other applications can know what is the
- * current game or last game played.
- *
- * @param {Object} data - I am the JSON data to make the comment file from.
- * @return {void}
+ * current game or last game played. I return true if I passed.
+ * @param {Object} data - I am the JSON data to make the current game file 
+ * from.
+ * @return {Boolean}
  */
 function updateCurrentGameFile( data ){
 
@@ -118,6 +104,8 @@ function updateCurrentGameFile( data ){
 			log.application("LATEST GAME FILE File WRITTEN AFRE FAIL!", "Fixed it", newJSON);
 		}
 	}
+
+	return true;
 }
 
 
@@ -125,11 +113,10 @@ function updateCurrentGameFile( data ){
 /**
  * I build comment JSON file. I am really just a method to gather the async
  * Twitter timelines and then fire off the real method doBuildCommentFile().
- *
  * @param {Object} data - I am the JSON data to make the comment file from.
  * @return {void}
  */
-function buildCommentFile (data) {
+function buildCommentFile ( data ) {
 
 	// array of twitter user names
 	var twitterUsers = config.twitterCommentaryAccountArray;
@@ -166,17 +153,14 @@ function buildCommentFile (data) {
 				}
 			);
 		};
-		
 	} else {
-		//log.log('we did NOT hit twitter')
 		doBuildCommentFile( data, twitterTimelines );
-	}
+	};
 }
 
 
 /**
  * I do the actual building of the twitter data.
- *
  * @param {Object} data - I am the JSON data to make the comment file from.
  * @param {Object} twitterData - I am the array of twitter timelines.
  * @return {void}
@@ -187,6 +171,7 @@ function doBuildCommentFile( data, twitterData ){
 	var commentary = [];
 	var timeFormat = 'YYYY-MM-DD HH:mm:ss';
 	var startTime = moment(data.Commentary['@attributes'].game_date).format(timeFormat);
+	var IDGame = data.Commentary['@attributes'].game_id;
 
 	try{
 		// handle when the XML has only one message. it shows up NOT as an array
@@ -195,6 +180,7 @@ function doBuildCommentFile( data, twitterData ){
 			var comment = getComment();
 
 			comment.id = data.Commentary.message['@attributes']['id'];
+			comment.IDGame = IDGame;
 			comment.dateTime = moment(data.Commentary.message['@attributes']['last_modified']).format();
 			comment.formatedDateTime = moment(comment.dateTime).format(timeFormat);
 			comment.comment = data.Commentary.message['@attributes']['comment'];
@@ -202,7 +188,7 @@ function doBuildCommentFile( data, twitterData ){
 			comment.minute = 0;
 			comment.second = 0;
 			comment.sortKey = comment.formatedDateTime;
-			
+
 			commentary.push( comment );
 
 		} else { // there are an array of messages.
@@ -213,6 +199,7 @@ function doBuildCommentFile( data, twitterData ){
 				var comment = getComment();
 
 				comment.id = commentArray[i]['@attributes']['id'];
+				comment.IDGame = IDGame;
 				comment.dateTime = moment(commentArray[i]['@attributes']['last_modified']).format();
 				comment.formatedDateTime = moment(comment.dateTime).format(timeFormat);
 				comment.comment = commentArray[i]['@attributes']['comment'];
@@ -274,6 +261,7 @@ function doBuildCommentFile( data, twitterData ){
 			for (var x = timeline.length - 1; x >= 0; x--) {
 
 				var tweetComment = getComment();
+				tweetComment.IDGame = IDGame;
 				
 				var testString = timeline[i].text.toLowerCase();
 				var hashTagTest = config.twitterHashTagFlag.toLowerCase();
@@ -320,7 +308,6 @@ function doBuildCommentFile( data, twitterData ){
 						log.log('noooooo')
 					}
 					*/
-					
 
 					// if the tweet is after the game start and before the game end
 					// create it and push it onto the stack of tweets
@@ -383,28 +370,13 @@ function doBuildCommentFile( data, twitterData ){
 	
 	commentary = sortCommentary( commentary );
 
-	// get the top commentary entry entry to push to clients
-	var topCommentArray = [];
-	topCommentArray.push( commentary[ commentary.length - 1 ] );
-
-	var fayeData = JSON.stringify( topCommentArray );
-
 	// reverse so it reads top to bottom on the front end
 	commentary.reverse();
 
-	var jsonString = JSON.stringify( commentary );
-	var IDGame = data.Commentary['@attributes'].game_id;
-	
-	// build the file name
-	var fileName = 'commentary/commentary-f' + IDGame + '.json';
+	// tell the controller that we have finished doing commentary building
+	Controller.handleCommentPostParsing(commentary);
 
-	var commentaryFayeChannel = config.faye.channel.commentary + '-f' + IDGame;
-
-	// production version.
-	//postTransform( fileName, jsonString, commentaryFayeChannel, fayeData );
-	postTransform( fileName, jsonString, commentaryFayeChannel, jsonString );
-
-	log.application('Commentary JSON Written: ' + fileName);
+	return true;
 	
 	/***************** helper functions *****************/
 	/**
@@ -603,19 +575,13 @@ function buildSquadFile ( data ) {
 	// sort the squad object by team name
 	resultArray = sortSquad( resultArray );
 
-	// ***** handle the squad JSON ***** //
-	var fileName = 'squad.json';
-	var json = JSON.stringify( resultArray );
-	postTransform( fileName, json );
+	var resultObject = {
+		'squad' : resultArray,
+		'player' : playerArray
+	}
 
-	// ***** handle the player JSON ***** //
-	//fileName = 'player.json';
-	//json = ;
-	//postTransform( fileName, json );
-	fs.writeFileSync(config.JSONDirectory + '/player.json', JSON.stringify( playerArray ));
-	log.application('player.json file written');
+	return resultObject;
 	
-
 	// **************** Helper functions for squad parsing ***************** //
 	
 	/**
@@ -915,7 +881,6 @@ function buildGameFile( data ){
 		round = competitionData.Round.RoundNumber['#text'];
 	} catch ( error ){ /*fail silently, aborted game or playoff */ }
 
-
 	// Is this a live game?
 	// we need to make a proper date to check, the XML date is kinda wak.
 	var checkDate = utils.formatOptaDate( matchData.MatchInfo.Date['#text'] );
@@ -965,14 +930,7 @@ function buildGameFile( data ){
 		}
 	}
 
-	var jsonString = JSON.stringify(result);
-	var fileName = 'game/game-' + result.IDGame + '.json';
-	var gameFayeChannel = config.faye.channel.gamestats + '-' + result.IDGame;
-
-	postTransform( fileName, jsonString, gameFayeChannel, jsonString, data, result );
-
-	log.application('Game JSON Written: ' + fileName);
-
+	return result;
 
 	/************** BUILD THE AGGREGATE DATA FILES ***************/
 	// were only going to do this when told to by arguments passed in process.argv
@@ -1163,7 +1121,6 @@ function buildGameFile( data ){
 		}
 
 		return result;
-
 
 		function getDefaultSubstituionObject(){
 
@@ -1488,17 +1445,10 @@ function buildSchedule( data ){
 
 		match = {};
 	}
-
 	
 	schedule = sortSchedule( schedule );
 
-	var jsonString = JSON.stringify( schedule );
-	var fileName = 'schedule.json';
-
-	postTransform( fileName, jsonString, config.faye.channel.schedule, jsonString );
-
-	log.application('Schedule JSON Written: ' + fileName);
-
+	return schedule;
 
 	/***************** helper functions *****************/
 	// I sort the schedule by group then date
@@ -1639,7 +1589,8 @@ function postTransform( fileName, json, fayeChannel, fayeData, rawParsedJSON, ga
 	// at start up. the directory watcher initialy process ALL the files in the
 	// watched directory which is a good thing in case the JSON format is
 	// changed during the life of the world cup.
-	global.numberOfSartUpJobsCommited = global.numberOfSartUpJobsCommited +1;
+	
+	//global.numberOfSartUpJobsCommited = global.numberOfSartUpJobsCommited +1;
 
 	// if we have processed all the initial files in the FTP directory we can
 	// start to broadcast to Faye
@@ -1647,10 +1598,10 @@ function postTransform( fileName, json, fayeChannel, fayeData, rawParsedJSON, ga
 
 		if( fayeChannel.length ){
 
-			fayClient.publish('/' + fayeChannel, {text: fayeData} );
+			//fayClient.publish('/' + fayeChannel, {text: fayeData} );
 			
 			if( doLogging ){
-				util.log( fayeChannel + " was pushed." );	
+			//	util.log( fayeChannel + " was pushed." );	
 			}
 		}
 	}
@@ -1779,3 +1730,4 @@ exports.buildCommentFile = buildCommentFile;
 exports.buildSquadFile = buildSquadFile;
 exports.buildSeasonStats = buildSeasonStats;
 exports.updateCurrentGameFile = updateCurrentGameFile;
+exports.doBuildCommentFile = doBuildCommentFile;

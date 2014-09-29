@@ -1,9 +1,9 @@
-/* ****************************************************************************
- * File: 		Utils.js
- * Purpose: 	I provide generic Utility methods
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/**
+ * @fileOverview 	I provide generic Utility methods.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			Utils.js
+ */
 
 /* *************************** Required Classes **************************** */
 var fs = require('fs');
@@ -17,7 +17,6 @@ var fs = require('fs');
  * to YYYY-MM-DDTHH:mm:ssZZ format so it's easer to work wiht and a valid 
  * Javascript format
  * @param {String} theDate - I am the string to convert
- *
  * @return {string} - the formated date.
  */
 function formatOptaDate( theDate ){
@@ -34,7 +33,6 @@ function formatOptaDate( theDate ){
 /**
  * I delete the contents of a directory
  * @param {String} dirPath - I am the path of the directory to empty
- *
  * @return {void}
  */
 function emptyDirectory( dirPath ) {
@@ -54,7 +52,6 @@ function emptyDirectory( dirPath ) {
 /**
  * I recursivly delete a directory
  * @param {String} dirPath - I am the path of the directory to delete
- *
  * @return {void}
  */
 function deleteDirectory( dirPath ) {

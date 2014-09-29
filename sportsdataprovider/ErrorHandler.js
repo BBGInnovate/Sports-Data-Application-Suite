@@ -1,10 +1,10 @@
-/* ****************************************************************************
- * File: 		ErrorHandler.js
- * Purpose: 	I am the application wide Error Handler
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
-
+/**
+ * @fileOverview 	I am the application wide Error Handler.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			ErrorHandler.js
+ */
+ 
 /* *************************** Required Classes **************************** */
 
 var email = require('./Email.js');

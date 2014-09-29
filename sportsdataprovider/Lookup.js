@@ -1,9 +1,9 @@
-/* ****************************************************************************
- * File: 		Lookup.js
- * Purpose: 	I hold some basic lookup data.
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/**
+ * @fileOverview 	I hold some basic lookup data.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			Lookup.js
+ */
 
 /* *************************** Required Classes **************************** */
 

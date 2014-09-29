@@ -1,9 +1,9 @@
-/* ****************************************************************************
- * File: 		Config.js
- * Purpose: 	I am a simple configuration object
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/**
+ * @fileOverview 	I am a simple configuration object.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		0.0.1
+ * @module 			Config.js
+ */
 
 /* *************************** Required Classes **************************** */
 

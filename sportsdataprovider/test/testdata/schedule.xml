@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2001-2014 Opta Sportsdata Ltd. All rights reserved. -->
+
+<!-- PRODUCTION HEADER
+     produced on:        valde-jobq-a07.nexus.opta.net
+     production time:    20140714T134012,514Z
+     production module:  Opta::Feed::XML::Soccer::F1
+-->
+<SoccerFeed>
+  <SoccerDocument Type="RESULTS Latest" competition_code="IG_WC" competition_id="4" competition_name="World Cup" game_system_id="1" season_id="2013" season_name="Season 2013/2014" timestamp="2014-07-14 14-40-12">
+    <MatchData detail_id="1" last_modified="2014-06-13T03:47:37+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731767">
+      <MatchInfo GroupName="A" MatchDay="1" MatchType="Regular" MatchWinner="t614" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8606">
+        <Date>2014-06-12 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena de São Paulo</Stat>
+      <Stat Type="City">São Paulo</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="3" Side="Home" TeamRef="t614">
+        <Goal Period="FirstHalf" PlayerRef="p61278" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p61262" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p61278" Type="Penalty" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="1" Side="Away" TeamRef="t535">
+        <Goal Period="FirstHalf" PlayerRef="p39563" Type="Own" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-14T12:12:26+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731770">
+      <MatchInfo GroupName="B" MatchDay="1" MatchType="Regular" MatchWinner="t831" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8608">
+        <Date>2014-06-13 23:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Pantanal</Stat>
+      <Stat Type="City">Cuiaba</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="2" Score="3" Side="Home" TeamRef="t831">
+        <Goal Period="FirstHalf" PlayerRef="p33190" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p37265" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p33298" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="1" Side="Away" TeamRef="t575">
+        <Goal Period="FirstHalf" PlayerRef="p3273" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-14T15:59:18+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731768">
+      <MatchInfo GroupName="A" MatchDay="1" MatchType="Regular" MatchWinner="t659" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8607">
+        <Date>2014-06-13 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena das Dunas</Stat>
+      <Stat Type="City">Natal</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="1" Side="Home" TeamRef="t659">
+        <Goal Period="SecondHalf" PlayerRef="p53515" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t494" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-14T04:41:58+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731769">
+      <MatchInfo GroupName="B" MatchDay="1" MatchType="Regular" MatchWinner="t366" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8605">
+        <Date>2014-06-13 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Fonte Nova</Stat>
+      <Stat Type="City">Salvador</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="1" Side="Home" TeamRef="t118">
+        <Goal Period="FirstHalf" PlayerRef="p3508" Type="Penalty" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="5" Side="Away" TeamRef="t366">
+        <Goal Period="FirstHalf" PlayerRef="p12297" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p8533" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p12297" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p78140" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p8533" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-15T15:09:54+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731771">
+      <MatchInfo GroupName="C" MatchDay="1" MatchType="Regular" MatchWinner="t832" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2905">
+        <Date>2014-06-14 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Mineirão</Stat>
+      <Stat Type="City">Belo Horizonte</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="3" Side="Home" TeamRef="t832">
+        <Goal Period="FirstHalf" PlayerRef="p50369" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p60025" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p62914" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t517" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-15T15:58:29+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731774">
+      <MatchInfo GroupName="D" MatchDay="1" MatchType="Regular" MatchWinner="t119" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8610">
+        <Date>2014-06-14 23:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Amazonia</Stat>
+      <Stat Type="City">Manaus</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="1" Side="Home" TeamRef="t114">
+        <Goal Period="FirstHalf" PlayerRef="p40755" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="2" Side="Away" TeamRef="t119">
+        <Goal Period="FirstHalf" PlayerRef="p20113" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p42493" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-15T12:14:17+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731773">
+      <MatchInfo GroupName="D" MatchDay="1" MatchType="Regular" MatchWinner="t838" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="6586">
+        <Date>2014-06-14 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Castelão</Stat>
+      <Stat Type="City">Fortaleza</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="1" Side="Home" TeamRef="t837">
+        <Goal Period="FirstHalf" PlayerRef="p40720" Type="Penalty" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="3" Side="Away" TeamRef="t838">
+        <Goal Period="SecondHalf" PlayerRef="p99128" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p99127" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p77755" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-16T15:33:08+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731777">
+      <MatchInfo GroupName="F" MatchDay="1" MatchType="Regular" MatchWinner="t632" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2900">
+        <Date>2014-06-15 23:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio do Maracanã</Stat>
+      <Stat Type="City">Rio de Janeiro</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="2" Side="Home" TeamRef="t632">
+        <Goal Period="FirstHalf" PlayerRef="p111457" Type="Own" />
+        <Goal Period="SecondHalf" PlayerRef="p19054" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t537">
+        <Goal Period="SecondHalf" PlayerRef="p18695" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-15T15:53:42+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731772">
+      <MatchInfo GroupName="C" MatchDay="1" MatchType="Regular" MatchWinner="t1221" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8604">
+        <Date>2014-06-15 02:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Pernambuco</Stat>
+      <Stat Type="City">Recife</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t1221">
+        <Goal Period="SecondHalf" PlayerRef="p43274" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p57001" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="1" Side="Away" TeamRef="t1266">
+        <Goal Period="FirstHalf" PlayerRef="p49657" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-16T03:44:11+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731776">
+      <MatchInfo GroupName="E" MatchDay="1" MatchType="Regular" MatchWinner="t368" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2920">
+        <Date>2014-06-15 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Beira-Rio</Stat>
+      <Stat Type="City">Porto Alegre</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="3" Side="Home" TeamRef="t368">
+        <Goal Period="FirstHalf" PlayerRef="p19927" Type="Penalty" />
+        <Goal Period="SecondHalf" PlayerRef="p34302" Type="Own" />
+        <Goal Period="SecondHalf" PlayerRef="p19927" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t847" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-16T14:51:33+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731775">
+      <MatchInfo GroupName="E" MatchDay="1" MatchType="Regular" MatchWinner="t497" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="3006">
+        <Date>2014-06-15 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estádio Nacional Mané Garrincha</Stat>
+      <Stat Type="City">Brasília</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t497">
+        <Goal Period="SecondHalf" PlayerRef="p60841" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p52156" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="1" Side="Away" TeamRef="t830">
+        <Goal Period="FirstHalf" PlayerRef="p148179" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-17T04:04:04+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731779">
+      <MatchInfo GroupName="G" MatchDay="1" MatchType="Regular" MatchWinner="t357" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8605">
+        <Date>2014-06-16 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Fonte Nova</Stat>
+      <Stat Type="City">Salvador</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="3" Score="4" Side="Home" TeamRef="t357">
+        <Goal Period="FirstHalf" PlayerRef="p55634" Type="Penalty" />
+        <Goal Period="FirstHalf" PlayerRef="p55634" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p38392" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p55634" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t359" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-17T13:00:51+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731780">
+      <MatchInfo GroupName="G" MatchDay="1" MatchType="Regular" MatchWinner="t596" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8607">
+        <Date>2014-06-16 23:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena das Dunas</Stat>
+      <Stat Type="City">Natal</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="1" Side="Home" TeamRef="t1219">
+        <Goal Period="SecondHalf" PlayerRef="p45124" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="2" Side="Away" TeamRef="t596">
+        <Goal Period="FirstHalf" PlayerRef="p20226" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p100941" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-17T14:35:14+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731778">
+      <MatchInfo GroupName="F" MatchDay="1" MatchType="Regular" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="3693">
+        <Date>2014-06-16 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena da Baixada</Stat>
+      <Stat Type="City">Curitiba</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t1042" />
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t1216" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-18T13:46:12+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731781">
+      <MatchInfo GroupName="H" MatchDay="1" MatchType="Regular" MatchWinner="t360" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2905">
+        <Date>2014-06-17 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Mineirão</Stat>
+      <Stat Type="City">Belo Horizonte</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t360">
+        <Goal Period="SecondHalf" PlayerRef="p54917" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p41184" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="1" Side="Away" TeamRef="t1215">
+        <Goal Period="FirstHalf" PlayerRef="p44336" Type="Penalty" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-18T04:02:15+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731783">
+      <MatchInfo GroupName="A" MatchDay="2" MatchType="Regular" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="6586">
+        <Date>2014-06-17 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Castelão</Stat>
+      <Stat Type="City">Fortaleza</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t614" />
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t659" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-18T14:37:10+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731782">
+      <MatchInfo GroupName="H" MatchDay="1" MatchType="Regular" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8608">
+        <Date>2014-06-17 23:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Pantanal</Stat>
+      <Stat Type="City">Cuiaba</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="1" Side="Home" TeamRef="t536">
+        <Goal Period="SecondHalf" PlayerRef="p13229" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t1041">
+        <Goal Period="SecondHalf" PlayerRef="p64431" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-18T18:51:47+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731786">
+      <MatchInfo GroupName="B" MatchDay="2" MatchType="Regular" MatchWinner="t366" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2920">
+        <Date>2014-06-18 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Beira-Rio</Stat>
+      <Stat Type="City">Porto Alegre</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="2" Side="Home" TeamRef="t575">
+        <Goal Period="FirstHalf" PlayerRef="p3273" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p59115" Type="Penalty" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="3" Side="Away" TeamRef="t366">
+        <Goal Period="FirstHalf" PlayerRef="p8533" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p106824" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p12297" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-19T22:54:16+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731784">
+      <MatchInfo GroupName="A" MatchDay="2" MatchType="Regular" MatchWinner="t535" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8610">
+        <Date>2014-06-18 23:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Amazonia</Stat>
+      <Stat Type="City">Manaus</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t494" />
+      <TeamData HalfScore="1" Score="4" Side="Away" TeamRef="t535">
+        <Goal Period="FirstHalf" PlayerRef="p13139" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p46197" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p46197" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p45034" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-19T03:54:51+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731785">
+      <MatchInfo GroupName="B" MatchDay="2" MatchType="Regular" MatchWinner="t831" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2900">
+        <Date>2014-06-18 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio do Maracanã</Stat>
+      <Stat Type="City">Rio de Janeiro</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t118" />
+      <TeamData HalfScore="2" Score="2" Side="Away" TeamRef="t831">
+        <Goal Period="FirstHalf" PlayerRef="p83531" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p105835" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-20T12:51:50+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731787">
+      <MatchInfo GroupName="C" MatchDay="2" MatchType="Regular" MatchWinner="t832" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="3006">
+        <Date>2014-06-19 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estádio Nacional Mané Garrincha</Stat>
+      <Stat Type="City">Brasília</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t832">
+        <Goal Period="SecondHalf" PlayerRef="p126437" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p60025" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t1221">
+        <Goal Period="SecondHalf" PlayerRef="p43274" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-20T13:25:39+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731788">
+      <MatchInfo GroupName="C" MatchDay="2" MatchType="Regular" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8607">
+        <Date>2014-06-19 23:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena das Dunas</Stat>
+      <Stat Type="City">Natal</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t1266" />
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t517" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-26T16:12:00+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731789">
+      <MatchInfo GroupName="D" MatchDay="2" MatchType="Regular" MatchWinner="t837" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8606">
+        <Date>2014-06-19 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena de São Paulo</Stat>
+      <Stat Type="City">São Paulo</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="2" Side="Home" TeamRef="t837">
+        <Goal Period="FirstHalf" PlayerRef="p39336" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p39336" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t114">
+        <Goal Period="SecondHalf" PlayerRef="p13017" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-21T13:45:18+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731792">
+      <MatchInfo GroupName="E" MatchDay="2" MatchType="Regular" MatchWinner="t830" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="3693">
+        <Date>2014-06-20 23:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena da Baixada</Stat>
+      <Stat Type="City">Curitiba</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="1" Side="Home" TeamRef="t847">
+        <Goal Period="FirstHalf" PlayerRef="p59794" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="2" Side="Away" TeamRef="t830">
+        <Goal Period="FirstHalf" PlayerRef="p148179" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p148179" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-21T02:13:13+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731790">
+      <MatchInfo GroupName="D" MatchDay="2" MatchType="Regular" MatchWinner="t838" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8604">
+        <Date>2014-06-20 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Pernambuco</Stat>
+      <Stat Type="City">Recife</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t119" />
+      <TeamData HalfScore="1" Score="1" Side="Away" TeamRef="t838">
+        <Goal Period="FirstHalf" PlayerRef="p37084" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-21T14:43:07+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731791">
+      <MatchInfo GroupName="E" MatchDay="2" MatchType="Regular" MatchWinner="t368" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8605">
+        <Date>2014-06-20 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Fonte Nova</Stat>
+      <Stat Type="City">Salvador</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t497">
+        <Goal Period="SecondHalf" PlayerRef="p84450" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p32269" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="3" Score="5" Side="Away" TeamRef="t368">
+        <Goal Period="FirstHalf" PlayerRef="p37971" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p37852" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p44346" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p45268" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p19927" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-22T16:06:12+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731793">
+      <MatchInfo GroupName="F" MatchDay="2" MatchType="Regular" MatchWinner="t632" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2905">
+        <Date>2014-06-21 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Mineirão</Stat>
+      <Stat Type="City">Belo Horizonte</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="1" Side="Home" TeamRef="t632">
+        <Goal Period="SecondHalf" PlayerRef="p19054" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t1042" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-22T04:56:16+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731795">
+      <MatchInfo GroupName="G" MatchDay="2" MatchType="Regular" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="6586">
+        <Date>2014-06-21 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Castelão</Stat>
+      <Stat Type="City">Fortaleza</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t357">
+        <Goal Period="SecondHalf" PlayerRef="p5155" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p69600" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="2" Side="Away" TeamRef="t1219">
+        <Goal Period="SecondHalf" PlayerRef="p33223" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p45124" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-22T16:08:07+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731794">
+      <MatchInfo GroupName="F" MatchDay="2" MatchType="Regular" MatchWinner="t1216" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8608">
+        <Date>2014-06-21 23:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Pantanal</Stat>
+      <Stat Type="City">Cuiaba</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="1" Side="Home" TeamRef="t1216">
+        <Goal Period="FirstHalf" PlayerRef="p26900" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t537" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-23T04:01:08+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731797">
+      <MatchInfo GroupName="H" MatchDay="2" MatchType="Regular" MatchWinner="t360" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2900">
+        <Date>2014-06-22 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio do Maracanã</Stat>
+      <Stat Type="City">Rio de Janeiro</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="1" Side="Home" TeamRef="t360">
+        <Goal Period="SecondHalf" PlayerRef="p152760" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t536" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-23T15:32:04+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731798">
+      <MatchInfo GroupName="H" MatchDay="2" MatchType="Regular" MatchWinner="t1215" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2920">
+        <Date>2014-06-22 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Beira-Rio</Stat>
+      <Stat Type="City">Porto Alegre</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t1041">
+        <Goal Period="SecondHalf" PlayerRef="p85971" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p77865" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="3" Score="4" Side="Away" TeamRef="t1215">
+        <Goal Period="FirstHalf" PlayerRef="p50117" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p149828" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p175078" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p51310" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-23T17:47:17+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731796">
+      <MatchInfo GroupName="G" MatchDay="2" MatchType="Regular" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8610">
+        <Date>2014-06-22 23:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Amazonia</Stat>
+      <Stat Type="City">Manaus</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t596">
+        <Goal Period="SecondHalf" PlayerRef="p20226" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p17152" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="2" Side="Away" TeamRef="t359">
+        <Goal Period="FirstHalf" PlayerRef="p38530" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p38685" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-24T15:31:51+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731801">
+      <MatchInfo GroupName="B" MatchDay="3" MatchType="Regular" MatchWinner="t118" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="3693">
+        <Date>2014-06-23 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena da Baixada</Stat>
+      <Stat Type="City">Curitiba</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t575" />
+      <TeamData HalfScore="1" Score="3" Side="Away" TeamRef="t118">
+        <Goal Period="FirstHalf" PlayerRef="p17279" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p14402" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p43670" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-24T15:55:31+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731799">
+      <MatchInfo GroupName="A" MatchDay="3" MatchType="Regular" MatchWinner="t614" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="3006">
+        <Date>2014-06-23 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estádio Nacional Mané Garrincha</Stat>
+      <Stat Type="City">Brasília</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="1" Side="Home" TeamRef="t494">
+        <Goal Period="FirstHalf" PlayerRef="p60914" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="2" Score="4" Side="Away" TeamRef="t614">
+        <Goal Period="FirstHalf" PlayerRef="p61278" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p61278" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p27789" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p27250" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-24T15:22:29+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731800">
+      <MatchInfo GroupName="A" MatchDay="3" MatchType="Regular" MatchWinner="t659" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8604">
+        <Date>2014-06-23 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Pernambuco</Stat>
+      <Stat Type="City">Recife</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="1" Side="Home" TeamRef="t535">
+        <Goal Period="SecondHalf" PlayerRef="p45034" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="3" Side="Away" TeamRef="t659">
+        <Goal Period="SecondHalf" PlayerRef="p43020" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p6685" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p37064" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-24T15:36:48+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731802">
+      <MatchInfo GroupName="B" MatchDay="3" MatchType="Regular" MatchWinner="t366" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8606">
+        <Date>2014-06-23 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena de São Paulo</Stat>
+      <Stat Type="City">São Paulo</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t366">
+        <Goal Period="SecondHalf" PlayerRef="p49277" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p106824" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t831" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-25T15:11:25+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731806">
+      <MatchInfo GroupName="D" MatchDay="3" MatchType="Regular" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2905">
+        <Date>2014-06-24 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Mineirão</Stat>
+      <Stat Type="City">Belo Horizonte</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t838" />
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t114" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-25T15:00:46+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731804">
+      <MatchInfo GroupName="C" MatchDay="3" MatchType="Regular" MatchWinner="t517" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="6586">
+        <Date>2014-06-24 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Castelão</Stat>
+      <Stat Type="City">Fortaleza</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="2" Side="Home" TeamRef="t517">
+        <Goal Period="FirstHalf" PlayerRef="p81456" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p10866" Type="Penalty" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t1221">
+        <Goal Period="SecondHalf" PlayerRef="p57001" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-24T23:13:31+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731805">
+      <MatchInfo GroupName="D" MatchDay="3" MatchType="Regular" MatchWinner="t837" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8607">
+        <Date>2014-06-24 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena das Dunas</Stat>
+      <Stat Type="City">Natal</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t119" />
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t837">
+        <Goal Period="SecondHalf" PlayerRef="p32281" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-25T10:15:04+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731803">
+      <MatchInfo GroupName="C" MatchDay="3" MatchType="Regular" MatchWinner="t832" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8608">
+        <Date>2014-06-24 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Pantanal</Stat>
+      <Stat Type="City">Cuiaba</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="1" Side="Home" TeamRef="t1266">
+        <Goal Period="FirstHalf" PlayerRef="p78412" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="4" Side="Away" TeamRef="t832">
+        <Goal Period="FirstHalf" PlayerRef="p66733" Type="Penalty" />
+        <Goal Period="SecondHalf" PlayerRef="p60025" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p77064" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p77064" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-26T14:45:20+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731810">
+      <MatchInfo GroupName="F" MatchDay="3" MatchType="Regular" MatchWinner="t537" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8605">
+        <Date>2014-06-25 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Fonte Nova</Stat>
+      <Stat Type="City">Salvador</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="3" Side="Home" TeamRef="t537">
+        <Goal Period="FirstHalf" PlayerRef="p42544" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p46696" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p67140" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t1042">
+        <Goal Period="SecondHalf" PlayerRef="p41071" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-26T12:57:34+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731808">
+      <MatchInfo GroupName="E" MatchDay="3" MatchType="Regular" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2900">
+        <Date>2014-06-25 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio do Maracanã</Stat>
+      <Stat Type="City">Rio de Janeiro</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t830" />
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t368" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-25T22:52:08+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731807">
+      <MatchInfo GroupName="E" MatchDay="3" MatchType="Regular" MatchWinner="t497" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8610">
+        <Date>2014-06-25 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Amazonia</Stat>
+      <Stat Type="City">Manaus</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t847" />
+      <TeamData HalfScore="2" Score="3" Side="Away" TeamRef="t497">
+        <Goal Period="FirstHalf" PlayerRef="p68312" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p68312" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p68312" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-26T17:48:42+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731809">
+      <MatchInfo GroupName="F" MatchDay="3" MatchType="Regular" MatchWinner="t632" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="2920">
+        <Date>2014-06-25 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Beira-Rio</Stat>
+      <Stat Type="City">Porto Alegre</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="2" Side="Home" TeamRef="t1216">
+        <Goal Period="FirstHalf" PlayerRef="p90714" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p90714" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="2" Score="3" Side="Away" TeamRef="t632">
+        <Goal Period="FirstHalf" PlayerRef="p19054" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p19054" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p58893" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-27T14:23:50+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731814">
+      <MatchInfo GroupName="H" MatchDay="3" MatchType="Regular" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="3693">
+        <Date>2014-06-26 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena da Baixada</Stat>
+      <Stat Type="City">Curitiba</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="1" Side="Home" TeamRef="t1215">
+        <Goal Period="SecondHalf" PlayerRef="p149828" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="1" Score="1" Side="Away" TeamRef="t536">
+        <Goal Period="FirstHalf" PlayerRef="p57038" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-27T15:08:07+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731812">
+      <MatchInfo GroupName="G" MatchDay="3" MatchType="Regular" MatchWinner="t359" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="3006">
+        <Date>2014-06-26 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estádio Nacional Mané Garrincha</Stat>
+      <Stat Type="City">Brasília</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="2" Side="Home" TeamRef="t359">
+        <Goal Period="FirstHalf" PlayerRef="p68791" Type="Own" />
+        <Goal Period="SecondHalf" PlayerRef="p14937" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t1219">
+        <Goal Period="SecondHalf" PlayerRef="p33223" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-27T12:51:14+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731813">
+      <MatchInfo GroupName="H" MatchDay="3" MatchType="Regular" MatchWinner="t360" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8606">
+        <Date>2014-06-26 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena de São Paulo</Stat>
+      <Stat Type="City">São Paulo</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t1041" />
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t360">
+        <Goal Period="SecondHalf" PlayerRef="p39194" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-27T14:34:39+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731811">
+      <MatchInfo GroupName="G" MatchDay="3" MatchType="Regular" MatchWinner="t357" Period="FullTime" RoundNumber="1" RoundType="Round" Venue_id="8604">
+        <Date>2014-06-26 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Pernambuco</Stat>
+      <Stat Type="City">Recife</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t596" />
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t357">
+        <Goal Period="SecondHalf" PlayerRef="p55634" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-29T15:41:09+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731815">
+      <MatchInfo MatchDay="4" MatchType="Cup" NextMatch="g731823" Period="FullTime" RoundNumber="2" RoundType="Round" Venue_id="2905">
+        <Date>2014-06-28 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Mineirão</Stat>
+      <Stat Type="City">Belo Horizonte</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData ExtraScore="0" HalfScore="1" NinetyScore="1" PenaltyScore="3" Score="1" Side="Home" TeamRef="t614">
+        <Goal Period="FirstHalf" PlayerRef="p41270" Type="Goal" />
+        <Goal Period="ShootOut" PlayerRef="p41270" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p61278" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p39563" Type="Penalty" />
+      </TeamData>
+      <TeamData ExtraScore="0" HalfScore="1" NinetyScore="1" PenaltyScore="2" Score="1" Side="Away" TeamRef="t831">
+        <Goal Period="FirstHalf" PlayerRef="p37265" Type="Goal" />
+        <Goal Period="ShootOut" PlayerRef="p83531" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p118749" Type="Penalty" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-28T22:52:24+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731816">
+      <MatchInfo MatchDay="4" MatchType="Cup" MatchWinner="t832" NextMatch="g731823" Period="FullTime" RoundNumber="2" RoundType="Round" Venue_id="2900">
+        <Date>2014-06-28 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio do Maracanã</Stat>
+      <Stat Type="City">Rio de Janeiro</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="2" Side="Home" TeamRef="t832">
+        <Goal Period="FirstHalf" PlayerRef="p60025" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p60025" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t837" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-29T23:55:44+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731818">
+      <MatchInfo MatchDay="4" MatchType="Cup" NextMatch="g731825" Period="FullTime" RoundNumber="2" RoundType="Round" Venue_id="8604">
+        <Date>2014-06-29 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Pernambuco</Stat>
+      <Stat Type="City">Recife</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData ExtraScore="0" HalfScore="0" NinetyScore="1" PenaltyScore="5" Score="1" Side="Home" TeamRef="t838">
+        <Goal Period="SecondHalf" PlayerRef="p37084" Type="Goal" />
+        <Goal Period="ShootOut" PlayerRef="p105021" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p37084" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p61960" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p99127" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p34352" Type="Penalty" />
+      </TeamData>
+      <TeamData ExtraScore="0" HalfScore="0" NinetyScore="1" PenaltyScore="3" Score="1" Side="Away" TeamRef="t517">
+        <Goal Period="SecondHalf" PlayerRef="p39476" Type="Goal" />
+        <Goal Period="ShootOut" PlayerRef="p47434" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p50343" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p40868" Type="Penalty" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-06-30T13:15:42+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731817">
+      <MatchInfo MatchDay="4" MatchType="Cup" MatchWinner="t366" NextMatch="g731825" Period="FullTime" RoundNumber="2" RoundType="Round" Venue_id="6586">
+        <Date>2014-06-29 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Castelão</Stat>
+      <Stat Type="City">Fortaleza</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t366">
+        <Goal Period="SecondHalf" PlayerRef="p14941" Type="Penalty" />
+        <Goal Period="SecondHalf" PlayerRef="p15403" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t659">
+        <Goal Period="SecondHalf" PlayerRef="p40275" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-01T12:20:28+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731819">
+      <MatchInfo MatchDay="4" MatchType="Cup" MatchWinner="t368" NextMatch="g731824" Period="FullTime" RoundNumber="2" RoundType="Round" Venue_id="3006">
+        <Date>2014-06-30 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estádio Nacional Mané Garrincha</Stat>
+      <Stat Type="City">Brasília</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="2" Side="Home" TeamRef="t368">
+        <Goal Period="SecondHalf" PlayerRef="p74208" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p10594" Type="Own" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t1216" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-01T14:12:11+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731820">
+      <MatchInfo MatchDay="4" MatchType="Cup" NextMatch="g731824" Period="FullTime" RoundNumber="2" RoundType="Round" Venue_id="2920">
+        <Date>2014-06-30 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Beira-Rio</Stat>
+      <Stat Type="City">Porto Alegre</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData ExtraScore="2" HalfScore="0" NinetyScore="0" Score="2" Side="Home" TeamRef="t357">
+        <Goal Period="ExtraFirstHalf" PlayerRef="p66842" Type="Goal" />
+        <Goal Period="ExtraSecondHalf" PlayerRef="p37605" Type="Goal" />
+      </TeamData>
+      <TeamData ExtraScore="1" HalfScore="0" NinetyScore="0" Score="1" Side="Away" TeamRef="t1215">
+        <Goal Period="ExtraSecondHalf" PlayerRef="p175078" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-01T19:36:14+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731821">
+      <MatchInfo MatchDay="4" MatchType="Cup" NextMatch="g731826" Period="FullTime" RoundNumber="2" RoundType="Round" Venue_id="8606">
+        <Date>2014-07-01 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena de São Paulo</Stat>
+      <Stat Type="City">São Paulo</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData ExtraScore="1" HalfScore="0" NinetyScore="0" Score="1" Side="Home" TeamRef="t632">
+        <Goal Period="ExtraSecondHalf" PlayerRef="p46497" Type="Goal" />
+      </TeamData>
+      <TeamData ExtraScore="0" HalfScore="0" NinetyScore="0" Score="0" Side="Away" TeamRef="t497" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-02T23:34:32+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731822">
+      <MatchInfo MatchDay="4" MatchType="Cup" NextMatch="g731826" Period="FullTime" RoundNumber="2" RoundType="Round" Venue_id="8605">
+        <Date>2014-07-01 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Fonte Nova</Stat>
+      <Stat Type="City">Salvador</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData ExtraScore="2" HalfScore="0" NinetyScore="0" Score="2" Side="Home" TeamRef="t360">
+        <Goal Period="ExtraFirstHalf" PlayerRef="p66749" Type="Goal" />
+        <Goal Period="ExtraFirstHalf" PlayerRef="p61366" Type="Goal" />
+      </TeamData>
+      <TeamData ExtraScore="1" HalfScore="0" NinetyScore="0" Score="1" Side="Away" TeamRef="t596">
+        <Goal Period="ExtraSecondHalf" PlayerRef="p168085" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-05T14:48:06+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731823">
+      <MatchInfo MatchDay="5" MatchType="Cup" MatchWinner="t614" NextMatch="g731827" Period="FullTime" RoundNumber="3" RoundType="Quarter-Finals" Venue_id="6586">
+        <Date>2014-07-04 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Castelão</Stat>
+      <Stat Type="City">Fortaleza</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="2" Side="Home" TeamRef="t614">
+        <Goal Period="FirstHalf" PlayerRef="p51090" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p41270" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="1" Side="Away" TeamRef="t832">
+        <Goal Period="SecondHalf" PlayerRef="p60025" Type="Penalty" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-05T16:54:40+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731824">
+      <MatchInfo MatchDay="5" MatchType="Cup" MatchWinner="t357" NextMatch="g731827" Period="FullTime" RoundNumber="3" RoundType="Quarter-Finals" Venue_id="2900">
+        <Date>2014-07-04 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio do Maracanã</Stat>
+      <Stat Type="City">Rio de Janeiro</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t368" />
+      <TeamData HalfScore="1" Score="1" Side="Away" TeamRef="t357">
+        <Goal Period="FirstHalf" PlayerRef="p38392" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-06T12:19:44+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731826">
+      <MatchInfo MatchDay="5" MatchType="Cup" MatchWinner="t632" NextMatch="g731828" Period="FullTime" RoundNumber="3" RoundType="Quarter-Finals" Venue_id="3006">
+        <Date>2014-07-05 17:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estádio Nacional Mané Garrincha</Stat>
+      <Stat Type="City">Brasília</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="1" Score="1" Side="Home" TeamRef="t632">
+        <Goal Period="FirstHalf" PlayerRef="p40232" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="0" Score="0" Side="Away" TeamRef="t360" />
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-06T14:24:31+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731825">
+      <MatchInfo MatchDay="5" MatchType="Cup" NextMatch="g731828" Period="FullTime" RoundNumber="3" RoundType="Quarter-Finals" Venue_id="8605">
+        <Date>2014-07-05 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena Fonte Nova</Stat>
+      <Stat Type="City">Salvador</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData ExtraScore="0" HalfScore="0" NinetyScore="0" PenaltyScore="4" Score="0" Side="Home" TeamRef="t366">
+        <Goal Period="ShootOut" PlayerRef="p8533" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p4719" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p12297" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p15403" Type="Penalty" />
+      </TeamData>
+      <TeamData ExtraScore="0" HalfScore="0" NinetyScore="0" PenaltyScore="3" Score="0" Side="Away" TeamRef="t838">
+        <Goal Period="ShootOut" PlayerRef="p28392" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p105021" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p61960" Type="Penalty" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-09T10:30:00+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731827">
+      <MatchInfo MatchDay="6" MatchType="Cup" MatchWinner="t357" NextMatch="g731830" NextMatchLoser="g731829" Period="FullTime" RoundNumber="4" RoundType="Semi-Finals" Venue_id="2905">
+        <Date>2014-07-08 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio Mineirão</Stat>
+      <Stat Type="City">Belo Horizonte</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="1" Side="Home" TeamRef="t614">
+        <Goal Period="SecondHalf" PlayerRef="p61262" Type="Goal" />
+      </TeamData>
+      <TeamData HalfScore="5" Score="7" Side="Away" TeamRef="t357">
+        <Goal Period="FirstHalf" PlayerRef="p55634" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p44989" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p44989" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p5155" Type="Goal" />
+        <Goal Period="FirstHalf" PlayerRef="p39816" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p66842" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p66842" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-10T10:21:13+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731828">
+      <MatchInfo MatchDay="6" MatchType="Cup" NextMatch="g731830" NextMatchLoser="g731829" Period="FullTime" RoundNumber="4" RoundType="Semi-Finals" Venue_id="8606">
+        <Date>2014-07-09 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Arena de São Paulo</Stat>
+      <Stat Type="City">São Paulo</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData ExtraScore="0" HalfScore="0" NinetyScore="0" PenaltyScore="2" Score="0" Side="Home" TeamRef="t366">
+        <Goal Period="ShootOut" PlayerRef="p8533" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p4719" Type="Penalty" />
+      </TeamData>
+      <TeamData ExtraScore="0" HalfScore="0" NinetyScore="0" PenaltyScore="4" Score="0" Side="Away" TeamRef="t632">
+        <Goal Period="ShootOut" PlayerRef="p28525" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p19054" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p37572" Type="Penalty" />
+        <Goal Period="ShootOut" PlayerRef="p13308" Type="Penalty" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-13T15:47:07+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731829">
+      <MatchInfo MatchDay="7" MatchType="Cup" MatchWinner="t366" Period="FullTime" RoundNumber="5" RoundType="3rd and 4th Place" Venue_id="3006">
+        <Date>2014-07-12 21:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estádio Nacional Mané Garrincha</Stat>
+      <Stat Type="City">Brasília</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData HalfScore="0" Score="0" Side="Home" TeamRef="t614" />
+      <TeamData HalfScore="2" Score="3" Side="Away" TeamRef="t366">
+        <Goal Period="FirstHalf" PlayerRef="p12297" Type="Penalty" />
+        <Goal Period="FirstHalf" PlayerRef="p58877" Type="Goal" />
+        <Goal Period="SecondHalf" PlayerRef="p41733" Type="Goal" />
+      </TeamData>
+    </MatchData>
+    <MatchData detail_id="1" last_modified="2014-07-14T14:38:13+00:00" timestamp_accuracy_id="1" timing_id="1" uID="g731830">
+      <MatchInfo MatchDay="8" MatchType="Cup" Period="FullTime" RoundNumber="6" RoundType="Final" Venue_id="2900">
+        <Date>2014-07-13 20:00:00</Date>
+        <TZ>BST</TZ>
+      </MatchInfo>
+      <Stat Type="Venue">Estadio do Maracanã</Stat>
+      <Stat Type="City">Rio de Janeiro</Stat>
+      <Stat Type="Neutral">True</Stat>
+      <TeamData ExtraScore="1" HalfScore="0" NinetyScore="0" Score="1" Side="Home" TeamRef="t357">
+        <Goal Period="ExtraSecondHalf" PlayerRef="p69600" Type="Goal" />
+      </TeamData>
+      <TeamData ExtraScore="0" HalfScore="0" NinetyScore="0" Score="0" Side="Away" TeamRef="t632" />
+    </MatchData>
+    <TimingTypes>
+      <DetailTypes>
+        <DetailType detail_id="0" name="Unknown" />
+        <DetailType detail_id="1" name="All Events (with positions)" />
+        <DetailType detail_id="2" name="All Events" />
+        <DetailType detail_id="3" name="Key Events" />
+        <DetailType detail_id="4" name="Lineups, Goals &amp; Cards" />
+        <DetailType detail_id="5" name="Goals" />
+        <DetailType detail_id="6" name="Scores" />
+      </DetailTypes>
+      <TimestampAccuracyTypes>
+        <TimestampAccuracyType name="Unknown" timing_id="0" />
+        <TimestampAccuracyType name="Fully Accurate Timestamps (24hr + Match Times)" timing_id="1" />
+        <TimestampAccuracyType name="Accurate Match Times only" timing_id="2" />
+        <TimestampAccuracyType name="To The Minute Accurate" timing_id="3" />
+        <TimestampAccuracyType name="Low Level Accurate Match Times" timing_id="4" />
+        <TimestampAccuracyType name="No Match Time Accuracy" timing_id="5" />
+      </TimestampAccuracyTypes>
+      <TimingType>
+        <TimingType name="Unknown" timestamp_accuracy_id="0" />
+        <TimingType name="Live" timestamp_accuracy_id="1" />
+        <TimingType name="Live Delayed" timestamp_accuracy_id="2" />
+        <TimingType name="Post Match (less than 24 hours)" timestamp_accuracy_id="3" />
+        <TimingType name="Post Match (24 hours+)" timestamp_accuracy_id="4" />
+      </TimingType>
+    </TimingTypes>
+    <Team uID="t118">
+      <Name>Spain</Name>
+    </Team>
+    <Team uID="t659">
+      <Name>Mexico</Name>
+    </Team>
+    <Team uID="t1041">
+      <Name>South Korea</Name>
+    </Team>
+    <Team uID="t831">
+      <Name>Chile</Name>
+    </Team>
+    <Team uID="t537">
+      <Name>Bosnia and Herzegovina</Name>
+    </Team>
+    <Team uID="t119">
+      <Name>Italy</Name>
+    </Team>
+    <Team uID="t575">
+      <Name>Australia</Name>
+    </Team>
+    <Team uID="t366">
+      <Name>Netherlands</Name>
+    </Team>
+    <Team uID="t1221">
+      <Name>Côte d&#39;Ivoire</Name>
+    </Team>
+    <Team uID="t838">
+      <Name>Costa Rica</Name>
+    </Team>
+    <Team uID="t359">
+      <Name>Portugal</Name>
+    </Team>
+    <Team uID="t517">
+      <Name>Greece</Name>
+    </Team>
+    <Team uID="t368">
+      <Name>France</Name>
+    </Team>
+    <Team uID="t614">
+      <Name>Brazil</Name>
+    </Team>
+    <Team uID="t596">
+      <Name>USA</Name>
+    </Team>
+    <Team uID="t536">
+      <Name>Russia</Name>
+    </Team>
+    <Team uID="t1266">
+      <Name>Japan</Name>
+    </Team>
+    <Team uID="t632">
+      <Name>Argentina</Name>
+    </Team>
+    <Team uID="t1216">
+      <Name>Nigeria</Name>
+    </Team>
+    <Team uID="t535">
+      <Name>Croatia</Name>
+    </Team>
+    <Team uID="t360">
+      <Name>Belgium</Name>
+    </Team>
+    <Team uID="t830">
+      <Name>Ecuador</Name>
+    </Team>
+    <Team uID="t494">
+      <Name>Cameroon</Name>
+    </Team>
+    <Team uID="t837">
+      <Name>Uruguay</Name>
+    </Team>
+    <Team uID="t1215">
+      <Name>Algeria</Name>
+    </Team>
+    <Team uID="t847">
+      <Name>Honduras</Name>
+    </Team>
+    <Team uID="t1219">
+      <Name>Ghana</Name>
+    </Team>
+    <Team uID="t497">
+      <Name>Switzerland</Name>
+    </Team>
+    <Team uID="t114">
+      <Name>England</Name>
+    </Team>
+    <Team uID="t1042">
+      <Name>Iran</Name>
+    </Team>
+    <Team uID="t832">
+      <Name>Colombia</Name>
+    </Team>
+    <Team uID="t357">
+      <Name>Germany</Name>
+    </Team>
+  </SoccerDocument>
+</SoccerFeed>

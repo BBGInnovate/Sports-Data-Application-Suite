@@ -1,10 +1,10 @@
-/* ****************************************************************************
- * File: 		AggregateDataService.js
- * Purpose: 	I take JSON objects and build the Aggregate data files for 
- 				players and teams.
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/** 
+ * @fileOverview 	I take JSON objects and build the Aggregate data files for 
+ 					players and teams.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		0.0.1
+ * @module 			AggregateDataService.js
+ */
 
 /* *************************** Required Classes **************************** */
 var fs = require('fs');

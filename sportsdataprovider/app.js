@@ -1,14 +1,14 @@
-/* ****************************************************************************
- * File: 		app.js
- * Purpose: 	I am the main application file. I watch a specified directory
- *				and when files have been updated or added I create a job so the file 
- *				can be read then parsed and passed to the Transformer.js class which 
- *				generates front end ready JSON files and publishes data to the Faye
- *				server.
+/**
+ * @fileOverview  	I am the main application file. I watch a specified directory
+ *					and when files have been updated or added I create a job so the file 
+ *					can be read then parsed and passed to the Transformer.js class which 
+ *					generates front end ready JSON files and publishes data to the Faye
+ *					server.
  *
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			app.js
+ */
 
 /* *************************** Required Classes **************************** */
 
@@ -16,7 +16,8 @@ var fs = require('fs');
 var path = require('path');
 var chokidar = require('chokidar');
 var Config = require('./Config');
-var Transformer = require('./Transformer.js');
+//var Transformer = require('./Transformer.js');
+var Controller = require('./Controller.js');
 var ErrorHandler = require('./ErrorHandler');
 var log = require('./Logger.js');
 var utils = require('./Utils.js');
@@ -42,7 +43,8 @@ var jobs = kue.createQueue();
 global = {
 	isApplicaitonStarting : true,
 	numberOfStartUpXMLFiles : 0,
-	numberOfSartUpJobsCommited : 0
+	numberOfSartUpJobsCommited : 0,
+	allHistoryFilesProcessed : false
 }
 
 // write any lookup json files we need
@@ -77,7 +79,6 @@ if(process.argv[3] != undefined && process.argv[3] === 'true'){
  * request to the Faye server with the JSON to update any clients which want
  * to see the updates.
  *
- * Arguments:
  * @param {String} message - a message to log when I am called
  * @return {void}
  */
@@ -151,7 +152,7 @@ function onApplicationStart( message ){
  * I restart the applicaiton. 
  *
  * Arguments:
- * @param {Numeric} millisecondsToWait - how long I should sleep before calling 
+ * @param {Number} millisecondsToWait - how long I should sleep before calling 
  										 onApplicationStart()
  * @return {void}
  */
@@ -175,11 +176,10 @@ function restartApplication( millisecondsToWait ){
 /**
  * I process all the jobs in the que. I am the consumer of the Kue.
  *
- * Arguments:
  * @param {String} 'processJSON' - I am the string to look at the job que for to
  								   process things.
  * @param {Function} callback - I am teh call back funciton.
- * @return {void}
+ * @return {Void}
  */
 jobs.process('processJSON', function( job, done ){
 	
@@ -197,7 +197,6 @@ jobs.process('processJSON', function( job, done ){
  * I am the function called after the watcher sees a change. I read the file 
  * make the  JSON and then pass the results to the front controller
  *
- * Arguments:
  * @param {String} action - what action the watcher performed
  * @param {String} path - the path of the file
  * @return {void}
@@ -216,9 +215,6 @@ function afterWatcher( action, path ){
 
 		} catch( error ) {
 
-			//log.log('Error From app.js in afterWatcher. Problem reading the XML data.', arguments);
-			
-			
 			ErrorHandler.handleError( 
 				'Error From app.js in afterWatcher. Problem reading the XML data.', 
 				arguments 
@@ -233,9 +229,6 @@ function afterWatcher( action, path ){
 			var json = utils.xmlToJson( xmlDoc );
 
 		} catch( error ) {
-			
-			//log.log('Error From app.js in afterWatcher. Problem reading the XML data.', arguments);
-
 			
 			ErrorHandler.handleError( 
 				'Error From afterWatcher. Utils.xmlToJson failed.', 
@@ -261,13 +254,28 @@ function afterWatcher( action, path ){
 /**
  * I handle what to do after the parser and watcher
  *
- * Arguments:
  * @param {String} action - what action the watcher performed
  * @param {String} feedType - what type of feed this is
  * @param {Object} data - the JSON data from the XML feed
  * @return {void}
  */
 function handleAction( action, feedType, data, path ){
+
+	// add 1 to keep track of how many times we've been called. were using this 
+	// so we don't broadcast to Faye during the initial build of all the JSON 
+	// at start up. the directory watcher initialy process ALL the files in the
+	// watched directory which is a good thing.
+	global.numberOfSartUpJobsCommited = global.numberOfSartUpJobsCommited +1;
+
+	// this needs to get reset here.
+	global.allHistoryFilesProcessed = false;
+
+	// if we have processed all the initial files in the FTP directory we can
+	// start to broadcast to Faye
+	if (global.numberOfStartUpXMLFiles < global.numberOfSartUpJobsCommited){
+
+		global.allHistoryFilesProcessed = true;
+	}
 
 	var doAction = '';
 
@@ -314,29 +322,28 @@ function handleAction( action, feedType, data, path ){
 	switch( doAction ){
 
 		case 'buildSchedule':
-			
-			Transformer.buildSchedule( data );
+
+			Controller.handleSchedule( data );
 			break;
 
 		case 'buildGameFile':
-			
-			Transformer.buildGameFile( data );
-			Transformer.updateCurrentGameFile( data );
+
+			Controller.handleGame( data );
 			break;
 
 		case 'buildCommentFile':
 			
-			Transformer.buildCommentFile( data );
+			Controller.handleComment( data );
 			break;
 
 		case 'buildSquadFile':
-			
-			Transformer.buildSquadFile( data );
+		
+			Controller.handleSquad( data )
 			break;
 
 		case 'buildSeasonStats':
 			
-			Transformer.buildSeasonStats(  );
+			Controller.handleSeasonStats();
 			break;
 
 		default:
@@ -352,13 +359,11 @@ function handleAction( action, feedType, data, path ){
 /**
  * I read the squads XML file and build the squad and player JSON. They are
  * by lots of other file writes so build them here at application start.
- * @param {String} path - path to the file
-
+ * @param {String} path - I am the path to the file.
  * @return {string}
  */
 function preBuildSquadFile() {
 	
-
 	try{
 
 	var squadsFilePath = config.FPTDirectory + "/" + config.squadFileName;
@@ -366,7 +371,7 @@ function preBuildSquadFile() {
 	var xmlDoc = new dom().parseFromString( rawSquadBinnaryData.toString() );
 	var json = utils.xmlToJson( xmlDoc );
 
-	Transformer.buildSquadFile( json );
+	Controller.handleSquad( json );
 
 	} catch(e){
 		// log and let the app continue. this can happen in testing a lot
@@ -379,9 +384,8 @@ function preBuildSquadFile() {
 
 /**
  * I return the type of feed based on the file name.
- * @param {String} path - path to the file
-
- * @return {string}
+ * @param {String} path - I am the path to the file
+ * @return {string} I am the feed type.
  */
 function getFeedType( path ){
 	
@@ -401,7 +405,7 @@ function getFeedType( path ){
 /**
  * I return the type of feed based on the file name.
  *
- * @return {Numeric} I am the number of XML files in the FTP directory
+ * @return {Number} I am the number of XML files in the FTP directory
  */
 function getNumberOfStartUpXMLFiles(){
 
@@ -425,7 +429,6 @@ function getNumberOfStartUpXMLFiles(){
 /**
  * I return true for false if the json is for the 2014 world cup.
  * @param {json} json - i am the json data to check.
- *
  * @return {boolean} True if it is the 2014 world cup. False if not.
  */
 function isInSeason(feedType, json){

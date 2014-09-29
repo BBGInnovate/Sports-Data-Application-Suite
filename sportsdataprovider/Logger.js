@@ -1,11 +1,11 @@
-/* ****************************************************************************
- * File: 		Logger.js
- * Purpose: 	I am the applications Logger. I can log to two different files
- 				application.log and error.log. As a convience I can also log to
- 				the console.
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/**
+ * @fileOverview 	I am the applications Logger. I can log to two different files
+ *					application.log and error.log. As a convience I can also log to
+ * 					the console.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			Logger.js
+ */
 
 /* *************************** Required Classes **************************** */
 var util = require('util');
