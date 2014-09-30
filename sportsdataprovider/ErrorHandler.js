@@ -1,10 +1,10 @@
-/* ****************************************************************************
- * File: 		ErrorHandler.js
- * Purpose: 	I am the application wide Error Handler
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
-
+/**
+ * @fileOverview 	I am the application wide Error Handler.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			ErrorHandler.js
+ */
+ 
 /* *************************** Required Classes **************************** */
 
 var email = require('./Email.js');
@@ -24,6 +24,9 @@ var config = Config.getConfig();
  */
 function handleError( message, data ){
 	
+	// return something... 
+	var result = false;
+
 	// log stuff to the console for dev development
 	if (config.applicationMode != 'dev'){
 		log.log(message);
@@ -33,10 +36,12 @@ function handleError( message, data ){
 	var extraData = JSON.stringify(data);
 	log.error(message, extraData);
 	
-	/* TODO: uncomment for production*/
 	email.send( "ERROR! Football DataProvider Applicaiton: " + message, 
 		"An ERROR Happend! Additional Information: " + extraData);
-	
+
+	result = true;
+
+	return result;
 }
 
 

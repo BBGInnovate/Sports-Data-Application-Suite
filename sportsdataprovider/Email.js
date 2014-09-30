@@ -1,9 +1,9 @@
-/* ****************************************************************************
- * File: 		Email.js
- * Purpose: 	I handle emailing for the application.
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/**
+ * @fileOverview 	I handle emailing for the application.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			Email.js
+ */
 
 /* *************************** Required Classes **************************** */
 
