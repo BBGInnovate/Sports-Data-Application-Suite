@@ -93,3 +93,5 @@
 {"level":"error","message":"LATEST GAME FILE File Write Failed! \"bummer\" bummer","timestamp":"2014-09-29T19:00:42.197Z"}
 {"level":"error","message":"LATEST GAME FILE File Write Failed! \"bummer\" bummer","timestamp":"2014-09-29T19:40:52.030Z"}
 {"level":"error","message":"LATEST GAME FILE File Write Failed! \"bummer\" bummer","timestamp":"2014-09-29T19:42:23.797Z"}
+{"level":"error","message":"{ 'this is a': 'test', 'that happens': 'during unit tests' } undefined undefined","timestamp":"2014-09-30T15:38:56.789Z"}
+{"level":"error","message":"unitTestEmail! \"{\\\"this is a\\\":\\\"test\\\",\\\"that happens\\\":\\\"during unit tests\\\"}\" {\"this is a\":\"test\",\"that happens\":\"during unit tests\"}","timestamp":"2014-09-30T15:39:52.334Z"}

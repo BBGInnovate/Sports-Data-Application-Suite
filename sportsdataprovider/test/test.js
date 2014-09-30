@@ -6,6 +6,7 @@ var util = require('util');
 var utils = require('../Utils');
 var dom = require('xmldom').DOMParser;
 var transformer = require('../Transformer');
+var errorHandler = require('../ErrorHandler');
 
 
 // set up some vars will use to test with
@@ -50,7 +51,7 @@ describe('Transformer', function(){
 	// doBuildCommentFile
 	describe('#doBuildCommentFile should PASS', function(){
 		it('should return boolean true', function(){
-			assert.equal( true, transformer.doBuildCommentFile(commentJSONGood, []) );
+			assert(transformer.doBuildCommentFile(commentJSONGood, []) );
 		});
 	});
 	describe('#updateCurrentGameFile should FAIL', function(){
@@ -303,11 +304,22 @@ describe('Transformer', function(){
 		});
 	});
 
+});
 
 
+describe('ErrorHandler', function(){
 
-	
+	var testErrorData = {
+		"this is a" : "test",
+		"that happens": "during unit tests"
+	}
 
+	// updateCurrentGameFile()
+	describe('#handleError should PASS', function(){
+		it('should return boolean true', function(){
+			assert.equal( true, errorHandler.handleError('unitTestEmail!', testErrorData) );
+		});
+	});
 });
 
 
