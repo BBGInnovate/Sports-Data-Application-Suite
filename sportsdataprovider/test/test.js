@@ -7,7 +7,7 @@ var utils = require('../Utils');
 var dom = require('xmldom').DOMParser;
 var transformer = require('../Transformer');
 var errorHandler = require('../ErrorHandler');
-
+var Controller = require('../Controller');
 
 // set up some vars will use to test with
 
@@ -29,7 +29,63 @@ var squadJSONGood = getXMLAsJSON(squadXMLPath);
 
 
 /**
- * Unit tests for a Transformer
+ * Controller
+ */
+describe('Controller', function(){
+
+	describe('#handleComment should PASS', function(){
+		it('should return boolean true.', function(){
+			assert(Controller.handleComment(commentJSONGood) );
+		});
+	});
+	describe('#handleComment should FAIL', function(){
+		it('I should thow an error.', function(){
+			//assert.throws( false, Cat.sleep( 'john' ) );
+			assert.throws( function() { Controller.handleComment(gameJSONBad); }, Error );
+		});
+	});
+
+	describe('#handleGame should PASS', function(){
+		it('should return boolean true.', function(){
+			assert(Controller.handleGame(gameJSONGood) );
+		});
+	});
+	describe('#handleGame should FAIL', function(){
+		it('I should thow an error.', function(){
+			//assert.throws( false, Cat.sleep( 'john' ) );
+			assert.throws( function() { Controller.handleGame(gameJSONBad); }, Error );
+			// rewrite the latest game file....
+			transformer.updateCurrentGameFile(gameJSONGood);
+		});
+	});
+
+	describe('#handleSchedule should PASS', function(){
+		it('should return boolean true.', function(){
+			assert(Controller.handleSchedule(scheduleJSONGood) );
+		});
+	});
+	describe('#handleSchedule should FAIL', function(){
+		it('I should thow an error.', function(){
+			//assert.throws( false, Cat.sleep( 'john' ) );
+			assert.throws( function() { Controller.handleSchedule(scheduleJSONBad); }, Error );
+		});
+	});
+
+	describe('#handleSquad should PASS', function(){
+		it('should return boolean true.', function(){
+			assert(Controller.handleSquad( squadJSONGood ) );
+		});
+	});
+	describe('#handleSquad should FAIL', function(){
+		it('I should thow an error.', function(){
+			assert.throws( function() { Controller.handleSquad( squadJSONBad ); }, Error );
+		});
+	});
+});
+
+
+/**
+ * Transformer
  */
 describe('Transformer', function(){
 
@@ -46,7 +102,6 @@ describe('Transformer', function(){
 			transformer.updateCurrentGameFile(gameJSONGood);
 		});
 	});
-
 
 	// doBuildCommentFile
 	describe('#doBuildCommentFile should PASS', function(){
@@ -67,7 +122,6 @@ describe('Transformer', function(){
 		});
 	});
 
-	
 	//buildSquadFile
 	var finalSquadData = transformer.buildSquadFile(squadJSONGood);
 
@@ -92,7 +146,6 @@ describe('Transformer', function(){
 			assert.throws( function() { transformer.buildSquadFile(squadJSONBad); }, Error );
 		});
 	});
-
 
 	// buildGameFile
 	var finalGameJSON = transformer.buildGameFile(gameJSONGood);
@@ -208,9 +261,8 @@ describe('Transformer', function(){
 		});
 	});
 
-
 	// buildSchedule
-	var finalSchedulaJSON = transformer.buildSchedule(scheduleJSONGood);
+	var finalSchedulaJSON = transformer.buildSchedule( scheduleJSONGood );
 	var matchObject = finalSchedulaJSON[0];
 	var matchHomeObject = matchObject.homeTeam;
 	var matchAwayObject = matchObject.awayTeam;
@@ -258,7 +310,6 @@ describe('Transformer', function(){
 		});
 	});
 
-
 	describe('#buildSchedule should PASS. A Match objects away team "ID" should be an string.', function(){
 		it('should be an string', function(){
 			assert.equal( true,  typeof matchAwayObject.ID === 'string' );
@@ -280,7 +331,6 @@ describe('Transformer', function(){
 			assert.equal( true,  matchHomeObject.ID.length > 0 );
 		});
 	});
-
 
 	describe('#buildSchedule should PASS. A Match objects away team "name" should be an string.', function(){
 		it('should be an string', function(){
@@ -306,7 +356,7 @@ describe('Transformer', function(){
 
 });
 
-
+// ErrorHandler
 describe('ErrorHandler', function(){
 
 	var testErrorData = {
@@ -321,8 +371,6 @@ describe('ErrorHandler', function(){
 		});
 	});
 });
-
-
 
 /**
  * I read an xml file and return it as a JSON object.

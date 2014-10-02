@@ -1338,6 +1338,11 @@ function buildGameFile( data ){
  */
 function buildSchedule( data ){
 	
+	// thow an error if we didn't get data
+	if (typeof data.SoccerFeed.SoccerDocument.MatchData === 'undefined'){
+		 throw ("Invalid Data");
+	}
+
 	var schedule  = [];
 	var matchArray = utils.objectSearch( 'SoccerFeed.SoccerDocument.MatchData',data );
 	var teamArray = utils.objectSearch( 'SoccerFeed.SoccerDocument.Team',data );
@@ -1531,98 +1536,18 @@ function buildSchedule( data ){
 
 
 /**
- * I do nothing but fire off the postTransform function to keep startup file
- * file count tracking accurate.
+ * I do nothing and am here for backward compatibility. Ill be removed in the
+ * future.
  *
  * @return {void}
  */
 function buildSeasonStats(){
 	
-	postTransform();
+	return true;
 }
 
 
 /* *************************** Private Methods ***************************** */
-
-/**
- * I write the JSON file to disk and kick off the update Faye server process.
- *
- * @param {String} fileName - I am the file name to write to disk.
- * @param {Object} data - I am the JSON data to put in the file.
- * @param {String} fayeChannel - I am channel to push JSON to.
- * @param {Object} fayeData - I am JSON to push.
- *
- * @return {void}
- */
-function postTransform( fileName, json, fayeChannel, fayeData, rawParsedJSON, gameResult ){
-
-	// default these
-	fileName = fileName || '';
-	json = json || '';
-	fayeChannel = fayeChannel || '';
-	rawParsedJSON = rawParsedJSON || '';
-	gameResult = gameResult || '';
-	
-
-	// should we log stuff?
-	var doLogging = false;
-	if (config.applicationMode === 'dev'){
-		doLogging = true;
-	}
-
-	// only if we have length will we write a file...
-	if( json.length && fileName.length ){
-		fs.writeFile(config.JSONDirectory + '/' + fileName, json, function(error) {
-			
-			if( error ) {
-				ErrorHandler.handleError( 'JSON File Write Failed! File: ' + fileName, error );
-			}
-		});
-	}
-
-	if ( doLogging ){
-		util.log(fayeChannel + " before Faye Push");
-	}
-
-	// add 1 to keep track of how many times we've been called. were using this 
-	// so we don't broadcast to Faye during the initial build of all the JSON 
-	// at start up. the directory watcher initialy process ALL the files in the
-	// watched directory which is a good thing in case the JSON format is
-	// changed during the life of the world cup.
-	
-	//global.numberOfSartUpJobsCommited = global.numberOfSartUpJobsCommited +1;
-
-	// if we have processed all the initial files in the FTP directory we can
-	// start to broadcast to Faye
-	if (global.numberOfStartUpXMLFiles < global.numberOfSartUpJobsCommited){
-
-		if( fayeChannel.length ){
-
-			//fayClient.publish('/' + fayeChannel, {text: fayeData} );
-			
-			if( doLogging ){
-			//	util.log( fayeChannel + " was pushed." );	
-			}
-		}
-	}
-
-	// here is where will know that all the XML files have been processed so we
-	// can do something....
-	if  ( 
-			( global.numberOfStartUpXMLFiles <= global.numberOfSartUpJobsCommited ) 
-			&& 
-			( global.numberOfStartUpXMLFiles > 0 )
-		){
-		
-		// add code here for the POST startup process...
-		if ( doLogging ){
-			log.log('========= clean shot at after all files processed... build ==========');
-		}
-
-	}
-}
-
-
 
 /**
  * I check if a game is live by the date object passed to me.
@@ -1655,47 +1580,6 @@ function isGameLive( scheduledDateTime, data ){
 	}
 
 	return result;
-
-	/* OLD
-	utils.formatOptaDate(data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Date['#text'])
-
-	// start time object
-	var startTime = moment( scheduledDateTime );
-	// end time object, add 100 min so we catch THE WHOLE game.
-	var endTime = moment( startTime ).add( 'm', 100 );
-	// now, the time to check
-	var now = moment();
-
-	var isBeforeGame = startTime.isBefore(now);
-	var isAfterGame = endTime.isAfter(now);
-
-	// default to false
-	var result = false;
-
-	// test
-	if (isBeforeGame && isAfterGame){
-		result = true;
-	}
-
-	// if the above logic is off cause we went into overtime, the flag
-	// 'Latest' will tell us. Come to think of it.. the above code is 
-	// kinda unnessary if the below is 100% accurate and OPTA sais it is.
-	// We might refactor and remove the above code. I'm only keeping the
-	// above JUST incase the property 'Type' isn't in the XML. That would
-	// be suprising becasuse they do spen a lot of time in the docs talking
-	// about this.
-	if (
-			data.SoccerFeed.SoccerDocument['@attributes'] 
-			&&
-			data.SoccerFeed.SoccerDocument['@attributes']['Type'] === 'Latest'
-		) {
-		result = true;
-	} else {
-		result = false;
-	}
-
-	return result;
-	*/
 }
 
 
@@ -1712,13 +1596,8 @@ function isCommentFeedLive ( data ) {
 	if (isBeforeGame && isAfterGame){
 		result = true;
 	}
-	//log.log(startTime._d);
-	//log.log(endTime._d);
-	//log.log(data.Commentary['@attributes']['game_id'])
-	//log.log(result)
 
 	return result;
-
 }
 
 

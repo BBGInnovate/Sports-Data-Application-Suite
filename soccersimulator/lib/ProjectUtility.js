@@ -1,9 +1,9 @@
-/* ****************************************************************************
- * File: 		Utils.js
- * Purpose: 	I provide generic Utility methods
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/** 
+ * @fileOverview 	I provide generic Uitlitiy functions.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			ProjectUtility.js
+ */
 
 /* *************************** Required Classes **************************** */
 var fs = require('fs');
@@ -17,7 +17,6 @@ var dom = require('xmldom').DOMParser;
 /**
  * I read an XML file and return its data as JSON
  * @param {String} path - I am the path to the XML file.
- *
  * @return {object}
  */
 function getJSONFromXMLFile( path ) {
@@ -30,11 +29,9 @@ function getJSONFromXMLFile( path ) {
 }
 
 
-
 /**
  * I delete the contents of a directory
  * @param {String} dirPath - I am the path of the directory to empty
- *
  * @return {void}
  */
 function emptyDirectory( dirPath ) {
@@ -54,7 +51,6 @@ function emptyDirectory( dirPath ) {
 /**
  * I recursivly delete a directory
  * @param {String} dirPath - I am the path of the directory to delete
- *
  * @return {void}
  */
 function deleteDirectory( dirPath ) {
@@ -75,10 +71,10 @@ function deleteDirectory( dirPath ) {
 /**
  * I search JSON objects.
  * @param {String} Path - I am the name of the node to search for.
- 						  Examples can be:
- 						  MainDatContainer.NodeToFind
- 						  or even pass in array positions like:
- 						  UberParent.ChildArray[0].NodeToFind
+ *						  Examples can be:
+ *						  MainDatContainer.NodeToFind
+ *						  or even pass in array positions like:
+ *						  UberParent.ChildArray[0].NodeToFind
  * @param {Object} data - I am the JSON object to be searched.
  */
 function objectSearch(path, obj) {
@@ -111,7 +107,11 @@ function objectSearch(path, obj) {
 }
 
 
-// Changes XML to JSON
+/**
+ * I convert xml to JSON.
+ * @param {Object} xml - I am the XML to convert.
+ * @param {Object} data - I am the JSON object to be searched.
+ */
 function xmlToJson( xml ) {
 	
 	// Create the return object

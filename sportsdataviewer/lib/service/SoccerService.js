@@ -1,13 +1,10 @@
-/* ****************************************************************************
- * File: 		SoccerService.js
- *
- * Purpose: 	I am the API for interacting with soccer data and all things
- *				that have to do with soccer.
- *
- * Author: 		John Allen ( jallen@figleaf.com )
- *
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/** 
+ * @fileOverview 	I am the API for interacting with soccer data and all things
+ *					that have to do with soccer.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			SoccerService.js
+ */
 
 /* *************************** Required Classes **************************** */
 var fs = require('fs');
@@ -42,7 +39,6 @@ function getGame( IDGame ){
 exports.getGame = getGame;
 
 
-
 /**
  * I return a players JSON data by ID.
  *
@@ -73,7 +69,6 @@ function getPlayer( IDPlayer ){
 exports.getPlayer = getPlayer;
 
 
-
 /**
  * I return the schedule JSON.
  *
@@ -87,7 +82,6 @@ function getSchedule(){
 	return result;
 }
 exports.getSchedule = getSchedule;
-
 
 
 /**
@@ -143,8 +137,6 @@ function getLatestGameID(){
 }
 
 
-
-
 /**
  * I read a games Stats JSON file and return it.
  *
@@ -158,7 +150,6 @@ function getGameJSON( id ){
 
 	return gameJSON;
 }
-
 
 
 /**
@@ -176,7 +167,6 @@ function getCommentaryJSON( id ){
 }
 
 
-
 /**
  * I read a JSON text file and return the data as a JSON object.
  *
@@ -191,7 +181,6 @@ function readJSONFile( path ){
 }
 
 
-
 /**
  * I return the configured JSON directory.
  *
@@ -200,7 +189,6 @@ function readJSONFile( path ){
 function getJSONDirectory(){
 	return config.jsonDirectory;
 }
-
 
 
 /**

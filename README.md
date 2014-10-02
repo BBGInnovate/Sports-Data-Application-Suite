@@ -147,12 +147,23 @@ This class provides the functionality for
 
 If the application was to be used for a different event, e.g.: Premier League vs World Cup 2014, the configuration file would need to be updated with the correct check stings.
 
+####Controller.js
+
+This class is just a simple thin 'dispatcher' so the app.js class and the supporting service classed are more loosely coupled.
 
 ####Transformer.js
 
-This class provides the data generations for JSON functionality. It also broadcasts the finalized JSON data to the SFS.
+This class generates the properly formatted JSON used buy all other applications from the OPTA XML.  
 
 If this software was to be used for a different sport than soccer this class would be re-written to produce the proper JSON data. 
+
+####FayeService.js
+
+This class is responsible for all communication between the application and the Faye Sever, the SFS.
+
+####JSONFileService.js
+
+This class is responsible for writing JSON data to the correct directory.
 
 ####AggregateDataSevice.js
 

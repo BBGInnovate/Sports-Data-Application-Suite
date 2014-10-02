@@ -1,10 +1,10 @@
-/* ****************************************************************************
- * File: 		MatchService.js
- * Purpose: 	I am provide the file building and simulation functionality for
- *				simulating soccer games using OPTA data.
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/** 
+ * @fileOverview 	I am provide the file building and simulation functionality for
+ *					simulating soccer games using OPTA data.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			MatchService.js
+ */
 
 /* *************************** Required Classes **************************** */
 var fs = require('fs');

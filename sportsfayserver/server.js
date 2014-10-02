@@ -1,9 +1,9 @@
-/* ****************************************************************************
- * File: 		Server.js
- * Purpose: 	I am the Faye Messaging Server
- * Author: 		John Allen
- * Company: 	Fig Leaf Software
- *************************************************************************** */
+/** 
+ * @fileOverview 	I am the Faye Messaging Server.
+ * @author 			John Allen <jallen@bbg.gov>
+ * @version 		1.0.0
+ * @module 			server.js
+ */
 
 /* *************************** Required Classes **************************** */
 var http = require('http');
