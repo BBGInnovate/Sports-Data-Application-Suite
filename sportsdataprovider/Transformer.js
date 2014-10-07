@@ -39,7 +39,7 @@ var twitter = new Twit({
 /* *************************** Public Methods ****************************** */
 
 /**
- * I update the currentgame.json file. If a game file XML says it's the latest
+ * I update the current game.json file. If a game file XML says it's the latest
  * I write the game ID to the file so other applications can know what is the
  * current game or last game played. I return true if I passed.
  * @param {Object} data - I am the JSON data to make the current game file 
