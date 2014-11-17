@@ -1,0 +1,14 @@
+{
+  "name": "sportsfayeserver",
+  "version": "1.0.0",
+  "author": "John Allen for BBG | ODDI",
+  "dependencies": {
+    "moment" : "~2.8.2",
+    "faye" : "^1.0.3",
+    "forever" : "^0.13.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "0.8.x"
+  }
+}

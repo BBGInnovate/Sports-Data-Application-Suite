@@ -23,12 +23,22 @@ var server = http.createServer(function(request, response) {
 bayeux.attach( server );
 server.listen( 8000 );
 
+bayeux.on('publish', function(clientId, channel, data) {
+  
+  console.log(arguments);
+  console.log('something happened');
+
+});
+
 
 // I am an extension that checks if a publisher is sending a password and that
 // the password is correct. If it's not I add the .error key to the message
 // object which effectivly kills it.
 bayeux.addExtension({
 	incoming: function(message, callback) {
+
+		console.log(message);
+
 
 		if (!message.channel.match(/^\/meta\//)) {
 			
