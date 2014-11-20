@@ -18,3 +18,5 @@ sportsdataprovider/aggregate_data/**/*
 projectFilesBackup/**/*
 sportsdataviewer/data/**/*
 sportsdataprovider/logs/
+sportsdataprovider/Config.js
+sportsdataviewer/config/
