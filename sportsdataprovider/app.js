@@ -371,9 +371,12 @@ function preBuildSquadFile() {
 	var xmlDoc = new dom().parseFromString( rawSquadBinnaryData.toString() );
 	var json = utils.xmlToJson( xmlDoc );
 
+
 	Controller.handleSquad( json );
 
 	} catch(e){
+
+		console.log(e);
 		// log and let the app continue. this can happen in testing a lot
 		log.application("preBuildSquadFile borked casue the file was not there", "nope", e);
 		log.error("preBuildSquadFile borked casue the file was not there", "nope", e);

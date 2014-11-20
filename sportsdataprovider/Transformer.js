@@ -517,6 +517,9 @@ function buildSquadFile ( data ) {
 	var timeFormat = 'YYYY-MM-DD HH:mm:ss';
 	var teamArray = data.SoccerFeed.SoccerDocument.Team;
 
+
+
+
 	// the array of squads
 	var resultArray = [];
 	
@@ -546,11 +549,23 @@ function buildSquadFile ( data ) {
 			}
 
 			if(teamArray[i].hasOwnProperty( 'TeamOfficial' )){
-				var official = teamArray[i].TeamOfficial;
-				team.manager.name = official.PersonName.First['#text'] + ' ' + official.PersonName.Last['#text'];
-				team.manager.country = official['@attributes'].country;
-				team.manager.dob = moment(official.PersonName.BirthDate['#text']).format(timeFormat);
-				team.manager.joinDate = moment(official.PersonName.join_date['#text']).format(timeFormat);
+
+				try{
+					
+					var official = teamArray[i].TeamOfficial;
+
+					if( Object.prototype.toString.call( official ) === '[object Array]' ) {
+					    
+					    official = teamArray[i].TeamOfficial[0];
+					}
+					team.manager.name = official.PersonName.First['#text'] + ' ' + official.PersonName.Last['#text'];
+					team.manager.country = official['@attributes'].country;
+					team.manager.dob = moment(official.PersonName.BirthDate['#text']).format(timeFormat);
+					team.manager.joinDate = moment(official.PersonName.join_date['#text']).format(timeFormat);
+				}catch(e){
+					ErrorHandler.handleError(e);
+					
+				}
 			}
 
 			// loop over the player array of each team and add them to the squad
@@ -562,10 +577,10 @@ function buildSquadFile ( data ) {
 				player.teamID = team.id;
 				
 				// add them to the squad
-				team.player.push(player);
+				team.player.push( player );
 
 				// also add them to the player array
-				playerArray.push(player);
+				playerArray.push( player );
 			};
 
 			resultArray.push(team);	

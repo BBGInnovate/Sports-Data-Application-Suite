@@ -35,7 +35,7 @@ exports.handleComment = handleComment;
  * I handle the handle what happens AFTER the comments are built. I still
  * suck at asyn programming so this is why this method is here. Check out
  * the Transformer.buildCommentFile... it makes an async call to twitter
- * and then it calles another function.... bla bla bla... so this will be the
+ * and then it calls another function.... bla bla bla... so this will be the
  * only example of this type of mess and why you see a refrence to Controller
  * in the Transformer... :P
  * @param {Object} data I am the game JSON object. I am required.

@@ -16,3 +16,5 @@ sportsdataprovider/scribble.js
 sportsdataprovider/Config.js
 sportsdataprovider/aggregate_data/**/*
 projectFilesBackup/**/*
+sportsdataviewer/data/**/*
+sportsdataprovider/logs/

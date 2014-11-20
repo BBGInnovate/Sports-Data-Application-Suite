@@ -10,6 +10,7 @@
 
 /* *************************** Required Classes **************************** */
 var SoccerService = require('../../lib/service/SoccerService');
+var moment = require('moment');
 
 /* ************************** Controller Methods *************************** */
 var Soccer = function () {
@@ -51,7 +52,7 @@ this.schedule = function ( req, resp, params ) {
 
 	var json = SoccerService.getSchedule();
 
-	self.respond({ params: params, schedule: json });
+	self.respond({ params: params, schedule: json, moment : moment });
 };
 
 

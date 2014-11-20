@@ -11,6 +11,8 @@
 
 /* *************************** Public Methods ****************************** */
 
+console.log(process.cwd());
+
 /**
  * I return all the applications configuration data.
  *
@@ -23,13 +25,13 @@ function getConfig(){
 		'FPTDirectory' : process.cwd() + '/FTP',
 		//'JSONDirectory' : process.cwd() + '/JSON',
 		'JSONDirectory' : '/Users/lbacker/Documents/nodeapps/sportsdataapplication/sportsdataviewer/data/json/soccer/worldcup2014',
-		'squadFileName' : 'srml-4-2013-squads.xml',
+		'squadFileName' : 'srml-8-2014-squads.xml',
 
-		'competitionName' : 'World Cup',
-		'competitionID' : '4',
-		'season' : 'Season 2013/2014',
-		'seasonName' : 'Season 2013/2014',
-		'seasonID' : '2013',
+		'competitionName' : 'English Barclays Premier League',
+		'competitionID' : '8',
+		'season' : 'Season 2014/2015',
+		'seasonName' : 'Season 2014/2015',
+		'seasonID' : '2014',
 
 		'aggregateDataDirectory' : process.cwd() + '/aggregate_data',
 		'feedTypeStringID' : {

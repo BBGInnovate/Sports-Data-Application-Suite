@@ -160,8 +160,12 @@ function getGameJSON( id ){
  */
 function getCommentaryJSON( id ){
 	
+	try{
 	var jsonPath = getJSONDirectory() + '/commentary/' + 'commentary-' + id + '.json';
 	var commentaryJSON = readJSONFile( jsonPath );
+	}catch(e){
+		commentaryJSON = [];
+	}
 
 	return commentaryJSON;
 }

@@ -10,13 +10,15 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 var rb = getRB(params.language);
 %>
 <div class="scheduleContainer">
-<table class='schedule'>
+<table class='schedule' border=1>
 <thead>
 	<tr>
+		
 		<th id="group">
 			<span class='full'><%= rb.get('group') %></span>
 			<span class="abbr">G</span>
 		</th>
+		
 		<!-- <th id='match'>Match</th> -->
 		<th id="date">
 			<span class='full'><%= rb.get('dateTime') %> (GMT)</span>
@@ -29,3 +31,40 @@ var rb = getRB(params.language);
 	</tr>
 </thead>
 <tbody>
+	<% for (var i = 0; i < schedule.length; i++) { %>
+	<tr>
+		<td></td>
+		<td>
+			<%= moment(schedule[i].date).format('DD/MM')%>  - 
+			<%= moment(schedule[i].date).format('hh:mm') %>
+		</td>
+		<td>
+			<%= schedule[i].city %> <%= schedule[i].venue %>
+		</td>
+		<td>
+			[]
+		</td>
+		<td>
+			<%= schedule[i].awayTeam.name %>
+		</td>
+		<td>
+			<a href="<%- urlFor({
+					controller: 'soccer', 
+					action: 'index',
+					IDGame : schedule[i].IDMatch,
+					relPath: true,
+					language: params.language
+				}) %>">
+				<%= schedule[i].awayTeam.score %> - <%= schedule[i].homeTeam.score %>
+			</a>
+		</td>
+		<td>
+			<%= schedule[i].homeTeam.name %>
+		</td>
+		<td>
+			[]
+		</td>
+	</tr>
+	<% } %>
+</tbody>
+</table>
