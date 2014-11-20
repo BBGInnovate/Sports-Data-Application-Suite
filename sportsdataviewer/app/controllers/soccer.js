@@ -16,6 +16,21 @@ var moment = require('moment');
 var Soccer = function () {
 this.respondsWith = ['html', 'json', 'xml', 'js', 'txt'];
 
+
+/*
+ * index - I am the default action for this controller. Check the view to
+ *         see what I can display based on query string variables. I should 
+ *		   always return game and commentary JSON.
+ */
+this.game = function ( req, resp, params ) {
+	var self = this;
+
+	var json = SoccerService.getGame( params.IDGame );
+
+	self.respond({ params: params, gameData: json });
+};
+
+
 /*
  * index - I am the default action for this controller. Check the view to
  *         see what I can display based on query string variables. I should 
