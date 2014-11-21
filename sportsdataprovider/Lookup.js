@@ -402,7 +402,7 @@ function writeTeamLookUpJSON() {
 	
 	fs.writeFile(config.JSONDirectory + '/' + fileName, jsonString, function(error) {
 		if( error ) {
-			ErrorHandler.handleError('Team Lookup JSON write failed. File:' + fileName, err);
+			ErrorHandler.handleError('Team Lookup JSON write failed. File:' + fileName, error);
 		}
 	});
 }
