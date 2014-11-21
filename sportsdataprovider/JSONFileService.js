@@ -9,6 +9,7 @@
 var fs = require('fs');
 var log = require('./Logger.js');
 var Config = require('./Config');
+var ErrorHandler = require('./ErrorHandler');
 
 /* *************************** Constructor Code **************************** */
 var config = Config.getConfig();
