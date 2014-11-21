@@ -1,0 +1,90 @@
+.flag{background: url(../img/logos_epl_small_20.png) no-repeat 0px 0px;min-height:20px; min-width: 20px;}
+.flag.ars{background-position: 0px 0px;} /* Arsenal */
+.flag.avl{background-position: 0px -20px;} /* Aston Villa */
+.flag.bur{background-position: 0px -40px;} /* Burnley */
+.flag.che{background-position: 0px -60px;} /* Chelsea */
+.flag.cry{background-position: 0px -80px;} /* Crystal Palace */
+.flag.eve{background-position: 0px -100px;} /* Everton */
+.flag.hul{background-position: 0px -120px;} /* Hull City */
+.flag.lei{background-position: 0px -140px;} /* Leicester City */
+.flag.liv{background-position: 0px -160px;} /* Liverpool */
+.flag.mci{background-position: 0px -180px;} /* Manchester City */
+.flag.mun{background-position: 0px -200px;} /* Manchester United */
+.flag.new{background-position: 0px -220px;} /* Newcastle */
+.flag.qpr{background-position: 0px -240px;} /* Queens Park Rangers */
+.flag.sou{background-position: 0px -260px;} /* Southampton */
+.flag.stk{background-position: 0px -280px;} /* Stoke City */
+.flag.sun{background-position: 0px -300px;} /* Sunderland */
+.flag.swa{background-position: 0px -320px;} /* Swansea City */
+.flag.tot{background-position: 0px -340px;} /* Tottenham Hotspur */
+.flag.wba{background-position: 0px -360px;} /* West Bromwich Albion */
+.flag.whu{background-position: 0px -380px;} /* West Ham United */
+
+.flag.right{text-align: right;}
+.flag.right.ars{background-position: right 0px;} 
+.flag.right.avl{background-position: right -20px;} 
+.flag.right.bur{background-position: right -40px;} 
+.flag.right.che{background-position: right -60px;}
+.flag.right.cry{background-position: right -80px;}
+.flag.right.eve{background-position: right -100px;}
+.flag.right.hul{background-position: right -120px;}
+.flag.right.lei{background-position: right -140px;} 
+.flag.right.liv{background-position: right -160px;} 
+.flag.right.mci{background-position: right -180px;} 
+.flag.right.mun{background-position: right -200px;} 
+.flag.right.new{background-position: right -220px;} 
+.flag.right.qpr{background-position: right -240px;} 
+.flag.right.sou{background-position: right -260px;} 
+.flag.right.stk{background-position: right -280px;} 
+.flag.right.sun{background-position: right -300px;} 
+.flag.right.swa{background-position: right -320px;} 
+.flag.right.tot{background-position: right -340px;} 
+.flag.right.wba{background-position: right -360px;} 
+.flag.right.whu{background-position: right -380px;} 
+
+
+
+@media only screen and (min-width: 420px) {
+.flag{background: url(../img/logos_epl_med_30.png) no-repeat 0px 0px;min-height:30px; min-width: 30px;}
+.flag.ars{background-position: 0px 0px;} 
+.flag.avl{background-position: 0px -30px;} 
+.flag.bur{background-position: 0px -60px;} 
+.flag.che{background-position: 0px -90px;} 
+.flag.cry{background-position: 0px -120px;} 
+.flag.eve{background-position: 0px -150px;} 
+.flag.hul{background-position: 0px -180px;} 
+.flag.lei{background-position: 0px -210px;} 
+.flag.liv{background-position: 0px -240px;} 
+.flag.mci{background-position: 0px -270px;} 
+.flag.mun{background-position: 0px -300px;} 
+.flag.new{background-position: 0px -330px;} 
+.flag.qpr{background-position: 0px -360px;} 
+.flag.sou{background-position: 0px -390px;} 
+.flag.stk{background-position: 0px -420px;} 
+.flag.sun{background-position: 0px -450px;} 
+.flag.swa{background-position: 0px -480px;} 
+.flag.tot{background-position: 0px -510px;} 
+.flag.wba{background-position: 0px -540px;} 
+.flag.whu{background-position: 0px -570px;} 
+
+.flag.right.ars{background-position: right 0px;} 
+.flag.right.avl{background-position: right -30px;} 
+.flag.right.bur{background-position: right -60px;} 
+.flag.right.che{background-position: right -90px;} 
+.flag.right.cry{background-position: right -120px;} 
+.flag.right.eve{background-position: right -150px;} 
+.flag.right.hul{background-position: right -180px;} 
+.flag.right.lei{background-position: right -210px;}
+.flag.right.liv{background-position: right -240px;} 
+.flag.right.mci{background-position: right -270px;} 
+.flag.right.mun{background-position: right -300px;} 
+.flag.right.new{background-position: right -330px;}
+.flag.right.qpr{background-position: right -360px;} 
+.flag.right.sou{background-position: right -390px;} 
+.flag.right.stk{background-position: right -420px;} 
+.flag.right.sun{background-position: right -450px;} 
+.flag.right.swa{background-position: right -480px;} 
+.flag.right.tot{background-position: right -510px;}
+.flag.right.wba{background-position: right -540px;} 
+.flag.right.whu{background-position: right -570px;} 
+}

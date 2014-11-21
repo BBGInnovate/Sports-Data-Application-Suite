@@ -8,6 +8,7 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 **************************************************************************** */
 // make an alias
 var rb = getRB(params.language);
+console.log(schedule);
 %>
 <div class="scheduleContainer">
 <table class='schedule' border=1>
@@ -41,7 +42,7 @@ var rb = getRB(params.language);
 		<td>
 			<%= schedule[i].city %> <%= schedule[i].venue %>
 		</td>
-		<td>
+		<td class="flag <%= schedule[i].awayTeam.abbreviation.toLowerCase()%>">
 			[]
 		</td>
 		<td>
@@ -61,7 +62,7 @@ var rb = getRB(params.language);
 		<td>
 			<%= schedule[i].homeTeam.name %>
 		</td>
-		<td>
+		<td class="flag <%= schedule[i].homeTeam.abbreviation.toLowerCase()%>">
 			[]
 		</td>
 	</tr>

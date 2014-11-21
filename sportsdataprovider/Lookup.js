@@ -20,10 +20,17 @@ var config = Config.getConfig();
 
 /* *************************** Public Methods ****************************** */
 
+
+
+
+
+
 /**
  * I return the team look up object.
  */
 function getTeamLookup(){
+	
+	/*
 	return  [
 	    {
 	        'country': 'Algeria',
@@ -189,6 +196,171 @@ function getTeamLookup(){
 	        'optaid' : 't837'
 	    }
 	]
+	*/
+	var teamArray = [
+		{
+			team : 'Arsenal',
+			teamShort : 'Arsenal',
+			nickName : 'Gunners',
+			abbreviation : 'ARS',
+			stadium : 'Emirates Stadium',
+			IDTeam : 't3'
+		},
+		{
+			team : 'Aston Villa',
+			teamShort : 'Aston Villa',
+			nickName : 'Villans',
+			abbreviation : 'AVL',
+			stadium : 'Villa Park',
+			IDTeam : 't7'
+		},
+		{
+			team : 'Burnley',
+			teamShort : 'Burnley',
+			nickName : 'Clarets',
+			abbreviation : 'BUR',
+			stadium : 'Turf Moor',
+			IDTeam : 't90'
+		},
+		{
+			team : 'Chelsea',
+			teamShort : 'Chelsea',
+			nickName : 'Blues',
+			abbreviation : 'CHE',
+			stadium : 'Stamford Bridge',
+			IDTeam : 't8'
+		},
+		{
+			team : 'Crystal Palace',
+			teamShort : 'Crystal Palace',
+			nickName : 'Eagles',
+			abbreviation : 'CRY',
+			stadium : 'Selhurst Park',
+			IDTeam : 't31'
+		},
+		{
+			team : 'Everton',
+			teamShort : 'Everton',
+			nickName : 'Toffees',
+			abbreviation : 'EVE',
+			stadium : 'Goodison Park',
+			IDTeam : 't11'
+		},
+		{
+			team : 'Hull City',
+			teamShort : 'Hull',
+			nickName : 'Tigers',
+			abbreviation : 'HUL',
+			stadium : 'KC Stadium',
+			IDTeam : 't88'
+		},
+		{
+			team : 'Leicester City',
+			teamShort : 'Leicester',
+			nickName : 'Foxes',
+			abbreviation : 'LEI',
+			stadium : 'King Power Stadium',
+			IDTeam : 't13'
+		},
+		{
+			team : 'Liverpool',
+			teamShort : 'Liverpool',
+			nickName : 'Reds',
+			abbreviation : 'LIV',
+			stadium : 'Anfield',
+			IDTeam : 't14'
+		},
+		{
+			team : 'Manchester City',
+			teamShort : 'Man City',
+			nickName : 'Citizens',	
+			abbreviation : 'MCI',
+			stadium : 'Etihad Stadium',
+			IDTeam : 't43'
+		},
+		{
+			team : 'Manchester United',	
+			teamShort : 'Man UTD',
+			nickName : 'Red Devils',	
+			abbreviation : 'MUN',
+			stadium : 'Old Trafford',
+			IDTeam : 't1'
+		},
+		{
+			team : 'Newcastle United',	
+			teamShort : 'Newcastle',
+			nickName : 'Magpies',
+			abbreviation : 'NEW',
+			stadium : 'St. Jame\'s Park',
+			IDTeam : 't4'
+		},
+		{
+			team : 'Queens Park Rangers',	
+			teamShort : 'QPR',
+			nickName : 'Hoops',
+			abbreviation : 'QPR',
+			stadium : 'Loftus Road Stadium',
+			IDTeam : 't52'
+		},
+		{
+			team : 'Southampton',
+			teamShort : 'Southampton',
+			nickName : 'Saints',
+			abbreviation : 'SOU',
+			stadium : 'St. Mary\'s Stadium',
+			IDTeam : 't20'
+		},
+		{
+			team : 'Stoke City',
+			teamShort : 'Stoke',
+			nickName : 'Potters',
+			abbreviation : 'STK',
+			stadium : 'Britannia Stadium',
+			IDTeam : 't110'
+		},
+		{
+			team : 'Sunderland',
+			teamShort : 'Sunderland',
+			nickName : 'Black Cats',
+			abbreviation : 'SUN',
+			stadium : 'Stadium of Light',
+			IDTeam : 't56'
+		},
+		{
+			team : 'Swansea City',
+			teamShort : 'Swansea',
+			nickName : 'Swans',
+			abbreviation : 'SWA',
+			stadium : 'Liberty Stadium',
+			IDTeam : 't80'
+		},
+		{
+			team : 'Tottenham Hotspur',
+			teamShort : 'Spurs',
+			nickName : 'Spurs',
+			abbreviation : 'TOT',
+			stadium : 'White Hart Lane',
+			IDTeam : 't6'
+		},
+		{
+			team : 'West Bromwich Albion',
+			teamShort : 'West Brom',
+			nickName : 'Baggies',
+			abbreviation : 'WBA',
+			stadium : 'Hawthorns',
+			IDTeam : 't35'
+		},
+		{
+			team : 'West Ham United',
+			teamShort : 'West Ham',
+			nickName : 'Hammers',
+			abbreviation : 'WHU',
+			stadium : 'Boleyn Ground',
+			IDTeam : 't21'
+		}
+	];
+
+	return teamArray;
 }
 
 
@@ -200,14 +372,17 @@ function getTeamDataByID( IDTeam ) {
 	
 	var data = getTeamLookup();
 	var result = {
-		'country' : '',
-		'abbreviation' : '',
-		'optaid' : ''
+		team : '',
+		teamShort : '',
+		nickName : '',
+		abbreviation : '',
+		stadium : '',
+		IDTeam : ''
 	};
 	
 	for (var i = data.length - 1; i >= 0; i--) {
 		
-		if ( data[i].optaid === IDTeam ){
+		if ( data[i].IDTeam === IDTeam ){
 			result = data[i];
 		}
 	};
