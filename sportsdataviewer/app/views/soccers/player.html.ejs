@@ -10,7 +10,7 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 var rb = getRB(params.language);
 %>
 <div class='container'>
-	<h4 class='flag <%= player.teamMetadata.abbreviation.toLowerCase() %>'>
+	<h4 class='flag <%= /*player.teamMetadata.abbreviation.toLowerCase()*/ %>'>
 		<a href="<%- urlFor({
 			controller: 'soccer', 
 			action: 'squad',
@@ -93,7 +93,7 @@ var rb = getRB(params.language);
 				language: params.language
 				}) %>">
 				<span class='full'>
-					<%= rb.get(games[i]['opposingTeam']['country'].toLowerCase()) %>
+					<%= /*rb.get(games[i]['opposingTeam']['country'].toLowerCase())*/ %>
 				</span>
 				<span class='abbr'>
 					<%= rb.get(games[i]['opposingTeam']['abbreviation'].toLowerCase()) %>

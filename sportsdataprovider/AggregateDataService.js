@@ -553,7 +553,7 @@ function buildPlayerData( data ){
 		thisGameStatObject.opposingTeam = opposingTeam;
 
 		// only push a valid individual game stat
-		if (opposingTeam.optaid.length){
+		if (opposingTeam.IDTeam.length){
 			
 			//push the new game stats on to the array of games stats
 			playerInidvidualGateStatArray.push(thisGameStatObject);
