@@ -945,13 +945,28 @@ function buildGameFile( data ){
 		}
 	}
 
+	if( allowAggregateFileBuild ){
+		setTimeout(function() { 
+			aggDataService.buildPlayerData( data );
+		},100);
+		setTimeout(function() { 
+			aggDataService.buildTeamData( data, result ); 
+		},100);
+		setTimeout(function() { 
+			aggDataService.buildRefData( data, result );
+		},100);
+		setTimeout(function() { 
+			aggDataService.buildGoalieData( data, result );
+		},100);
+	}
+
 	return result;
 
 	/************** BUILD THE AGGREGATE DATA FILES ***************/
 	// were only going to do this when told to by arguments passed in process.argv
 	// from the command line
 	//if( allowAggregateFileBuild ){
-
+	/*
 	if (global.numberOfStartUpXMLFiles < global.numberOfSartUpJobsCommited){
 		
 		if ( !isLiveGame ){
@@ -985,6 +1000,7 @@ function buildGameFile( data ){
 			
 		}
 	}
+	*/
 	
 
 	/***************** helper functions *****************/
