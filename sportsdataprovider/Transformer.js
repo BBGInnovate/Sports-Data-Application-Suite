@@ -946,18 +946,10 @@ function buildGameFile( data ){
 	}
 
 	if( allowAggregateFileBuild ){
-		setTimeout(function() { 
-			aggDataService.buildPlayerData( data );
-		},100);
-		setTimeout(function() { 
-			aggDataService.buildTeamData( data, result ); 
-		},100);
-		setTimeout(function() { 
-			aggDataService.buildRefData( data, result );
-		},100);
-		setTimeout(function() { 
-			aggDataService.buildGoalieData( data, result );
-		},100);
+		aggDataService.buildPlayerData( data );
+		aggDataService.buildTeamData( data, result ); 
+		aggDataService.buildRefData( data, result );
+		aggDataService.buildGoalieData( data, result );
 	}
 
 	return result;
