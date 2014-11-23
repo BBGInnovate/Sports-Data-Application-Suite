@@ -110,7 +110,7 @@ function getSquad( IDTeam ){
 
 	for ( var i = teamMetaData.length - 1; i >= 0; i-- ) {
 		
-		if ( teamMetaData[i].optaid === IDTeam ){
+		if ( teamMetaData[i].IDTeam === IDTeam ){
 			result.teamMetadata = teamMetaData[i];
 		}
 	};

@@ -11,6 +11,7 @@ var rb = getRB(params.language);
 
 %><div class='testRoster2'>
 <h2 class='flag <%= squad.teamMetadata.abbreviation.toLowerCase() %>'>
+	<%= squad.team.name %>
 	<%= rb.get(squad.team.name.toLowerCase()) %>
 </h2>
 <% if(squad.team.nickName.length){ /* do we have a nickname to display? */ %>
