@@ -13,10 +13,8 @@ sportsdataprovider/JSON/**/*
 sportsdataprovider/FTP/**/*
 sportsdataprovider/logs/**/*
 sportsdataprovider/scribble.js
-sportsdataprovider/Config.js
+sportsdataprovider/EngagementConfig.js
 sportsdataprovider/aggregate_data/**/*
 projectFilesBackup/**/*
 sportsdataviewer/data/**/*
 sportsdataprovider/logs/
-sportsdataprovider/Config.js
-sportsdataviewer/config/

@@ -458,35 +458,40 @@ function buildRefData( data, result ){
 function buildPlayerData( data ){
 	
 	var playerLookupBinary = fs.readFileSync( config.JSONDirectory + '/player.json' );
-	var playerLookup = JSON.parse(playerLookupBinary.toString());
+	
+	try{
+		var playerLookup = JSON.parse(playerLookupBinary.toString());
 
-	//lets put all the players of the MATCH into ONE array
-	var playerArray1 = data.SoccerFeed.SoccerDocument.MatchData.TeamData[0].PlayerLineUp.MatchPlayer;
-	var playerArray2 = data.SoccerFeed.SoccerDocument.MatchData.TeamData[1].PlayerLineUp.MatchPlayer;
-	var matchPlayerArray = [];
+		//lets put all the players of the MATCH into ONE array
+		var playerArray1 = data.SoccerFeed.SoccerDocument.MatchData.TeamData[0].PlayerLineUp.MatchPlayer;
+		var playerArray2 = data.SoccerFeed.SoccerDocument.MatchData.TeamData[1].PlayerLineUp.MatchPlayer;
+		var matchPlayerArray = [];
 
-	for (var i = playerArray1.length - 1; i >= 0; i--) {
-		matchPlayerArray.push(playerArray1[i]);
-	};
-	for (var i = playerArray2.length - 1; i >= 0; i--) {
-		matchPlayerArray.push(playerArray2[i]);
-	};
-
-	var teamData = data.SoccerFeed.SoccerDocument.Team;
-
-	// loop over the all the tournaments players and build each players
-	// individual stats JSON file based on what they did in the match.
-	for (var i = 0; i < playerLookup.length; i++) {
-		
-		for (var x = 0; x < matchPlayerArray.length; x++) {
-			
-			if (playerLookup[i].id === matchPlayerArray[x]['@attributes'].PlayerRef){
-
-				aggregatePlayerData(playerLookup[i], matchPlayerArray[x], teamData);
-			}
+		for (var i = playerArray1.length - 1; i >= 0; i--) {
+			matchPlayerArray.push(playerArray1[i]);
 		};
-	};
+		for (var i = playerArray2.length - 1; i >= 0; i--) {
+			matchPlayerArray.push(playerArray2[i]);
+		};
 
+		var teamData = data.SoccerFeed.SoccerDocument.Team;
+
+		// loop over the all the tournaments players and build each players
+		// individual stats JSON file based on what they did in the match.
+		for (var i = 0; i < playerLookup.length; i++) {
+			
+			for (var x = 0; x < matchPlayerArray.length; x++) {
+				
+				if (playerLookup[i].id === matchPlayerArray[x]['@attributes'].PlayerRef){
+
+					aggregatePlayerData(playerLookup[i], matchPlayerArray[x], teamData);
+				}
+			};
+		};
+	} catch (e){
+		// do nothing. the player data isn't currently there, next time a match
+		// file is processed it will be.
+	}
 	/***************** helper functions *****************/
 
 	// I aggregate a players Data from the game data and write the file to disk.
