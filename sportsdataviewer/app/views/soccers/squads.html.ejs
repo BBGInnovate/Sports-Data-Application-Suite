@@ -1,0 +1,85 @@
+<%
+/* ****************************************************************************
+File:			schedule.html.ejs
+
+Purpose:		I display the schedule.
+
+Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+**************************************************************************** */
+// make an alias
+var rb = getRB(params.language);
+console.log(squadArray);
+var squad = squadArray.squadJSON;
+var lookup = squadArray.lookupJSON;
+
+// helper function
+function getTeamByID ( id ) {
+	var result = {};
+
+	for (var i = 0; i < lookup.length; i++) {
+		if ( lookup[i].IDTeam === id){
+			result = lookup[i];
+		}
+	};
+
+	return result;
+}
+
+%>
+<table class='tableToSVG squads'>
+	<thead>
+		<tr>
+			<th></th>
+			<th><span class='full'><%= rb.get('country') %></span></th>
+			<th><%= rb.get('coach') %></th>
+			<th title='Win'>
+				<span class='full'><%= rb.get('wins') %></span>
+				<span class='abbr'><%= rb.get('winsAbbr') %></span>
+			</th>
+			<th title='Loss'>
+				<span class='full'><%= rb.get('losses') %></span>
+				<span class='abbr'><%= rb.get('lossesAbbr') %></span>
+			</th>
+			<th title='Draw'>
+				<span class='full'><%= rb.get('draws') %></span>
+				<span class='abbr'><%= rb.get('drawsAbbr') %></span>
+			</th>
+			<th title='Goal Difference'>
+				<span class='full'><%= rb.get('goalDifference') %></span>
+				<span class='abbr'><%= rb.get('goalDifferenceAbbr') %></span>
+			</th>
+			<th title='Points'>
+				<span class='full'><%= rb.get('points') %></span>
+				<span class='abbr'><%= rb.get('pointsAbbr') %></span>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<% 
+			for (var i = 0; i < squad.length; i++) { 
+				var team = getTeamByID(squad[i].id);
+		%>
+			<tr> %>
+				<td class="flag <%= team.abbreviation.toLowerCase() %>"></td>		
+				<td>
+					<a href="<%- urlFor({
+							controller: 'soccer', 
+							action: 'squad',
+							IDTeam : squad[i].id,
+							relPath: true,
+							language: params.language
+					}) %>">
+						<%= team.teamShort %>
+					</a>
+				</td>
+				<td><%= squad[i].coach.name %></td>
+				<td><%= squad[i].win %></td>
+				<td><%= squad[i].loss %></td>
+				<td><%= squad[i].draw %></td>
+				<td><%= squad[i].goalDifference %></td>
+				<td><%= squad[i].points %></td>
+			</tr>
+		<% } %>
+	</tbody>
+</table>

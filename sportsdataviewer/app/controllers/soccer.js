@@ -39,9 +39,9 @@ this.game = function ( req, resp, params ) {
 this.index = function ( req, resp, params ) {
 	var self = this;
 
-	var json = SoccerService.getGame( params.IDGame );
+	var json = SoccerService.getCurrentGames();
 
-	self.respond({ params: params, gameData: json });
+	self.respond({ params: params, currentGameArray: json });
 };
 
 
@@ -83,6 +83,30 @@ this.squad = function ( req, resp, params ) {
 	self.respond({ params: params, squad: json });
 };
 
+/*
+ * squads - I get a squads JSON and display it.
+ */
+this.squads = function ( req, resp, params ) {
+	var self = this;
+
+	var json = SoccerService.getSquadArray();
+
+	self.respond({ params: params, squadArray: json });
+};
+
+
+/*
+ * widget - I am the default action for this controller. Check the view to
+ *         see what I can display based on query string variables. I should
+ *		   always return game and commentary JSON.
+ */
+this.widget = function ( req, resp, params ) {
+	var self = this;
+
+	var json = SoccerService.getGame( params.IDGame );
+
+	self.respond({ params: params, gameData: json });
+};
 
 
 // end controller methods

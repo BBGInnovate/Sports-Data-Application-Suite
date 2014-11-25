@@ -2,53 +2,44 @@
 /* ****************************************************************************
 File:			index.html.ejs
 
-Purpose:		I display the default view for the soccer section. I expect an
-				object wth the game stats JSON and commentary JSON from the 
-				controller.
+Purpose:		I display the landing page of the application. If there are
+				live games i will display a list of them.
 
-Paramaters: 	URL: 'widget' - what view to display. I default to display all.
-						types:
-							* scoreboard
-							* timeline
-							* overview
-							* lineup
-							* commentary
-							* game - all the above except lineup
-							* default is to show them all when NO widget=foo is
-							  in the URL
-
-Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
+Author: 		John Allen (Fig Leaf Software) jallen@figleaf.com
 **************************************************************************** */
-var gameStatData = gameData.stat;
-var commentaryData = gameData.commentary;
-// default to show all the widgets, overide when asked to show a single one.
-var showAll = true;
+var games = currentGameArray;
 %>
-<% if ( params.widget === 'scoreboard' ){ showAll = false; %>
-	<%= partial('scoreboard', {gameData: gameStatData, params: params}); %>
-<% } %>
-<% if ( params.widget === 'timeline' ){ showAll = false; %>
-	<%= partial('timeline', {gameData: gameStatData, params: params}); %>
-<% } %>
-<% if ( params.widget === 'overview' ){ showAll = false; %>
-	<%= partial('game-overview', {gameData: gameStatData, params: params}); %>
-<% } %>
-<% if ( params.widget === 'lineup' ){ showAll = false; %>
-	<%= partial('starting-lineup', {gameData: gameStatData, params: params}); %>
-<% } %>
-<% if ( params.widget === 'commentary' ){ showAll = false; %>
-	<%= partial('commentary', {commentary: commentaryData, gameData: gameStatData, params: params}); %>
-<% } %>
-<% if ( params.widget === 'game' ){ showAll = false; %>
-	<%= partial('scoreboard', {gameData: gameStatData, params: params}); %>
-	<%= partial('timeline', {gameData: gameStatData, params: params}); %>
-	<%= partial('game-overview', {gameData: gameStatData, params: params}); %>
-	<%= partial('commentary', {commentary: commentaryData, gameData: gameStatData, params: params}); %>
-<% } %>
-<% if ( showAll ){ /* show ALL the widgets, the default behaivor */%>
-<%= partial('scoreboard', {gameData: gameStatData, params: params}); %>
-<%= partial('timeline', {gameData: gameStatData, params: params}); %>
-<%= partial('game-overview', {gameData: gameStatData, params: params}); %>
-<%= partial('commentary', {commentary: commentaryData, gameData: gameStatData, params: params}); %>
-<%= partial('starting-lineup', {gameData: gameStatData,  params: params}); %>
-<% } %>
+
+<div style="float:right; padding-right:.4em;">
+	<img src="//images.uncova.com/f668092a96721b1d5718bca64386ce9afa0ae6df.jpg" alt="sammy-ameobi-newcastle-united" width="240" />
+</div>
+
+<% if(currentGameArray.length){%>
+	<h2>Live Games</h2>
+	<table>
+	<% for (var i = 0; i < games.length; i++) { %>
+		<tr>
+			<td><%= games[i].homeTeam.teamShort %></td>
+			<td>
+				<a href="<%- urlFor({
+							controller: 'soccer', 
+							action: 'game',
+							IDGame : games[i].IDGame,
+							relPath: true,
+							language: params.language
+				}) %>">
+					<%= games[i].homeTeam.score %> &ndash; <%= games[i].awayTeam.score %>
+				</a>
+			</td>
+			<td><%= games[i].awayTeam.teamShort %></td>
+		</tr>
+	<% } %>
+	</table>
+<%	} %>
+<p>
+	<%- linkTo('Schedule', {controller: 'soccer', action: 'schedule'}) %>
+</p>
+<p>
+	<%- linkTo('Squads', {controller: 'soccer', action: 'squads'}) %>
+</p>
+

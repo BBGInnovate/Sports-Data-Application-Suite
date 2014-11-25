@@ -67,24 +67,21 @@ This is the main configuration class. Below is a description of each configurati
 
 
 	var config = {
-		// the mode the application runs in options are 'dev' and 'prod'
-		'applicationMode' : 'dev', 
-
-		// File location:
-		// where XML files are stored and the directory watcher looks
-		'FPTDirectory' : process.cwd() + '/FTP', 
-		//where to write JSON to
-		'JSONDirectory' : process.cwd() + '/JSON', 
 		
+		'applicationMode' : engagementConfig.applicationMode,
+		'FPTDirectory' : engagementConfig.FPTDirectory,
+		'JSONDirectory' :  rootPath + '/sportsdataviewer/data/json',
 		// the OPTA squads file name (will be deprecated in the future)
-		'squadFileName' : 'srml-4-2013-squads.xml', 
+		'squadFileName' : engagementConfig.squadFileName,
+		'rootPath' : rootPath,
 		
 		// strings to check in the XML for verification of correct XML data
-		'competitionName' : 'World Cup', 
-		'competitionID' : '4',
-		'season' : 'Season 2013/2014',
-		'seasonName' : 'Season 2013/2014',
-		'seasonID' : '2013',
+		// these are set in the EngagementConfig.js file
+		'competitionName' : engagementConfig.competitionName,
+		'competitionID' : engagementConfig.competitionID,
+		'season' : engagementConfig.season,
+		'seasonName' : engagementConfig.seasonName,
+		'seasonID' : engagementConfig.seasonID,
 		
 		// dir for aggregate data. this is not used and will be removed
 		'aggregateDataDirectory' : '', 
@@ -129,7 +126,7 @@ This is the main configuration class. Below is a description of each configurati
 				'scoreboard' : 'scoreboard',
 				'squad' : 'squad'
 			},
-			'url' : 'http://127.0.0.1:8000/faye',
+			'url' : engagementConfig.fayClientURL,
 			// this is just a big long sting to deter packet sniffers from figuring
 			// out what we're doing. for total security use the faye server under
 			// and SSL cert.
@@ -226,44 +223,32 @@ The application currently supports the game soccer with these views:
 		generatedByVersion: '0.12.12',
 
 		// JSON directory to read from
-		jsonDirectory : process.cwd() + '/data/json/soccer/worldcup2014',
+		jsonDirectory : process.cwd() + '/data/json',
 		
 		// SFS URL
-		fayeClientURL : 'http://127.0.0.1:8000/faye'
+		'url' : engagementConfig.fayClientURL,
 	};
 
 ###Suggested Setup Option
 The application is blazing fast and depending on your hardware can handle LOAD, but BBG puts this application behind a Varnish server with a TTL of 1 min. Why? Because once the initial HTML is delivered to the client the SFS delivers the HTML updates so there is no more need for 'real time' delivery of information.
 
 ##EngamgementConfig.js
-This file contains all the conifiguration options used for different servers. It is not under version control and will need to be created and configured each time the software
-is deployed
+This file contains all the configuration options used for different servers. It is not under version control and will need to be created and configured each time the software is deployed. It should be located in the sportsdataprovider/ directory.
 
-/**
- * @fileOverview 	I am the config data for specific uses of the soccer 
- *					software.
- * @author 			John Allen <jallen@bbg.gov>
- * @version 		0.0.1
- * @module 			EngagementConfig.js
- */
+	var path = require('path');
+	var rootPath = path.normalize(__dirname + '/..');
 
-/* *************************** Required Classes **************************** */
-var path = require('path');
-var rootPath = path.normalize(__dirname + '/..');
-
-module.exports = {
-	'applicationMode' : 'dev',
-	'competitionName' : 'English Barclays Premier League',
-	'competitionID' : '8',
-	'season' : 'Season 2014/2015',
-	'seasonName' : 'Season 2014/2015',
-	'seasonID' : '2014',
-	'fayClientURL' : 'http://127.0.0.1:8000/faye',
-	'FPTDirectory' : rootPath + '/sportsdataprovider/FTP',
-	'squadFileName' : 'srml-8-2014-squads.xml'
-}
-
-
+	module.exports = {
+		'applicationMode' : 'dev',
+		'competitionName' : 'English Barclays Premier League',
+		'competitionID' : '8',
+		'season' : 'Season 2014/2015',
+		'seasonName' : 'Season 2014/2015',
+		'seasonID' : '2014',
+		'fayClientURL' : 'http://127.0.0.1:8000/faye',
+		'FPTDirectory' : rootPath + '/sportsdataprovider/FTP',
+		'squadFileName' : 'srml-8-2014-squads.xml'
+	}
 
 
 

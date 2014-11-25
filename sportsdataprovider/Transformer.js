@@ -55,53 +55,85 @@ function updateCurrentGameFile( data ){
 		data.SoccerFeed.SoccerDocument['@attributes']['Type'] === 'Latest') {
 		isLive = true;
 	}
+	
+	var latestGameFilePath = config.JSONDirectory + '/latestgame.json';
+	var binaryData = fs.readFileSync( latestGameFilePath );
+	var latestGameJSON = JSON.parse( binaryData.toString() );
+
+	var homeTeam = data.SoccerFeed.SoccerDocument.MatchData.TeamData[0]['@attributes'];
+	var awayTeam = data.SoccerFeed.SoccerDocument.MatchData.TeamData[1]['@attributes'];
+	var IDGame = data.SoccerFeed.SoccerDocument['@attributes']['uID'];
 
 	if ( isLive ){
 
 		try {
+			
+			var homeTeamMeta = Lookup.getTeamDataByID( homeTeam.TeamRef );
+			var awayTeamMeta = Lookup.getTeamDataByID( awayTeam.TeamRef );
 
-			var latestGameFilePath = config.JSONDirectory + '/latestgame.json';
-			var binaryData = fs.readFileSync( latestGameFilePath );
-			var latestGameJSON = JSON.parse( binaryData.toString() );
+			var isInLatestGameJSON = false;
+			
+			// if the game data is already in the lastestgame.json file
+			// update the json.
+			for (var i = latestGameJSON.length - 1; i >= 0; i--) {
+				if ( IDGame === latestGameJSON[i]['IDGame'] ){
+					
+					latestGameJSON[i].homeTeam = homeTeamMeta;
+					latestGameJSON[i].homeTeam.score = homeTeam.Score;
+					latestGameJSON[i].awayTeam = awayTeamMeta;
+					latestGameJSON[i].awayTeam.score = awayTeam.Score;
+					latestGameJSON[i].IDGame = IDGame;
 
-			var incomingID = data.SoccerFeed.SoccerDocument['@attributes']['uID'];
+					isInLatestGameJSON = true;
+				}
+			};
 
-			// this is the latest ID, so over write the file with the new ID.
-			if ( latestGameJSON[0]['id'] != incomingID ){
-				latestGameJSON[0]['id'] = incomingID;
-			}
+			// if the game is NOT in the json ADD the game data.
+			if ( !isInLatestGameJSON ){
+				
+				var newJSONToAddToLatestJSON = {};
+				newJSONToAddToLatestJSON.homeTeam = homeTeamMeta;
+				newJSONToAddToLatestJSON.homeTeam.score = homeTeam.Score;
+				newJSONToAddToLatestJSON.awayTeam = awayTeamMeta;
+				newJSONToAddToLatestJSON.awayTeam.score = awayTeam.Score;
+				newJSONToAddToLatestJSON.IDGame = IDGame;
+
+				latestGameJSON.push( newJSONToAddToLatestJSON );
+			};
 
 			var jsonToWrite = JSON.stringify( latestGameJSON );
 
-			// write the new file...
-			fs.writeFile(latestGameFilePath, jsonToWrite, function(error) {
-				
-				if( error ) {
-					console.log('LATEST GAME FILE File Write Failed!');
-					ErrorHandler.handleError( 'LATEST GAME FILE File Write Failed!', error );
-				}
-			});
+			// write the UPDATED file...
+			fs.writeFileSync( latestGameFilePath, jsonToWrite );
 
 		} catch( e ){
 			
-			log.error("LATEST GAME FILE File Write Failed!", "bummer", jsonToWrite);
+			log.error("LATEST GAME FILE File Write Failed!", e.stack);
+			
+			var newJSON = [];
+			
+			// write a default file..
+			fs.writeFileSync(latestGameFilePath, newJSON );
 
-			var objectToWrite = [
-				{'id' : incomingID}
-			]
+			log.application( "LATEST GAME FILE File WRITTEN AFRE FAIL!", "Fixed it" );
+		}
+	} else { 
 
-			var newJSON = JSON.stringify( objectToWrite );
-
-			// write the new file...
-			fs.writeFile(latestGameFilePath, newJSON, function(error) {
+		// were going to check if the current game is in the latestgame.json
+		// file and remove it.
+		for (var i = latestGameJSON.length - 1; i >= 0; i--) {
+			
+			if ( IDGame === latestGameJSON[i]['IDGame'] ){
 				
-				if( error ) {
-					console.log('LATEST GAME FILE File Write Failed!');
-					ErrorHandler.handleError( 'LATEST GAME FILE File Write Failed!', error );
-				}
-			});
+				latestGameJSON.splice(i, 1);
 
-			log.application("LATEST GAME FILE File WRITTEN AFRE FAIL!", "Fixed it", newJSON);
+				var jsonToWrite = JSON.stringify( latestGameJSON );
+
+				// write the UPDATED file...
+				fs.writeFileSync( latestGameFilePath, jsonToWrite );
+				
+				break;
+			}
 		}
 	}
 

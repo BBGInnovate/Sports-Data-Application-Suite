@@ -20,11 +20,6 @@ var config = Config.getConfig();
 
 /* *************************** Public Methods ****************************** */
 
-
-
-
-
-
 /**
  * I return the team look up object.
  */

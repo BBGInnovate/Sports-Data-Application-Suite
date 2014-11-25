@@ -52,6 +52,7 @@ function broadcastToFaye( fayeData, type ){
 	if (config.applicationMode === 'dev'){
 		doLogging = true;
 	}
+	doLogging = false;
 
 	// create the correct fayeChannel to push to based on the type that's passed
 	// to us.

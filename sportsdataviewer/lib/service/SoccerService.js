@@ -20,6 +20,19 @@ var config = geddy.config;
 /* *************************** Public Methods ****************************** */
 
 /**
+ * I return an array of games being played right now.
+ */
+function getCurrentGames(){
+	var path = getJSONDirectory() + '/latestgame.json';
+
+	var currentGameArray = readJSONFile( path );
+
+	return currentGameArray;
+}
+exports.getCurrentGames = getCurrentGames;
+
+
+/**
  * I return the game JSON data. If no IDGame is passed to me I will return the
  * latest OR current game.
  *
@@ -37,6 +50,8 @@ function getGame( IDGame ){
 	return result;
 }
 exports.getGame = getGame;
+
+
 
 
 /**
@@ -118,6 +133,27 @@ function getSquad( IDTeam ){
 	return result;
 }
 exports.getSquad = getSquad;
+
+/**
+ * I return teams JSON data by ID.
+ *
+ * @param {string} IDTeam - I am the ID of the team to get.
+ * @return {object}
+ */
+function getSquadArray() {
+	
+	var result = {};
+	
+	var squadFilePath = getJSONDirectory() + '/squad-results-sorted.json';
+	var teamLookupPath = getJSONDirectory() + '/teamlookup.json';
+
+	result.squadJSON = readJSONFile( squadFilePath );
+	result.lookupJSON = readJSONFile( teamLookupPath );
+
+	return result;
+
+}
+exports.getSquadArray = getSquadArray;
 
 
 
