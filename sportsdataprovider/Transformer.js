@@ -977,12 +977,20 @@ function buildGameFile( data ){
 		}
 	}
 
+
+	aggDataService.buildPlayerData( data );
+	aggDataService.buildTeamData( data, result ); 
+	aggDataService.buildRefData( data, result );
+	aggDataService.buildGoalieData( data, result );
+
+	/*
 	if( allowAggregateFileBuild ){
 		aggDataService.buildPlayerData( data );
 		aggDataService.buildTeamData( data, result ); 
 		aggDataService.buildRefData( data, result );
 		aggDataService.buildGoalieData( data, result );
 	}
+	*/
 
 	return result;
 
