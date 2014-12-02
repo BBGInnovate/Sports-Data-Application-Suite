@@ -18,3 +18,5 @@ sportsdataprovider/aggregate_data/**/*
 projectFilesBackup/**/*
 sportsdataviewer/data/**/*
 sportsdataprovider/logs/
+dump.rdb
+sportsfayeserver/node_modules/
