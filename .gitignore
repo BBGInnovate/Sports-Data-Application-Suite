@@ -19,4 +19,4 @@ projectFilesBackup/**/*
 sportsdataviewer/data/**/*
 sportsdataprovider/logs/
 dump.rdb
-sportsfayeserver/node_modules/
+sportsfayserver/node_modules/
