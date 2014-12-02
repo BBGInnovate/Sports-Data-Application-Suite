@@ -45,7 +45,15 @@ var rb = getRB(params.language);
 			&nbsp;
 		</td>
 		<td>
-			<%= schedule[i].awayTeam.name %>
+			<a href="<%- urlFor({
+					controller: 'soccer', 
+					action: 'squad',
+					IDTeam : schedule[i].awayTeam.ID,
+					relPath: true,
+					language: params.language
+				}) %>">
+				<%= schedule[i].awayTeam.abbreviation %>
+			</a>
 		</td>
 		<td>
 			<a href="<%- urlFor({
@@ -59,7 +67,15 @@ var rb = getRB(params.language);
 			</a>
 		</td>
 		<td>
-			<%= schedule[i].homeTeam.name %>
+			<a href="<%- urlFor({
+					controller: 'soccer', 
+					action: 'squad',
+					IDTeam : schedule[i].homeTeam.ID,
+					relPath: true,
+					language: params.language
+				}) %>">
+				<%= schedule[i].homeTeam.abbreviation %>
+			</a>
 		</td>
 		<td class="flag <%= schedule[i].homeTeam.abbreviation.toLowerCase()%>">
 			&nbsp;
