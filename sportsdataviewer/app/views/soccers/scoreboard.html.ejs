@@ -15,16 +15,18 @@ var IDGame = gameData.IDGame;
 var fayeURL = geddy.config.fayeClientURL;
 var scoreBoardUUID = getUUID();
 
-%><div class="liveGame">
+%>
+
+<div class="liveGame">
 <div id="scroller">
 <table class="scoreBoard" id="getFixed">
 <tbody>
 <tr>
 	<td>
-		<div class="flag <%= home.abbreviation.toLowerCase() %>"></div>
+		<div class="flag large <%= home.abbreviation.toLowerCase() %>"></div>
 	</td>
 	<td>
-		<span class="country">
+		<span class="full team home">
 			<a href="<%- urlFor({
 					controller: 'soccer', 
 					action: 'squad',
@@ -32,7 +34,8 @@ var scoreBoardUUID = getUUID();
 					relPath: true,
 					language: params.language
 				}) %>">
-				<%= rb.get(home.name.toLowerCase()) %>
+				<!--<%= home.abbreviation %>-->
+				<%= home.name %>
 			</a>
 		</span>
 		<span class="abbreviation">
@@ -43,7 +46,7 @@ var scoreBoardUUID = getUUID();
 					relPath: true,
 					language: params.language
 				}) %>">
-				<%= rb.get(home.abbreviation.toLowerCase()) %>
+				<%= home.abbreviation %>
 			</a>
 		</span>
 	</td>
@@ -67,7 +70,7 @@ var scoreBoardUUID = getUUID();
 		</span>
 	</td>
 	<td>
-		<span class="country">
+		<span class="full team away">
 			<a href="<%- urlFor({
 					controller: 'soccer', 
 					action: 'squad',
@@ -75,7 +78,8 @@ var scoreBoardUUID = getUUID();
 					relPath: true,
 					language: params.language
 				}) %>">
-				<%= rb.get(away.name.toLowerCase()) %>
+				<!--<%= away.abbreviation %>-->
+				<%= away.name %>
 			</a>
 		</span>
 		<span class="abbreviation">
@@ -86,12 +90,12 @@ var scoreBoardUUID = getUUID();
 					relPath: true,
 					language: params.language
 				}) %>">
-				<%= rb.get(gameData.away.abbreviation.toLowerCase()) %>
+				<%= away.abbreviation %>
 			</a>
 		</span>
 	</td>
 	<td>
-		<div class="flag <%= away.abbreviation.toLowerCase() %>" id="rightFlag"></div>
+		<div class="flag large right <%= away.abbreviation.toLowerCase() %>" id="rightFlag"></div>
 	</td>
 </tr>
 </tbody>

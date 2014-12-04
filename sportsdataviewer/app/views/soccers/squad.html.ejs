@@ -10,13 +10,31 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 var rb = getRB(params.language);
 
 %><div class='testRoster2'>
-<h2 class='flag <%= squad.teamMetadata.abbreviation.toLowerCase() %>'>
+<h2 class='flag large <%= squad.teamMetadata.abbreviation.toLowerCase() %>'>
 	<%= squad.team.name %>
 	<%= rb.get(squad.team.name.toLowerCase()) %>
 </h2>
 <% if(squad.team.nickName.length){ /* do we have a nickname to display? */ %>
 	<h3>'<%= squad.team.nickName %>'</h3>
 <% } %>
+
+<!-- totals -->
+<table class='tableToSVG bigNumbers'>
+	<tr>
+		<th><%= rb.get('wins') %></th>
+		<th><%= rb.get('losses') %></th>
+		<th><%= rb.get('draws') %></th>
+		<th><%= rb.get('points') %></th>
+	</tr>
+	<tr>
+		<td><%= /*player.individualGameStat.length*/ %>XX</td>
+		<td><%= /*player.totalStat.goals*/ %>YY</td>
+		<td><%= /*player.totalStat.goal_assist*/ %>ZZ</td>
+		<td><%= /*player.totalStat.total_scoring_att*/ %>XX</td>
+	</tr>
+</table>
+
+
 <table class='tableToSVG roster2'>
 	<thead>
 		<tr>

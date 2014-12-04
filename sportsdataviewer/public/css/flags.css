@@ -43,6 +43,26 @@
 .flag.right.whu{background-position: right -380px;} 
 
 
+.flag.bur{background-position: 0px -40px;} /* Burnley */
+.flag.che{background-position: 0px -60px;} /* Chelsea */
+.flag.cry{background-position: 0px -80px;} /* Crystal Palace */
+.flag.eve{background-position: 0px -100px;} /* Everton */
+.flag.hul{background-position: 0px -120px;} /* Hull City */
+.flag.lei{background-position: 0px -140px;} /* Leicester City */
+.flag.liv{background-position: 0px -160px;} /* Liverpool */
+.flag.mci{background-position: 0px -180px;} /* Manchester City */
+.flag.mun{background-position: 0px -200px;} /* Manchester United */
+.flag.new{background-position: 0px -220px;} /* Newcastle */
+.flag.qpr{background-position: 0px -240px;} /* Queens Park Rangers */
+.flag.sou{background-position: 0px -260px;} /* Southampton */
+.flag.stk{background-position: 0px -280px;} /* Stoke City */
+.flag.sun{background-position: 0px -300px;} /* Sunderland */
+.flag.swa{background-position: 0px -320px;} /* Swansea City */
+.flag.tot{background-position: 0px -340px;} /* Tottenham Hotspur */
+.flag.wba{background-position: 0px -360px;} /* West Bromwich Albion */
+.flag.whu{background-position: 0px -380px;} /* West Ham United */
+
+
 
 @media only screen and (min-width: 420px) {
 .flag{background: url(../img/logos_epl_med_30.png) no-repeat 0px 0px;min-height:30px; min-width: 30px;}
@@ -87,4 +107,30 @@
 .flag.right.tot{background-position: right -510px;}
 .flag.right.wba{background-position: right -540px;} 
 .flag.right.whu{background-position: right -570px;} 
+
+}
+
+
+@media screen and ( min-width: 700px ) {
+h2.flag.large {padding-left:65px;padding-top:15px;}
+.flag.large.ars{background: url(../img/logos_epl_large_ars.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.avl{background: url(../img/logos_epl_large_avl.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.bur{background: url(../img/logos_epl_large_bur.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.che{background: url(../img/logos_epl_large_che.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.cry{background: url(../img/logos_epl_large_cry.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.eve{background: url(../img/logos_epl_large_eve.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.hul{background: url(../img/logos_epl_large_hul.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.lei{background: url(../img/logos_epl_large_lei.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.liv{background: url(../img/logos_epl_large_liv.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.mci{background: url(../img/logos_epl_large_mci.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.mun{background: url(../img/logos_epl_large_mun.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.new{background: url(../img/logos_epl_large_new.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.qpr{background: url(../img/logos_epl_large_qpr.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.sou{background: url(../img/logos_epl_large_sou.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.stk{background: url(../img/logos_epl_large_stk.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.sun{background: url(../img/logos_epl_large_sun.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.swa{background: url(../img/logos_epl_large_swa.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.tot{background: url(../img/logos_epl_large_tot.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.wba{background: url(../img/logos_epl_large_wba.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
+.flag.large.whu{background: url(../img/logos_epl_large_whu.png) no-repeat 0px 0px;min-height:60px; min-width: 60px;}
 }

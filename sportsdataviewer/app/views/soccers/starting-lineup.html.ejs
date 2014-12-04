@@ -14,7 +14,7 @@ var away = gameData.away;
 
 %>
 <div class='teamLineups home'>
-	<h2><%= rb.get(home.name.toLowerCase()) %></h2>
+	<h2 class='flag <%= home.abbreviation.toLowerCase() %>'><%= home.name %><!--<%= rb.get(home.name.toLowerCase()) %>--></h2>
 	<h3><%= rb.get('startingLineup') %></h3>
 	<table class='tableToSVG lineup'>
 		<% 
@@ -81,7 +81,7 @@ var away = gameData.away;
 </div>
 
 <div class='teamLineups away'>
-	<h2><%= rb.get(away.name.toLowerCase()) %></h2>
+	<h2 class='flag right <%= away.abbreviation.toLowerCase() %>'><%= away.name %><!--<%= rb.get(away.name.toLowerCase()) %>--></h2>
 	<h3><%= rb.get('startingLineup') %></h3>
 	<table class='tableToSVG lineup'>
 		<% 

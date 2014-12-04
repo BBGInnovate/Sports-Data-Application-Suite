@@ -8,29 +8,14 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 **************************************************************************** */
 // make an alias
 var rb = getRB(params.language);
-console.log(squadArray);
 var squad = squadArray.squadJSON.reverse();
-var lookup = squadArray.lookupJSON;
-
-// helper function
-function getTeamByID ( id ) {
-	var result = {};
-
-	for (var i = 0; i < lookup.length; i++) {
-		if ( lookup[i].IDTeam === id){
-			result = lookup[i];
-		}
-	};
-
-	return result;
-}
 
 %>
 <table class='tableToSVG squads'>
 	<thead>
 		<tr>
 			<th></th>
-			<th><span class='full'><%= rb.get('country') %></span></th>
+			<th><span class='full'><%= rb.get('team') %></span></th>
 			<th><%= rb.get('coach') %></th>
 			<th title='Win'>
 				<span class='full'><%= rb.get('wins') %></span>
@@ -58,10 +43,14 @@ function getTeamByID ( id ) {
 
 		<% 
 			for (var i = 0; i < squad.length; i++) { 
-				var team = getTeamByID(squad[i].id);
+				var teamFull = getTeamByID(squad[i].id);
+				var team = teamFull.teamMetaData;
+				console.log(teamFull);
 		%>
 			<tr> %>
-				<td class="flag <%= team.abbreviation.toLowerCase() %>"></td>		
+				<td >
+					<div class="flag <%= team.abbreviation.toLowerCase() %>"/>
+				</td>		
 				<td>
 					<a href="<%- urlFor({
 							controller: 'soccer', 

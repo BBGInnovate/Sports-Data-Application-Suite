@@ -10,7 +10,7 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 var rb = getRB(params.language);
 %>
 <div class="scheduleContainer">
-<table class='schedule' border=1>
+<table class='schedule'>
 <thead>
 	<tr>
 		
@@ -41,8 +41,8 @@ var rb = getRB(params.language);
 		<td>
 			<%= schedule[i].city %> <%= schedule[i].venue %>
 		</td>
-		<td class="flag <%= schedule[i].awayTeam.abbreviation.toLowerCase()%>">
-			&nbsp;
+		<td>
+			<div class="flag <%= schedule[i].awayTeam.abbreviation.toLowerCase()%>" />
 		</td>
 		<td>
 			<a href="<%- urlFor({
@@ -77,8 +77,8 @@ var rb = getRB(params.language);
 				<%= schedule[i].homeTeam.abbreviation %>
 			</a>
 		</td>
-		<td class="flag <%= schedule[i].homeTeam.abbreviation.toLowerCase()%>">
-			&nbsp;
+		<td>
+			<div class="flag <%= schedule[i].homeTeam.abbreviation.toLowerCase()%>" />
 		</td>
 	</tr>
 	<% } %>

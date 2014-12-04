@@ -9,8 +9,9 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 // make some aliases
 var rb = getRB(params.language);
 %>
+
 <div class='container'>
-	<h4 class='flag <%= /*player.teamMetadata.abbreviation.toLowerCase()*/ %>'>
+	<h4 class='flag <%= player.teamMetadata/*player.teamMetadata.abbreviation.toLowerCase()*/ %>'>
 		<a href="<%- urlFor({
 			controller: 'soccer', 
 			action: 'squad',
@@ -18,7 +19,7 @@ var rb = getRB(params.language);
 			relPath: true,
 			language: params.language
 			}) %>">
-			<%= rb.get( player.info.teamName.toLowerCase() ) %>
+			<%= player.info.teamName/*rb.get( player.info.teamName.toLowerCase() )*/ %>
 		</a>
 	</h4>
 	<h1><%= player.info['name'] %></h1>
@@ -93,10 +94,12 @@ var rb = getRB(params.language);
 				language: params.language
 				}) %>">
 				<span class='full'>
+					<%= games[i]['opposingTeam']['team'] %>
 					<%= /*rb.get(games[i]['opposingTeam']['country'].toLowerCase())*/ %>
 				</span>
 				<span class='abbr'>
-					<%= rb.get(games[i]['opposingTeam']['abbreviation'].toLowerCase()) %>
+					<%= games[i]['opposingTeam']['abbreviation'] %>
+					<%= /*rb.get(games[i]['opposingTeam']['abbreviation'].toLowerCase()) */%>
 				</span>
 			</a>
 		</td>

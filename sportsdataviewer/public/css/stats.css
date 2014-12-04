@@ -2,12 +2,15 @@ body {
 	font-family: Arial, sans-serif;
 	margin:0;
 }
+h1, h2, h3, h4{font-family: 'Oswald', Arial, sans-serif;}
+h1 a, h2 a, h3 a, h4 a{text-decoration: none; color:#666;}
+
 a {
-	/*color: #ff6d28;*/
 	color: #132fbe;
-	text-decoration: none;
+	text-decoration: underline;
 }
 a:hover{
+	color: #11227C;
 	text-decoration: underline;
 }
 
@@ -15,38 +18,51 @@ a:hover{
 	margin:0 10px;
 }
 
+table th, table td {border: 0px;border-top: 1px solid #E5E5E5;}
+
 /* schedule CSS ====================================================================================== */
 table.schedule{border-collapse:collapse;width: 100%;max-width: 1000px;margin: 0 auto;}
 table.schedule thead tr th{text-align: center;}
-table.schedule tr td{border-top: 1px solid #CCC;text-align: center; padding-top: 5px; padding-bottom: 5px; vertical-align: middle;padding-right:2px;padding-left:2px;}
+table.schedule tr td{border-top: 1px solid #E5E5E5;text-align: center; padding-top: 5px; padding-bottom: 5px; vertical-align: middle;padding-right:2px;padding-left:2px;}
 table.schedule tr td:nth-child(1){font-weight: bold;}
 table.schedule tr td:nth-child(5){text-align: left; padding-left:1px;}
 table.schedule tr td:nth-child(7){text-align: right; padding-right:1px;}
+table tr td a{text-decoration: underline; font-weight: bold;}
 
 /*set the mobile defaults*/
 table.schedule #venue, table.schedule tr td:nth-child(3) { display:none; visibility:hidden; }
+
+/*hide the group column by default*/
 table.schedule #group, table.schedule tr td:nth-child(1){display: none;}
+/* if you want to show the group column, use this: table.schedule tr td:nth-child(1){display: table-cell;} */
+
 
 table.schedule tr th .collapse{display: none;}
 table.schedule tr.newGroup > td{padding-top: 50px;}
 table.schedule tr td:nth-child(8), table.schedule tr td:nth-child(4){width: 31px;}
+
+/* World Cup flags */
+/*
 .flag{background: url(../img/sprite_flags_small.png) no-repeat 0px 0px;height:20px;width: 31px;}
 .flag.tbd{background-position: 0px -1200px;}.flag.alg{background-position: 0px 0px;}.flag.arg{background-position: 0px -20px;}.flag.aus{background-position: 0px -40px;}.flag.bel{background-position: 0px -60px;}.flag.bih{background-position: 0px -80px;}.flag.bra{background-position: 0px -100px;}.flag.chi{background-position: 0px -120px;}.flag.civ{background-position: 0px -180px;}.flag.cmr{background-position: 0px -140px;}.flag.col{background-position: 0px -160px;}.flag.crc{background-position: 0px -200px;}.flag.cro{background-position: 0px -220px;}.flag.ecu{background-position: 0px -240px;}.flag.eng{background-position: 0px -260px;}.flag.esp{background-position: 0px -280px;}.flag.fra{background-position: 0px -300px;}.flag.ger{background-position: 0px -320px;}.flag.gha{background-position: 0px -340px;}.flag.gre{background-position: 0px -360px;}.flag.hon{background-position: 0px -380px;}.flag.irn{background-position: 0px -400px;}.flag.ita{background-position: 0px -420px;}.flag.jpn{background-position: 0px -440px;}.flag.kor{background-position: 0px -460px;}.flag.mex{background-position: 0px -480px;}.flag.ned{background-position: 0px -500px;}.flag.nga{background-position: 0px -520px;}.flag.por{background-position: 0px -540px;}.flag.rus{background-position: 0px -560px;}.flag.sui{background-position: 0px -580px;}.flag.uru{background-position: 0px -600px;}.flag.usa{background-position: 0px -620px;}
+*/
 
 .full {	display: none;}
 .abbr {display: table-cell;}
 
 @media only screen and (min-width: 350px) {
-	table.schedule #group, table.schedule tr td:nth-child(1){display: table-cell;}
 }
 @media only screen and (min-width: 500px) {
+	/* World Cup flags */
+	/*
 	.flag{background: url(../img/sprite_flags.png) no-repeat 0px 0px;height:30px;width: 45px;}
 	.flag.alg{background-position: 0px 0px;}.flag.arg{background-position: 0px -30px;}.flag.aus{background-position: 0px -60px;}.flag.bel{background-position: 0px -90px;}.flag.bih{background-position: 0px -120px;}.flag.bra{background-position: 0px -150px;}.flag.chi{background-position: 0px -180px;}.flag.civ{background-position: 0px -270px;}.flag.cmr{background-position: 0px -210px;}.flag.col{background-position: 0px -240px;}.flag.crc{background-position: 0px -300px;}.flag.cro{background-position: 0px -330px;}.flag.ecu{background-position: 0px -360px;}.flag.eng{background-position: 0px -390px;}.flag.esp{background-position: 0px -420px;}.flag.fra{background-position: 0px -450px;}.flag.ger{background-position: 0px -480px;}.flag.gha{background-position: 0px -510px;}.flag.gre{background-position: 0px -540px;}.flag.hon{background-position: 0px -570px;}.flag.irn{background-position: 0px -600px;}.flag.ita{background-position: 0px -630px;}.flag.jpn{background-position: 0px -660px;}.flag.kor{background-position: 0px -690px;}.flag.mex{background-position: 0px -720px;}.flag.ned{background-position: 0px -750px;}.flag.nga{background-position: 0px -780px;}.flag.por{background-position: 0px -810px;}.flag.rus{background-position: 0px -840px;}.flag.sui{background-position: 0px -870px;}.flag.uru{background-position: 0px -900px;}.flag.usa{background-position: 0px -930px;}
+	*/
 	table.schedule #venue, table.schedule tr td:nth-child(3) { display:table-cell; visibility:visible; }
 	table.schedule tr th .collapse{display: inline-block;}
 	table.schedule tr.newGroup > td{padding-top: 70px;}
 	table.schedule tr td:nth-child(8), table.schedule tr td:nth-child(4){width: 45px;}
-	/*.full {	display: table-cell;}*/
+
 	.full {	display: inline;}
 	.abbr {display: none;}
 }
@@ -213,7 +229,7 @@ margin: 0;
 padding: 0;
 }
 table tr.even, table tr.alt, table tr:nth-of-type(even) {
-background: #f9f9f9;
+/*background: #f9f9f9;*/
 }
 
 
@@ -226,7 +242,8 @@ background: #f9f9f9;
 }
 
 .tableToSVG td {
-	border-top: 1px solid #999;
+	/*border-top: 1px solid #999;*/
+	border-top: 1px solid #E5E5E5;
 }
 
 
@@ -377,6 +394,10 @@ g.arc text.barvalues{fill:#666;}
 		height: 30px;
 	}
 
+	table.scoreBoard tr td:nth-child(1), table.scoreBoard tr td:nth-child(5){width:5%;}
+	table.scoreBoard tr td:nth-child(3){width:20%;}
+	table.scoreBoard tr td:nth-child(2), table.scoreBoard tr td:nth-child(2){width:35%;}
+
 	table.scoreBoard .country {
 		display: block;
 		text-overflow: ellipsis;
@@ -412,8 +433,11 @@ g.arc text.barvalues{fill:#666;}
 @media screen and ( min-width: 700px ) {
 
 	table.scoreBoard {
-		font-size: 3em;
+		font-size: 2em;
 	}
+	table.scoreBoard tr td:nth-child(1), table.scoreBoard tr td:nth-child(5){width:5%;}
+	table.scoreBoard tr td:nth-child(3){width:20%;}
+	table.scoreBoard tr td:nth-child(2), table.scoreBoard tr td:nth-child(2){width:35%;}
 
 	table.scoreBoard img {
 		height: 30px;
@@ -422,14 +446,11 @@ g.arc text.barvalues{fill:#666;}
 		height: 30px;
 	}
 
-	table.scoreBoard td span.country, table.scoreBoard .country {
-		display: block;
-	}
-
 	table.scoreBoard td span.abbreviation, table.scoreBoard .abbreviation {
 		display: none;
 	}
-
+	/*If we add stats column for the game */
+	/*
 	.commentary {
 		float: right;
 		width: 67%
@@ -439,7 +460,7 @@ g.arc text.barvalues{fill:#666;}
 		float: left;
 		width: 30%;
 		padding: 0 2%;
-	}
+	}*/
 
 	.gameSummary {
 		font-size: 1em !important;
@@ -465,7 +486,7 @@ g.arc text.barvalues{fill:#666;}
 	width:80%;
 	vertical-align: middle;
 	color:#000;
-	padding-left:40px;
+	padding-left:30px;
 	font-size: 1.2em;/* needs a media query */
 	margin-bottom: 0;
 	margin-left: 10px;
@@ -521,10 +542,10 @@ table.playerMatchSummary td{vertical-align: middle;text-align: center;}
 
 @media screen and ( min-width: 500px ) {
 	.testRoster2 h2.flag, h4.flag{
-		padding-left:50px;
+		padding-left:35px;
 		font-size: 1.5em;/* needs a media query */
 	}
-	table.roster tr th:nth-child(1), table.roster tr td:nth-child(1) { display: block; }
+	/*table.roster tr th:nth-child(1), table.roster tr td:nth-child(1) { display: block; }*/
 	.abbr{display: none;}
 	.extended{display: inline;}
 
@@ -561,18 +582,19 @@ table.lineup {margin-bottom: 50px;}
 table.lineup tr td:nth-child(2), table.lineup tr th:nth-child(2)  {text-align: left;}	
 table.lineup tr td:nth-child(2)  {max-width: 100px;}
 table.lineup tr.newGroup > td{padding-top: 40px;}
-table.lineup td{text-align: center;border-top: 1px solid #CCC;}
+table.lineup td{text-align: center;/*border-top: 1px solid #CCC;*/}
 .teamLineups h3 {margin-top: 0; font-size: .7em; text-transform: uppercase;}
 .teamLineups h2 {margin-top: 0;}
 .teamLineups.home h2{color:#393;}
 .teamLineups.away h2{color:#999;}
-.teamLineups h2, .teamLineups h3 {padding: 0 5%;}
+.teamLineups h2, .teamLineups h3 {padding: 0 25px;}
 
 @media screen and ( min-width: 500px ) {
 	.teamLineups{width: 48%;}
 	.teamLineups.away{float: right;}
 	.teamLineups.home{float: left; padding-right:2%;  border-right: 1px dotted #CCC;}
 	.teamLineups.away h2{text-align: right;}
+	.teamLineups h2, .teamLineups h3 {padding: 0 35px;}
 }
 @media screen and ( min-width: 500px ) and ( max-width: 660px ) {
 	table.lineup .full {display: none;}
@@ -633,3 +655,6 @@ table.team .match.right .score{text-align: left;}
 	table.bracket{display: table;}
 	#bracketMobile{display: none;}
 }
+
+
+/*table.tableToSVG.playerMatchSummary tr:hover td{background-color: #E2E2E2;}*/

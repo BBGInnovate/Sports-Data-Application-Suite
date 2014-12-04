@@ -10,10 +10,57 @@
 
 /* *************************** Required Classes **************************** */
 var moment = require('moment');
+var SoccerService = require('../../lib/service/SoccerService');
 
 
 /* *************************** Constructor Code **************************** */
+var teamLookUpJSON = SoccerService.getTeamLookUpJSON();
+var aggregatedSquadJSON = SoccerService.getAggregagtedSquadJSON();
+
+
+
+
 /* *************************** Public Methods ****************************** */
+
+
+/**
+ * I return a teams lookup and aggregate data.
+ *
+ * @param {String} id - I am the ID of the team to lookup.
+ * @return {Object} team - the team object.
+ */
+function getTeamByID ( id ) {
+
+	var result = {};
+
+	for (var i = 0; i < teamLookUpJSON.length; i++) {
+		if ( teamLookUpJSON[i].IDTeam === id){
+			var teamMetaData = teamLookUpJSON[i];
+		}
+	};
+
+	result.teamMetaData = teamMetaData;
+
+	for (var x = 0; x < aggregatedSquadJSON.length; x++) {
+		
+
+		if ( aggregatedSquadJSON[x].id === id){
+			var aggregateData = aggregatedSquadJSON[x];
+		}
+
+	};	
+
+	result.aggregateData = aggregateData;
+
+	return result;
+}
+exports.getTeamByID = getTeamByID;
+
+
+
+
+
+
 
 /**
  * I displsy a players abbreviated postition. I am here casue the original

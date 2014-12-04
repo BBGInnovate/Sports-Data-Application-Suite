@@ -156,6 +156,37 @@ function getSquadArray() {
 exports.getSquadArray = getSquadArray;
 
 
+/**
+ * I return the lookup data JSON.
+ *
+ * @return {object}
+ */
+function getTeamLookUpJSON(){
+
+	var teamLookupPath = getJSONDirectory() + '/teamlookup.json';
+	return readJSONFile( teamLookupPath );
+
+}
+exports.getTeamLookUpJSON = getTeamLookUpJSON;
+
+
+
+/**
+ * I return the aggregated team data.
+ *
+ * @return {object}
+ */
+function getAggregagtedSquadJSON(){
+
+	var squadLookUpPath = getJSONDirectory() + '/squad-results-sorted.json';
+	return readJSONFile( squadLookUpPath );
+
+}
+exports.getAggregagtedSquadJSON = getAggregagtedSquadJSON;
+
+
+
+
 
 /* *************************** Private Methods ***************************** */
 /**
