@@ -8,6 +8,7 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 **************************************************************************** */
 
 var rb = getRB(params.language);
+var playerTeam = getTeamByID(squad.teamMetadata.IDTeam)
 
 %><div class='testRoster2'>
 <h2 class='flag large <%= squad.teamMetadata.abbreviation.toLowerCase() %>'>
@@ -27,10 +28,10 @@ var rb = getRB(params.language);
 		<th><%= rb.get('points') %></th>
 	</tr>
 	<tr>
-		<td><%= /*player.individualGameStat.length*/ %>XX</td>
-		<td><%= /*player.totalStat.goals*/ %>YY</td>
-		<td><%= /*player.totalStat.goal_assist*/ %>ZZ</td>
-		<td><%= /*player.totalStat.total_scoring_att*/ %>XX</td>
+		<td><%= playerTeam.aggregateData.win %></td>
+		<td><%= playerTeam.aggregateData.loss %></td>
+		<td><%= playerTeam.aggregateData.draw %></td>
+		<td><%= playerTeam.aggregateData.points %></td>
 	</tr>
 </table>
 
