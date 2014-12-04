@@ -1,5 +1,5 @@
 .flag{background: url(../img/logos_epl_small_20.png) no-repeat 0px 0px;min-height:20px; min-width: 20px;}
-.flag.ars{background-position: 0px 0px;} /* Arsenal */
+.flag.ars{background-position: 0px 1px;} /* Arsenal */
 .flag.avl{background-position: 0px -20px;} /* Aston Villa */
 .flag.bur{background-position: 0px -40px;} /* Burnley */
 .flag.che{background-position: 0px -60px;} /* Chelsea */
@@ -21,7 +21,7 @@
 .flag.whu{background-position: 0px -380px;} /* West Ham United */
 
 .flag.right{text-align: right;}
-.flag.right.ars{background-position: right 0px;} 
+.flag.right.ars{background-position: right 1px;} 
 .flag.right.avl{background-position: right -20px;} 
 .flag.right.bur{background-position: right -40px;} 
 .flag.right.che{background-position: right -60px;}
@@ -31,7 +31,7 @@
 .flag.right.lei{background-position: right -140px;} 
 .flag.right.liv{background-position: right -160px;} 
 .flag.right.mci{background-position: right -180px;} 
-.flag.right.mun{background-position: right -200px;} 
+.flag.right.mun{background-position: right -201px;} 
 .flag.right.new{background-position: right -220px;} 
 .flag.right.qpr{background-position: right -240px;} 
 .flag.right.sou{background-position: right -260px;} 
@@ -51,7 +51,7 @@
 .flag.lei{background-position: 0px -140px;} /* Leicester City */
 .flag.liv{background-position: 0px -160px;} /* Liverpool */
 .flag.mci{background-position: 0px -180px;} /* Manchester City */
-.flag.mun{background-position: 0px -200px;} /* Manchester United */
+.flag.mun{background-position: 0px -201px;} /* Manchester United */
 .flag.new{background-position: 0px -220px;} /* Newcastle */
 .flag.qpr{background-position: 0px -240px;} /* Queens Park Rangers */
 .flag.sou{background-position: 0px -260px;} /* Southampton */
@@ -76,7 +76,7 @@
 .flag.lei{background-position: 0px -210px;} 
 .flag.liv{background-position: 0px -240px;} 
 .flag.mci{background-position: 0px -270px;} 
-.flag.mun{background-position: 0px -300px;} 
+.flag.mun{background-position: 0px -301px;} 
 .flag.new{background-position: 0px -330px;} 
 .flag.qpr{background-position: 0px -360px;} 
 .flag.sou{background-position: 0px -390px;} 
@@ -97,7 +97,7 @@
 .flag.right.lei{background-position: right -210px;}
 .flag.right.liv{background-position: right -240px;} 
 .flag.right.mci{background-position: right -270px;} 
-.flag.right.mun{background-position: right -300px;} 
+.flag.right.mun{background-position: right -301px;} 
 .flag.right.new{background-position: right -330px;}
 .flag.right.qpr{background-position: right -360px;} 
 .flag.right.sou{background-position: right -390px;} 

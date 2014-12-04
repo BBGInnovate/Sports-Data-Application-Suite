@@ -18,7 +18,7 @@ a:hover{
 	margin:0 10px;
 }
 
-table th, table td {border: 0px;border-top: 1px solid #E5E5E5;}
+table td {border: 0px;border-top: 1px solid #E5E5E5;}
 
 /* schedule CSS ====================================================================================== */
 table.schedule{border-collapse:collapse;width: 100%;max-width: 1000px;margin: 0 auto;}
