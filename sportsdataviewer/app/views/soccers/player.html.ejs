@@ -8,10 +8,11 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 **************************************************************************** */
 // make some aliases
 var rb = getRB(params.language);
+var playerTeam = getTeamByID(player.info.teamID)
 %>
 
 <div class='container'>
-	<h4 class='flag <%= player.teamMetadata/*player.teamMetadata.abbreviation.toLowerCase()*/ %>'>
+	<h4 class='flag <%= playerTeam.teamMetaData.abbreviation.toLowerCase() %>'>
 		<a href="<%- urlFor({
 			controller: 'soccer', 
 			action: 'squad',
