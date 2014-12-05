@@ -35,6 +35,11 @@ var aggregateDataService = require('./AggregateDataService');
 // the configuration data
 var config = Config.getConfig();
 
+var appJSLogging = false;
+if (config.applicationMode === 'dev'){
+	appJSLogging = true;
+}
+
 // the array of jobs Kue keeps track of
 var jobs = kue.createQueue();
 
@@ -113,6 +118,10 @@ function onApplicationStart( message ){
 		.on('add', function( path ) {
 
 			var extension = path.split('.').pop();
+
+			if( appJSLogging ){
+				console.log( path );
+			}
 
 			if (extension === 'xml'){
 
@@ -227,6 +236,10 @@ function afterWatcher( action, path ){
 		try {
 			
 			var json = utils.xmlToJson( xmlDoc );
+
+			if( appJSLogging ){
+				console.log( 'read JSON' );
+			}
 
 		} catch( error ) {
 			
@@ -367,10 +380,14 @@ function preBuildSquadFile() {
 	try{
 
 	var squadsFilePath = config.FPTDirectory + "/" + config.squadFileName;
+
+	if( appJSLogging ){
+		console.log( squadsFilePath );
+	}
+
 	var rawSquadBinnaryData = fs.readFileSync( squadsFilePath );
 	var xmlDoc = new dom().parseFromString( rawSquadBinnaryData.toString() );
 	var json = utils.xmlToJson( xmlDoc );
-
 
 	Controller.handleSquad( json );
 
