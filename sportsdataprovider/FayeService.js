@@ -64,10 +64,21 @@ function broadcastToFaye( fayeData, type ){
 
 		case 'commentary':
 			
-			// pick out the game id from one of the comments.
-			var ID = fayeData[0]['IDGame'];
-			fayeChannel = config.faye.channel.commentary + '-f' + ID;
+
+			try{
+
+				// pick out the game id from one of the comments.
+				var ID = fayeData[0]['IDGame'];
+				fayeChannel = config.faye.channel.commentary + '-f' + ID;
+
+			} catch (e){
+
+				log.dump(arguments);
+				log.dump(e);
+			}
 			break;
+
+
 
 		case 'schedule':
 			fayeChannel = config.faye.channel.schedule;
