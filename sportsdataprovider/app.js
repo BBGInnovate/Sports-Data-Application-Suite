@@ -37,7 +37,7 @@ var config = Config.getConfig();
 
 var appJSLogging = false;
 if (config.applicationMode === 'dev'){
-	appJSLogging = true;
+	appJSLogging = false;
 }
 
 // the array of jobs Kue keeps track of
