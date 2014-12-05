@@ -10,36 +10,34 @@ Author: 		John Allen (Fig Leaf Software) jallen@figleaf.com
 var games = currentGameArray;
 %>
 
-<div style="float:right; padding-right:.4em;">
-	<img src="//images.uncova.com/f668092a96721b1d5718bca64386ce9afa0ae6df.jpg" alt="sammy-ameobi-newcastle-united" width="240" />
+<div style="padding:.2em;">
+	<% if(currentGameArray.length){%>
+		<h3>Live Games</h3>
+		<table>
+		<% for (var i = 0; i < games.length; i++) { %>
+			<tr>
+				<td><%= games[i].homeTeam.teamShort %></td>
+				<td>
+					<a href="<%- urlFor({
+								controller: 'soccer', 
+								action: 'game',
+								IDGame : games[i].IDGame,
+								relPath: true,
+								language: params.language
+					}) %>">
+						<%= games[i].homeTeam.score %> &ndash; <%= games[i].awayTeam.score %>
+					</a>
+				</td>
+				<td><%= games[i].awayTeam.teamShort %></td>
+			</tr>
+		<% } %>
+		</table>
+	<%	} %>
+	<p>
+		<%- linkTo('Schedule', {controller: 'soccer', action: 'schedule'}) %>
+	</p>
+	<p>
+		<%- linkTo('Squads', {controller: 'soccer', action: 'squads'}) %>
+	</p>
 </div>
-
-<% if(currentGameArray.length){%>
-	<h2>Live Games</h2>
-	<table>
-	<% for (var i = 0; i < games.length; i++) { %>
-		<tr>
-			<td><%= games[i].homeTeam.teamShort %></td>
-			<td>
-				<a href="<%- urlFor({
-							controller: 'soccer', 
-							action: 'game',
-							IDGame : games[i].IDGame,
-							relPath: true,
-							language: params.language
-				}) %>">
-					<%= games[i].homeTeam.score %> &ndash; <%= games[i].awayTeam.score %>
-				</a>
-			</td>
-			<td><%= games[i].awayTeam.teamShort %></td>
-		</tr>
-	<% } %>
-	</table>
-<%	} %>
-<p>
-	<%- linkTo('Schedule', {controller: 'soccer', action: 'schedule'}) %>
-</p>
-<p>
-	<%- linkTo('Squads', {controller: 'soccer', action: 'squads'}) %>
-</p>
 

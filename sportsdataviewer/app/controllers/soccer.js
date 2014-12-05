@@ -11,6 +11,7 @@
 /* *************************** Required Classes **************************** */
 var SoccerService = require('../../lib/service/SoccerService');
 var moment = require('moment');
+var util = require('util');
 
 /* ************************** Controller Methods *************************** */
 var Soccer = function () {
@@ -40,6 +41,10 @@ this.index = function ( req, resp, params ) {
 	var self = this;
 
 	var json = SoccerService.getCurrentGames();
+
+	if(util.isArray(json) && !json.length){
+		self.redirect('/soccer/schedule');
+	}
 
 	self.respond({ params: params, currentGameArray: json });
 };
