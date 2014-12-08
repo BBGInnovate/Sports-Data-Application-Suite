@@ -32,4 +32,7 @@ router.match('/soccer/player/').to({controller: 'soccer', action: 'player'});
 router.match('/soccer/schedule').to({controller: 'soccer', action: 'schedule'});
 router.match('/soccer/schedule/').to({controller: 'soccer', action: 'schedule'});
 
+router.match('/soccer/currentgame').to({controller: 'soccer', action: 'currentgame'});
+router.match('/soccer/currentgame/').to({controller: 'soccer', action: 'currentgame'});
+
 exports.router = router;

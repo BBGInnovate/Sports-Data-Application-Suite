@@ -32,6 +32,28 @@ this.game = function ( req, resp, params ) {
 };
 
 
+
+
+/*
+ * index - I am the default action for this controller. Check the view to
+ *         see what I can display based on query string variables. I should 
+ *		   always return game and commentary JSON.
+ */
+this.currentgame = function ( req, resp, params ) {
+	var self = this;
+
+	var json = SoccerService.getCurrentGames();
+	
+	self.respondTo({
+		json: function () {
+			self.respond(json, {format: 'json'});
+	    }
+	});
+
+	//self.respond({ params: params, gameData: json, format : json });
+};
+
+
 /*
  * index - I am the default action for this controller. Check the view to
  *         see what I can display based on query string variables. I should 
