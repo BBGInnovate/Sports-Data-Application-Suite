@@ -8,9 +8,19 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 **************************************************************************** */
 // make some aliases
 var rb = getRB(params.language);
+var playerTeam = getTeamByID(player.info.teamID);
 
-if ( displayPlayer ){
-	var playerTeam = getTeamByID(player.info.teamID);
+console.log(player.totalStat.goals);
+
+// these fix where the player never played a game.
+if (player.totalStat.goals === undefined){
+	player.totalStat.goals = 0;
+}
+if (player.totalStat.goal_assist === undefined){
+	player.totalStat.goal_assist = 0;
+}
+if (player.totalStat.total_scoring_att === undefined){
+	player.totalStat.total_scoring_att = 0;
 }
 
 %>

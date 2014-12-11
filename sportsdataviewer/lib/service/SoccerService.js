@@ -84,20 +84,27 @@ function getPlayer( IDPlayer ){
 				result.teamMetadata = teamMetaData[i];
 			}
 		};		
-	} else { // need to read the player meta data from the squad.json file...
+	} else { 
+		// need to read the player meta data from the squad.json file...
+		// and find the player data that way... they have not played a game
+		// so they wont have an individual player json file yet.
 
 		var squadJSON = readJSONFile( getJSONDirectory() + '/squad.json' );
+
+		// array of each teams players were going to loop over the squad.json
+		//file is {team.player[]} format.
 		var playerArray = [];
+
+		// have we found our guy?
 		var hasBeenFound = false;
 
 		for (var i = 0; i < squadJSON.length; i++) {
 
+			// set the individuals team player array to loop over.
 			playerArray = squadJSON[i].player;
 
 			for (var x = 0; x < playerArray.length; x++) {
 				
-				console.log(playerArray[x].id);
-
 				if (playerArray[x].id === IDPlayer){
 					
 					result.info = playerArray[x];
@@ -112,11 +119,8 @@ function getPlayer( IDPlayer ){
 			if ( hasBeenFound ){
 				break;
 			}
-
 		};
-	
 	}
-
 
 	return result;
 }
