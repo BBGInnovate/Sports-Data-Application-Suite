@@ -6,7 +6,7 @@
      production time:    20140706T132528,968Z
      production module:  Opta::Feed::XML::Soccer::F13
 -->
-<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-07-05 21:00:00" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-12-09 15:30:59" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
   <message id="935826341" comment="Offside, Costa Rica. Keylor Navas tries a through ball, but Joel Campbell is caught offside." last_modified="2014-07-05 22:08:45" minute="50" period="2" second="45" time="51'" type="offside" />
   <message id="1573827346" comment="Arjen Robben (Netherlands) wins a free kick on the right wing." last_modified="2014-07-05 22:06:49" minute="45" period="2" second="49" time="46'" type="free kick won" />
   <message id="2072606828" comment="Foul by Christian Bolaños (Costa Rica)." last_modified="2014-07-05 22:06:47" minute="45" period="2" second="49" time="46'" type="free kick lost" />

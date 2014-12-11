@@ -6,7 +6,7 @@
      production time:    20140706T132528,968Z
      production module:  Opta::Feed::XML::Soccer::F13
 -->
-<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-07-05 21:00:00" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-12-09 15:30:59" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
   <message id="1575499329" comment="Corner,  Costa Rica. Conceded by Ron Vlaar." last_modified="2014-07-05 23:28:24" minute="114" period="4" second="47" time="115'" type="corner" />
   <message id="2096324401" comment="Attempt blocked. Christian Bolaños (Costa Rica) left footed shot from the left side of the box is blocked." last_modified="2014-07-05 23:28:44" minute="114" period="4" second="45" time="115'" type="attempt blocked" />
   <message id="261840000" comment="Offside, Netherlands. Wesley Sneijder tries a through ball, but Jeremain Lens is caught offside." last_modified="2014-07-05 23:26:28" minute="113" period="4" second="1" time="114'" type="offside" />

@@ -6,7 +6,7 @@
      production time:    20140706T132528,968Z
      production module:  Opta::Feed::XML::Soccer::F13
 -->
-<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-07-05 21:00:00" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-12-09 15:30:59" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
   <message id="1671878307" comment="Delay over. They are ready to continue." last_modified="2014-07-05 23:25:34" minute="112" period="4" second="8" time="113'" type="end delay" />
   <message id="128899797" comment="Delay in match Keylor Navas (Costa Rica) because of an injury." last_modified="2014-07-05 23:24:44" minute="111" period="4" second="23" time="112'" type="start delay" />
   <message id="1842713378" comment="Klaas-Jan Huntelaar (Netherlands) is shown the yellow card for a bad foul." last_modified="2014-07-05 23:24:12" minute="110" period="4" second="51" time="111'" type="yellow card" />

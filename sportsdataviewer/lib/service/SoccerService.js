@@ -65,19 +65,58 @@ function getPlayer( IDPlayer ){
 	var result = {};
 
 	var playerJSONPath = getJSONDirectory() + '/player/' + IDPlayer + '.json';
-	var playerJSON = readJSONFile( playerJSONPath );
 
-	result = playerJSON;
-
-	var teamMetaPath = getJSONDirectory() + '/teamlookup.json';
-	var teamMetaData = readJSONFile( teamMetaPath );
-
-	for ( var i = teamMetaData.length - 1; i >= 0; i-- ) {
+	// if the file exists read it and do some stuff....
+	if (fs.existsSync( playerJSONPath )) {
 		
-		if ( teamMetaData[i].optaid === playerJSON.info.teamID ){
-			result.teamMetadata = teamMetaData[i];
-		}
-	};
+		console.log('WE GO FILE!!!!!');
+
+		var playerJSON = readJSONFile( playerJSONPath );
+
+		result = playerJSON;
+
+		var teamMetaPath = getJSONDirectory() + '/teamlookup.json';
+		var teamMetaData = readJSONFile( teamMetaPath );
+
+		for ( var i = teamMetaData.length - 1; i >= 0; i-- ) {
+			
+			if ( teamMetaData[i].optaid === playerJSON.info.teamID ){
+				result.teamMetadata = teamMetaData[i];
+			}
+		};		
+	} else { // need to read the player meta data from the squad.json file...
+
+		var squadJSON = readJSONFile( getJSONDirectory() + '/squad.json' );
+		var playerArray = [];
+		var hasBeenFound = false;
+
+		for (var i = 0; i < squadJSON.length; i++) {
+
+			playerArray = squadJSON[i].player;
+
+			for (var x = 0; x < playerArray.length; x++) {
+				
+				console.log(playerArray[x].id);
+
+				if (playerArray[x].id === IDPlayer){
+					
+					result.info = playerArray[x];
+					result.individualGameStat = [];
+					result.totalStat = {};
+
+					hasBeenFound = true;
+					break;
+				}
+			};
+
+			if ( hasBeenFound ){
+				break;
+			}
+
+		};
+	
+	}
+
 
 	return result;
 }

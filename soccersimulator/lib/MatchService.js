@@ -27,7 +27,7 @@ var config = geddy.config;
 var jobs = kue.createQueue();
 
 // light up the UI for kue
-kue.app.listen(3000);
+//kue.app.listen(3000);
 
 
 

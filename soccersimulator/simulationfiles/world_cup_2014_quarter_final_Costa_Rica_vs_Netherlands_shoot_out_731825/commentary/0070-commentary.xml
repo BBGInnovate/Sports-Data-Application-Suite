@@ -6,7 +6,7 @@
      production time:    20140706T132528,968Z
      production module:  Opta::Feed::XML::Soccer::F13
 -->
-<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-07-05 21:00:00" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-12-09 15:30:59" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
   <message id="55230856" comment="Substitution, Netherlands. Jeremain Lens replaces Memphis Depay." last_modified="2014-07-05 22:33:07" minute="75" period="2" second="14" time="76'" type="substitution" />
   <message id="2119405110" comment="Attempt missed. Ron Vlaar (Netherlands) header from the centre of the box is too high. Assisted by Wesley Sneijder with a cross following a set piece situation." last_modified="2014-07-05 22:32:07" minute="74" period="2" second="3" time="75'" type="miss" />
   <message id="1939679707" comment="Daley Blind (Netherlands) wins a free kick on the left wing." last_modified="2014-07-05 22:31:17" minute="73" period="2" second="22" time="74'" type="free kick won" />

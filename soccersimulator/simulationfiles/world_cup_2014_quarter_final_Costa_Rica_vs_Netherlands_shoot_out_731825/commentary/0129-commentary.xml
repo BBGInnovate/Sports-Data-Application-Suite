@@ -6,7 +6,7 @@
      production time:    20140706T132528,968Z
      production module:  Opta::Feed::XML::Soccer::F13
 -->
-<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-07-05 21:00:00" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-12-09 15:30:59" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
   <message id="73135457" comment="Attempt blocked. Arjen Robben (Netherlands) left footed shot from the centre of the box is blocked." last_modified="2014-07-05 23:36:08" minute="118" period="4" second="22" time="119'" type="attempt blocked" />
   <message id="991198272" comment="Wesley Sneijder (Netherlands) hits the bar with a right footed shot from outside the box. Assisted by Jeremain Lens." last_modified="2014-07-05 23:35:47" minute="118" period="4" second="19" time="119'" type="post" />
   <message id="19136643" comment="Corner,  Netherlands. Conceded by Giancarlo Gonzalez." last_modified="2014-07-05 23:35:28" minute="117" period="4" second="16" time="118'" type="corner" />

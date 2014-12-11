@@ -6,7 +6,7 @@
      production time:    20140706T132528,968Z
      production module:  Opta::Feed::XML::Soccer::F13
 -->
-<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-07-05 21:00:00" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-12-09 15:30:59" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
   <message id="1090693266" comment="Offside, Netherlands. Daley Blind tries a through ball, but Robin van Persie is caught offside." last_modified="2014-07-05 23:06:43" minute="98" period="3" second="8" time="99'" type="offside" />
   <message id="848163458" comment="Substitution, Costa Rica. José Cubero replaces Yeltsin Tejeda." last_modified="2014-07-05 23:04:51" minute="96" period="3" second="19" time="97'" type="substitution" />
   <message id="517887356" comment="Delay over. They are ready to continue." last_modified="2014-07-05 23:04:04" minute="95" period="3" second="26" time="96'" type="end delay" />

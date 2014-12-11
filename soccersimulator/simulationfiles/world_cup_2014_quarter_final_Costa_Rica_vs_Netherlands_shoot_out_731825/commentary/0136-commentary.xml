@@ -6,7 +6,7 @@
      production time:    20140706T132528,968Z
      production module:  Opta::Feed::XML::Soccer::F13
 -->
-<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-07-05 21:00:00" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-12-09 15:30:59" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
   <message id="424418775" comment="Penalty Shootout begins Netherlands 0, Costa Rica 0." last_modified="2014-07-05 23:40:43" minute="120" period="5" second="0" time=" " type="start" />
   <message id="254507788" comment="Second Half Extra Time ends, Netherlands 0, Costa Rica 0." last_modified="2014-07-05 23:35:05" minute="121" period="4" second="37" time="120'+2'" type="end 4" />
   <message id="1746544276" comment="Substitution, Netherlands. Tim Krul replaces Jasper Cillessen." last_modified="2014-07-05 23:34:12" minute="120" period="4" second="53" time="120'+1'" type="substitution" />

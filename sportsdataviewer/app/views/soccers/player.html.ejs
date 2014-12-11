@@ -8,8 +8,14 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 **************************************************************************** */
 // make some aliases
 var rb = getRB(params.language);
-var playerTeam = getTeamByID(player.info.teamID)
+
+if ( displayPlayer ){
+	var playerTeam = getTeamByID(player.info.teamID);
+}
+
 %>
+
+<% if ( displayPlayer ) { %>
 
 <div class='container'>
 	<h4 class='flag <%= playerTeam.teamMetaData.abbreviation.toLowerCase() %>'>
@@ -114,3 +120,9 @@ var playerTeam = getTeamByID(player.info.teamID)
 	</tr>
 <% } %>
 </table>
+
+<% } else { %>
+	
+	<p>This player has not played</p>
+
+<% } %>
