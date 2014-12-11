@@ -475,6 +475,7 @@ function buildPlayerData( data ){
 		};
 
 		var teamData = data.SoccerFeed.SoccerDocument.Team;
+		var IDGame = data.SoccerFeed.SoccerDocument['@attributes']['uID'];
 
 		// loop over the all the tournaments players and build each players
 		// individual stats JSON file based on what they did in the match.
@@ -484,7 +485,7 @@ function buildPlayerData( data ){
 				
 				if (playerLookup[i].id === matchPlayerArray[x]['@attributes'].PlayerRef){
 
-					aggregatePlayerData(playerLookup[i], matchPlayerArray[x], teamData);
+					aggregatePlayerData(playerLookup[i], matchPlayerArray[x], teamData, IDGame);
 				}
 			};
 		};
@@ -495,7 +496,7 @@ function buildPlayerData( data ){
 	/***************** helper functions *****************/
 
 	// I aggregate a players Data from the game data and write the file to disk.
-	function aggregatePlayerData(playerInfo, matchData, teamData){
+	function aggregatePlayerData(playerInfo, matchData, teamData, IDGame){
 		
 		// whats the players file path??
 		var playerDataFilePath = playerJSONDirectory + playerInfo.id + '.json';
@@ -556,6 +557,7 @@ function buildPlayerData( data ){
 		};
 
 		thisGameStatObject.opposingTeam = opposingTeam;
+		thisGameStatObject.IDGame = IDGame;
 
 		// only push a valid individual game stat
 		if (opposingTeam.IDTeam.length){

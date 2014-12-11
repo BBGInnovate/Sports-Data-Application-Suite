@@ -80,16 +80,10 @@ this.player = function ( req, resp, params ) {
 	var self = this;
 
 	var json = {};
-	var displayPlayer = true;
 
-	// try to read the file. If it fails the view will handle the display.
-	try {
-		var json = SoccerService.getPlayer( params.IDPlayer );
-	} catch ( e ) {
-		displayPlayer = false;
-	}
+	var json = SoccerService.getPlayer( params.IDPlayer );	
 
-	self.respond({ params: params, player: json, displayPlayer : displayPlayer });
+	self.respond({ params: params, player: json});
 };
 
 

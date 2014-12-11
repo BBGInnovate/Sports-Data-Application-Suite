@@ -25,8 +25,6 @@ if (player.totalStat.total_scoring_att === undefined){
 
 %>
 
-<% if ( displayPlayer ) { %>
-
 <div class='container'>
 	<h4 class='flag <%= playerTeam.teamMetaData.abbreviation.toLowerCase() %>'>
 		<a href="<%- urlFor({
@@ -105,8 +103,8 @@ if (player.totalStat.total_scoring_att === undefined){
 		<td>
 			<a href="<%- urlFor({
 				controller: 'soccer', 
-				action: 'squad',
-				IDTeam : games[i]['opposingTeam']['optaid'],
+				action: 'game',
+				IDGame : games[i]['IDGame'],
 				relPath: true,
 				language: params.language
 				}) %>">
@@ -130,9 +128,3 @@ if (player.totalStat.total_scoring_att === undefined){
 	</tr>
 <% } %>
 </table>
-
-<% } else { %>
-	
-	<p>This player has not played</p>
-
-<% } %>
