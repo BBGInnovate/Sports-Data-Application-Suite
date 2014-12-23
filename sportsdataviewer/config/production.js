@@ -11,7 +11,7 @@ var config = {
   appName: 'Sports Data Viewing Application'
 , detailedErrors: false
 , hostname: null
-, port: 4000
+, port: 443
 , model: {
     defaultAdapter: 'mongo'
   }
@@ -26,6 +26,11 @@ var config = {
     }
   }
  , jsonDirectory : process.cwd() + '/data/json/'
+
+ , ssl: {
+    key: '/etc/apache2/SSL/soccer-epl-home.voanews.com.key'
+  , cert: '/etc/apache2/SSL/soccer-epl-home.voanews.com.crt'
+}
 
 /* // Using Postgres as the default, with only a Postgres DB
 , model: {
