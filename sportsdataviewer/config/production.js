@@ -11,7 +11,7 @@ var config = {
   appName: 'Sports Data Viewing Application'
 , detailedErrors: true
 , debug: true
-, hostname: 'soccer-epl-home.voanews.com'
+//, hostname: 'soccer-epl-home.voanews.com'
 , port: 443
 , model: {
     defaultAdapter: 'filesystem'
