@@ -27,10 +27,10 @@ var config = {
   }
  , jsonDirectory : process.cwd() + '/data/json/'
 
- , ssl: {
-    key: '/etc/apache2/SSL/soccer-epl-home.voanews.com.key'
-  , cert: '/etc/apache2/SSL/soccer-epl-home.voanews.com.crt'
-}
+ //, ssl: {
+ //   key: '/etc/apache2/SSL/soccer-epl-home.voanews.com.key'
+ // , cert: '/etc/apache2/SSL/soccer-epl-home.voanews.com.crt'
+//}
 
 /* // Using Postgres as the default, with only a Postgres DB
 , model: {
