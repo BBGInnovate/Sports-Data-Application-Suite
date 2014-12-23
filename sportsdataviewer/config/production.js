@@ -10,7 +10,7 @@
 var config = {
   appName: 'Sports Data Viewing Application'
 , detailedErrors: true
-, debug: true,
+, debug: true
 , hostname: null
 , port: 443
 , model: {
