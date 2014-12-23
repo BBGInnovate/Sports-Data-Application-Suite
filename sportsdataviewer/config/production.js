@@ -11,7 +11,7 @@ var config = {
   appName: 'Sports Data Viewing Application'
 , detailedErrors: false
 , hostname: null
-, port: 443
+, port: 4000
 , model: {
     defaultAdapter: 'mongo'
   }
