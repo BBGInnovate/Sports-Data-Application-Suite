@@ -9,28 +9,24 @@
  *************************************************************************** */
 var config = {
   appName: 'Sports Data Viewing Application'
-, detailedErrors: false
+, detailedErrors: true
+, debug: true,
 , hostname: null
-, port: 4000
+, port: 443
 , model: {
-    defaultAdapter: 'mongo'
-  }
-, db: {
-    mongo: {
-      username: null
-    , dbname: 'production'
-    , prefix: null
-    , password: null
-    , host: 'localhost'
-    , port: 27017
-    }
+    defaultAdapter: 'filesystem'
+} 
+, sessions: {
+	store: 'filesystem',
+	filename: '_session_store.json',
+	key: 'sid',
+	expiry: 14 * 24 * 60 * 60
   }
  , jsonDirectory : process.cwd() + '/data/json/'
-
- //, ssl: {
- //   key: '/etc/apache2/SSL/soccer-epl-home.voanews.com.key'
- // , cert: '/etc/apache2/SSL/soccer-epl-home.voanews.com.crt'
-//}
+ , ssl: {
+    key: '/etc/apache2/SSL/soccer-epl-home.voanews.com.key'
+  , cert: '/etc/apache2/SSL/soccer-epl-home.voanews.com.crt'
+}
 
 /* // Using Postgres as the default, with only a Postgres DB
 , model: {
