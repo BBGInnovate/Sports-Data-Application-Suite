@@ -12,7 +12,7 @@ var config = {
 , detailedErrors: true
 , debug: true
 //, hostname: 'soccer-epl-home.voanews.com'
-, port: 443
+, port: 4000
 , model: {
     defaultAdapter: 'filesystem'
 } 
@@ -23,12 +23,12 @@ var config = {
 	expiry: 14 * 24 * 60 * 60
   }
  , jsonDirectory : process.cwd() + '/data/json/'
- 
+ /*
  , ssl: {
     key: '/etc/apache2/SSL/soccer-epl.voanews.com.key'
     , cert: '/etc/apache2/SSL/soccer-epl-home.voanews.com.crt'
   }
-  
+  */
 };
 
 module.exports = config;
