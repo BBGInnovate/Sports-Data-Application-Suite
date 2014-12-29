@@ -25,7 +25,7 @@ var config = {
  , jsonDirectory : process.cwd() + '/data/json/'
  
  , ssl: {
-    key: '/etc/apache2/SSL/soccer-epl.voanews.com.key'
+    key: '/etc/apache2/SSL/soccer-epl-home.voanews.com.key'
     , cert: '/etc/apache2/SSL/soccer-epl-home.voanews.com.crt'
   }
   
