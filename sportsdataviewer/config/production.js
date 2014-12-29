@@ -23,12 +23,12 @@ var config = {
 	expiry: 14 * 24 * 60 * 60
   }
  , jsonDirectory : process.cwd() + '/data/json/'
- /*
+ 
  , ssl: {
     key: '/etc/apache2/SSL/soccer-epl-home.voanews.com.key'
     , cert: '/etc/apache2/SSL/soccer-epl-home.voanews.com.crt'
   }
-  */
+  
 };
 
 module.exports = config;
