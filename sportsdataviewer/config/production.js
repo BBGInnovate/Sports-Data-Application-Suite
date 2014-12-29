@@ -12,7 +12,7 @@ var config = {
 , detailedErrors: true
 , debug: true
 //, hostname: 'soccer-epl-home.voanews.com'
-, port: 4000
+, port: 443
 , model: {
     defaultAdapter: 'filesystem'
 } 
