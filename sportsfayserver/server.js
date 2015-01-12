@@ -9,6 +9,7 @@
 //var http = require('http');
 var https = require('https');
 var faye = require('faye');
+var fs = require('fs');
 
 /* *************************** Constructor Code **************************** */
 var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
