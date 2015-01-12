@@ -6,7 +6,8 @@
  */
 
 /* *************************** Required Classes **************************** */
-var http = require('http');
+//var http = require('http');
+var https = require('https');
 var faye = require('faye');
 
 /* *************************** Constructor Code **************************** */
@@ -14,14 +15,21 @@ var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
 
 var secret = '78654323MyVeryL0ngStr1ngTh4tIsC00l4ndYouC4ntT0uchThi5IfY0uTry9907654';
 
+
+var options = {
+  key: fs.readFileSync('/etc/apache2/SSL/soccer-epl-home.voanews.com.key'),
+  cert: fs.readFileSync('/etc/apache2/SSL/soccer-epl-home.voanews.com.crt'),
+  ca: fs.readFileSync('/etc/apache2/SSL/gd_bundle-g2-g1.crt')
+};
+
 // Handle non-Bayeux requests
-var server = http.createServer(function(request, response) {
+var server = https.createServer(function(request, response) {
   response.writeHead(200, {'Content-Type': 'text/plain'});
   response.end('Hello, non-Bayeux request');
 });
 
 bayeux.attach( server );
-server.listen( 8000 );
+server.listen( 443 );
 
 bayeux.on('publish', function(clientId, channel, data) {
   

@@ -27,6 +27,7 @@ var config = {
  , ssl: {
     key: '/etc/apache2/SSL/soccer-epl-home.voanews.com.key'
     , cert: '/etc/apache2/SSL/soccer-epl-home.voanews.com.crt'
+    , ca: '/etc/apache2/SSL/gd_bundle-g2-g1.crt'
   }
   
 };
