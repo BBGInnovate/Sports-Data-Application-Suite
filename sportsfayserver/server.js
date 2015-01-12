@@ -24,7 +24,7 @@ var options = {
 };
 
 // Handle non-Bayeux requests
-var server = https.createServer(function(options, request, response) {
+var server = https.createServer(options, function(request, response) {
   response.writeHead(200, {'Content-Type': 'text/plain'});
   response.end('Hello, non-Bayeux request');
 });
