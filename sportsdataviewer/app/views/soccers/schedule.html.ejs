@@ -12,7 +12,7 @@ var nextGame = false;
 %>
 <script>
 $( document ).ready(function() {
-    
+
     function scrollTo(hash) {
         location.hash = "#" + hash;
     }
@@ -65,21 +65,23 @@ $( document ).ready(function() {
 				}) %>">
 				<%= schedule[i].awayTeam.abbreviation %>
 			</a>
-		</td>
-		<td>
+
             <%
                 // need and anchor tag to scroll to.
-                if(
+            if(
                     schedule[i].awayTeam.score.length === 0
                     &&
                     schedule[i].homeTeam.score.length === 0
                     &&
                     nextGame === false
-                ){
-                    nextGame = true;
+            ){
+                nextGame = true;
             %>
                 <a name="nextGameAnchor" id="nextGameAnchor"></a>
             <% }%>
+		</td>
+		<td>
+
 
 			<a href="<%- urlFor({
 					controller: 'soccer', 
