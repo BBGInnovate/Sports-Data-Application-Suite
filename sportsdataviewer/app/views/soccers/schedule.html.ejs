@@ -8,7 +8,18 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 **************************************************************************** */
 // make an alias
 var rb = getRB(params.language);
+var nextGame = false;
 %>
+<script>
+$( document ).ready(function() {
+    
+    function scrollTo(hash) {
+        location.hash = "#" + hash;
+    }
+
+    scrollTo('nextGameAnchor');
+});
+</script>
 <div class="scheduleContainer">
 <table class='schedule'>
 <thead>
@@ -56,6 +67,20 @@ var rb = getRB(params.language);
 			</a>
 		</td>
 		<td>
+            <%
+                // need and anchor tag to scroll to.
+                if(
+                    schedule[i].awayTeam.score.length === 0
+                    &&
+                    schedule[i].homeTeam.score.length === 0
+                    &&
+                    nextGame === false
+                ){
+                    nextGame = true;
+            %>
+                <a name="nextGameAnchor" id="nextGameAnchor"></a>
+            <% }%>
+
 			<a href="<%- urlFor({
 					controller: 'soccer', 
 					action: 'game',
