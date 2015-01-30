@@ -9,6 +9,7 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 // make an alias
 var rb = getRB(params.language);
 var nextGame = false;
+var hasScore = true;
 %>
 <script>
 $( document ).ready(function() {
@@ -43,6 +44,17 @@ $( document ).ready(function() {
 </thead>
 <tbody>
 	<% for (var i = 0; i < schedule.length; i++) { %>
+    <%
+        // need and anchor tag to scroll to.
+        hasScore = true;
+        if(
+            schedule[i].awayTeam.score.length === 0
+            &&
+            schedule[i].homeTeam.score.length === 0
+        ){
+            hasScore = false;
+        }
+    %>
 	<tr>
 		<td></td>
 		<td>
@@ -68,30 +80,32 @@ $( document ).ready(function() {
 
             <%
                 // need and anchor tag to scroll to.
-            if(
-                    schedule[i].awayTeam.score.length === 0
-                    &&
-                    schedule[i].homeTeam.score.length === 0
-                    &&
-                    nextGame === false
-            ){
-                nextGame = true;
+                if(
+                        schedule[i].awayTeam.score.length === 0
+                        &&
+                        schedule[i].homeTeam.score.length === 0
+                        &&
+                        nextGame === false
+                ){
+                    nextGame = true;
             %>
                 <a name="nextGameAnchor" id="nextGameAnchor"></a>
             <% }%>
 		</td>
 		<td>
-
-
-			<a href="<%- urlFor({
-					controller: 'soccer', 
-					action: 'game',
-					IDGame : schedule[i].IDMatch,
-					relPath: true,
-					language: params.language
-				}) %>">
-				<%= schedule[i].awayTeam.score %> - <%= schedule[i].homeTeam.score %>
-			</a>
+            <% if(hasScore){ %>
+                <a href="<%- urlFor({
+                        controller: 'soccer',
+                        action: 'game',
+                        IDGame : schedule[i].IDMatch,
+                        relPath: true,
+                        language: params.language
+                    }) %>">
+                    <%= schedule[i].awayTeam.score %> - <%= schedule[i].homeTeam.score %>
+                </a>
+            <% }else {%>
+                -
+            <% } %>
 		</td>
 		<td>
 			<a href="<%- urlFor({
@@ -111,3 +125,4 @@ $( document ).ready(function() {
 	<% } %>
 </tbody>
 </table>
+</div>
