@@ -1021,7 +1021,7 @@ function buildGameFile( data ){
 	if( allowAggregateFileBuild ){
 		aggDataService.buildPlayerData( data );
 		aggDataService.buildTeamData( data, result ); 
-		aggDataService.buildRefData( data, result );
+		//aggDataService.buildRefData( data, result );
 		aggDataService.buildGoalieData( data, result );
 	}
 	
