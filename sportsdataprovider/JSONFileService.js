@@ -36,9 +36,13 @@ function writeJSONDataFile( data, type ){
 
 		case 'commentary':
 
-			// pick out the game id from one of the comments.
-			var IDGame = data[0]['IDGame'];
-			fileName = 'commentary/commentary-f' + IDGame + '.json';
+			try {
+				// pick out the game id from one of the comments.
+				var IDGame = data[0]['IDGame'];
+				fileName = 'commentary/commentary-f' + IDGame + '.json';
+			} catch (e) {
+				fileName = 'commentary/commentary-f' + 'error-out' + '.json';
+			}
 			
 			break;
 
