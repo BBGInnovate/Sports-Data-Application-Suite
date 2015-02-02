@@ -961,6 +961,16 @@ function buildGameFile( data ){
 	var checkDate = utils.formatOptaDate( matchData.MatchInfo.Date['#text'] );
 	var isLiveGame = isGameLive(checkDate, data);
 
+	// match officials:
+	var matchOfficialFirstName = '';
+	var matchOfficialLastName = '';
+	try {
+		matchOfficialFirstName = matchData.MatchOfficial.OfficialName.First['#text'];
+		matchOfficialLastName = matchData.MatchOfficial.OfficialName.Last['#text'];
+	} catch(e){
+		// no match played so no official...
+	} 
+
 	var result = {
 		"isGameLive" : isLiveGame,
 		"IDGame" : soccerDocument['@attributes']['uID'],
@@ -973,8 +983,8 @@ function buildGameFile( data ){
 		"firstHalfTime" : firstHalfTime,
 		"secondHalfTime" : secondHalfTime,
 		"matchTime" : matchTime,
-		"matchOfficialFirstName" : matchData.MatchOfficial.OfficialName.First['#text'],
-		"matchOfficialLastName" : matchData.MatchOfficial.OfficialName.Last['#text'],
+		"matchOfficialFirstName" : matchOfficialFirstName,
+		"matchOfficialLastName" : matchOfficialLastName,
 
 		"home" : {
 			"IDTeam" : hTeam['@attributes']['TeamRef'], 
