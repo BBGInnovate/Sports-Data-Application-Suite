@@ -1021,8 +1021,19 @@ function buildGameFile( data ){
 	if( allowAggregateFileBuild ){
 		aggDataService.buildPlayerData( data );
 		aggDataService.buildTeamData( data, result ); 
-		//aggDataService.buildRefData( data, result );
-		//aggDataService.buildGoalieData( data, result );
+		
+		try{
+			aggDataService.buildRefData( data, result );	
+		} catch (e) {
+			// do nothing, it was a delayed game so dont aggregate
+		}
+		
+		try{
+			aggDataService.buildGoalieData( data, result );
+		} catch (e) {
+			// do nothing, it was a delayed game so dont aggregate
+		}
+		
 	}
 	
 
