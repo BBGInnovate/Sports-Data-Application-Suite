@@ -883,8 +883,21 @@ function buildGameFile( data ){
 		}
 	};
 
-	var hPlayerArray = hTeam.PlayerLineUp.MatchPlayer;
-	var vPlayerArray = vTeam.PlayerLineUp.MatchPlayer;
+
+	var hPlayerArray = [];
+	try{
+		hPlayerArray = hTeam.PlayerLineUp.MatchPlayer;
+	}
+	catch (e) {
+		// do nothing. the game was delayed and we don't have player data...
+	}
+
+	var vPlayerArray = [];
+	try {
+		var vPlayerArray = vTeam.PlayerLineUp.MatchPlayer;
+	} catch (e) {
+		// do nothing. the game was delayed and we don't have player data...	
+	}
 
 	// were wrapping try/catch around these because aborted games will NOT
 	// have these properties in the XML.
@@ -992,7 +1005,9 @@ function buildGameFile( data ){
 		}
 	}
 
-	
+
+	//aggDataService.buildPlayerData( data );
+
 	if( allowAggregateFileBuild ){
 		aggDataService.buildPlayerData( data );
 		aggDataService.buildTeamData( data, result ); 
