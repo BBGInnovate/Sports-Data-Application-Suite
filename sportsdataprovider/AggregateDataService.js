@@ -16,6 +16,7 @@ var log = require('./Logger.js');
 var utils = require('./Utils.js');
 var moment = require('moment');
 var faye = require('faye');
+var PlayerService = require('./PlayerService');
 
 
 /* *************************** Constructor Code **************************** */
@@ -126,9 +127,9 @@ function buildGoalieData( data ){
 
 						if( key === statToCheck ){
 							temp[ key ] = parseInt( stat[y]['#text'] );
-						};
-					};
-				};
+						}
+					}
+				}
 
 				goalie.gameArray.push( temp );
 
@@ -150,7 +151,7 @@ function buildGoalieData( data ){
 					goalie.saved_obox = theGame.saved_obox + goalie.saved_obox;
 					goalie.saved_ibox = theGame.saved_ibox + goalie.saved_ibox;
 					goalie.touches = theGame.touches + goalie.touches;
-				};
+				}
 				
 				// write the goalie specific file to disk.
 				var finalJSON = JSON.stringify( goalie );
@@ -159,9 +160,9 @@ function buildGoalieData( data ){
 
 				// now add or write to the aggregate file
 				buildGoalieAggregateFile( goalie );
-			};
-		};
-	};
+			}
+		}
+	}
 
 
 	function buildGoalieAggregateFile( goalie ){
@@ -173,7 +174,7 @@ function buildGoalieData( data ){
 			var goalieBinaryData = fs.readFileSync( goalieAggregateFile );
 	   		// when we start the application, this file will be empty
 	   		try {
-	   			var dataArray = JSON.parse( goalieBinaryData.toString() );
+	   			dataArray = JSON.parse( goalieBinaryData.toString() );
 	   		} catch(e) {
 	   			console.log(e)
 	   		}
@@ -186,7 +187,7 @@ function buildGoalieData( data ){
 	   			dataArray[i] = goalie;
 	   			addGolie = false;
 	   		}
-	   	};
+	   	}
 
 	   	if(addGolie){
 	   		dataArray.push(goalie);
@@ -240,8 +241,8 @@ function buildGoalieData( data ){
 				foundIt = true;
 
 				break;
-			};
-		};
+			}
+		}
 
 		if(!foundIt){
 			for (var i = awayPlayers.length - 1; i >= 0; i--) {
@@ -257,8 +258,8 @@ function buildGoalieData( data ){
 					foundIt = true;
 
 					break;
-				};
-			};
+				}
+			}
 		}
 
 		return result;
@@ -268,7 +269,7 @@ function buildGoalieData( data ){
 
 
 /**
- * I build the reffrie aggregate data.
+ * I build the referee aggregate data.
  *
  * @param {Object} data - I am the JSON data to make the data from
  * @return {void}
@@ -349,7 +350,7 @@ function buildRefData( data, result ){
 			refThisGame.secondHalfExtraTime = secondHalfTime;
 		}
 		*/
-	};
+	}
 
 	// YELLOW Card
 	ref.totalStat.yellowCard = ref.totalStat.yellowCard + result.home.total.yellowCard;
@@ -414,7 +415,7 @@ function buildRefData( data, result ){
 	   		} catch(e){}
 	   	} 
 		
-		var refToPush = {}
+		var refToPush = {};
 		refToPush.id = ref.id;
 		refToPush.firstName = ref.firstName;
 		refToPush.lastName = ref.lastName;
@@ -436,7 +437,7 @@ function buildRefData( data, result ){
 				needPush = false;
 				break;
 			}
-		};
+		}
 		
 		if ( needPush ){
 			dataArray.push(refToPush);
@@ -469,13 +470,15 @@ function buildPlayerData( data ){
 
 		for (var i = playerArray1.length - 1; i >= 0; i--) {
 			matchPlayerArray.push(playerArray1[i]);
-		};
+		}
 		for (var i = playerArray2.length - 1; i >= 0; i--) {
 			matchPlayerArray.push(playerArray2[i]);
-		};
+		}
 
 		var teamData = data.SoccerFeed.SoccerDocument.Team;
 		var IDGame = data.SoccerFeed.SoccerDocument['@attributes']['uID'];
+
+		var localCount = 1;
 
 		// loop over the all the tournaments players and build each players
 		// individual stats JSON file based on what they did in the match.
@@ -486,14 +489,203 @@ function buildPlayerData( data ){
 				if (playerLookup[i].id === matchPlayerArray[x]['@attributes'].PlayerRef){
 
 					aggregatePlayerData(playerLookup[i], matchPlayerArray[x], teamData, IDGame);
+
+					/*
+					var passthroughArgs = {};
+					passthroughArgs.playerInfo = playerLookup[i];
+					passthroughArgs.matchData = matchPlayerArray[x];
+					passthroughArgs.teamData = teamData;
+					passthroughArgs.IDGame = IDGame;
+
+					setTimeout(
+						//PlayerService.getPlayerByOptaID(playerLookup[i].id, postAggregatePlayerData, passthroughArgs),
+						localCount * 1000
+					)
+					*/
+					localCount++;
 				}
-			};
-		};
+			}
+		}
 	} catch (e){
+		log.dump(e);
 		// do nothing. the player data isn't currently there, next time a match
 		// file is processed it will be.
 	}
+
+
+
+
+
+
+
+
 	/***************** helper functions *****************/
+
+
+	// I aggregate a players Data from the game data and write the file to disk.
+	function postAggregatePlayerData(thePlayer, passthroughArgs){
+
+		var playerInfo = passthroughArgs.playerInfo;
+		var matchData = passthroughArgs.matchData;
+		var teamData = passthroughArgs.teamData;
+		var IDGame = passthroughArgs.IDGame;
+
+		// whats the players file path??
+		//var playerDataFilePath = playerJSONDirectory + playerInfo.id + '.json';
+
+		if ( thePlayer !== null ){
+			var playerTotalStat = thePlayer.getTotalStats();
+			var playerInidvidualGateStatArray = thePlayer.individualGameStat;
+		} else {
+			var playerTotalStat = {};
+			var playerInidvidualGateStatArray = [];
+		}
+
+
+
+		//console.log(thePlayer);
+		//console.log(passthroughArgs);
+
+		/*
+		// if the file exists, read its content
+		if ( fs.existsSync( playerDataFilePath ) ) {
+
+			var playerBinaryData = fs.readFileSync( playerDataFilePath );
+			var playerJSONFromDisk = JSON.parse(playerBinaryData.toString());
+			var playerTotalStat = playerJSONFromDisk.totalStat;
+			var playerInidvidualGateStatArray = playerJSONFromDisk.individualGameStat;
+
+		} else {
+
+			// no player file to get data from so get the predefined object
+			var playerTotalStat = getPlayerStatsObject();
+			var playerInidvidualGateStatArray = [];
+		}
+		*/
+
+
+
+		// figure out the players team and opposing team
+		// var playerTeam = Lookup.getTeamDataByID(playerInfo.teamID);
+		// default this to an empty object
+		var opposingTeam = Lookup.getTeamDataByID('foo');
+
+		// look up the opposing team
+		for (var i = teamData.length - 1; i >= 0; i--) {
+			if (teamData[i]['@attributes'].uID != playerInfo.teamID){
+				opposingTeam = Lookup.getTeamDataByID(teamData[i]['@attributes'].uID)
+			}
+		}
+
+		// alias the players stat array
+		var stats = matchData.Stat;
+		var thisGameStatObject = getPlayerStatsObject();
+
+		//loop over the match data and add the values to the playerTotalStat.
+		for (var i = stats.length - 1; i >= 0; i--) {
+
+			var statWeCareAbout = stats[i]['@attributes'].Type;
+
+			// loop over the playerTotalStat and see if any of the keys are there
+			// that we are intrested in, if they are add the total to the player
+			// objects total
+			for (var stat in playerTotalStat) {
+
+				if ( playerTotalStat.hasOwnProperty(stat) && (stat === statWeCareAbout) ) {
+
+					var numberToAdd = parseInt(stats[i]['#text']);
+
+					// aggregate the data...
+					playerTotalStat[stat] = parseInt(playerTotalStat[stat]) + numberToAdd;
+
+					// push onto the individual game array
+					thisGameStatObject[stat] = numberToAdd;
+				}
+			}
+		}
+
+		thisGameStatObject.opposingTeam = opposingTeam;
+		thisGameStatObject.IDGame = IDGame;
+
+		// we need to check that the game is not already in the players stats...
+		var pushThisGame = true;
+		for (var x = playerInidvidualGateStatArray.length - 1; x >= 0; x--) {
+			if ( playerInidvidualGateStatArray.IDGame === IDGame ) {
+				var pushThisGame = false;
+			}
+		}
+
+		// only push a valid individual game stat && if the game is not already
+		// in the players array of games.
+		if ( opposingTeam.IDTeam.length && pushThisGame ){
+
+			//push the new game stats on to the array of games stats
+			playerInidvidualGateStatArray.push(thisGameStatObject);
+
+		}
+
+		// lets make a new object to serialize;
+		var player = {};
+		player.individualGameStat = playerInidvidualGateStatArray;
+		player.info = playerInfo;
+		//player.totalStat = playerTotalStat;
+
+		//console.log('**************************************');
+		//console.log(player);
+
+
+		if ( thePlayer !== null ){
+			PlayerService.update( player );
+
+		} else {
+			PlayerService.save( player );
+		}
+
+
+		//PlayerService.save( player );
+
+		//var finalPlayerJSON = JSON.stringify( player );
+		//fs.writeFileSync(playerDataFilePath, finalPlayerJSON);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	// I aggregate a players Data from the game data and write the file to disk.
 	function aggregatePlayerData(playerInfo, matchData, teamData, IDGame){
@@ -517,6 +709,9 @@ function buildPlayerData( data ){
 			var playerInidvidualGateStatArray = [];
 		}
 
+
+
+
 		// figure out the players team and opposing team
 		var playerTeam = Lookup.getTeamDataByID(playerInfo.teamID);
 		// default this to an empty object
@@ -527,7 +722,7 @@ function buildPlayerData( data ){
 			if (teamData[i]['@attributes'].uID != playerInfo.teamID){
 				opposingTeam = Lookup.getTeamDataByID(teamData[i]['@attributes'].uID)
 			}
-		};
+		}
 
 		// alias the players stat array
 		var stats = matchData.Stat;
@@ -554,7 +749,7 @@ function buildPlayerData( data ){
 					thisGameStatObject[stat] = numberToAdd;
 			  	}
 			}
-		};
+		}
 
 		thisGameStatObject.opposingTeam = opposingTeam;
 		thisGameStatObject.IDGame = IDGame;
@@ -566,14 +761,15 @@ function buildPlayerData( data ){
 			playerInidvidualGateStatArray.push(thisGameStatObject);
 		}
 
-		// lets make a new object to searilize;
+		// lets make a new object to serialize;
 		var player = {};
 		player.individualGameStat = playerInidvidualGateStatArray;
 		player.info = playerInfo;
 		player.totalStat = playerTotalStat;
 
-		var finalPlayerJSON = JSON.stringify( player );
+		//console.log(player);
 
+		var finalPlayerJSON = JSON.stringify( player );
 		fs.writeFileSync(playerDataFilePath, finalPlayerJSON);
 	}
 
@@ -597,7 +793,7 @@ function buildPlayerData( data ){
 		}
 		return result;
 	}
-};
+}
 
 
 
@@ -792,7 +988,7 @@ function buildAggregateTeamJSON(){
 	 			result = schedule[i]['group'];
 				break;
 	 		}
-	 	};
+	 	}
 
 		return result;
 	}
@@ -861,7 +1057,7 @@ function buildAggregateTeamJSON(){
 				result = lookupJSON[i];
 				break;
 			}
-		};
+		}
 
 		return result;
 	}
@@ -909,7 +1105,7 @@ function buildAggregateTeamJSON(){
 		                };
 		            }
 		            return cmp;
-		        };
+		        }
 
 		    // actual implementation
 		    sort_by = function() {
