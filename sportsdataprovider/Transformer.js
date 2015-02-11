@@ -50,18 +50,27 @@ function updateCurrentGameFile( data ){
 
 	var isLive = false;
 
+
+	if (
+		data.SoccerFeed.SoccerDocument['@attributes']
+		&&
+		data.SoccerFeed.SoccerDocument['@attributes']['Type'] === 'Latest'
+
+	) {
+		isLive = true;
+	}
+
+
+
 	try {
 		if (
-			data.SoccerFeed.SoccerDocument['@attributes']
-			&&
-			data.SoccerFeed.SoccerDocument['@attributes']['Type'] === 'Latest'
-			&&
+
 			data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type']
 			&&
 			data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type'] !== 'Postponed'
 
 		) {
-			isLive = true;
+			isLive = false;
 		}
 	} catch (e) {
 		// do nothing
