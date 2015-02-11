@@ -50,21 +50,21 @@ function updateCurrentGameFile( data ){
 
 	var isLive = false;
 
-	if (
-		data.SoccerFeed.SoccerDocument['@attributes']
-		&&
-		data.SoccerFeed.SoccerDocument['@attributes']['Type'] === 'Latest'
-		&&
-		data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result 
-		&&
-		data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']
-		&&
-		data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type']
-		&&
-		data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type'] !== 'Postponed'
+	try {
+		if (
+			data.SoccerFeed.SoccerDocument['@attributes']
+			&&
+			data.SoccerFeed.SoccerDocument['@attributes']['Type'] === 'Latest'
+			&&
+			data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type']
+			&&
+			data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type'] !== 'Postponed'
 
-	) {
-		isLive = true;
+		) {
+			isLive = true;
+		}
+	} catch (e) {
+		// do nothing
 	}
 
 	var latestGameFilePath = config.JSONDirectory + '/latestgame.json';
