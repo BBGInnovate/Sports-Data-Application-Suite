@@ -35,6 +35,7 @@ var mongoose = require('mongoose');
 // the configuration data
 var config = Config.getConfig();
 
+/*
 // connect to mongoose
 var dbConnectionString = config.db;
 mongoose.connect(dbConnectionString);
@@ -43,7 +44,7 @@ mongoose.connect(dbConnectionString);
 mongoose.connection.once('connected', function() {
 	console.log("Connected to database")
 });
-
+*/
 
 var appJSLogging = false;
 if (config.applicationMode === 'dev'){
