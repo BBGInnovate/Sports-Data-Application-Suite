@@ -41,7 +41,7 @@ function writeJSONDataFile( data, type ){
 				var IDGame = data[0]['IDGame'];
 				fileName = 'commentary/commentary-f' + IDGame + '.json';
 			} catch (e) {
-				fileName = 'commentary/commentary-f' + 'error-out' + '.json';
+				//fileName = 'commentary/commentary-f' + 'error-out' + '.json';
 			}
 			
 			break;

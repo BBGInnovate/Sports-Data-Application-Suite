@@ -25,15 +25,25 @@ var Lookup = require('./Lookup.js');
 var dom = require('xmldom').DOMParser;
 var kue = require('kue');
 var aggregateDataService = require('./AggregateDataService');
+var mongoose = require('mongoose');
 
 /* *************************** Constructor Code **************************** */
-
 // light up the web based UI
 // were nixing this cause it borks on production server
 //kue.app.listen(3000);
 
 // the configuration data
 var config = Config.getConfig();
+
+// connect to mongoose
+var dbConnectionString = config.db;
+mongoose.connect(dbConnectionString);
+
+//attach lister to connected event
+mongoose.connection.once('connected', function() {
+	console.log("Connected to database")
+});
+
 
 var appJSLogging = false;
 if (config.applicationMode === 'dev'){
@@ -43,7 +53,7 @@ if (config.applicationMode === 'dev'){
 // the array of jobs Kue keeps track of
 var jobs = kue.createQueue();
 
-// set these defaults, they are overwritten in onApplicaitonStart and finaly
+// set these defaults, they are overwritten in onApplicaitonStart and finally
 // in Transformer.js postTransform() during start up.
 global = {
 	isApplicaitonStarting : true,
@@ -59,7 +69,7 @@ Lookup.writeTeamLookUpJSON();
 preBuildSquadFile();
 
 // only build the agg squad file if stuff was passed in e.g.: '$ node app.js false true'
-// also kill the application right after so we don't reprocess everthing..
+// also kill the application right after so we don't reprocess everything..
 if(process.argv[3] != undefined && process.argv[3] === 'true'){
 	
 	// chill out, the lookup and squad files need to be written first.
@@ -94,7 +104,7 @@ function onApplicationStart( message ){
 
 	// set these so we can keep track during startup and NOT broadcast
 	// to Faye the JSON were building during the startup process. The directory
-	// watcher by default will fire off 'add' actions on the dir it's watcing
+	// watcher by default will fire off 'add' actions on the dir it's watching
 	// for each file in the directory.
 	global = {
 		isApplicaitonStarting : true,
@@ -108,9 +118,9 @@ function onApplicationStart( message ){
 	});
 
 	// we want the watcher to create jobs instead of having all the code rely
-	// on the watcher itself. Better seperation of concerns and allows
-	// for more fault tolerance becaue Kue will attempt to process any failed
-	// job another time intstead of just borking the application. Why
+	// on the watcher itself. Better separation of concerns and allows
+	// for more fault tolerance because Kue will attempt to process any failed
+	// job another time instead of just borking the application. Why
 	// would code fail after the watcher? Because SFTP file transfers might be
 	// held up for some reason and be taking a long time. We want to allow the
 	// files to be written before we react to them. 
@@ -187,7 +197,7 @@ function restartApplication( millisecondsToWait ){
  *
  * @param {String} 'processJSON' - I am the string to look at the job que for to
  								   process things.
- * @param {Function} callback - I am teh call back funciton.
+ * @param {Function} callback - I am teh call back function.
  * @return {Void}
  */
 jobs.process('processJSON', function( job, done ){
@@ -440,7 +450,7 @@ function getNumberOfStartUpXMLFiles(){
 
 			count++;
 		}
-	};
+	}
 
 	return count;
 }
