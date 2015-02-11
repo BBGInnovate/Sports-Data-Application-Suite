@@ -55,6 +55,8 @@ function updateCurrentGameFile( data ){
 		&&
 		data.SoccerFeed.SoccerDocument['@attributes']['Type'] === 'Latest'
 		&&
+		data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result 
+		&&
 		data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']
 		&&
 		data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type']
