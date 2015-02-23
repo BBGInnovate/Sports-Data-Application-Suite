@@ -51,6 +51,14 @@ function updateCurrentGameFile( data ){
 	var isLive = false;
 
 
+	if (data.SoccerFeed.SoccerDocument['@attributes']['uID'] === 'f755565') {
+		//log.dump(data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result);
+	}
+
+
+	//log.dump(data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']);
+
+
 	if (
 		data.SoccerFeed.SoccerDocument['@attributes']
 		&&
@@ -60,20 +68,25 @@ function updateCurrentGameFile( data ){
 		isLive = true;
 	}
 
+	// PUT ALL THE EXCLUSION CHECKS HERE e.g.: if it was postponed, if there was
+	// a technical issue where the game didn't happen...
+	//
+	// Were wrapping the checks in TRY/CATCH so we can easily add individual
+	// ones. This way we don't have to have a huge honken if statement in the
+	// 'normal' if check. This is an OK pattern I think -- John Allen
 
 
+	// if postponed
 	try {
 		if (
-
-			data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type']
-			&&
-			data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type'] !== 'Postponed'
-
+			data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type'] == 'Postponed'
 		) {
 			isLive = false;
+			//console.log('WE ARE SUPER PHAT*************************** type:' + data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type']);
+			//console.log('ARE WE LIVE?!?!??!: ' + isLive);
 		}
 	} catch (e) {
-		// do nothing
+		log.dump(e);
 	}
 
 	var latestGameFilePath = config.JSONDirectory + '/latestgame.json';
@@ -84,8 +97,8 @@ function updateCurrentGameFile( data ){
 	var awayTeam = data.SoccerFeed.SoccerDocument.MatchData.TeamData[1]['@attributes'];
 	var IDGame = data.SoccerFeed.SoccerDocument['@attributes']['uID'];
 
-	console.log('IS LIVE ************* ID: ' + IDGame);
-	console.log( isLive );
+	console.log('IS LIVE ************* ID: ' + IDGame + '?: ' + isLive);
+	//console.log( isLive );
 
 	if ( isLive ){
 
@@ -156,7 +169,7 @@ function updateCurrentGameFile( data ){
 
 		// were going to check if the current game is in the latestgame.json
 		// file and remove it.
-		for (var i = latestGameJSON.length - 1; i >= 0; i--) {
+		for ( var i = latestGameJSON.length - 1; i >= 0; i-- ) {
 			
 			if ( IDGame === latestGameJSON[i]['IDGame'] ){
 				
@@ -319,7 +332,7 @@ function doBuildCommentFile( data, twitterData ){
 	var secondOfComment = 0;
 
 	// add the twitter timelines
-	for (var i = twitterData.length - 1; i >= 0; i--) {
+	for ( var i = twitterData.length - 1; i >= 0; i-- ) {
 		
 		var timeline = twitterData[i];
 
@@ -1045,13 +1058,13 @@ function buildGameFile( data ){
 		try{
 			aggDataService.buildRefData( data, result );	
 		} catch (e) {
-			// do nothing, it was a delayed game so dont aggregate
+			// do nothing, it was a delayed game so don't aggregate
 		}
 		
 		try{
 			aggDataService.buildGoalieData( data, result );
 		} catch (e) {
-			// do nothing, it was a delayed game so dont aggregate
+			// do nothing, it was a delayed game so don't aggregate
 		}
 		
 	}
