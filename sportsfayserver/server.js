@@ -69,7 +69,7 @@ bayeux.on('publish', function(clientId, channel, data) {
 bayeux.addExtension({
 	incoming: function(message, callback) {
 
-
+		/*
 		console.log(message);
 		console.log(message.ext);
 		console.log('---------------');
@@ -82,13 +82,14 @@ bayeux.addExtension({
 				message.error = '403::Password required';
 			}
 	    }
+	    */
 	    callback(message);
 
 	},
 
 	outgoing: function(message, callback) {
 
-
+		
 		// kill the password, don't want to send that out.
 		if (message.ext) delete message.ext.password;
 
