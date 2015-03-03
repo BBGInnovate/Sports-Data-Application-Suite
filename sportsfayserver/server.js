@@ -65,6 +65,7 @@ bayeux.on('publish', function(clientId, channel, data) {
 // I am an extension that checks if a publisher is sending a password and that
 // the password is correct. If it's not I add the .error key to the message
 // object which effectivly kills it.
+/*
 bayeux.addExtension({
 	incoming: function(message, callback) {
 
@@ -90,3 +91,4 @@ bayeux.addExtension({
 	    callback(message);
 	}
 });
+*/
