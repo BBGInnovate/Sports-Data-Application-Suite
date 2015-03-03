@@ -69,9 +69,11 @@ bayeux.on('publish', function(clientId, channel, data) {
 bayeux.addExtension({
 	incoming: function(message, callback) {
 
-		console.log(message);
 
-		/*
+		console.log(message);
+		console.log(message.ext);
+		console.log('---------------');
+
 		if (!message.channel.match(/^\/meta\//)) {
 			
 			var password = message.ext && message.ext.password;
@@ -81,17 +83,15 @@ bayeux.addExtension({
 			}
 	    }
 	    callback(message);
-	    */
 
-		callback(message);
 	},
 
 	outgoing: function(message, callback) {
 
-		/*
+
 		// kill the password, don't want to send that out.
 		if (message.ext) delete message.ext.password;
-	    */
+
 	    callback(message);
 	}
 });
