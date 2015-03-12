@@ -1,4 +1,4 @@
-# Sports Data Application Suite
+    # Sports Data Application Suite
 
 This repository contains a suite of applications that provide web based realtime scores and updates for soccer or any other configured sport.
 
