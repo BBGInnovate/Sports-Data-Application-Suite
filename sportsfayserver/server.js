@@ -17,7 +17,7 @@ var bayeux = new faye.NodeAdapter({mount: '/faye', timeout: 45});
 var secret = '78654323MyVeryL0ngStr1ngTh4tIsC00l4ndYouC4ntT0uchThi5IfY0uTry9907654';
 
 // by default we will ALWAYS run under SSL
-var runUnderSSL = true;
+var runUnderSSL = false;
 
 // if in dev (local) start the server this way: node server.js false
 if (process.argv[2] !== undefined && process.argv[2] === 'false'){
@@ -64,7 +64,7 @@ bayeux.on('publish', function(clientId, channel, data) {
 
 // I am an extension that checks if a publisher is sending a password and that
 // the password is correct. If it's not I add the .error key to the message
-// object which effectivly kills it.
+// object which effectively kills it.
 
 bayeux.addExtension({
 	incoming: function(message, callback) {
@@ -95,7 +95,7 @@ bayeux.addExtension({
 
 
 		// kill the password, don't want to send that out.
-		//if (message.ext) delete message.ext.password;
+		// if (message.ext) delete message.ext.password;
 
 	    callback(message);
 	}
