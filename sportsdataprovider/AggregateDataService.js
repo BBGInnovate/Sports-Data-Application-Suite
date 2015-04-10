@@ -513,16 +513,10 @@ function buildPlayerData( data ){
 	}
 
 
-
-
-
-
-
-
 	/***************** helper functions *****************/
 
 
-	// I aggregate a players Data from the game data and write the file to disk.
+	// I AM UNUSED CODE!
 	function postAggregatePlayerData(thePlayer, passthroughArgs){
 
 		var playerInfo = passthroughArgs.playerInfo;
