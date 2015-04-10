@@ -11,6 +11,17 @@ var rb = getRB(params.language);
 var squad = squadArray.squadJSON.reverse();
 
 %>
+<script>
+    $( document ).ready(function() {
+
+        function scrollTo(hash) {
+            location.hash = "#" + hash;
+        }
+
+        scrollTo('topAnchor');
+    });
+</script>
+<a name="topAnchor" id="topAnchor"></a>
 <table class='tableToSVG squads'>
 	<thead>
 		<tr>

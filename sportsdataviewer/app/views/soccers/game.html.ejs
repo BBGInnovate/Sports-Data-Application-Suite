@@ -46,6 +46,17 @@ var showAll = true;
 <%= partial('commentary', {commentary: commentaryData, gameData: gameStatData, params: params}); %>
 <% } %>
 <% if ( showAll ){ /* show ALL the widgets, the default behavior */%>
+<script>
+    $( document ).ready(function() {
+
+        function scrollTo(hash) {
+            location.hash = "#" + hash;
+        }
+
+        scrollTo('topAnchor');
+    });
+</script>
+<a name="topAnchor" id="topAnchor"></a>
 <%= partial('scoreboard', {gameData: gameStatData, params: params}); %>
 <%= partial('timeline', {gameData: gameStatData, params: params}); %>
 <%= partial('game-overview', {gameData: gameStatData, params: params}); %>

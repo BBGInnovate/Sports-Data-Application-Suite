@@ -4,7 +4,7 @@ sportsdataprovider/node_modules/
 sportsdataprovider/documentation-output/
 sportsdataviewer/node_modules/
 soccersimulator/node_modules/
-soccersimulator/simulationfiles/**/*
+soccersimulator/simulationfiles/
 soccersimulator/log/**/*
 soccersimulator/_session_store.json
 sportsdataviewer/log/**/*

@@ -6,7 +6,7 @@
      production time:    20140706T132528,968Z
      production module:  Opta::Feed::XML::Soccer::F13
 -->
-<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2014-12-09 15:30:59" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
+<Commentary away_score="0" away_team_id="838" away_team_name="Costa Rica" competition="World Cup" competition_id="4" game_date="2015-03-03 10:02:59" game_id="731825" home_score="0" home_team_id="366" home_team_name="Netherlands" lang_id="en" matchday="5" season="Season 2013/2014" season_id="2013" sport_id="1" sport_name="Football">
   <message id="226084831" comment="Substitution, Costa Rica. David Myrie replaces Cristian Gamboa because of an injury." last_modified="2014-07-05 22:36:13" minute="78" period="2" second="21" time="79'" type="substitution" />
   <message id="968582051" comment="Delay over. They are ready to continue." last_modified="2014-07-05 22:36:12" minute="78" period="2" second="15" time="79'" type="end delay" />
   <message id="522469104" comment="Delay in match Cristian Gamboa (Costa Rica) because of an injury." last_modified="2014-07-05 22:35:34" minute="77" period="2" second="38" time="78'" type="start delay" />

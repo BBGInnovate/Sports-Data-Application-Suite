@@ -10,7 +10,19 @@ Author: 		Johh Allen (Fig Leaf Software) jallen@figleaf.com
 var rb = getRB(params.language);
 var playerTeam = getTeamByID(squad.teamMetadata.IDTeam)
 
-%><div class='testRoster2'>
+%>
+<script>
+    $( document ).ready(function() {
+
+        function scrollTo(hash) {
+            location.hash = "#" + hash;
+        }
+
+        scrollTo('topAnchor');
+    });
+</script>
+<a name="topAnchor" id="topAnchor"></a>
+<div class='testRoster2'>
 <h2 class='flag large <%= squad.teamMetadata.abbreviation.toLowerCase() %>'>
 	<%= squad.team.name %>
 	<%= rb.get(squad.team.name.toLowerCase()) %>

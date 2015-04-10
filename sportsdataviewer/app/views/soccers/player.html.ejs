@@ -24,7 +24,17 @@ if (player.totalStat.total_scoring_att === undefined){
 }
 
 %>
+<script>
+    $( document ).ready(function() {
 
+        function scrollTo(hash) {
+            location.hash = "#" + hash;
+        }
+
+        scrollTo('topAnchor');
+    });
+</script>
+<a name="topAnchor" id="topAnchor"></a>
 <div class='container'>
 	<h4 class='flag <%= playerTeam.teamMetaData.abbreviation.toLowerCase() %>'>
 		<a href="<%- urlFor({
