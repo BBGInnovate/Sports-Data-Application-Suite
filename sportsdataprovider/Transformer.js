@@ -50,14 +50,11 @@ function updateCurrentGameFile( data ){
 
 	var isLive = false;
 
-
+	/* use this for debugging. change the game id
 	if (data.SoccerFeed.SoccerDocument['@attributes']['uID'] === 'f755565') {
 		//log.dump(data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result);
 	}
-
-
-	//log.dump(data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']);
-
+	*/
 
 	if (
 		data.SoccerFeed.SoccerDocument['@attributes']
@@ -70,11 +67,6 @@ function updateCurrentGameFile( data ){
 
 	// PUT ALL THE EXCLUSION CHECKS HERE e.g.: if it was postponed, if there was
 	// a technical issue where the game didn't happen...
-	//
-	// Were wrapping the checks in TRY/CATCH so we can easily add individual
-	// ones. This way we don't have to have a huge honken if statement in the
-	// 'normal' if check. This is an OK pattern I think -- John Allen
-
 
 	// if postponed
 	try {
@@ -82,8 +74,6 @@ function updateCurrentGameFile( data ){
 			data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type'] == 'Postponed'
 		) {
 			isLive = false;
-			//console.log('WE ARE SUPER PHAT*************************** type:' + data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type']);
-			//console.log('ARE WE LIVE?!?!??!: ' + isLive);
 		}
 	} catch (e) {
 		log.dump(e);
@@ -98,7 +88,6 @@ function updateCurrentGameFile( data ){
 	var IDGame = data.SoccerFeed.SoccerDocument['@attributes']['uID'];
 
 	console.log('IS LIVE ************* ID: ' + IDGame + '?: ' + isLive);
-	//console.log( isLive );
 
 	if ( isLive ){
 
@@ -124,8 +113,7 @@ function updateCurrentGameFile( data ){
 				}
 			};
 
-			console.log('IN GAME DATA AFTER CHECK is it IN THERE?? *************');
-			console.log( isInLatestGameJSON );
+			console.log('Is game in current game json?: ' + isInLatestGameJSON);
 
 			var newJSONToAddToLatestJSON = {};
 
@@ -139,14 +127,8 @@ function updateCurrentGameFile( data ){
 				newJSONToAddToLatestJSON.IDGame = IDGame;
 
 				latestGameJSON.push( newJSONToAddToLatestJSON );
-
-				console.log('WAS PUSHED *************');
 				
 			};
-
-
-			console.log('JSON *************');
-			console.log( newJSONToAddToLatestJSON );
 
 			var jsonToWrite = JSON.stringify( latestGameJSON );
 
@@ -156,16 +138,23 @@ function updateCurrentGameFile( data ){
 		} catch( e ){
 			
 			log.error("LATEST GAME FILE File Write Failed!", e.stack);
-			console.log(e);
+			//console.log(e);
 			
 			var newJSON = [];
 			
 			// write a default file..
 			fs.writeFileSync(latestGameFilePath, newJSON );
-
-			log.application( "LATEST GAME FILE File WRITTEN AFRE FAIL!", "Fixed it" );
 		}
 	} else { 
+
+		/*
+			TODO:
+			this is a good place to put code that says: hey, are all the
+			current live games over? if so run the aggregate data stuff.
+
+			Do this by checking if the array has len and if removing a game
+			makes the array len 0. if 0 run build all aggregate functionality.
+		 */
 
 		// were going to check if the current game is in the latestgame.json
 		// file and remove it.
@@ -1052,8 +1041,10 @@ function buildGameFile( data ){
 	//aggDataService.buildPlayerData( data );
 
 	if( allowAggregateFileBuild ){
+
 		aggDataService.buildPlayerData( data );
-		aggDataService.buildTeamData( data, result ); 
+
+		aggDataService.buildTeamData( data, result );
 		
 		try{
 			aggDataService.buildRefData( data, result );	

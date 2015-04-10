@@ -1,13 +1,11 @@
 /**
- * @fileOverview  	I am the main application file. I watch a specified directory
- *					and when files have been updated or added I create a job so the file 
- *					can be read then parsed and passed to the Transformer.js class which 
- *					generates front end ready JSON files and publishes data to the Faye
- *					server.
+ * @fileOverview  	I am almost the exact file as app.js but should only be used
+ *                  when generating aggregate data called by app.js using a cron
+ *                  job.
  *
  * @author 			John Allen <jallen@bbg.gov>
  * @version 		1.0.0
- * @module 			app.js
+ * @module 			aggregate-app.js
  */
 
 /* *************************** Required Classes **************************** */
@@ -25,8 +23,7 @@ var Lookup = require('./Lookup.js');
 var dom = require('xmldom').DOMParser;
 var kue = require('kue');
 var aggregateDataService = require('./AggregateDataService');
-// var mongoose = require('mongoose');
-var CronService = require('./CronService.js');
+var mongoose = require('mongoose');
 
 /* *************************** Constructor Code **************************** */
 // light up the web based UI
@@ -36,13 +33,9 @@ var CronService = require('./CronService.js');
 // the configuration data
 var config = Config.getConfig();
 
-// set the nightly aggregate data build fires every night at 11:30
-CronService.setDailyAggregateBuild();
-
+// *************** DIFFERENT THAN APP.JS ************** //
+// always keep this false for Aggregation...
 var appJSLogging = false;
-if (config.applicationMode === 'dev'){
-	appJSLogging = false;
-}
 
 // the array of jobs Kue keeps track of
 var jobs = kue.createQueue();
@@ -56,26 +49,19 @@ global = {
 	allHistoryFilesProcessed : false
 }
 
+// *************** DIFFERENT THAN APP.JS ************** //
 // write any lookup json files we need
-Lookup.writeTeamLookUpJSON();
+//Lookup.writeTeamLookUpJSON();
 
+// *************** DIFFERENT THAN APP.JS ************** //
 // write the squad and player file
-preBuildSquadFile();
+//preBuildSquadFile();
 
-// only build the agg squad file if stuff was passed in e.g.: '$ node app.js false true'
-// also kill the application right after so we don't reprocess everything..
-if(process.argv[3] != undefined && process.argv[3] === 'true'){
-	
-	// chill out, the lookup and squad files need to be written first.
-	setTimeout(function() { 
-		aggregateDataService.buildAggregateTeamJSON();
-		log.log('we build the aggregate squad file.')
-	}, 5000);
-} else {
+// *************** DIFFERENT THAN APP.JS ************** //
+// Different than the app.js, we will always just light the application up.
+// the aggregate Team json will be built in the handleAction() method.
+onApplicationStart('Seems the Application started as normal');
 
-	// Light Up the Application!
-	onApplicationStart('Seems the Application started as normal');
-}
 
 
 /* *************************** Public Methods ****************************** */
@@ -137,15 +123,15 @@ function onApplicationStart( message ){
 		})
 		.on('change', function( path ) {
 
-			var extension = path.split('.').pop();
+			// *************** DIFFERENT THAN APP.JS ************** //
 
-			if (extension === 'xml'){
+			// we only want to run this as a start up... so if for some reason
+			// we are still 'alive' we DO NOT want to process anything, we want
+			// to quit.
 
-				jobs.create('processJSON', {
-					action : 'change',
-					path: path
-				}).attempts( howMayJobAttempts ).save();
-			}
+			// THIS IN THEORY SHOULD NEVER FIRE. THE PROCESS SHOULD EXIT IN THE
+			// handleAction() METHOD. This is defensive only.
+			process.exit(0);
 
 		})
 		.on('unlink', function( path ) {
@@ -155,14 +141,15 @@ function onApplicationStart( message ){
 			ErrorHandler.handleError( 'The watcher borked', error );
 		});
 
-	//log.application( 'onApplicationStart() happened.', message );
+	// *************** DIFFERENT THAN APP.JS ************** //
+	log.application( 'onApplicationStart() IN aggregate-app.js happened.' );
 
 	global.isApplicaitonStarting = false;
 }
 
 
 /**
- * I restart the applicaiton. 
+ * I restart the application.
  *
  * Arguments:
  * @param {Number} millisecondsToWait - how long I should sleep before calling 
@@ -218,6 +205,7 @@ function afterWatcher( action, path ){
 
 	fs.readFile( path, function( err, data ) {
 
+		// *************** DIFFERENT THAN APP.JS ************** //
 		// log that we read a file.
 		//log.application('read the file: ' + path);
 
@@ -242,7 +230,7 @@ function afterWatcher( action, path ){
 			var json = utils.xmlToJson( xmlDoc );
 
 			if( appJSLogging ){
-				//console.log( 'read JSON' );
+				console.log( 'read JSON' );
 			}
 
 		} catch( error ) {
@@ -287,11 +275,25 @@ function handleAction( action, feedType, data, path ){
 	// this needs to get reset here.
 	global.allHistoryFilesProcessed = false;
 
-	// if we have processed all the initial files in the FTP directory we need
-	// to exit the application.
+	// if we have processed all the initial files in the FTP directory we can
+	// build the Team JSON file and then exit this process
 	if (global.numberOfStartUpXMLFiles < global.numberOfSartUpJobsCommited){
 
-		global.allHistoryFilesProcessed = true;
+
+		// *************** DIFFERENT THAN APP.JS ************** //
+
+		log.application("Aggregate Data has been processed.", "null");
+
+		// build the aggregate team json file.
+		aggregateDataService.buildAggregateTeamJSON();
+		log.application('we build the aggregate squad file.')
+
+		// wait 10 seconds to exit the application
+		setTimeout(
+			function(){
+				log.application("We are exiting the application.", "null");
+				process.exit(0);
+			}, 10000 );
 	}
 
 	var doAction = '';
@@ -386,7 +388,7 @@ function preBuildSquadFile() {
 	var squadsFilePath = config.FPTDirectory + "/" + config.squadFileName;
 
 	if( appJSLogging ){
-		//console.log( squadsFilePath );
+		console.log( squadsFilePath );
 	}
 
 	var rawSquadBinnaryData = fs.readFileSync( squadsFilePath );
@@ -525,8 +527,8 @@ function isInSeason(feedType, json){
 
 	// log a failed file for testing....
 	if(result === false){
-		//log.application(feedType + ' was a non world cup file.');
-		//log.log(feedType + ' was a non world cup file.');
+		log.application(feedType + ' was a non world cup file.');
+		log.log(feedType + ' was a non world cup file.');
 	}
 
 	return result;

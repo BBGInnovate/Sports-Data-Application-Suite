@@ -14,6 +14,7 @@ var log = require('./Logger.js');
 
 /* *************************** Constructor Code **************************** */
 var config = Config.getConfig();
+
 var fayClient = new faye.Client(config.faye.url);
 
 // we need to send the password to the server so lets add an extension to do
@@ -27,6 +28,9 @@ fayClient.addExtension({
 		callback( message );
 	}
 });
+
+console.log(fayClient);
+
 
 
 /* *************************** Public Methods ****************************** */

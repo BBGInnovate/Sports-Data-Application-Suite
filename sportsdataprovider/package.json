@@ -13,7 +13,10 @@
 		"kue" : "^0.8.6",
 		"faye" : "^1.0.3",
 		"winston" : "^0.7.3",
-	  	"forever" : "^0.13.0"
+	  	"forever" : "^0.13.0",
+	    "mongoose" : "^3.8.21",
+        "memory-cache" : "^0.0.5",
+        "cron" : "^1.0.9"
 	},
 	"devDependencies": {},
 	"engines": {

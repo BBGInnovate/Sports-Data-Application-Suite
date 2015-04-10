@@ -28,12 +28,14 @@ function getConfig(){
 		'JSONDirectory' :  rootPath + '/sportsdataviewer/data/json',
 		'squadFileName' : engagementConfig.squadFileName,
 		'rootPath' : rootPath,
+		'db' : engagementConfig.db,
 
 		'competitionName' : engagementConfig.competitionName,
 		'competitionID' : engagementConfig.competitionID,
 		'season' : engagementConfig.season,
 		'seasonName' : engagementConfig.seasonName,
 		'seasonID' : engagementConfig.seasonID,
+
 
 		'aggregateDataDirectory' : process.cwd() + '/aggregate_data',
 		'feedTypeStringID' : {
