@@ -148,6 +148,10 @@ If the application was to be used for a different event, e.g. Premier League vs.
 
 This class is just a simple thin 'dispatcher' so the app.js class and the supporting service classed are more loosely coupled.
 
+####CronService.js
+
+This class handles all the Cron functionality for the application.
+
 ####Transformer.js
 
 This class generates the properly formatted JSON used by all other applications from the OPTA XML.  
