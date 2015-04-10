@@ -16,7 +16,6 @@ var log = require('./Logger.js');
 var utils = require('./Utils.js');
 var moment = require('moment');
 var faye = require('faye');
-var PlayerService = require('./PlayerService');
 
 
 /* *************************** Constructor Code **************************** */
@@ -490,18 +489,6 @@ function buildPlayerData( data ){
 
 					aggregatePlayerData(playerLookup[i], matchPlayerArray[x], teamData, IDGame);
 
-					/*
-					var passthroughArgs = {};
-					passthroughArgs.playerInfo = playerLookup[i];
-					passthroughArgs.matchData = matchPlayerArray[x];
-					passthroughArgs.teamData = teamData;
-					passthroughArgs.IDGame = IDGame;
-
-					setTimeout(
-						//PlayerService.getPlayerByOptaID(playerLookup[i].id, postAggregatePlayerData, passthroughArgs),
-						localCount * 1000
-					)
-					*/
 					localCount++;
 				}
 			}
@@ -514,172 +501,6 @@ function buildPlayerData( data ){
 
 
 	/***************** helper functions *****************/
-
-
-	// I AM UNUSED CODE!
-	function postAggregatePlayerData(thePlayer, passthroughArgs){
-
-		var playerInfo = passthroughArgs.playerInfo;
-		var matchData = passthroughArgs.matchData;
-		var teamData = passthroughArgs.teamData;
-		var IDGame = passthroughArgs.IDGame;
-
-		// whats the players file path??
-		//var playerDataFilePath = playerJSONDirectory + playerInfo.id + '.json';
-
-		if ( thePlayer !== null ){
-			var playerTotalStat = thePlayer.getTotalStats();
-			var playerInidvidualGateStatArray = thePlayer.individualGameStat;
-		} else {
-			var playerTotalStat = {};
-			var playerInidvidualGateStatArray = [];
-		}
-
-
-
-		//console.log(thePlayer);
-		//console.log(passthroughArgs);
-
-		/*
-		// if the file exists, read its content
-		if ( fs.existsSync( playerDataFilePath ) ) {
-
-			var playerBinaryData = fs.readFileSync( playerDataFilePath );
-			var playerJSONFromDisk = JSON.parse(playerBinaryData.toString());
-			var playerTotalStat = playerJSONFromDisk.totalStat;
-			var playerInidvidualGateStatArray = playerJSONFromDisk.individualGameStat;
-
-		} else {
-
-			// no player file to get data from so get the predefined object
-			var playerTotalStat = getPlayerStatsObject();
-			var playerInidvidualGateStatArray = [];
-		}
-		*/
-
-
-
-		// figure out the players team and opposing team
-		// var playerTeam = Lookup.getTeamDataByID(playerInfo.teamID);
-		// default this to an empty object
-		var opposingTeam = Lookup.getTeamDataByID('foo');
-
-		// look up the opposing team
-		for (var i = teamData.length - 1; i >= 0; i--) {
-			if (teamData[i]['@attributes'].uID != playerInfo.teamID){
-				opposingTeam = Lookup.getTeamDataByID(teamData[i]['@attributes'].uID)
-			}
-		}
-
-		// alias the players stat array
-		var stats = matchData.Stat;
-		var thisGameStatObject = getPlayerStatsObject();
-
-		//loop over the match data and add the values to the playerTotalStat.
-		for (var i = stats.length - 1; i >= 0; i--) {
-
-			var statWeCareAbout = stats[i]['@attributes'].Type;
-
-			// loop over the playerTotalStat and see if any of the keys are there
-			// that we are intrested in, if they are add the total to the player
-			// objects total
-			for (var stat in playerTotalStat) {
-
-				if ( playerTotalStat.hasOwnProperty(stat) && (stat === statWeCareAbout) ) {
-
-					var numberToAdd = parseInt(stats[i]['#text']);
-
-					// aggregate the data...
-					playerTotalStat[stat] = parseInt(playerTotalStat[stat]) + numberToAdd;
-
-					// push onto the individual game array
-					thisGameStatObject[stat] = numberToAdd;
-				}
-			}
-		}
-
-		thisGameStatObject.opposingTeam = opposingTeam;
-		thisGameStatObject.IDGame = IDGame;
-
-		// we need to check that the game is not already in the players stats...
-		var pushThisGame = true;
-		for (var x = playerInidvidualGateStatArray.length - 1; x >= 0; x--) {
-			if ( playerInidvidualGateStatArray.IDGame === IDGame ) {
-				var pushThisGame = false;
-			}
-		}
-
-		// only push a valid individual game stat && if the game is not already
-		// in the players array of games.
-		if ( opposingTeam.IDTeam.length && pushThisGame ){
-
-			//push the new game stats on to the array of games stats
-			playerInidvidualGateStatArray.push(thisGameStatObject);
-
-		}
-
-		// lets make a new object to serialize;
-		var player = {};
-		player.individualGameStat = playerInidvidualGateStatArray;
-		player.info = playerInfo;
-		//player.totalStat = playerTotalStat;
-
-		//console.log('**************************************');
-		//console.log(player);
-
-
-		if ( thePlayer !== null ){
-			PlayerService.update( player );
-
-		} else {
-			PlayerService.save( player );
-		}
-
-
-		//PlayerService.save( player );
-
-		//var finalPlayerJSON = JSON.stringify( player );
-		//fs.writeFileSync(playerDataFilePath, finalPlayerJSON);
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	// I aggregate a players Data from the game data and write the file to disk.
 	function aggregatePlayerData(playerInfo, matchData, teamData, IDGame){
