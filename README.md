@@ -251,7 +251,8 @@ This file contains all the configuration options used for different servers. It 
 		'seasonID' : '2014',
 		'fayClientURL' : 'http://127.0.0.1:8000/faye',
 		'FPTDirectory' : rootPath + '/sportsdataprovider/FTP',
-		'squadFileName' : 'srml-8-2014-squads.xml'
+		'squadFileName' : 'srml-8-2014-squads.xml',
+		'scheduleFileName' : 'srml-8-2014-results.xml',
 	}
 
 
