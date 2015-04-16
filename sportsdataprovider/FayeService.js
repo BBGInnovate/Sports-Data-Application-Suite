@@ -29,9 +29,6 @@ fayClient.addExtension({
 	}
 });
 
-console.log(fayClient);
-
-
 
 /* *************************** Public Methods ****************************** */
 /**

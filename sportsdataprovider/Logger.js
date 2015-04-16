@@ -18,11 +18,19 @@ var applogger = new (winston.Logger)({
 	]
 });
 
+var aggregateLogger = new (winston.Logger)({
+	transports: [
+		new (winston.transports.File)({ filename: './logs/aggregation.log' })
+	]
+});
+
 var errorLogger = new (winston.Logger)({
 	transports: [
 		new (winston.transports.File)({ filename: './logs/error.log' })
 	]
 });
+
+
 
 // var Log = require('log');
 // var appLogger = new Log('debug', fs.createWriteStream('./logs/application.log'));
@@ -43,6 +51,16 @@ function application( message, data ){
 }
 
 /**
+ * I write log entries to the application.log file
+ * @param {String} message - I am a message about what happened
+ * @param {Object} data - I am a JS object of additional infomation to log
+ */
+function aggregate( message, data ){
+	aggregateLogger.info( message, JSON.stringify( data ), data );
+}
+
+
+/**
  * I write log entries to the console
  * @param {String} message - I am a message about what happened
  */
@@ -58,7 +76,6 @@ function log( message ){
 function error( message, data ){
 	errorLogger.error( message, JSON.stringify( data ), data );
 }
-
 
 /**
  * I dump a object to the console
@@ -76,6 +93,7 @@ function dump( data, depth ){
 
 /* ************************ Exported Public Methods ************************ */
 exports.application = application;
+exports.aggregate = aggregate;
 exports.error = error;
 exports.log = log;
 exports.dump = dump;

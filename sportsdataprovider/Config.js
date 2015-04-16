@@ -27,6 +27,7 @@ function getConfig(){
 		'FPTDirectory' : engagementConfig.FPTDirectory,
 		'JSONDirectory' :  rootPath + '/sportsdataviewer/data/json',
 		'squadFileName' : engagementConfig.squadFileName,
+		'scheduleFileName' : engagementConfig.scheduleFileName,
 		'rootPath' : rootPath,
 		'db' : engagementConfig.db,
 

@@ -10,6 +10,11 @@
 
 /* *************************** Required Classes **************************** */
 
+// *************** DIFFERENT THAN APP.JS ************** //
+// WE NEED THIS FLAG TO TELL Transformer.js TO BUILD AGGREGATE FILES
+process.argv[2] = 'true';
+
+
 var fs = require('fs');
 var path = require('path');
 var chokidar = require('chokidar');
@@ -51,11 +56,11 @@ global = {
 
 // *************** DIFFERENT THAN APP.JS ************** //
 // write any lookup json files we need
-//Lookup.writeTeamLookUpJSON();
+Lookup.writeTeamLookUpJSON();
 
 // *************** DIFFERENT THAN APP.JS ************** //
 // write the squad and player file
-//preBuildSquadFile();
+preBuildSquadFile();
 
 // *************** DIFFERENT THAN APP.JS ************** //
 // Different than the app.js, we will always just light the application up.
@@ -78,6 +83,8 @@ onApplicationStart('Seems the Application started as normal');
  * @return {void}
  */
 function onApplicationStart( message ){
+
+	log.aggregate("AGGREGATE DATA PROCESS LAUNCHED.", "null");
 
 	var howLongToWaitAfterChange = 5000;
 	var howMayJobAttempts = 1;
@@ -131,7 +138,16 @@ function onApplicationStart( message ){
 
 			// THIS IN THEORY SHOULD NEVER FIRE. THE PROCESS SHOULD EXIT IN THE
 			// handleAction() METHOD. This is defensive only.
-			process.exit(0);
+			aggregateDataService.buildAggregateTeamJSON();
+			console.log("Aggregate Data has been processed.");
+			// wait 10 seconds to exit the application
+			setTimeout(
+				function(){
+					log.application("We are exiting the application.", "null");
+					console.log("Endign APplication");
+					process.exit(0);
+				}, 10000
+			);
 
 		})
 		.on('unlink', function( path ) {
@@ -275,25 +291,42 @@ function handleAction( action, feedType, data, path ){
 	// this needs to get reset here.
 	global.allHistoryFilesProcessed = false;
 
-	// if we have processed all the initial files in the FTP directory we can
-	// build the Team JSON file and then exit this process
-	if (global.numberOfStartUpXMLFiles < global.numberOfSartUpJobsCommited){
+
+	// *************** DIFFERENT THAN APP.JS ************** //
+	// if we have processed all the initial files exit the do some stuff and
+	// exit the application
+	if (global.numberOfStartUpXMLFiles <= global.numberOfSartUpJobsCommited){
 
 
 		// *************** DIFFERENT THAN APP.JS ************** //
 
-		log.application("Aggregate Data has been processed.", "null");
+		// log that all the files have been processed.
+		log.aggregate("Aggregate Data has been processed.", "null");
 
-		// build the aggregate team json file.
-		aggregateDataService.buildAggregateTeamJSON();
-		log.application('we build the aggregate squad file.')
+		// read the schedule xml, parse it and have the controller build the file
+		var scheduleFilePath = config.FPTDirectory + "/" + config.scheduleFileName;
+		var rawSchedualBinnaryData = fs.readFileSync( scheduleFilePath );
+		var xmlDoc = new dom().parseFromString( rawSchedualBinnaryData.toString() );
+		var json = utils.xmlToJson( xmlDoc );
+		// build the schedule
+		Controller.handleSchedule(json);
 
-		// wait 10 seconds to exit the application
+		// need to wait a bit so the schedule is built so we can build the
+		// aggregate team JSON file.
 		setTimeout(
 			function(){
-				log.application("We are exiting the application.", "null");
+				aggregateDataService.buildAggregateTeamJSON();
+				log.aggregate('we build the aggregate squad file.');
+			}, 5000
+		);
+
+		// wait 10 seconds for the heck of it to exit the application
+		setTimeout(
+			function(){
+				log.aggregate("EXITING THE AGGREGATE DATA PROCESS.", "null");
 				process.exit(0);
-			}, 10000 );
+			}, 10000
+		);
 	}
 
 	var doAction = '';
@@ -327,7 +360,6 @@ function handleAction( action, feedType, data, path ){
 	if ( (action === 'add') && ( feedType === 'f40' ) ){
 		doAction = 'buildSquadFile';
 	}
-
 
 	if ( (action === 'add') && ( feedType === 'f30' ) ){
 		doAction = 'buildSeasonStats';

@@ -15,11 +15,10 @@ var Lookup = require('./Lookup.js');
 var log = require('./Logger.js');
 var utils = require('./Utils.js');
 var moment = require('moment');
-var faye = require('faye');
+
 
 
 /* *************************** Constructor Code **************************** */
-
 var config = Config.getConfig();
 var playerJSONDirectory = config.JSONDirectory + '/player/';
 var teamJSONDirectory = config.JSONDirectory + '/team/';
@@ -27,7 +26,6 @@ var refJSONDirectory = config.JSONDirectory + '/ref/';
 var refAggregateFile = config.JSONDirectory + '/refereeData.json';
 var goalieJSONDirectory = config.JSONDirectory + '/goalie/';
 var goalieAggregateFile = config.JSONDirectory + '/goalieData.json';
-
 
 var buildAllTheFiles = false;
 
@@ -37,6 +35,12 @@ if(process.argv[2] != undefined && process.argv[2] === 'true'){
 }
 
 if ( buildAllTheFiles ){
+	killCurrentDataJSONFiles();
+}
+
+/* *************************** Public Methods ****************************** */
+
+function killCurrentDataJSONFiles(){
 
 	// we need to delete the current aggregate data cause the application just
 	// started. It will be rebuilt as game files are read and game data is created.
@@ -44,7 +48,7 @@ if ( buildAllTheFiles ){
 	utils.emptyDirectory( teamJSONDirectory );
 	utils.emptyDirectory( refJSONDirectory );
 	utils.emptyDirectory( goalieJSONDirectory );
-	
+
 	// kill the ref aggregate file store
 	if (fs.existsSync( refAggregateFile )){
 		fs.unlinkSync( refAggregateFile );
@@ -54,11 +58,13 @@ if ( buildAllTheFiles ){
 	if (fs.existsSync( goalieAggregateFile )){
 		fs.unlinkSync( goalieAggregateFile );
 	}
+
 }
+exports.killCurrentDataJSONFiles = killCurrentDataJSONFiles;
 
 
 
-/* *************************** Public Methods ****************************** */
+
 
 /**
  * I build the goalie aggregate data.
