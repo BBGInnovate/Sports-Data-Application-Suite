@@ -114,6 +114,17 @@ function onApplicationStart( message ){
 	watcher
 		.on('add', function( path ) {
 
+
+			setTimeout(
+				function(){
+					log.application("We are exiting the application.", "null");
+					console.log("Endign APplication");
+					process.exit(0);
+				}, 2000
+			);
+
+
+
 			/*
 			var extension = path.split('.').pop();
 
