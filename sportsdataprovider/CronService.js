@@ -8,6 +8,7 @@
 /* *************************** Required Classes **************************** */
 var CronJob = require('cron').CronJob;
 var childProcess = require('child_process');
+var log = require('./Logger');
 
 /* *************************** Constructor Code **************************** */
 
@@ -33,6 +34,8 @@ exports.setJob = setJob;
  * I set the corn job that process the aggregate data every night at 11:30.
  */
 function setDailyAggregateBuild(){
+
+	//log.aggregate('')
 
 	var job = new CronJob({
 		cronTime: '00 30 11 * * 0-6',

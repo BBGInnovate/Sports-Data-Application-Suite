@@ -114,6 +114,7 @@ function onApplicationStart( message ){
 	watcher
 		.on('add', function( path ) {
 
+			/*
 			var extension = path.split('.').pop();
 
 			if( appJSLogging ){
@@ -127,8 +128,11 @@ function onApplicationStart( message ){
 					path: path
 				}).attempts( howMayJobAttempts ).save();
 			}
+			*/
 		})
 		.on('change', function( path ) {
+
+			/*
 
 			// *************** DIFFERENT THAN APP.JS ************** //
 
@@ -148,6 +152,7 @@ function onApplicationStart( message ){
 					process.exit(0);
 				}, 10000
 			);
+			*/
 
 		})
 		.on('unlink', function( path ) {
