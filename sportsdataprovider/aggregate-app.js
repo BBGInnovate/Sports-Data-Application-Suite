@@ -115,9 +115,16 @@ function onApplicationStart( message ){
 		.on('add', function( path ) {
 
 
+			setTimeout(
+				function(){
+					log.application("We are exiting the application.", "null");
+					console.log("Endign APplication");
+					process.exit(0);
+				}, 10000
+			);
 
 
-
+			/*
 			var extension = path.split('.').pop();
 
 			if( appJSLogging ){
@@ -131,7 +138,7 @@ function onApplicationStart( message ){
 					path: path
 				}).attempts( howMayJobAttempts ).save();
 			}
-
+			*/
 		})
 		.on('change', function( path ) {
 
