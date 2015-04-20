@@ -115,17 +115,9 @@ function onApplicationStart( message ){
 		.on('add', function( path ) {
 
 
-			setTimeout(
-				function(){
-					log.application("We are exiting the application.", "null");
-					console.log("Endign APplication");
-					process.exit(0);
-				}, 2000
-			);
 
 
 
-			/*
 			var extension = path.split('.').pop();
 
 			if( appJSLogging ){
@@ -139,11 +131,11 @@ function onApplicationStart( message ){
 					path: path
 				}).attempts( howMayJobAttempts ).save();
 			}
-			*/
+
 		})
 		.on('change', function( path ) {
 
-			/*
+
 
 			// *************** DIFFERENT THAN APP.JS ************** //
 
@@ -163,7 +155,7 @@ function onApplicationStart( message ){
 					process.exit(0);
 				}, 10000
 			);
-			*/
+
 
 		})
 		.on('unlink', function( path ) {
@@ -304,6 +296,12 @@ function handleAction( action, feedType, data, path ){
 	// watched directory which is a good thing.
 	global.numberOfSartUpJobsCommited = global.numberOfSartUpJobsCommited +1;
 
+	/*
+	console.log('number of Jobs Commited: ' + global.numberOfSartUpJobsCommited);
+	console.log('Number of startUPfFiles: ' + global.numberOfStartUpXMLFiles);
+	console.log('----------------');
+	*/
+
 	// this needs to get reset here.
 	global.allHistoryFilesProcessed = false;
 
@@ -311,7 +309,7 @@ function handleAction( action, feedType, data, path ){
 	// *************** DIFFERENT THAN APP.JS ************** //
 	// if we have processed all the initial files exit the do some stuff and
 	// exit the application
-	if (global.numberOfStartUpXMLFiles <= global.numberOfSartUpJobsCommited){
+	if ( global.numberOfStartUpXMLFiles === (global.numberOfSartUpJobsCommited + 1) ){
 
 
 		// *************** DIFFERENT THAN APP.JS ************** //
