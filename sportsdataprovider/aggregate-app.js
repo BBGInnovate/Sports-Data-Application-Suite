@@ -304,11 +304,11 @@ function handleAction( action, feedType, data, path ){
 	// watched directory which is a good thing.
 	global.numberOfSartUpJobsCommited = global.numberOfSartUpJobsCommited +1;
 
-	/*
+
 	console.log('number of Jobs Commited: ' + global.numberOfSartUpJobsCommited);
 	console.log('Number of startUPfFiles: ' + global.numberOfStartUpXMLFiles);
 	console.log('----------------');
-	*/
+	
 
 	// this needs to get reset here.
 	global.allHistoryFilesProcessed = false;
