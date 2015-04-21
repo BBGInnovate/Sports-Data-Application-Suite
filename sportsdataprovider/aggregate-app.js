@@ -308,7 +308,7 @@ function handleAction( action, feedType, data, path ){
 	console.log('number of Jobs Commited: ' + global.numberOfSartUpJobsCommited);
 	console.log('Number of startUPfFiles: ' + global.numberOfStartUpXMLFiles);
 	console.log('----------------');
-	
+
 
 	// this needs to get reset here.
 	global.allHistoryFilesProcessed = false;
@@ -317,7 +317,7 @@ function handleAction( action, feedType, data, path ){
 	// *************** DIFFERENT THAN APP.JS ************** //
 	// if we have processed all the initial files exit the do some stuff and
 	// exit the application
-	if ( global.numberOfStartUpXMLFiles === (global.numberOfSartUpJobsCommited + 1) ){
+	if ( global.numberOfStartUpXMLFiles === (global.numberOfSartUpJobsCommited + 2) ){
 
 
 		// *************** DIFFERENT THAN APP.JS ************** //
