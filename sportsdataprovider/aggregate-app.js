@@ -401,12 +401,13 @@ function handleAction( action, feedType, data, path ){
 
 		case 'buildGameFile':
 
-			Controller.handleGame( data );
+			Controller.handleGame( data, false );
 			break;
 
 		case 'buildCommentFile':
-			
-			Controller.handleComment( data );
+
+
+			//Controller.handleComment( data );
 			break;
 
 		case 'buildSquadFile':

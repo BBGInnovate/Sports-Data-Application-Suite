@@ -57,14 +57,19 @@ exports.handleCommentPostParsing = handleCommentPostParsing;
  * @param {Object} data I am the game JSON object. I am required.
  * @return {Boolean}
  */
-function handleGame( data ){
+function handleGame( data, writefile ){
+
+	// for aggregation we don't want to write the file and update the
+	// current game file..
+	writefile = writefile || true;
 
 	var gameObject = Transformer.buildGameFile( data );
-	
-	FayeService.broadcastToFaye( gameObject, 'game' );
-	JSONFileService.writeJSONDataFile( gameObject, 'game' );
 
-	Transformer.updateCurrentGameFile( data );
+	if( writefile ){
+		FayeService.broadcastToFaye( gameObject, 'game' );
+		JSONFileService.writeJSONDataFile( gameObject, 'game' );
+		Transformer.updateCurrentGameFile( data );
+	}
 
 	return true;
 }
