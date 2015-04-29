@@ -224,6 +224,11 @@ jobs.process('processJSON', function( job, done ){
 	done();
 });
 
+jobs.on( 'error', function(e){
+	log.dump(e);
+	//log.error(e);
+});
+
 
 /**
  * I am the function called after the watcher sees a change. I read the file 
