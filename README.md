@@ -73,6 +73,7 @@ This is the main configuration class. Below is a description of each configurati
 		'JSONDirectory' :  rootPath + '/sportsdataviewer/data/json',
 		// the OPTA squads file name (will be deprecated in the future)
 		'squadFileName' : engagementConfig.squadFileName,
+		'scheduleFileName' : engagementConfig.scheduleFileName,
 		'rootPath' : rootPath,
 		
 		// strings to check in the XML for verification of correct XML data
@@ -141,6 +142,7 @@ This class provides the functionality for
 1. Directory watching
 2. Validation that incoming files are valid for the configured sports event
 3. Transformation of XML to JSON
+4. Outputs Errors when Kue fails.
 
 If the application was to be used for a different event, e.g. Premier League vs. World Cup 2014, the configuration file would need to be updated with the correct check strings.
 
