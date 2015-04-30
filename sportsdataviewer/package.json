@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"author": "John Allen for BBG | ODDI",
 	"dependencies": {
-		"moment" : "~2.8.2"
+		"moment" : ">=2.8.2"
 	},
 	"devDependencies": {},
 	"engines": {

@@ -4,11 +4,11 @@
   "author": "John Allen for BBG | ODDI",
   "description" : "Software to simulate OPTA XML file pushes.",
   "dependencies": {
-    "moment": "^2.7.0",
-    "kue" : "^0.8.6",
-    "xmldom" : "^0.1.19",
-    "lazy" : "^1.0.11",
-    "ssh2" : "^0.3.6"
+    "moment": ">=2.7.0",
+    "kue" : ">=0.8.6",
+    "xmldom" : ">=0.1.19",
+    "lazy" : ">=1.0.11",
+    "ssh2" : ">=0.3.6"
   },
   "devDependencies": {},
   "engines": {
