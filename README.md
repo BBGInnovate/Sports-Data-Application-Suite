@@ -1,4 +1,4 @@
-    # Sports Data Application Suite
+#Sports Data Application Suite
 
 This repository contains a suite of applications that provide web based realtime scores and updates for soccer or any other configured sport.
 
@@ -256,6 +256,21 @@ This file contains all the configuration options used for different servers. It 
 		'squadFileName' : 'srml-8-2014-squads.xml',
 		'scheduleFileName' : 'srml-8-2014-results.xml',
 	}
+The values for the specific 'season' data can be found in the XML set by Opta.
+
+'competitionName' - look in a srml-8-xxxx-fxxxxx-matchresults.xml file for the node 'Name'
+
+'competitionID' - look in a seasonstats-x-xxxx-xxxx.xml file for the node 'SeasonStatistics' and the attribute 'competition_id'.
+
+'season' - look in a srml-8-xxxx-fxxxxx-matchresults.xml file under the node Stat that has the attribute season_name
+
+'seasonName' - look in a srml-8-xxxx-fxxxxx-matchresults.xml file under the node Stat that has the attribute season_name
+
+'seasonID' - look in a srml-8-xxxx-fxxxxx-matchresults.xml file under the node Stat that has the attribute season_id
+
+The squadFileName and scheduleFileName will be the same for the entire engagement.
+
+
 
 
 
