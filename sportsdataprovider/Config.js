@@ -46,8 +46,8 @@ function getConfig(){
 			'f30': 'seasonstats-',
 			'f40': '-squads'
 		},
-		//'emailSendList' : 'jallen@figleaf.com,bwilliamson@bbg.gov,jallen@bbg.gov',
-		'emailSendList' : 'jallen@bbg.gov',
+		//'emailSendList' : 'bwilliamson@bbg.gov',
+		'emailSendList' : 'bwilliamson@bbg.gov,jflowers@bbg.gov',
 		//'emailCCList' : 'stran@bbg.gov',
 		'emailCCList' : '',
 		'emailUserAccount' : 'bbg.football.dataprovider@gmail.com',
