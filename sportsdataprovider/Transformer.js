@@ -992,8 +992,17 @@ function buildGameFile( data ){
 	} catch(e){
 		// no match played so no official...
 	} 
+	var isPostponed=false;
+	try {
+		if (
+			data.SoccerFeed.SoccerDocument.MatchData.MatchInfo.Result['@attributes']['Type'] == 'Postponed'
+		) {
+			isPostponed = true;
+		}
+	}
 
 	var result = {
+		"isPostponed": isPostponed,
 		"isGameLive" : isLiveGame,
 		"IDGame" : soccerDocument['@attributes']['uID'],
 		"type" : soccerDocument['@attributes']['Type'],

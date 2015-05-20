@@ -26,7 +26,7 @@ var dom = require('xmldom').DOMParser;
 var kue = require('kue');
 var aggregateDataService = require('./AggregateDataService');
 // var mongoose = require('mongoose');
-var CronService = require('./CronService.js');
+//var CronService = require('./CronService.js');
 
 /* *************************** Constructor Code **************************** */
 // light up the web based UI
@@ -37,7 +37,7 @@ var CronService = require('./CronService.js');
 var config = Config.getConfig();
 
 // set the nightly aggregate data build fires every night at 11:30
-CronService.setDailyAggregateBuild();
+//CronService.setDailyAggregateBuild();
 
 var appJSLogging = false;
 if (config.applicationMode === 'dev'){
