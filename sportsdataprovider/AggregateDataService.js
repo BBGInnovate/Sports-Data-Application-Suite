@@ -626,112 +626,116 @@ function buildPlayerData( data ){
  */
 function buildTeamData( data, result ) {
 
-	var homeTeam = result.home;
-	var awayTeam = result.away;
-
-	homeTeam.historyData = getTeamHistory( homeTeam.IDTeam );
-	awayTeam.historyData = getTeamHistory( awayTeam.IDTeam );
-	
-	// sets default winner to an empty string, if it remans empty we
-	// know we have a draw.
-	var winner = '';
-
-	//log.dump(homeTeam);
-	//log.dump(awayTeam);
-
-	// who won the game? were keeping this broken out cause we want to also
-	// figure out if there was a draw
-	if ( homeTeam.score > awayTeam.score ){
-		winner = 'home';
-	}
-	if ( homeTeam.score < awayTeam.score ){
-		winner = 'away';
-	}
-
-	// if we have a winner calculate
-	if ( winner.length ){
-
-		if( winner === 'home' ){
-
-			homeTeam.historyData.win = homeTeam.historyData.win + 1;
-			homeTeam.historyData.points = homeTeam.historyData.points + 3;
-
-			awayTeam.historyData.loss = awayTeam.historyData.loss + 1;
-
-			//figure out the goal difference
-			homeTeam.historyData.goalDifference = homeTeam.historyData.goalDifference + (homeTeam.score - awayTeam.score);
-			awayTeam.historyData.goalDifference = awayTeam.historyData.goalDifference + (awayTeam.score - homeTeam.score);
-		}
-		if( winner === 'away' ){
-			homeTeam.historyData.loss = homeTeam.historyData.loss + 1;
-			
-			awayTeam.historyData.win = awayTeam.historyData.win + 1;
-			awayTeam.historyData.points = awayTeam.historyData.points + 3;
-
-			//figure out the goal difference
-			awayTeam.historyData.goalDifference = awayTeam.historyData.goalDifference + (awayTeam.score - homeTeam.score);
-			homeTeam.historyData.goalDifference = homeTeam.historyData.goalDifference + (homeTeam.score - awayTeam.score);
-
-		}
+	if (result.isPostponed) {
+		console.log("we have a game postponed between " + result.home.name + " " + result.away.name);
 	} else {
+		var homeTeam = result.home;
+		var awayTeam = result.away;
 
-		// NO winner so chalk up a draw for each team
-		homeTeam.historyData.draw = homeTeam.historyData.draw + 1;
-		awayTeam.historyData.draw = awayTeam.historyData.draw + 1;
-
-		// everyone gets a point for the draw
-		homeTeam.historyData.points = homeTeam.historyData.points + 1;
-		awayTeam.historyData.points = awayTeam.historyData.points + 1;
-	}
-
-	// add some meta data, not using but we might need it in the future.
-	homeTeam.historyData.id = homeTeam.IDTeam;
-	homeTeam.historyData.abbreviation = homeTeam.abbreviation;
-	homeTeam.historyData.name = homeTeam.name;
-	
-	awayTeam.historyData.id = awayTeam.IDTeam;
-	awayTeam.historyData.abbreviation = awayTeam.abbreviation;
-	awayTeam.historyData.name = awayTeam.name;
-
-	var homeTeamJSONFileName = teamJSONDirectory + homeTeam.IDTeam + '.json';
-	var awayTeamJSONFileName = teamJSONDirectory + awayTeam.IDTeam + '.json';
-
-	var finalHomeTeamJSON = JSON.stringify( homeTeam.historyData );
-	var finalAwayTeamJSON = JSON.stringify( awayTeam.historyData );
-
-	fs.writeFileSync(homeTeamJSONFileName, finalHomeTeamJSON);
-	fs.writeFileSync(awayTeamJSONFileName, finalAwayTeamJSON);
-
-	/***************** helper functions *****************/
-
-	// I aggregate a teams data with previously stored data
-	function getTeamHistory( id ) {
-
-		var teamFile = teamJSONDirectory + id + '.json';
+		homeTeam.historyData = getTeamHistory( homeTeam.IDTeam );
+		awayTeam.historyData = getTeamHistory( awayTeam.IDTeam );
 		
-		if ( fs.existsSync( teamFile ) ) {
- 	   		var teamBinaryData = fs.readFileSync( teamFile );
- 	   		var result = JSON.parse( teamBinaryData.toString() );
- 	   	} else {
- 	   		var result = getTeamStatsObject();
+		// sets default winner to an empty string, if it remans empty we
+		// know we have a draw.
+		var winner = '';
+
+		//log.dump(homeTeam);
+		//log.dump(awayTeam);
+
+		// who won the game? were keeping this broken out cause we want to also
+		// figure out if there was a draw
+		if ( homeTeam.score > awayTeam.score ){
+			winner = 'home';
+		}
+		if ( homeTeam.score < awayTeam.score ){
+			winner = 'away';
 		}
 
-		return result;
-	}
+		// if we have a winner calculate
+		if ( winner.length ){
 
-	// I return a default zeroed out stats object.
-	function getTeamStatsObject(){
-		var stats = {
-			'id' : '',
-			'abbreviation' : '',
-			'name' : '',
-			'win' : 0,
-			'loss' : 0,
-			'draw' : 0,
-			'goalDifference' : 0,
-			'points' : 0
+			if( winner === 'home' ){
+
+				homeTeam.historyData.win = homeTeam.historyData.win + 1;
+				homeTeam.historyData.points = homeTeam.historyData.points + 3;
+
+				awayTeam.historyData.loss = awayTeam.historyData.loss + 1;
+
+				//figure out the goal difference
+				homeTeam.historyData.goalDifference = homeTeam.historyData.goalDifference + (homeTeam.score - awayTeam.score);
+				awayTeam.historyData.goalDifference = awayTeam.historyData.goalDifference + (awayTeam.score - homeTeam.score);
+			}
+			if( winner === 'away' ){
+				homeTeam.historyData.loss = homeTeam.historyData.loss + 1;
+				
+				awayTeam.historyData.win = awayTeam.historyData.win + 1;
+				awayTeam.historyData.points = awayTeam.historyData.points + 3;
+
+				//figure out the goal difference
+				awayTeam.historyData.goalDifference = awayTeam.historyData.goalDifference + (awayTeam.score - homeTeam.score);
+				homeTeam.historyData.goalDifference = homeTeam.historyData.goalDifference + (homeTeam.score - awayTeam.score);
+
+			}
+		} else {
+
+			// NO winner so chalk up a draw for each team
+			homeTeam.historyData.draw = homeTeam.historyData.draw + 1;
+			awayTeam.historyData.draw = awayTeam.historyData.draw + 1;
+
+			// everyone gets a point for the draw
+			homeTeam.historyData.points = homeTeam.historyData.points + 1;
+			awayTeam.historyData.points = awayTeam.historyData.points + 1;
 		}
-		return stats;
+
+		// add some meta data, not using but we might need it in the future.
+		homeTeam.historyData.id = homeTeam.IDTeam;
+		homeTeam.historyData.abbreviation = homeTeam.abbreviation;
+		homeTeam.historyData.name = homeTeam.name;
+		
+		awayTeam.historyData.id = awayTeam.IDTeam;
+		awayTeam.historyData.abbreviation = awayTeam.abbreviation;
+		awayTeam.historyData.name = awayTeam.name;
+
+		var homeTeamJSONFileName = teamJSONDirectory + homeTeam.IDTeam + '.json';
+		var awayTeamJSONFileName = teamJSONDirectory + awayTeam.IDTeam + '.json';
+
+		var finalHomeTeamJSON = JSON.stringify( homeTeam.historyData );
+		var finalAwayTeamJSON = JSON.stringify( awayTeam.historyData );
+
+		fs.writeFileSync(homeTeamJSONFileName, finalHomeTeamJSON);
+		fs.writeFileSync(awayTeamJSONFileName, finalAwayTeamJSON);
+
+		/***************** helper functions *****************/
+
+		// I aggregate a teams data with previously stored data
+		function getTeamHistory( id ) {
+
+			var teamFile = teamJSONDirectory + id + '.json';
+			
+			if ( fs.existsSync( teamFile ) ) {
+	 	   		var teamBinaryData = fs.readFileSync( teamFile );
+	 	   		var result = JSON.parse( teamBinaryData.toString() );
+	 	   	} else {
+	 	   		var result = getTeamStatsObject();
+			}
+
+			return result;
+		}
+
+		// I return a default zeroed out stats object.
+		function getTeamStatsObject(){
+			var stats = {
+				'id' : '',
+				'abbreviation' : '',
+				'name' : '',
+				'win' : 0,
+				'loss' : 0,
+				'draw' : 0,
+				'goalDifference' : 0,
+				'points' : 0
+			}
+			return stats;
+		}
 	}
 }
 
