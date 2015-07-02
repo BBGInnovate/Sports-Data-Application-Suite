@@ -21,6 +21,10 @@ var config = {
     	filename: '_session_store.json',
     	key: 'sid',
     	expiry: 14 * 24 * 60 * 60
+    },
+    ssl: {
+        key: '/etc/apache2/SSL/voanews.com.key',
+        cert: '/etc/apache2/SSL/VOANEWS.COM.crt'
     }
 };
 
